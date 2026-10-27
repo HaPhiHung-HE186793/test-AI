@@ -1,0 +1,13 @@
+# Dependencies & Build
+node_modules/
+dist/
+.DS_Store
+
+# File video cũ > 100MB vượt giới hạn GitHub (151.84 MB)
+Thien_Vuong_09_Hoi_Uc_Rong_Thep_3Phut_Master.mp4
+
+# Bỏ qua các bản lưu nháp trùng lặp ở ngoài, giữ lại các thư mục phim hoàn chỉnh trong output/vscode_runs/movie_*
+output/vscode_runs/generate_*.png
+output/vscode_runs/generate_*.mp4
+output/vscode_runs/upload_*.png
+output/vscode_runs/upload_*.mp4

@@ -1,0 +1,109 @@
+{
+  "movieTitle": "Đại Chiến Kỷ Phấn Trắng: Tàn Tích Hỏa Ngục",
+  "createdAt": "2026-10-26T17:37:33.999Z",
+  "script": "Một kỵ sĩ cơ giáp bạc đứng trên đỉnh tháp Neo-Hanoi dưới mưa đêm, rút kiếm ánh sáng Plasma lao xuống chém đôi chiến hạm Drone rồi đáp xuống quảng trường.",
+  "model": "Veo 3.1 - Lite",
+  "character1SheetPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\02_character_1_3panel_sheet.png",
+  "character2SheetPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\02_character_2_3panel_sheet.png",
+  "cleanEnvironmentLockPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\03_clean_environment_lock.png",
+  "masterVideoPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\MASTER_FINAL_MOVIE.mp4",
+  "subtitlesPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\master_subtitles.srt",
+  "shots": [
+    {
+      "shotNumber": 1,
+      "titleVi": "Tiếng Gầm Khai Chiến",
+      "subtitleVi": "Hai đại quái thú đối đầu rực lửa bên dòng nham thạch cuộn trào.",
+      "skillUsed": "[ACTION_INFERNO_ROAR] & [ACTION_ABYSS_STALK]",
+      "actionPromptEn": "Wide Establishing Shot. Violent thunderstorm at night. On opposite banks of a bubbling molten lava river, @IGNIS REX unleashes [ACTION_INFERNO_ROAR] with fiery embers bursting from its jaws while @ABYSSAL SPINO executes [ACTION_ABYSS_STALK] with its cyan bioluminescent dorsal sail pulsing brightly. Rain sizzles into steam upon hitting the hot lava and IGNIS REX's glowing magma scales.",
+      "endFramePromptEn": "Wide profile freeze frame of the two prehistoric titans roaring face-to-face across the glowing red lava trench under torrential rain, jaws wide open, saliva and steam flying.",
+      "cameraAngle": "Wide Establishing Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 4,
+      "shotIdx": "01",
+      "startKeyframeMediaId": "b5d594dc-4745-494f-9f3b-c69adb8ca372",
+      "startKeyframePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_01_start_frame.png",
+      "referenceIds": [
+        "905c9754-de6c-4bf5-8ba7-d466e0d41301",
+        "aa3e5ce2-2b40-46ec-816a-a9d6d541000f",
+        "8973701d-9a0d-44d1-8186-b3a6f3863c0c"
+      ],
+      "videoMediaId": "96e49c63-8259-4f99-a45b-3caac2c073c5",
+      "videoPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_01_video.mp4",
+      "vqqaScore": 94,
+      "vqqaNote": "Strong adherence to the prompt with effective dual-bank framing, dynamic lighting contrast between the lava and bioluminescence, and solid subject posturing."
+    },
+    {
+      "shotNumber": 2,
+      "titleVi": "Cú Vồ Thủy Quái Liên Hoàn",
+      "subtitleVi": "Nanh vuốt phát sáng xanh lục lam xé toạc màn mưa nhắm thẳng vào yết hầu.",
+      "skillUsed": "[SKILL_1_HYDRO_SLASH] & [SKILL_2_BIO_PULSE]",
+      "actionPromptEn": "Dynamic Tracking Shot. @ABYSSAL SPINO charges forward through the steam and splashing mud, unleashing [SKILL_2_BIO_PULSE] from its glowing cyan dorsal sail and striking with [SKILL_1_HYDRO_SLASH] — slashing its massive razor-sharp foreclaws and lunging its elongated crocodilian jaws at @IGNIS REX's armored neck, sending sparks and fiery embers flying.",
+      "endFramePromptEn": "Tight action freeze frame showing ABYSSAL SPINO clamping its jaws inches from IGNIS REX's throat, deadly talons slashing into basalt scales with glowing orange sparks illuminating the torrential rain.",
+      "cameraAngle": "Dynamic Tracking Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 4,
+      "shotIdx": "02",
+      "startKeyframeMediaId": "2ce971a8-71e9-4d08-bc59-6d517e676ef3",
+      "startKeyframePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_02_start_frame.png",
+      "referenceIds": [
+        "905c9754-de6c-4bf5-8ba7-d466e0d41301",
+        "aa3e5ce2-2b40-46ec-816a-a9d6d541000f",
+        "8973701d-9a0d-44d1-8186-b3a6f3863c0c"
+      ],
+      "videoMediaId": "9d545c15-2a4b-4500-8ca8-a6a7a2ee8eb8",
+      "videoPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_02_video.mp4",
+      "vqqaScore": 94,
+      "vqqaNote": "Strong subject adherence and dynamic framing. Effectively visualizes both elemental dinosaurs, biological effects, and clashing forces with balanced environmental contrast."
+    },
+    {
+      "shotNumber": 3,
+      "titleVi": "Cú Ngoạm Dung Nham & Đòn Quật Đuôi Địa Chấn",
+      "subtitleVi": "Bạo chúa giáng trả đòn cắn dung nham sấm sét, quật văng đối thủ vào vách đá.",
+      "skillUsed": "[SKILL_1_MAGMA_JAWS] & [SKILL_2_SEISMIC_TAIL]",
+      "actionPromptEn": "Low-Angle Hero Shot. @IGNIS REX breaks free and counters with [SKILL_1_MAGMA_JAWS], locking its glowing molten teeth onto @ABYSSAL SPINO's neck, followed by [SKILL_2_SEISMIC_TAIL] — whipping its massive body and tail to hurl the Spinosaurus crashing heavily into a jagged obsidian cliff face, shattering volcanic boulders.",
+      "endFramePromptEn": "Low-angle impact frame showing ABYSSAL SPINO crashing into the shattered cliff wall surrounded by dust and falling rocks, while IGNIS REX stands tall with magma veins blazing.",
+      "cameraAngle": "Low-Angle Hero Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": true,
+      "durationSeconds": 4,
+      "shotIdx": "03",
+      "startKeyframeMediaId": "81bc82a6-ce0b-47ac-9c94-b49c4c6545bf",
+      "startKeyframePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_03_start_frame.png",
+      "referenceIds": [
+        "905c9754-de6c-4bf5-8ba7-d466e0d41301",
+        "aa3e5ce2-2b40-46ec-816a-a9d6d541000f",
+        "8973701d-9a0d-44d1-8186-b3a6f3863c0c"
+      ],
+      "videoMediaId": "df9be7c1-a540-4e6a-9a58-e53f40f403fb",
+      "videoPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_03_video.mp4",
+      "vqqaScore": 94,
+      "vqqaNote": "Strong cinematic low-angle framing effectively captures the magma bite and cliff impact. Subject details align well with both character designs, though conveying two sequential skill actions simultaneously slightly crowds the kinetic readability."
+    },
+    {
+      "shotNumber": 4,
+      "titleVi": "Khúc Khải Hoàn Bạo Chúa Hỏa Ngục",
+      "subtitleVi": "Đỉnh cao thống trị giữa cuồng nộ của sấm sét và nham thạch.",
+      "skillUsed": "[ACTION_INFERNO_ROAR]",
+      "actionPromptEn": "Low-Angle Hero Shot. @IGNIS REX mounts the apex of a colossal obsidian rock ledge overlooking the defeated rival and burning valley. Rain pours down its basalt armor as its molten red scars blaze with maximum intensity. @IGNIS REX unleashes its ultimate [ACTION_INFERNO_ROAR] into the stormy heavens just as a blinding fork of lightning splits the dark clouds behind its silhouette.",
+      "endFramePromptEn": "Epic cinematic master frame of IGNIS REX roaring skyward atop the rock pinnacle, silhouetted against a brilliant white lightning bolt and rolling volcanic storm clouds, steam rising into the night sky.",
+      "cameraAngle": "Low-Angle Hero Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 4,
+      "shotIdx": "04",
+      "startKeyframeMediaId": "0748d689-d4b5-44fa-ab31-9433080217e9",
+      "startKeyframePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_04_start_frame.png",
+      "referenceIds": [
+        "81bc82a6-ce0b-47ac-9c94-b49c4c6545bf",
+        "aa3e5ce2-2b40-46ec-816a-a9d6d541000f",
+        "8973701d-9a0d-44d1-8186-b3a6f3863c0c"
+      ],
+      "videoMediaId": "ffff94d5-459c-4c92-bdfc-81ea0ef19fbb",
+      "videoPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\movie_1793031510269\\shot_04_video.mp4",
+      "vqqaScore": 94,
+      "vqqaNote": "Strong adherence to the prompt elements, featuring the low-angle perspective, lightning silhouette, defeated rival, and molten basalt detailing in a well-balanced composition."
+    }
+  ]
+}

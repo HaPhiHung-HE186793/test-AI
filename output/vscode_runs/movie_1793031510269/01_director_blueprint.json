@@ -1,0 +1,68 @@
+{
+  "movieTitle": "Đại Chiến Kỷ Phấn Trắng: Tàn Tích Hỏa Ngục",
+  "character": {
+    "name": "IGNIS REX",
+    "personalityVi": "• Chỉ số hình thể: Cao 14.2m, Dài 40m, Cân nặng 98 tấn. Lớp vảy đá bazan đen nhám dày 35cm với các rãnh dung nham nóng chảy phát sáng đỏ cam.\n• Tính cách & Linh hồn cảm xúc: Hung bạo, kiêu hãnh, thống trị tuyệt đối, không bao giờ lùi bước; ánh mắt rực lửa phẫn nộ nhưng điềm tĩnh của bậc đế vương cổ đại.\n• Hành động & Chiêu thức đặc trưng:\n  - [ACTION_INFERNO_ROAR]: Gầm vang chấn động làm nứt vỡ mặt đất và bùng phát tia lửa từ cổ họng.\n  - [SKILL_1_MAGMA_JAWS]: Cú ngoạm nghiền nát 80.000 Newton bọc nhiệt dung nham.\n  - [SKILL_2_SEISMIC_TAIL]: Cú quật đuôi tạo sóng xung kích hất văng đối thủ.",
+    "defaultVisualPromptEn": "Colossal Tyrannosaurus Rex named IGNIS REX, armored with charred black basalt rock-textured scales, glowing molten red magma cracks and battle scars across its muscular body, massive skull with jagged razor teeth, glowing fiery ember eyes, towering predatory stance, hyper-realistic 8k cinematic textures.",
+    "transformedVisualPromptEn": "IGNIS REX battle-hardened and victorious, covered in fresh combat scars and steaming rain, magma veins pulsing intensely with brilliant incandescent orange and red light, dominant and terrifying apex predator posture, smoke curling from its jaws."
+  },
+  "secondaryCharacter": {
+    "name": "ABYSSAL SPINO",
+    "personalityVi": "• Chỉ số hình thể: Cao 16.5m, Dài 45m, Cân nặng 92 tấn. Buồm lưng khổng lồ phát quang sinh học xanh lục lam (Cyan Bioluminescence), mõm cá sấu dài 3.5m và bộ móng vuốt trước sắc như lưỡi hái.\n• Tính cách & Linh hồn cảm xúc: Lạnh lùng, tàn nhẫn, ranh mãnh và tàn độc; di chuyển uyển chuyển như bóng ma dưới màn mưa bão, luôn nhắm vào điểm yếu chí mạng.\n• Hành động & Chiêu thức đặc trưng:\n  - [ACTION_ABYSS_STALK]: Lao vọt từ màn sương với buồm lưng nạp điện xanh rực.\n  - [SKILL_1_HYDRO_SLASH]: Liên hoàn cào xé bằng bộ móng vuốt khổng lồ.\n  - [SKILL_2_BIO_PULSE]: Xung năng lượng điện sinh học phát ra từ vây lưng làm lóa mắt đối thủ.",
+    "defaultVisualPromptEn": "Massive aquatic apex predator Spinosaurus named ABYSSAL SPINO, dark navy and deep sea-green reptilian hide, enormous semi-translucent dorsal sail glowing with bioluminescent cyan and electric blue patterns, elongated crocodilian snout lined with conical sharp teeth, lethal curved forearm talons."
+  },
+  "environment": {
+    "name": "THUNG LUNG NUI LUA",
+    "cleanVisualPromptEn": "Prehistoric primeval volcanic valley during a violent nocturnal thunderstorm, ancient giant cycads and towering fern trees silhouetted against a glowing red river of molten lava, jagged obsidian rock formations, torrential rain pouring down, atmospheric volcanic fog and drifting sparks, dramatic lightning illumination, empty of any creatures."
+  },
+  "shots": [
+    {
+      "shotNumber": 1,
+      "titleVi": "Tiếng Gầm Khai Chiến",
+      "subtitleVi": "Hai đại quái thú đối đầu rực lửa bên dòng nham thạch cuộn trào.",
+      "skillUsed": "[ACTION_INFERNO_ROAR] & [ACTION_ABYSS_STALK]",
+      "actionPromptEn": "Wide Establishing Shot. Violent thunderstorm at night. On opposite banks of a bubbling molten lava river, @IGNIS REX unleashes [ACTION_INFERNO_ROAR] with fiery embers bursting from its jaws while @ABYSSAL SPINO executes [ACTION_ABYSS_STALK] with its cyan bioluminescent dorsal sail pulsing brightly. Rain sizzles into steam upon hitting the hot lava and IGNIS REX's glowing magma scales.",
+      "endFramePromptEn": "Wide profile freeze frame of the two prehistoric titans roaring face-to-face across the glowing red lava trench under torrential rain, jaws wide open, saliva and steam flying.",
+      "cameraAngle": "Wide Establishing Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 4
+    },
+    {
+      "shotNumber": 2,
+      "titleVi": "Cú Vồ Thủy Quái Liên Hoàn",
+      "subtitleVi": "Nanh vuốt phát sáng xanh lục lam xé toạc màn mưa nhắm thẳng vào yết hầu.",
+      "skillUsed": "[SKILL_1_HYDRO_SLASH] & [SKILL_2_BIO_PULSE]",
+      "actionPromptEn": "Dynamic Tracking Shot. @ABYSSAL SPINO charges forward through the steam and splashing mud, unleashing [SKILL_2_BIO_PULSE] from its glowing cyan dorsal sail and striking with [SKILL_1_HYDRO_SLASH] — slashing its massive razor-sharp foreclaws and lunging its elongated crocodilian jaws at @IGNIS REX's armored neck, sending sparks and fiery embers flying.",
+      "endFramePromptEn": "Tight action freeze frame showing ABYSSAL SPINO clamping its jaws inches from IGNIS REX's throat, deadly talons slashing into basalt scales with glowing orange sparks illuminating the torrential rain.",
+      "cameraAngle": "Dynamic Tracking Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 4
+    },
+    {
+      "shotNumber": 3,
+      "titleVi": "Cú Ngoạm Dung Nham & Đòn Quật Đuôi Địa Chấn",
+      "subtitleVi": "Bạo chúa giáng trả đòn cắn dung nham sấm sét, quật văng đối thủ vào vách đá.",
+      "skillUsed": "[SKILL_1_MAGMA_JAWS] & [SKILL_2_SEISMIC_TAIL]",
+      "actionPromptEn": "Low-Angle Hero Shot. @IGNIS REX breaks free and counters with [SKILL_1_MAGMA_JAWS], locking its glowing molten teeth onto @ABYSSAL SPINO's neck, followed by [SKILL_2_SEISMIC_TAIL] — whipping its massive body and tail to hurl the Spinosaurus crashing heavily into a jagged obsidian cliff face, shattering volcanic boulders.",
+      "endFramePromptEn": "Low-angle impact frame showing ABYSSAL SPINO crashing into the shattered cliff wall surrounded by dust and falling rocks, while IGNIS REX stands tall with magma veins blazing.",
+      "cameraAngle": "Low-Angle Hero Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": true,
+      "durationSeconds": 4
+    },
+    {
+      "shotNumber": 4,
+      "titleVi": "Khúc Khải Hoàn Bạo Chúa Hỏa Ngục",
+      "subtitleVi": "Đỉnh cao thống trị giữa cuồng nộ của sấm sét và nham thạch.",
+      "skillUsed": "[ACTION_INFERNO_ROAR]",
+      "actionPromptEn": "Low-Angle Hero Shot. @IGNIS REX mounts the apex of a colossal obsidian rock ledge overlooking the defeated rival and burning valley. Rain pours down its basalt armor as its molten red scars blaze with maximum intensity. @IGNIS REX unleashes its ultimate [ACTION_INFERNO_ROAR] into the stormy heavens just as a blinding fork of lightning splits the dark clouds behind its silhouette.",
+      "endFramePromptEn": "Epic cinematic master frame of IGNIS REX roaring skyward atop the rock pinnacle, silhouetted against a brilliant white lightning bolt and rolling volcanic storm clouds, steam rising into the night sky.",
+      "cameraAngle": "Low-Angle Hero Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 4
+    }
+  ]
+}

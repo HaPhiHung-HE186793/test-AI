@@ -1,0 +1,32 @@
+{
+  "name": "hyperion-studio-os-vscode",
+  "version": "5.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hyperion Studio OS — Chạy trực tiếp trên VS Code / Antigravity (Ubuntu Linux & Windows) kết nối gói Google AI Ultra (25.000 Credits) qua Local Bridge",
+  "scripts": {
+    "postinstall": "node scripts/setup-cross-platform.mjs",
+    "setup": "node scripts/setup-cross-platform.mjs",
+    "chrome": "node scripts/launch-chrome-flow.mjs",
+    "bridge": "node flow-ultra-bridge.mjs",
+    "produce": "node --experimental-strip-types vscode-cli-producer.ts",
+    "skill:movie": "node --experimental-strip-types .agents/skills/ai-film-studio/scripts/run-full-movie-pipeline.ts",
+    "skill:storyboard": "node --experimental-strip-types .agents/skills/ai-film-studio/scripts/run-full-movie-pipeline.ts --frames-only",
+    "create-character": "node --experimental-strip-types vscode-cli-producer.ts --create-character",
+    "create-scene": "node --experimental-strip-types vscode-cli-producer.ts --create-scene",
+    "dev:ui": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
