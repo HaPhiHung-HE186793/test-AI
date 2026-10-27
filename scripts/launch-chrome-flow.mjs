@@ -41,13 +41,19 @@ function findChromeBinary() {
 }
 
 const chromeBin = findChromeBinary();
-const userDataDir = path.join(os.homedir(), '.chrome-flow-ultra-profile');
+const existingBotProfile = path.join(os.homedir(), 'chrome_ai_bot');
+const userDataDir = fs.existsSync(existingBotProfile)
+  ? existingBotProfile
+  : path.join(os.homedir(), '.chrome-flow-ultra-profile');
 fs.mkdirSync(userDataDir, { recursive: true });
+
+const targetUrl =
+  process.argv[2] || 'https://flow.google.com/project/e3841c79-a90e-405d-a255-43bb95cd64ab';
 
 const args = [
   '--remote-debugging-port=9222',
   `--user-data-dir=${userDataDir}`,
-  'https://flow.google.com',
+  targetUrl,
 ];
 
 console.log(`🚀 Đang mở Google Chrome (${chromeBin}) ở cổng Debug 9222...`);

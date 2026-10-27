@@ -266,6 +266,15 @@ BẮT BUỘC TRẢ VỀ DUY NHẤT 1 JSON OBJECT HỢP LỆ THEO ĐÚNG CẤU TR
           ? rawVisualPrompt
           : `[CHARACTER: ${primaryCharName}] [ENVIRONMENT LOCK: ${stageLockName}] ${rawVisualPrompt}`;
 
+        const textForCheck = `${rawVisualPrompt} ${item.title || ''}`.toUpperCase();
+        const matchedEntities = finalEntities.filter((e) =>
+          textForCheck.includes((e.name || '').toUpperCase())
+        );
+        const shotParticipantIds =
+          matchedEntities.length > 0
+            ? matchedEntities.map((e) => e.id)
+            : finalEntities.map((e) => e.id);
+
         const shot: TimelineShot = {
           id: `shot_${Date.now()}_${idx + 1}`,
           order: idx + 1,
@@ -283,7 +292,7 @@ BẮT BUỘC TRẢ VỀ DUY NHẤT 1 JSON OBJECT HỢP LỆ THEO ĐÚNG CẤU TR
           trimmedDurationSeconds: defaultClipDuration,
           aspectRatio,
           videoEngine,
-          participatingEntityIds: finalEntities.map((e) => e.id),
+          participatingEntityIds: shotParticipantIds,
           entityStateUsed: entityState,
           stageId: finalStages[0]?.id || 'stage_default',
           isDnaStateShift,

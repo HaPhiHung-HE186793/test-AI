@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:08,000
+[Thung Lũng Nham Thạch Thức Giấc] Giữa cơn bão tiền sử, thung lũng Kreta rực cháy dưới những tia sét cổ đại.
+
+2
+00:00:08,000 --> 00:00:15,840
+[Bước Chân Bạo Chúa Dung Nham] Mỗi bước chân nặng mười chín tấn làm mặt đất đá bazan nứt toác.
+
+3
+00:00:15,840 --> 00:00:23,680
+[Bóng Ma Đầm Lầy Xuất Hiện] Từ dưới làn nước sôi sùng sục, cánh buồm phát quang xanh cyan trồi lên.
+
+4
+00:00:23,680 --> 00:00:31,520
+[Thủy Quái Lôi Đình Lộ Diện] VOLT_SPINO vươn mình khỏi mặt nước, đôi vuốt sắc lẹm tích đầy hồ quang điện.
+
+5
+00:00:31,520 --> 00:00:39,360
+[Hai Vị Vua Đối Mặt] Lửa dung nham đỏ rực và điện quang xanh biếc chia đôi bầu trời bão tố.
+
+6
+00:00:39,360 --> 00:00:47,200
+[Cú Lao Mình Tốc Độ Cao] Hai đại quái thú nặng hàng chục tấn lao thẳng vào nhau.
+
+7
+00:00:47,200 --> 00:00:55,040
+[Va Chạm Thiên Thạch Đầu Tiên] Cú đâm trực diện tạo nên sóng xung kích thổi bạt màn mưa.
+
+8
+00:00:55,040 --> 00:01:02,880
+[Liên Hoàn Vuốt Điện Xé Giáp] Đôi vuốt 1m5 của VOLT_SPINO cào toạc lớp vảy đá bazan của bạo chúa.
+
+9
+00:01:02,880 --> 00:01:10,720
+[Khóa Hàm Cá Sấu Cổ Đại] Bộ hàm thuôn dài tích điện kẹp chặt lấy cổ họng bạo chúa dung nham.
+
+10
+00:01:10,720 --> 00:01:18,560
+[Cú Quật Đuôi Địa Chấn Giải Vây] IGNIS_REX xoay người quật đuôi dung nham đập gãy cột đá bazan.
+
+11
+00:01:18,560 --> 00:01:26,400
+[Xung Kích Lôi Đình Phản Công] VOLT_SPINO nạp sấm sét từ bầu trời vào buồm lưng rồi phóng luồng điện hủy diệt.
+
+12
+00:01:26,400 --> 00:01:34,240
+[Sự Thức Tỉnh Huyết Quản Hỏa Ngục (DNA Shift)] Giáp đá nứt toác, lõi dung nham trắng rực bùng nổ khắp cơ thể IGNIS_REX!
+
+13
+00:01:34,240 --> 00:01:42,080
+[Bạo Chúa Thức Tỉnh Phản Kích] Sức nóng hàng ngàn độ làm bốc hơi mọi giọt mưa quanh thân hình bạo chúa.
+
+14
+00:01:42,080 --> 00:01:49,920
+[Cuộc Chiến Giữa Dòng Sông Lửa] Hai quái thú vật lộn ngay giữa dòng dung nham đang cuộn chảy.
+
+15
+00:01:49,920 --> 00:01:57,760
+[Đòn Ngoạm Nhiệt Hạch Phá Buồm Lưng] Hàm răng dung nham của IGNIS_REX nghiền nát một mảng gai điện của đối thủ.
+
+16
+00:01:57,760 --> 00:02:05,600
+[Bão Điện Sinh Học Tuyệt Vọng] VOLT_SPINO vùng vẫy phóng toàn bộ điện năng còn lại ở cự ly gần.
+
+17
+00:02:05,600 --> 00:02:13,440
+[Cú Húc Đầu Phá Vỡ Vách Núi] IGNIS_REX lao xuyên qua màn sét, húc văng đối thủ vào vách hẻm vực.
+
+18
+00:02:13,440 --> 00:02:21,280
+[Đòn Quật Đuôi Dung Nham Liên Hoàn] Đuôi gai rực lửa quét ngang làm nổ tung mặt đất dưới chân VOLT_SPINO.
+
+19
+00:02:21,280 --> 00:02:29,120
+[Cú Vồ Cuối Cùng Bên Bờ Vực] VOLT_SPINO tung cú vồ sinh tử cuối cùng nhằm kéo bạo chúa xuống vực sâu.
+
+20
+00:02:29,120 --> 00:02:36,960
+[Tuyệt Kỹ Hàm Dung Nham Kết Liễu] IGNIS_REX bắt trọn cú lao của đối thủ bằng đòn ngoạm hàm nhiệt hạch tối thượng.
+
+21
+00:02:36,960 --> 00:02:44,800
+[Kẻ Bại Trận Rút Lui Vào Bóng Tối] VOLT_SPINO trọng thương trượt xuống làn nước sương mù, nhường lại lãnh địa.
+
+22
+00:02:44,800 --> 00:02:52,640
+[Bạo Chúa Bước Lên Đỉnh Đá Bazan] IGNIS_REX bước lên đỉnh mỏm đá cao nhất giữa thung lũng rực lửa.
+
+23
+00:02:52,640 --> 00:02:56,480
+[Tiếng Gầm Thống Trị Kỷ Phấn Trắng] Tiếng gầm khải hoàn xé toạc bầu trời giông bão, khép lại huyền thoại tiền sử.
+

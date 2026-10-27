@@ -27,7 +27,7 @@ export class ProductionPipeline {
   ): Promise<{ url: string; mediaId: string }> {
     const stateObj = entity.states[stateKey] || entity.states.NORMAL;
     const prompt = clampPrompt(
-      `${aspectRatio} three-panel character reference sheet of [CHARACTER: ${entity.name}] (${stateKey} state) split into 3 views: (1) close-up portrait of face and head details, (2) full-body front view standing straight, (3) full-body three-quarter back view. Details: ${stateObj.promptModifier}. Signature gear: ${entity.signatureWeapon}. Isolated on a flat neutral gray studio background (#808080) with even, shadowless studio lighting, zero cast shadows, identical facial features and proportions across all 3 panels, 8k photorealistic.`
+      `${aspectRatio} three-panel character reference sheet of [CHARACTER: ${entity.name}] (${stateKey} state) split into 3 views: (1) close-up portrait of face and head details, (2) full-body front view standing straight, (3) full-body three-quarter back view. Details: ${stateObj.promptModifier}. Signature gear: ${entity.signatureWeapon}. Isolated on a flat neutral gray studio background (#808080) with even, shadowless studio lighting, zero cast shadows, identical facial features and proportions across all 3 panels, 8k photorealistic. STRICTLY NO TEXT, NO LETTERS, NO WORDS, NO LABELS, NO NUMBERS, NO TYPOGRAPHY, NO BORDERS, NO WATERMARKS.`
     );
 
     const refIds: string[] = [];
@@ -225,27 +225,19 @@ export class ProductionPipeline {
       .join(' ');
 
     const compositePrompt = clampPrompt(
-      `Master Cinematic Keyframe (${shot.cameraAngle}): ${shot.actionDescription}. ` +
+      `${shot.aspectRatio} full-resolution cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO GRID, NO TEXT). Camera: ${shot.cameraAngle}. Action: ${shot.actionDescription}. ` +
         `Subject DNA (${shot.entityStateUsed}): ${stateDesc}. ` +
         `${
           stage
             ? `Environment: ${stage.architectureStyle}, ${stage.lightingMood}, ${stage.weatherCondition}. `
             : ''
         }` +
-        `${refTokens}. Photorealistic 8k movie frame, sharp focus, zero motion blur, consistent character proportions.`
+        `${refTokens}. Photorealistic 8k movie frame, sharp focus, zero motion blur, preserve 100% of each subject's exact anatomy from its assigned Reference Image slot without cross-subject attribute bleeding.`
     );
 
     const refMediaIds = shot.referenceSlots
       .map((s) => s.mediaId)
       .filter((id): id is string => Boolean(id && !id.startsWith('mock_')));
-
-    if (
-      shot.canvasMemoryAnchorMediaId &&
-      !shot.canvasMemoryAnchorMediaId.startsWith('mock_') &&
-      !refMediaIds.includes(shot.canvasMemoryAnchorMediaId)
-    ) {
-      refMediaIds.unshift(shot.canvasMemoryAnchorMediaId);
-    }
 
     const uniqueRefs = Array.from(new Set(refMediaIds)).slice(0, 3);
 

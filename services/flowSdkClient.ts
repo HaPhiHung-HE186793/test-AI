@@ -29,7 +29,19 @@ async function callFlowBridge(method: string, args: any[]): Promise<any> {
 
 export const Flow = {
   generate: {
-    text: async (promptOrOpts: any, maybeOpts?: any) => {
+    text: async (
+      promptOrOpts:
+        | string
+        | {
+            prompt: string;
+            systemInstruction?: string;
+            thinkingLevel?: 'low' | 'medium' | 'high';
+            images?: Array<{ base64: string; mimeType: string }>;
+            videos?: Array<{ base64: string; mimeType: string }>;
+            audios?: Array<{ base64: string; mimeType: string }>;
+          },
+      maybeOpts?: any
+    ) => {
       if (typeof promptOrOpts === 'string') {
         return await callFlowBridge('generate.text', [promptOrOpts, maybeOpts || {}]);
       }
@@ -57,26 +69,67 @@ export const Flow = {
       referenceImageMediaIds?: string[];
       sourceVideoMediaId?: string;
       sourceVideoMode?: 'edit';
+      audioReferenceMediaIds?: string[];
     }) => {
       return await callFlowBridge('generate.video', [options]);
     },
+    videoExperimental: async (options: {
+      prompt: string;
+      modelDisplayName?: string;
+      aspectRatio?: string;
+      firstFrameImageMediaId?: string;
+      lastFrameImageMediaId?: string;
+      referenceImageMediaIds?: string[];
+      sourceVideoMediaId?: string;
+      audioReferenceMediaIds?: string[];
+      experimentalSettings?: Record<string, any>;
+      experimentalMediaInputs?: Record<string, any>;
+    }) => {
+      return await callFlowBridge('generate.videoExperimental', [options]);
+    },
   },
-  upload: async (options: { base64: string; mimeType: string; name?: string }) => {
-    return await callFlowBridge('upload', [options]);
+  upload: async (options: { base64: string; mimeType: string; name?: string; fileName?: string }) => {
+    return await callFlowBridge('upload', [
+      {
+        base64: options.base64,
+        mimeType: options.mimeType,
+        name: options.name || options.fileName || 'Hyperion_Studio_Asset',
+      },
+    ]);
   },
-  save: async (options: { base64: string; mimeType: string; prompt?: string }) => {
-    return await callFlowBridge('save', [options]);
+  save: async (options: { base64: string; mimeType: string; name?: string; prompt?: string }) => {
+    return await callFlowBridge('save', [
+      {
+        base64: options.base64,
+        mimeType: options.mimeType,
+        name: options.name || options.prompt || 'Hyperion_Studio_Output',
+      },
+    ]);
   },
   host: {
     /**
-     * Điều khiển tính năng gốc "Tạo nhân vật" (Tab Nhân vật - Ảnh 1) trên trang mẹ Google Flow
+     * Điều khiển tính năng gốc "Tạo nhân vật" (Tab Nhân vật - Ảnh 1) trên trang mẹ Google Flow (Đủ 3 phần MEM-10)
      */
     createCharacter: async (options: {
       name: string;
       personality?: string;
       assetQuery?: string;
+      portraitAssetQuery?: string;
+      bodyAssetQuery?: string;
+      assetIndex?: number;
     }) => {
       return await callFlowBridge('host.createCharacter', [options]);
+    },
+    /**
+     * Tạo ảnh Storyboard trực tiếp trên Host Prompt Box của Google Flow bằng cách đính kèm
+     * THỰC THỂ NHÂN VẬT (`<flow-character-ingredient-chip>`) từ tab "Nhân vật"
+     */
+    generateImageWithCharacters: async (options: {
+      prompt: string;
+      characterNames: string[];
+      aspectRatio?: string;
+    }) => {
+      return await callFlowBridge('host.generateImageWithCharacters', [options]);
     },
     /**
      * Điều khiển tính năng gốc "Cảnh mới" (Tab Cảnh / Scenebuilder - Ảnh 2) trên trang mẹ Google Flow
@@ -87,10 +140,26 @@ export const Flow = {
     }) => {
       return await callFlowBridge('host.createScene', [options || {}]);
     },
+    /**
+     * Điều khiển Trình tạo công cụ (Applet Builder) trên Google Flow để nâng cấp/tạo công cụ trực tiếp
+     */
+    upgradeFlowApplet: async (options: { prompt: string }) => {
+      return await callFlowBridge('host.upgradeFlowApplet', [options]);
+    },
   },
   media: {
-    select: async (options?: { filter?: 'image' | 'video' | 'audio' | 'all' }) => {
+    select: async (options?: { id?: string; filter?: 'image' | 'video' | 'audio' | 'all' }) => {
       return await callFlowBridge('media.select', [options || {}]);
+    },
+    selectMultiple: async (options?: {
+      maxCount?: number;
+      filter?: 'image' | 'video' | 'audio' | 'all';
+      preSelectedIds?: string[];
+    }) => {
+      return await callFlowBridge('media.selectMultiple', [options || {}]);
+    },
+    getBase64: async (options: { mediaId: string }) => {
+      return await callFlowBridge('media.getBase64', [options]);
     },
   },
   storage: {
