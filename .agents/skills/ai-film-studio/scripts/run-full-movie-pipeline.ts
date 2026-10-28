@@ -1095,6 +1095,7 @@ Trả về DUY NHẤT 1 khối JSON hợp lệ theo cấu trúc:
         await Flow.host.createCharacter({
           name: charName,
           personality: blueprint.character?.personalityVi || charDesc,
+          bodyPrompt: charSheetPrompt,
           portraitAssetQuery: portrait1Query,
           bodyAssetQuery: `CHAR_3PANEL_${charName}`,
           assetQuery: `CHAR_3PANEL_${charName}`,
@@ -1154,6 +1155,7 @@ Trả về DUY NHẤT 1 khối JSON hợp lệ theo cấu trúc:
           await Flow.host.createCharacter({
             name: char2Name,
             personality: blueprint.secondaryCharacter?.personalityVi || char2Desc,
+            bodyPrompt: char2SheetPrompt,
             portraitAssetQuery: portrait2Query,
             bodyAssetQuery: `CHAR_3PANEL_${char2Name}`,
             assetQuery: `CHAR_3PANEL_${char2Name}`,

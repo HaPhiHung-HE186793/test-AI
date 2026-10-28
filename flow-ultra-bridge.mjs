@@ -367,13 +367,17 @@ async function executeHostCreateCharacter(options = {}) {
   const {
     name = 'THIEN VUONG 09',
     personality = 'Nhân vật điện ảnh AI chuẩn 3-Panel Reference Sheet.',
+    bodyPrompt = '',
     assetQuery = '',
     portraitAssetQuery = '',
     bodyAssetQuery = '',
     assetIndex = 1,
   } = options;
   const effectivePortraitQuery = portraitAssetQuery || assetQuery;
-  const effectiveBodyQuery = bodyAssetQuery || assetQuery;
+  const effectiveBodyPrompt = (
+    bodyPrompt ||
+    `Full-body studio turnaround view of ${name} standing on neutral gray studio floor #808080, showing complete head-to-toe anatomy, front and 3/4 profile proportions. ${personality.slice(0, 320)}`
+  ).trim();
 
   const flowPage = await findHostFlowPage();
   const wsUrl = flowPage.webSocketDebuggerUrl;
@@ -440,7 +444,7 @@ async function executeHostCreateCharacter(options = {}) {
   }
   await new Promise((r) => setTimeout(r, 1000));
 
-  const charResult = await evaluateInTarget(
+  const charPrep = await evaluateInTarget(
     wsUrl,
     `(async () => {
       const setReactInputValue = (el, value) => {
@@ -468,46 +472,91 @@ async function executeHostCreateCharacter(options = {}) {
         setReactInputValue(bioInput, ${JSON.stringify(personality)});
       }
 
-      // Bước 3B: Tự động mở tab "Tạo cơ thể" (Ảnh 2) và gắn mô hình Full-Body 3 góc độ vào tab "Cơ thể"
-      const bodyBtn = Array.from(document.querySelectorAll('button'))
-        .filter(b => b.offsetParent !== null)
-        .find(b => (b.innerText || '').includes('Tạo cơ thể'));
+      // Bước 3B: Chờ ảnh Chân dung lưu xong để nút "Tạo cơ thể" được bật (disabled === false), sau đó bấm "Tạo cơ thể" và điền mô tả Full-Body vào ProseMirror
+      let bodyBtn = null;
+      for (let w = 0; w < 18; w++) {
+        bodyBtn = Array.from(document.querySelectorAll('button'))
+          .filter(b => b.offsetParent !== null && !b.disabled)
+          .find(b => (b.innerText || '').includes('Tạo cơ thể'));
+        if (bodyBtn) break;
+        await new Promise(r => setTimeout(r, 700));
+      }
+
+      let btnX = null;
+      let btnY = null;
       if (bodyBtn) {
         bodyBtn.click();
-        await new Promise(r => setTimeout(r, 800));
-        const addBodyProjBtn = Array.from(document.querySelectorAll('button'))
-          .filter(b => b.offsetParent !== null)
-          .find(b => (b.innerText || '').includes('Thêm từ dự án'));
-        if (addBodyProjBtn) {
-          addBodyProjBtn.click();
-          await new Promise(r => setTimeout(r, 1200));
-          const dialog = document.querySelector('[role="dialog"]');
-          if (dialog) {
-            const dBtns = Array.from(dialog.querySelectorAll('button'));
-            const q = ${JSON.stringify(effectiveBodyQuery)}.toLowerCase().trim();
-            let target = q ? dBtns.find(b => (b.innerText || '').toLowerCase().includes(q)) : null;
-            if (!target) target = dBtns[${Number(assetIndex) || 1}] || dBtns[1];
-            if (target) target.click();
-            await new Promise(r => setTimeout(r, 500));
-            const confirmBtn = dBtns.find(b => (b.innerText || '').includes('Thêm nội dung nghe nhìn'));
-            if (confirmBtn) confirmBtn.click();
-            await new Promise(r => setTimeout(r, 3000));
+        await new Promise(r => setTimeout(r, 1000));
+        const pm = document.querySelector('div.ProseMirror[aria-label="Mô tả cơ thể và trang phục…"], div.ProseMirror');
+        if (pm) {
+          pm.focus();
+          document.execCommand('selectAll', false, null);
+          document.execCommand('insertText', false, ${JSON.stringify(effectiveBodyPrompt)});
+          pm.dispatchEvent(new Event('input', { bubbles: true }));
+          await new Promise(r => setTimeout(r, 600));
+          const sendBtn = document.querySelector('button[aria-label="Bắt đầu tạo"]');
+          if (sendBtn && !sendBtn.disabled) {
+            const r = sendBtn.getBoundingClientRect();
+            btnX = Math.round(r.left + r.width / 2);
+            btnY = Math.round(r.top + r.height / 2);
           }
         }
       }
 
-      const characterUrl = location.href;
-      await new Promise(r => setTimeout(r, 800));
-
-      const doneBtns = Array.from(document.querySelectorAll('button')).filter(b => b.offsetParent !== null && (b.innerText || '').trim() === 'Xong');
-      if (doneBtns.length > 0) doneBtns[0].click();
-
-      return { ok: true, name: ${JSON.stringify(name)}, personality: ${JSON.stringify(personality)}, characterUrl };
+      return {
+        ok: true,
+        characterUrl: location.href,
+        btnX,
+        btnY,
+      };
     })()`,
-    20000
+    25000
   );
 
-  return charResult;
+  // Bước 3C: Click phần cứng vào nút "Bắt đầu tạo" để Google Flow sinh mô hình Full-Body trong tab "Cơ thể"
+  let bodyTabGenerated = false;
+  if (charPrep && charPrep.btnX && charPrep.btnY) {
+    await dispatchHardwareMouseClick(wsUrl, charPrep.btnX, charPrep.btnY);
+    for (let w = 0; w < 20; w++) {
+      await new Promise((r) => setTimeout(r, 2000));
+      const bodyStatus = await evaluateInTarget(
+        wsUrl,
+        `(async () => {
+          const coTheTab = Array.from(document.querySelectorAll('button')).find(
+            b => b.offsetParent !== null && (b.innerText || '').trim() === 'Cơ thể' && !b.disabled
+          );
+          const dlBtn = document.querySelector('button[aria-label="Tải hình ảnh xuống"]');
+          return { ready: Boolean(coTheTab && dlBtn) };
+        })()`,
+        6000
+      );
+      if (bodyStatus && bodyStatus.ready) {
+        bodyTabGenerated = true;
+        break;
+      }
+    }
+  }
+
+  // Bước 3D: Bấm "Xong" để lưu trọn vẹn Folder Nhân vật (Chân dung + Cơ thể + Thông tin nhân vật)
+  await evaluateInTarget(
+    wsUrl,
+    `(async () => {
+      const doneBtns = Array.from(document.querySelectorAll('button')).filter(
+        b => b.offsetParent !== null && (b.innerText || '').trim() === 'Xong'
+      );
+      if (doneBtns.length > 0) doneBtns[0].click();
+      return true;
+    })()`,
+    8000
+  );
+
+  return {
+    ok: true,
+    name,
+    personality,
+    characterUrl: charPrep?.characterUrl || '',
+    bodyTabGenerated,
+  };
 }
 
 /**
