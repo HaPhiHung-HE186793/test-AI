@@ -12,6 +12,6 @@ output/vscode_runs/generate_*.mp4
 output/vscode_runs/upload_*.png
 output/vscode_runs/upload_*.mp4
 output/vscode_runs/media_*.png
-output/vscode_runs/movie_*/mastered_segments/
-output/vscode_runs/movie_*/MASTER_JOINED_AUDIO_BRIDGED.mp4
-output/vscode_runs/movie_*/MASTER_DIRECTORS_CUT.mp4
+output/vscode_runs/*/mastered_segments/
+output/vscode_runs/*/MASTER_JOINED_AUDIO_BRIDGED.mp4
+output/vscode_runs/*/MASTER_DIRECTORS_CUT.mp4

@@ -8,56 +8,60 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: CinemaSub,Noto Sans,26,&H00FFFFFF,&H0000D7FF,&H00000000,&H96000000,-1,0,0,0,100,100,0.2,0,3,2.2,1.2,2,50,50,26,1
-Style: SkillBadge,Noto Sans,17,&H00A0E8FF,&H00FFFFFF,&H00000000,&H88081018,-1,0,0,0,100,100,0.6,0,3,1.8,0.8,7,26,26,20,1
-Style: MovieTitle,Noto Sans,29,&H0055D4FF,&H00FFFFFF,&H00000000,&HA0000000,-1,0,0,0,100,100,1.0,0,3,2.5,1.5,8,40,40,56,1
+Style: CinemaSub,Noto Sans,25,&H00FFFFFF,&H0000D7FF,&H00000000,&H96000000,-1,0,0,0,100,100,0.2,0,3,2.2,1.2,2,50,50,36,1
+Style: SkillBadge,Noto Sans,15,&H00A0E8FF,&H00FFFFFF,&H00000000,&H88081018,-1,0,0,0,100,100,0.5,0,3,1.6,0.8,7,24,24,8,1
+Style: MovieTitle,Noto Sans,27,&H0055D4FF,&H00FFFFFF,&H00000000,&HA0000000,-1,0,0,0,100,100,1.0,0,3,2.5,1.5,8,40,40,48,1
+Style: LocationCard,Noto Sans,16,&H00B8FF9E,&H00FFFFFF,&H00000000,&H90081810,-1,0,0,0,100,100,1.2,0,3,1.8,0.8,8,40,40,86,1
+Style: EndCredits,Noto Sans,14,&H00D0E8FF,&H00FFFFFF,&H00000000,&HB0000000,-1,0,0,0,100,100,0.8,0,3,1.6,0.8,8,30,30,8,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.12,0:00:07.88,CinemaSub,,0,0,0,,{\fad(180,180)}Giữa cơn bão tiền sử, thung lũng Kreta rực cháy dưới những tia sét cổ đại.
-Dialogue: 1,0:00:00.12,0:00:03.80,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 01/23 • THUNG LŨNG NHAM THẠCH THỨC GIẤC   |   ▸ [ACTION_SEISMIC_ROAR]
-Dialogue: 2,0:00:00.20,0:00:04.50,MovieTitle,,0,0,0,,{\fad(350,450)}★ ĐẠI CHIẾN KỶ PHẤN TRẮNG: BẠO CHÚA DUNG NHAM ĐỐI ĐẦU THỦY QUÁI LÔI ĐÌNH
-Dialogue: 0,0:00:08.12,0:00:15.72,CinemaSub,,0,0,0,,{\fad(180,180)}Mỗi bước chân nặng mười chín tấn làm mặt đất đá bazan nứt toác.
-Dialogue: 1,0:00:08.12,0:00:11.80,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 02/23 • BƯỚC CHÂN BẠO CHÚA DUNG NHAM   |   ▸ [ACTION_SEISMIC_ROAR]
-Dialogue: 0,0:00:15.96,0:00:23.56,CinemaSub,,0,0,0,,{\fad(180,180)}Từ dưới làn nước sôi sùng sục, cánh buồm phát quang xanh cyan trồi lên.
-Dialogue: 1,0:00:15.96,0:00:19.64,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 03/23 • BÓNG MA ĐẦM LẦY XUẤT HIỆN   |   ▸ [ACTION_AMPHIBIOUS_AMBUSH]
-Dialogue: 0,0:00:23.80,0:00:31.40,CinemaSub,,0,0,0,,{\fad(180,180)}VOLT_SPINO vươn mình khỏi mặt nước, đôi vuốt sắc lẹm tích đầy hồ quang điện.
-Dialogue: 1,0:00:23.80,0:00:27.48,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 04/23 • THỦY QUÁI LÔI ĐÌNH LỘ DIỆN   |   ▸ [ACTION_AMPHIBIOUS_AMBUSH]
-Dialogue: 0,0:00:31.64,0:00:39.24,CinemaSub,,0,0,0,,{\fad(180,180)}Lửa dung nham đỏ rực và điện quang xanh biếc chia đôi bầu trời bão tố.
-Dialogue: 1,0:00:31.64,0:00:35.32,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 05/23 • HAI VỊ VUA ĐỐI MẶT   |   ▸ [ACTION_SEISMIC_ROAR]
-Dialogue: 0,0:00:39.48,0:00:47.08,CinemaSub,,0,0,0,,{\fad(180,180)}Hai đại quái thú nặng hàng chục tấn lao thẳng vào nhau.
-Dialogue: 1,0:00:39.48,0:00:43.16,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 06/23 • CÚ LAO MÌNH TỐC ĐỘ CAO   |   ▸ [ACTION_AMPHIBIOUS_AMBUSH]
-Dialogue: 0,0:00:47.32,0:00:54.92,CinemaSub,,0,0,0,,{\fad(180,180)}Cú đâm trực diện tạo nên sóng xung kích thổi bạt màn mưa.
-Dialogue: 1,0:00:47.32,0:00:51.00,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 07/23 • VA CHẠM THIÊN THẠCH ĐẦU TIÊN   |   ▸ [SKILL_1_MAGMA_JAW_CRUSH]
-Dialogue: 0,0:00:55.16,0:01:02.76,CinemaSub,,0,0,0,,{\fad(180,180)}Đôi vuốt 1m5 của VOLT_SPINO cào toạc lớp vảy đá bazan của bạo chúa.
-Dialogue: 1,0:00:55.16,0:00:58.84,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 08/23 • LIÊN HOÀN VUỐT ĐIỆN XÉ GIÁP   |   ▸ [SKILL_1_RAZOR_CLAW_FRENZY]
-Dialogue: 0,0:01:03.00,0:01:10.60,CinemaSub,,0,0,0,,{\fad(180,180)}Bộ hàm thuôn dài tích điện kẹp chặt lấy cổ họng bạo chúa dung nham.
-Dialogue: 1,0:01:03.00,0:01:06.68,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 09/23 • KHÓA HÀM CÁ SẤU CỔ ĐẠI   |   ▸ [SKILL_1_RAZOR_CLAW_FRENZY]
-Dialogue: 0,0:01:10.84,0:01:18.44,CinemaSub,,0,0,0,,{\fad(180,180)}IGNIS_REX xoay người quật đuôi dung nham đập gãy cột đá bazan.
-Dialogue: 1,0:01:10.84,0:01:14.52,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 10/23 • CÚ QUẬT ĐUÔI ĐỊA CHẤN GIẢI VÂY   |   ▸ [SKILL_2_VOLCANIC_TAIL_SLAM]
-Dialogue: 0,0:01:18.68,0:01:26.28,CinemaSub,,0,0,0,,{\fad(180,180)}VOLT_SPINO nạp sấm sét từ bầu trời vào buồm lưng rồi phóng luồng điện hủy diệt.
-Dialogue: 1,0:01:18.68,0:01:22.36,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 11/23 • XUNG KÍCH LÔI ĐÌNH PHẢN CÔNG   |   ▸ [SKILL_2_BIO_VOLT_SHOCKWAVE]
-Dialogue: 0,0:01:26.52,0:01:34.12,CinemaSub,,0,0,0,,{\fad(180,180)}Giáp đá nứt toác, lõi dung nham trắng rực bùng nổ khắp cơ thể IGNIS_REX!
-Dialogue: 1,0:01:26.52,0:01:30.20,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 12/23 • SỰ THỨC TỈNH HUYẾT QUẢN HỎA NGỤC (DNA SHIFT)   |   ▸ [ACTION_SEISMIC_ROAR]
-Dialogue: 0,0:01:34.36,0:01:41.96,CinemaSub,,0,0,0,,{\fad(180,180)}Sức nóng hàng ngàn độ làm bốc hơi mọi giọt mưa quanh thân hình bạo chúa.
-Dialogue: 1,0:01:34.36,0:01:38.04,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 13/23 • BẠO CHÚA THỨC TỈNH PHẢN KÍCH   |   ▸ [SKILL_1_MAGMA_JAW_CRUSH]
-Dialogue: 0,0:01:42.20,0:01:49.80,CinemaSub,,0,0,0,,{\fad(180,180)}Hai quái thú vật lộn ngay giữa dòng dung nham đang cuộn chảy.
-Dialogue: 1,0:01:42.20,0:01:45.88,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 14/23 • CUỘC CHIẾN GIỮA DÒNG SÔNG LỬA   |   ▸ [SKILL_1_RAZOR_CLAW_FRENZY]
-Dialogue: 0,0:01:50.04,0:01:57.64,CinemaSub,,0,0,0,,{\fad(180,180)}Hàm răng dung nham của IGNIS_REX nghiền nát một mảng gai điện của đối thủ.
-Dialogue: 1,0:01:50.04,0:01:53.72,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 15/23 • ĐÒN NGOẠM NHIỆT HẠCH PHÁ BUỒM LƯNG   |   ▸ [SKILL_1_MAGMA_JAW_CRUSH]
-Dialogue: 0,0:01:57.88,0:02:05.48,CinemaSub,,0,0,0,,{\fad(180,180)}VOLT_SPINO vùng vẫy phóng toàn bộ điện năng còn lại ở cự ly gần.
-Dialogue: 1,0:01:57.88,0:02:01.56,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 16/23 • BÃO ĐIỆN SINH HỌC TUYỆT VỌNG   |   ▸ [SKILL_2_BIO_VOLT_SHOCKWAVE]
-Dialogue: 0,0:02:05.72,0:02:13.32,CinemaSub,,0,0,0,,{\fad(180,180)}IGNIS_REX lao xuyên qua màn sét, húc văng đối thủ vào vách hẻm vực.
-Dialogue: 1,0:02:05.72,0:02:09.40,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 17/23 • CÚ HÚC ĐẦU PHÁ VỠ VÁCH NÚI   |   ▸ [SKILL_1_MAGMA_JAW_CRUSH]
-Dialogue: 0,0:02:13.56,0:02:21.16,CinemaSub,,0,0,0,,{\fad(180,180)}Đuôi gai rực lửa quét ngang làm nổ tung mặt đất dưới chân VOLT_SPINO.
-Dialogue: 1,0:02:13.56,0:02:17.24,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 18/23 • ĐÒN QUẬT ĐUÔI DUNG NHAM LIÊN HOÀN   |   ▸ [SKILL_2_VOLCANIC_TAIL_SLAM]
-Dialogue: 0,0:02:21.40,0:02:29.00,CinemaSub,,0,0,0,,{\fad(180,180)}VOLT_SPINO tung cú vồ sinh tử cuối cùng nhằm kéo bạo chúa xuống vực sâu.
-Dialogue: 1,0:02:21.40,0:02:25.08,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 19/23 • CÚ VỒ CUỐI CÙNG BÊN BỜ VỰC   |   ▸ [ACTION_AMPHIBIOUS_AMBUSH]
-Dialogue: 0,0:02:29.24,0:02:36.84,CinemaSub,,0,0,0,,{\fad(180,180)}IGNIS_REX bắt trọn cú lao của đối thủ bằng đòn ngoạm hàm nhiệt hạch tối thượng.
-Dialogue: 1,0:02:29.24,0:02:32.92,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 20/23 • TUYỆT KỸ HÀM DUNG NHAM KẾT LIỄU   |   ▸ [SKILL_1_MAGMA_JAW_CRUSH]
-Dialogue: 0,0:02:37.08,0:02:44.68,CinemaSub,,0,0,0,,{\fad(180,180)}VOLT_SPINO trọng thương trượt xuống làn nước sương mù, nhường lại lãnh địa.
-Dialogue: 1,0:02:37.08,0:02:40.76,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 21/23 • KẺ BẠI TRẬN RÚT LUI VÀO BÓNG TỐI   |   ▸ [SKILL_2_VOLCANIC_TAIL_SLAM]
-Dialogue: 0,0:02:44.92,0:02:52.52,CinemaSub,,0,0,0,,{\fad(180,180)}IGNIS_REX bước lên đỉnh mỏm đá cao nhất giữa thung lũng rực lửa.
-Dialogue: 1,0:02:44.92,0:02:48.60,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 22/23 • BẠO CHÚA BƯỚC LÊN ĐỈNH ĐÁ BAZAN   |   ▸ [ACTION_SEISMIC_ROAR]
-Dialogue: 0,0:02:52.76,0:02:56.36,CinemaSub,,0,0,0,,{\fad(180,180)}Tiếng gầm khải hoàn xé toạc bầu trời giông bão, khép lại huyền thoại tiền sử.
-Dialogue: 1,0:02:52.76,0:02:56.28,SkillBadge,,0,0,0,,{\fad(200,300)}CẢNH 23/23 • TIẾNG GẦM THỐNG TRỊ KỶ PHẤN TRẮNG   |   ▸ [ACTION_SEISMIC_ROAR]
+Dialogue: 0,0:00:00.12,0:00:07.88,CinemaSub,,0,0,0,,{\fad(180,180)}Trước mỗi cuộc đại tuyệt chủng, mặt đất luôn nín thở. Giữa thung lũng nham thạch Kreta, bầu trời tím thẫm rạch ngang tia sét báo hiệu ngày phán quyết của hai vị vua.
+Dialogue: 1,0:00:00.12,0:00:03.80,SkillBadge,,0,0,0,,{\fad(200,300)}[KHỞI ĐỘNG & ĐIỀM BÁO • TĨNH LẶNG TRƯỚC BÃO • ĐẠI CẢNH (MASTER)] CẢNH 01/23 • ĐIỀM BÁO TRƯỚC NGÀY PHÁN QUYẾT   |   ✦ [ACTION_SEISMIC_ROAR]
+Dialogue: 2,0:00:00.20,0:00:04.50,MovieTitle,,0,0,0,,{\fad(350,450)}★ ĐẠI CHIẾN KỶ PHẤN TRẮNG: BẠO CHÚA DUNG NHAM ĐỐI ĐẦU THỦY QUÁI LÔI ĐÌNH ★
+Dialogue: 2,0:00:01.20,0:00:06.80,LocationCard,,0,0,0,,{\fad(400,450)}📍 ĐỊA ĐIỂM: THUNG LUNG NHAM THACH KRETA • 66.000.000 NĂM TRƯỚC CÔNG NGUYÊN
+Dialogue: 0,0:00:08.12,0:00:15.72,CinemaSub,,0,0,0,,{\fad(180,180)}Mười chín tấn cơ bắp bọc đá bazan dẫm nát thềm lục địa. Với IGNIS REX, mỗi vết nứt dung nham dưới chân là lời tuyên bố: ngai vàng này không bao giờ chia đôi.
+Dialogue: 1,0:00:08.12,0:00:11.80,SkillBadge,,0,0,0,,{\fad(200,300)}[KHỞI ĐỘNG & ĐIỀM BÁO • TĨNH LẶNG TRƯỚC BÃO • CẬN CHI TIẾT (INSERT)] CẢNH 02/23 • DẤU CHÂN CỦA NGAI VÀNG LỬA   |   ✦ [ACTION_SEISMIC_ROAR]
+Dialogue: 0,0:00:15.96,0:00:23.56,CinemaSub,,0,0,0,,{\fad(180,180)}Nhưng dưới làn nước sôi sùng sục, một quy luật tàn nhẫn khác đang trồi lên. Những mạch điện sinh học xanh băng giá lặng lẽ cắt ngang bóng tối đầm lầy.
+Dialogue: 1,0:00:15.96,0:00:19.64,SkillBadge,,0,0,0,,{\fad(200,300)}[KHỞI ĐỘNG & ĐIỀM BÁO • TĨNH LẶNG TRƯỚC BÃO • GÓC QUA VAI (OTS)] CẢNH 03/23 • LUỒNG ĐIỆN NGẦM DƯỚI ĐẦM SÔI   |   ✦ [ACTION_AMPHIBIOUS_AMBUSH]
+Dialogue: 0,0:00:23.80,0:00:31.40,CinemaSub,,0,0,0,,{\fad(180,180)}Đôi vuốt dài một mét rưỡi bấm phập vào đá núi lửa. VOLT SPINO bước lên bờ, mang theo cơn thịnh nộ của đại dương cổ đại thách thức bá chủ mặt đất.
+Dialogue: 1,0:00:23.80,0:00:27.48,SkillBadge,,0,0,0,,{\fad(200,300)}[KHỞI ĐỘNG & ĐIỀM BÁO • PHẢN ỨNG KULESHOV] CẢNH 04/23 • KẺ THÁCH THỨC TỪ VỰC THẲM   |   ✦ [ACTION_AMPHIBIOUS_AMBUSH]
+Dialogue: 0,0:00:31.64,0:00:39.24,CinemaSub,,0,0,0,,{\fad(180,180)}Một bên là huyết quản lửa ngàn độ, một bên là sấm sét vực sâu. Khoảnh khắc hai ánh mắt khóa chặt qua dòng sông dung nham, thời gian như đông cứng trước cơn bão.
+Dialogue: 1,0:00:31.64,0:00:35.32,SkillBadge,,0,0,0,,{\fad(200,300)}[KHỞI ĐỘNG & ĐIỀM BÁO • GÓC CHỦ QUAN (POV)] CẢNH 05/23 • HAI ÁNH MẮT CHIA ĐÔI BẦU TRỜI   |   ✦ [ACTION_SEISMIC_ROAR]
+Dialogue: 0,0:00:39.48,0:00:47.08,CinemaSub,,0,0,0,,{\fad(180,180)}Không còn đường lùi cho kẻ yếu. Hai khối núi thịt lao thẳng vào nhau, biến thềm đá bazan thành lò luyện kim của tự nhiên.
+Dialogue: 1,0:00:39.48,0:00:43.16,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • GÓC ANH HÙNG 24MM] CẢNH 06/23 • CÚ LAO SINH TỬ MỞ MÀN   |   ✦ [ACTION_AMPHIBIOUS_AMBUSH]
+Dialogue: 0,0:00:47.32,0:00:54.92,CinemaSub,,0,0,0,,{\fad(180,180)}Cú đâm trực diện đầu tiên không chỉ là đòn thử sức, mà là va chạm giữa hai kỷ nguyên. Sóng xung kích thổi bạt màn mưa, xé toạc không gian.
+Dialogue: 1,0:00:47.32,0:00:51.00,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • ĐẠI CẢNH (MASTER)] CẢNH 07/23 • VA CHẠM GIỮA HAI KỶ NGUYÊN   |   ✦ [SKILL_1_MAGMA_JAW_CRUSH]
+Dialogue: 0,0:00:55.16,0:01:02.76,CinemaSub,,0,0,0,,{\fad(180,180)}Chiến trường không tha thứ cho một nhịp chậm trễ. Đôi vuốt tích điện của sát thủ đầm lầy cào toạc lớp giáp đá, bắn tung những mảnh vảy nóng đỏ.
+Dialogue: 1,0:00:55.16,0:00:58.84,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • CẬN CHI TIẾT (INSERT)] CẢNH 08/23 • MÓNG VUỐT LÔI ĐÌNH XÉ GIÁP   |   ✦ [SKILL_1_RAZOR_CLAW_FRENZY]
+Dialogue: 0,0:01:03.00,0:01:10.60,CinemaSub,,0,0,0,,{\fad(180,180)}Bộ hàm cá sấu cổ đại khóa chặt cổ họng bạo chúa. Hàng vạn vôn điện sinh học phóng xuyên qua lớp vảy đen, đẩy vị vua dung nham vào cửa tử.
+Dialogue: 1,0:01:03.00,0:01:06.68,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • GÓC QUA VAI (OTS)] CẢNH 09/23 • KHÓA HÀM SINH TỬ & DÒNG ĐIỆN NGƯỢC   |   ✦ [SKILL_1_RAZOR_CLAW_FRENZY]
+Dialogue: 0,0:01:10.84,0:01:18.44,CinemaSub,,0,0,0,,{\fad(180,180)}Đau đớn chính là ngòi nổ của bản năng sinh tồn. Một cú xoay mình quật đuôi mười chín tấn đập gãy cột đá cổ đại, hất văng kẻ săn mồi khỏi tử huyệt.
+Dialogue: 1,0:01:10.84,0:01:14.52,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • PHẢN ỨNG KULESHOV] CẢNH 10/23 • CÚ QUẬT ĐUÔI ĐẬP GÃY CỘT ĐÁ   |   ✦ [SKILL_2_VOLCANIC_TAIL_SLAM]
+Dialogue: 0,0:01:18.68,0:01:26.28,CinemaSub,,0,0,0,,{\fad(180,180)}Nhưng bầu trời giông bão lại đứng về phía thủy quái. Sấm sét thiên nhiên giáng xuống buồm lưng, phóng ra luồng hồ quang đánh gục bạo chúa xuống bờ vực.
+Dialogue: 1,0:01:18.68,0:01:22.36,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • NGHỊCH CẢNH • GÓC CHỦ QUAN (POV)] CẢNH 11/23 • NGHỊCH CẢNH BÊN BỜ VỰC LỬA   |   ✦ [SKILL_2_BIO_VOLT_SHOCKWAVE]
+Dialogue: 0,0:01:26.52,0:01:34.12,CinemaSub,,0,0,0,,{\fad(180,180)}Khoảnh khắc cận kề cái chết là lúc huyết quản thức tỉnh! Giáp đá nứt toác, lõi dung nham trắng rực bùng nổ biến vết thương thành ngọn lửa bất diệt.
+Dialogue: 1,0:01:26.52,0:01:30.20,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • NÉN LÒ XO SAKUGA • GÓC ANH HÙNG 24MM] CẢNH 12/23 • HUYẾT QUẢN HỎA NGỤC THỨC TỈNH (DNA SHIFT)   |   ✦ [ACTION_SEISMIC_ROAR]
+Dialogue: 0,0:01:34.36,0:01:41.96,CinemaSub,,0,0,0,,{\fad(180,180)}Mọi giọt mưa chạm vào thân hình thức tỉnh đều bốc hơi tức khắc. Bạo chúa lửa lao xuyên qua biển khói, đòi lại món nợ máu bằng hàm răng nhiệt hạch.
+Dialogue: 1,0:01:34.36,0:01:38.04,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • ĐẠI CẢNH (MASTER)] CẢNH 13/23 • BẠO CHÚA LỬA XUYÊN MÀN KHÓI   |   ✦ [SKILL_1_MAGMA_JAW_CRUSH]
+Dialogue: 0,0:01:42.20,0:01:49.80,CinemaSub,,0,0,0,,{\fad(180,180)}Giữa dòng sông nham thạch cuộn chảy, không kẻ nào chịu nhượng bộ một tấc đất. Lửa và điện quấn lấy nhau trong vũ điệu sinh tử tàn khốc nhất.
+Dialogue: 1,0:01:42.20,0:01:45.88,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • CẬN CHI TIẾT (INSERT)] CẢNH 14/23 • TỬ CHIẾN GIỮA DÒNG SÔNG DUNG NHAM   |   ✦ [SKILL_1_RAZOR_CLAW_FRENZY]
+Dialogue: 0,0:01:50.04,0:01:57.64,CinemaSub,,0,0,0,,{\fad(180,180)}Đòn phản kích chí mạng tìm đúng điểm tựa sức mạnh của đối thủ. Hàm răng ngàn độ nghiền nát mảng gai phát điện trên lưng thủy quái trong mưa tia lửa.
+Dialogue: 1,0:01:50.04,0:01:53.72,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • GÓC QUA VAI (OTS)] CẢNH 15/23 • NGHIỀN NÁT CÁNH BUỒM TÍCH ĐIỆN   |   ✦ [SKILL_1_MAGMA_JAW_CRUSH]
+Dialogue: 0,0:01:57.88,0:02:05.48,CinemaSub,,0,0,0,,{\fad(180,180)}Như con thú bị dồn vào chân tường, VOLT SPINO giải phóng toàn bộ điện năng còn sót lại trong một vụ nổ hồ quang tuyệt vọng ở cự ly gần.
+Dialogue: 1,0:01:57.88,0:02:01.56,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • PHẢN ỨNG KULESHOV] CẢNH 16/23 • VỤ NỔ HỒ QUANG TUYỆT VỌNG   |   ✦ [SKILL_2_BIO_VOLT_SHOCKWAVE]
+Dialogue: 0,0:02:05.72,0:02:13.32,CinemaSub,,0,0,0,,{\fad(180,180)}Nhưng sấm sét không thể cản bước một ngọn núi lửa đang phun trào. IGNIS REX lao xuyên qua màn điện, húc sập cả vách đá hẻm vực lên người đối thủ.
+Dialogue: 1,0:02:05.72,0:02:09.40,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • GÓC CHỦ QUAN (POV)] CẢNH 17/23 • CÚ HÚC SẬP VÁCH NÚI ĐÁ BAZAN   |   ✦ [SKILL_1_MAGMA_JAW_CRUSH]
+Dialogue: 0,0:02:13.56,0:02:21.16,CinemaSub,,0,0,0,,{\fad(180,180)}Đòn kết liễu giáng xuống như búa tạ của tạo hóa! Cú ngoạm hàm nhiệt hạch tối thượng quật ngã hoàn toàn kẻ thách thức xuống thềm đá nứt toác.
+Dialogue: 1,0:02:13.56,0:02:17.24,SkillBadge,,0,0,0,,{\fad(200,300)}[Ý CHÍNH - CAO TRÀO • NÉN LÒ XO SAKUGA • GÓC ANH HÙNG 24MM] CẢNH 18/23 • PHÁN QUYẾT CUỐI CÙNG CỦA TẠO HÓA   |   ✦ [SKILL_2_VOLCANIC_TAIL_SLAM]
+Dialogue: 0,0:02:21.40,0:02:29.00,CinemaSub,,0,0,0,,{\fad(180,180)}Khi tiếng gầm lắng xuống, chỉ còn lại một thung lũng tan hoang chìm trong mưa tro bụi. Cái giá của ngôi vương luôn được trả bằng sự hủy diệt.
+Dialogue: 1,0:02:21.40,0:02:25.08,SkillBadge,,0,0,0,,{\fad(200,300)}[HẬU QUẢ & DƯ CHẤN • ĐẠI CẢNH (MASTER)] CẢNH 19/23 • DƯ CHẤN TRÊN THUNG LŨNG TRO TÀN   |   ✦ [ACTION_AMPHIBIOUS_AMBUSH]
+Dialogue: 0,0:02:29.24,0:02:36.84,CinemaSub,,0,0,0,,{\fad(180,180)}Trên gương mặt chằng chịt vết sẹo đang bốc khói, từng giọt dung nham nhỏ xuống hóa thành thủy tinh đen. Đôi mắt vàng rực nhìn kẻ bại trận lần cuối.
+Dialogue: 1,0:02:29.24,0:02:32.92,SkillBadge,,0,0,0,,{\fad(200,300)}[HẬU QUẢ & DƯ CHẤN • CẬN CHI TIẾT (INSERT)] CẢNH 20/23 • VẾT SẸO HÓA THỦY TINH ĐEN   |   ✦ [SKILL_1_MAGMA_JAW_CRUSH]
+Dialogue: 0,0:02:37.08,0:02:44.68,CinemaSub,,0,0,0,,{\fad(180,180)}Nhận thức rõ phán quyết của tự nhiên, bóng hình khổng lồ mang buồm lưng gãy vụn lặng lẽ lùi dần vào màn sương đầm lầy, nhường lại lãnh địa.
+Dialogue: 1,0:02:37.08,0:02:40.76,SkillBadge,,0,0,0,,{\fad(200,300)}[HẬU QUẢ & DƯ CHẤN • GÓC QUA VAI (OTS)] CẢNH 21/23 • KẺ BẠI TRẬN LÙI VÀO SƯƠNG MÙ   |   ✦ [SKILL_2_VOLCANIC_TAIL_SLAM]
+Dialogue: 0,0:02:44.92,0:02:52.52,CinemaSub,,0,0,0,,{\fad(180,180)}Mang trên mình những vết thương kiêu hãnh, vị vua duy nhất bước lên đỉnh đá bazan cao nhất giữa ánh hoàng hôn màu máu và hổ phách.
+Dialogue: 1,0:02:44.92,0:02:48.60,SkillBadge,,0,0,0,,{\fad(200,300)}[HẬU QUẢ & DƯ CHẤN • PHẢN ỨNG KULESHOV] CẢNH 22/23 • BƯỚC CHÂN LÊN ĐỈNH HOÀNG HÔN LỬA   |   ✦ [ACTION_SEISMIC_ROAR]
+Dialogue: 0,0:02:52.76,0:02:56.36,CinemaSub,,0,0,0,,{\fad(180,180)}Tiếng gầm khải hoàn vang vọng khắp đại ngàn Kỷ Phấn Trắng, khắc ghi định luật bất biến của thiên nhiên: chỉ kẻ bất khuất nhất mới xứng đáng thống trị.
+Dialogue: 1,0:02:52.76,0:02:56.28,SkillBadge,,0,0,0,,{\fad(200,300)}[HẬU QUẢ & DƯ CHẤN • GÓC CHỦ QUAN (POV)] CẢNH 23/23 • TIẾNG GẦM KHÉP LẠI HUYỀN THOẠI   |   ✦ [ACTION_SEISMIC_ROAR]
+Dialogue: 2,0:02:53.14,0:02:56.38,EndCredits,,0,0,0,,{\fad(450,350)}A HYPERION 12-DEPARTMENT STUDIO PRODUCTION • STUNT & FIGHT CHOREOGRAPHY: 87NORTH ENGINE • SCORE & 46HZ LFE FOLEY: SKYWALKER AUDIO SUITE • DI COLOR: DAVINCI 2.39:1

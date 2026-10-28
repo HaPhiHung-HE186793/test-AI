@@ -1,0 +1,467 @@
+{
+  "benchmarkStandard": "T2V-CompBench (CVPR 2025) + VBench (CVPR 2024) + Google DeepMind Veo Front-Loading + Meta Movie Gen Token Density + VideoDirectorGPT 3D Bounding Box",
+  "totalShotsAudited": 8,
+  "passedShotsCount": 8,
+  "averageScoreOutOf100": 100,
+  "allShotsPassed100Percent": true,
+  "shotReports": [
+    {
+      "shotNumber": 1,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 1,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 24mm IMAX Widescreen Prime, Distance Z=24m, Elevation 2.2m, +10° Epic...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1648 chars (~300 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 2564 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=24m, Y=2.2m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage MASTER_ESTABLISHING (Z=24m, Y=2.2m) matched with zone \"Full-Body Colossal Proportions & Surrounding Volcanic Arena Geography\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Wet fractured black basalt cliff ledge 22 meters above the boilin...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"Pelvis forward shift -> Thorax expansion & +40° neck arch -> Maximum jaw ga...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Sharp purple thunderclap, vibrating basalt pebbles...\")"
+        }
+      },
+      "autoFixesApplied": []
+    },
+    {
+      "shotNumber": 2,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 1,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 85mm Macro Anamorphic Prime, Distance Z=1.4m, Elevation 0.45m, -6° Gr...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1720 chars (~313 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 2831 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=1.4m, Y=0.45m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage INSERT_DETAIL_CUTAWAY (Z=1.4m, Y=0.45m) matched with zone \"Lower Hind-Limb Three-Toed Claws, Ankle Scales & Cracking Basalt Slab\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Crusted geothermal shoreline slab with glowing orange magma fissu...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"Lower hind-limb vertical drive -> Rigid ankle bone lock -> Three-toed hind-...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Colossal 19-ton hind-foot impact crunching black b...\")"
+        }
+      },
+      "autoFixesApplied": []
+    },
+    {
+      "shotNumber": 3,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 1,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 50mm Panavision Anamorphic Prime, Distance Z=3.2m, Elevation 3.6m, +1...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1611 chars (~293 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 2551 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=3.2m, Y=3.6m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage KULESHOV_REACTION (Z=3.2m, Y=3.6m) matched with zone \"Head, Jaws, Contracting Eye Pupil, Neck & Upper Thorax\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Sloping eastern basalt riverbank drenched in cascading muddy wate...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"Submerged hind-leg launch -> S-curve spine uncoil -> 1.5m foreclaw bank gri...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Explosive water breach, giant organic keratin claw...\")"
+        }
+      },
+      "autoFixesApplied": []
+    },
+    {
+      "shotNumber": 4,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 1,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 28mm Kinetic Combat Prime, Distance Z=5.8m, Elevation 2.6m, +6° Dynam...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1757 chars (~319 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 2981 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=5.8m, Y=2.6m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage POV_SUBJECTIVE (Z=5.8m, Y=2.6m) matched with zone \"Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Flat rain-slicked obsidian fault-line arena flanked by the intact...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"Dual low pelvis drop -> Opposing 25° neck crane -> Synchronized jaw roar ->...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Dual overlapping apex roars — guttural sub-bass ma...\")"
+        }
+      },
+      "autoFixesApplied": []
+    },
+    {
+      "shotNumber": 5,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 2,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 85mm Macro Anamorphic Prime, Distance Z=1.8m, Elevation 4.2m, +4° Sho...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1751 chars (~318 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 3115 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=1.8m, Y=4.2m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage INSERT_DETAIL_CUTAWAY (Z=1.8m, Y=4.2m) matched with zone \"Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Jagged obsidian rock shelf slick with steaming rain and glowing m...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"+30° hind-leg pivot -> Torso electric charge transfer -> Diagonal 1.5m fore...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: High-voltage electric discharge whip and 1.5-meter...\")"
+        }
+      },
+      "autoFixesApplied": [
+        "Compacted prepBeatEn & aftermathBeatEn to reduce video prompt from 1881 chars to <= 1850 chars"
+      ]
+    },
+    {
+      "shotNumber": 6,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 1,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 24mm Ultra-Wide Anamorphic Prime, Distance Z=7.2m, Elevation 0.4m, +2...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1762 chars (~320 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 2664 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=7.2m, Y=0.4m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage LOW_ANGLE_HERO_APEX (Z=7.2m, Y=0.4m) matched with zone \"Full Towering Bipedal Silhouette from Grounded Claws to Crown\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Melting vitrified volcanic glass crater glowing white-hot as subt...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"Vertical hind-leg drive -> Spine vein white-hot ignition -> Super-Nova upwa...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: [0.0s-1.75s] Eerie muffled heartbeat silence and r...\")"
+        }
+      },
+      "autoFixesApplied": []
+    },
+    {
+      "shotNumber": 7,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 1,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 24mm Ultra-Wide Anamorphic Prime, Distance Z=7.2m, Elevation 0.4m, +2...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1843 chars (~335 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 3131 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=7.2m, Y=0.4m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage LOW_ANGLE_HERO_APEX (Z=7.2m, Y=0.4m) matched with zone \"Full Towering Bipedal Silhouette from Grounded Claws to Crown\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Deep impact crater in the center of the valley floor ringed by ra...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"Crater-rim hind-foot lock -> White-gold throat magma surge -> Concentrated ...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: [0.0s-1.75s] Deep furnace inhalation silence -> [1...\")"
+        }
+      },
+      "autoFixesApplied": []
+    },
+    {
+      "shotNumber": 8,
+      "totalScore": 100,
+      "passed": true,
+      "iterationsUsed": 1,
+      "metrics": {
+        "frontLoadedCameraCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 28mm Kinetic Combat Prime, Distance Z=5.8m, Elevation 2.6m, +6° Dynam...\""
+        },
+        "motionPromptTokenDensityCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Video prompt length: 1629 chars (~296 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+        },
+        "spatialPromptPureStaticCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Image prompt length: 2524 chars, zero temporal timestamp pollution: true"
+        },
+        "spatialBoundingBoxCheck": {
+          "score": 15,
+          "max": 15,
+          "pass": true,
+          "detail": "Bounding Box [X%, Y%, Z=5.8m, Y=2.6m] & Body Yaw locked"
+        },
+        "scaleAndElevationZoneCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Coverage POV_SUBJECTIVE (Z=5.8m, Y=2.6m) matched with zone \"Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave\""
+        },
+        "terrainContactPhysicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Terrain: \"Monumental volcanic summit pinnacle framed against clearing twili...\""
+        },
+        "skeletalKinematicsCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Kinematics: \"Summit throne anchor -> Skyward neck arch -> Triumphant apex roar -> Widesc...\""
+        },
+        "generativeNumeracyAndFoleyCoherenceCheck": {
+          "score": 10,
+          "max": 10,
+          "pass": true,
+          "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: One final monumental sovereign roar resonating acr...\")"
+        }
+      },
+      "autoFixesApplied": []
+    }
+  ]
+}

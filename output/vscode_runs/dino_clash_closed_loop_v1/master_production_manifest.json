@@ -1,0 +1,1249 @@
+{
+  "movieTitle": "ĐẠI CHIẾN KỶ PHẤN TRẮNG: BẠO CHÚA DUNG NHAM ĐỐI ĐẦU THỦY QUÁI LÔI ĐÌNH",
+  "createdAt": "2026-10-28T10:00:01.561Z",
+  "studioPipelineArchitecture": "12-Department Blockbuster Studio Pipeline + 4-Tier Hierarchical Writers Room + Disentangled Spatial/Motion Prompt Compiler + Stage-by-Stage Closed-Loop Verification (MEM-22)",
+  "closedLoopExperienceLogPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/00C_closed_loop_experience_log.json",
+  "writersRoomStoryBiblePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/00_writers_room_story_bible.json",
+  "promptEngineeringAuditReportPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/00B_prompt_engineering_audit_report.json",
+  "promptEngineeringAuditSummary": {
+    "totalShotsAudited": 8,
+    "passedShotsCount": 8,
+    "averageScoreOutOf100": 100,
+    "allShotsPassed100Percent": true
+  },
+  "writersRoomThematicSpine": {
+    "loglineVi": "Giữa kỳ đại phun trào của Thung lũng Nham thạch Kreta (DAU_TRUONG_KRETA), vị vua mặt đất BAO_CHUA_IGNIS_REX phải bảo vệ ngai vàng sinh tồn trước cuộc phục kích của sát thủ đầm lầy tích điện THUY_QUAI_VOLT_SPINO — biến chính những vết thương chí mạng trên cơ thể thành ngọn lửa thức tỉnh để giành lấy quyền thống trị tuyệt đối.",
+    "centralPhilosophicalThemeVi": "Ngai vàng của tự nhiên không thuộc về kẻ không bao giờ bị thương, mà thuộc về kẻ biết biến vết thương chí mạng thành ngọn lửa thức tỉnh bất khuất.",
+    "irreconcilableConflictVi": "Mùa đông núi lửa xóa sổ mọi vùng đất lân cận; dòng sông địa nhiệt ở trung tâm thung lũng Kreta chỉ đủ nuôi sống một bá chủ duy nhất — Lửa Địa Nhiệt (BAO_CHUA_IGNIS_REX) hoặc Điện Vực Sâu (THUY_QUAI_VOLT_SPINO).",
+    "worldPhysicsAndEcologyRulesEn": "19-ton and 18-ton prehistoric titans obey strict Newtonian mass inertia; torrential cold storm rain flash-boils into white steam on contact with superheated basalt scales; bio-electric discharges short-circuit when dorsal spine conduits are physically fractured.",
+    "recurringVisualMotifLexicon": {
+      "primaryLandmarkMotifEn": "Ancient Fang-Shaped Basalt Pillar in the center of the lagoon (Intact in Act I -> Shattered in half by tail slam -> Smoking rubble in Act III)",
+      "elementalClashMotifEn": "Molten Crimson-Orange Magma (Left / Land Sovereign) vs. Bioluminescent Neon-Cyan Bio-Electricity (Right / Abyss Challenger)",
+      "scarAndTrophyMotifEn": "Three diagonal claw trenches on BAO_CHUA_IGNIS_REX left shoulder (Carved in Act II -> Blazing white-hot during DNA Shift -> Cooled into glossy black volcanic glass in Act III)"
+    }
+  },
+  "script": "Đại chiến sinh tồn tiền sử tại Thung lũng Nham thạch Kreta giữa hai đại quái thú khủng long: Bạo chúa dung nham BAO_CHUA_IGNIS_REX và Thủy quái lôi đình THUY_QUAI_VOLT_SPINO.",
+  "model": "Veo 3.1 - Lite",
+  "theatricalPosterPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/00_theatrical_imax_poster.png",
+  "character1SheetPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/02_character_1_3panel_sheet.png",
+  "character2SheetPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/02_character_2_3panel_sheet.png",
+  "cleanEnvironmentLockPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/03_clean_environment_lock.png",
+  "battleDamagedEnvironmentLockPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/03B_battle_damaged_environment_lock.png",
+  "smolderingAftermathEnvironmentLockPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/03C_smoldering_aftermath_environment_lock.png",
+  "masterVideoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/MASTER_FINAL_MOVIE.mp4",
+  "directorsCutVideoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/MASTER_DIRECTORS_CUT.mp4",
+  "subtitlesPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/master_subtitles.srt",
+  "assSubtitlesPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/master_subtitles.ass",
+  "shots": [
+    {
+      "shotNumber": 1,
+      "canonical23Index": 0,
+      "macroPhase": "PRE_MAIN_BUILDUP",
+      "titleVi": "Điềm Báo Trước Ngày Phán Quyết",
+      "subtitleVi": "Trước mỗi cuộc đại tuyệt chủng, mặt đất luôn nín thở. Giữa thung lũng nham thạch Kreta, bầu trời tím thẫm rạch ngang tia sét báo hiệu ngày phán quyết của hai vị vua.",
+      "skillUsed": "[ACTION_SEISMIC_ROAR]",
+      "preparationBeatEn": "Dark violet storm clouds churn above DAU_TRUONG_KRETA while concentric seismic rings tremble across boiling mud puddles and loose basalt gravel",
+      "mainActionBeatEn": "A jagged lightning bolt illuminates the cliff rim as @BAO_CHUA_IGNIS_REX steps into frame on two colossal hind legs, jaws parting to unleash an earth-shaking [ACTION_SEISMIC_ROAR]",
+      "aftermathConsequenceEn": "Acoustic shockwaves blow rain horizontally off the cliff ledge and send glowing volcanic embers spiraling down toward the dark lagoon below",
+      "actionPromptEn": "Atop the storm-lashed cliff of DAU_TRUONG_KRETA, @BAO_CHUA_IGNIS_REX emerges from volcanic mist and unleashes [ACTION_SEISMIC_ROAR], sending embers and shockwaves down into the valley.",
+      "endFramePromptEn": "End Frame Lock [Shot 01]: @BAO_CHUA_IGNIS_REX standing dominant on the left cliff edge with jaws smoking and orange magma veins glowing against the purple lightning sky.",
+      "cameraAngle": "Wide Establishing Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 8,
+      "causalConnector": "OPENING_INCITING_PREMISE",
+      "causalBridgeFromPrevVi": "[MỞ MÀN TIỀN ĐỀ]: Miệng núi lửa Kreta bước vào chu kỳ phun trào lớn nhất sau một vạn năm, ép mọi sinh vật săn mồi tối thượng phải hội tụ về nguồn nhiệt duy nhất.",
+      "causalBridgeFromPrevEn": "OPENING PREMISE: The Kreta volcanic caldera enters its fiercest eruption cycle, forcing apex predators toward the central geothermal river.",
+      "dramaticStakesVi": "Kẻ nào kiểm soát được thung lũng nham thạch sẽ sống sót qua mùa đông núi lửa; kẻ thua phải diệt vong.",
+      "valueChargeShift": "[0 Bầu trời Tĩnh lặng] -> [-1 Điềm báo Địa chấn]",
+      "microTurningPointTwistEn": "Mid-shot at 2.5s, a forked purple lightning bolt fractures the sky and @BAO_CHUA_IGNIS_REX massive silhouette steps onto the cliff edge, turning an empty storm into a sovereign claim.",
+      "recurringMotifPropStateEn": "Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: Stands pristine and towering in the center of the steaming lagoon.",
+      "entryStateEn": "OPENING PREMISE: The Kreta volcanic caldera enters its fiercest eruption cycle, forcing apex predators toward the central geothermal river.",
+      "exitStateEn": "End Frame Lock [Shot 01]: @BAO_CHUA_IGNIS_REX standing dominant on the left cliff edge with jaws smoking and orange magma veins glowing against the purple lightning sky.",
+      "coverageType": "MASTER_ESTABLISHING",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] colossal titans in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm",
+      "stuntChoreography": {
+        "attackVectorEn": "Predatory stalking stance with coiled hind-leg tendons and lowered center of gravity",
+        "mechanicalContactPointEn": "Heavy claws gripping and fracturing wet volcanic basalt ledges under 19-ton static load",
+        "newtonianCounterForceEn": "Seismic ground reaction force sending concentric shock rings through boiling water puddles",
+        "guardTransitionEn": "Combat-ready guard posture locked on 180-degree confrontation axis",
+        "combinedChoreographyEn": "Stunt Choreography [Pre-Clash Stance]: Predatory coiled tendons, claws fracturing basalt under 19-ton load, seismic ground reaction ripples, locked combat guard."
+      },
+      "stageDestructionLevel": "STAGE_1_PRISTINE_OMINOUS",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels.",
+      "emotionalTensionMode": "OMINOUS_SILENCE",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: shockwave parting the rain curtain, muddy water and molten droplets splashing onto the camera lens, subtle kinetic camera shake on impact",
+      "colorScriptMoodEn": "Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow",
+      "shotIdx": "01",
+      "hasChar1": true,
+      "hasChar2": false,
+      "spatialPrevisDossier": {
+        "shotNumber": 1,
+        "cameraExtrinsics": {
+          "coverageType": "MASTER_ESTABLISHING",
+          "focalLengthMm": "24mm IMAX Widescreen Prime",
+          "apertureStop": "f/4.0 (Deep pan-focus across foreground, midground subject, and background caldera)",
+          "cameraDistanceMeters": 24,
+          "cameraElevationMeters": 2.2,
+          "cameraPitchDeg": "+10° Epic Widescreen Horizon Tilt",
+          "cameraRigMovementVectorEn": "Sweeping orbital dolly movement at 1.2m/s establishing full arena geography and colossal scale",
+          "framingScaleConstraintEn": "WIDE ESTABLISHING ARENA FRAMING (24.0m distance, 2.2m elevation): Show full-body colossal proportions, clear spatial placement, contact terrain, and towering volcanic caldera horizon",
+          "targetAnatomicalZoneEn": "Full-Body Colossal Proportions & Surrounding Volcanic Arena Geography"
+        },
+        "subject1Box": {
+          "entityName": "BAO_CHUA_IGNIS_REX",
+          "screenZoneXPercent": "X: 22% to 74% (Dominant Left-Center Anchor)",
+          "screenZoneYPercent": "Y: 10% to 94%",
+          "depthDistanceMeters": 24,
+          "bodyYawDegAndFacingEn": "Body Yaw +30° Facing Screen-Right along the 180-degree axis",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Fierce golden eye and hornless jaws oriented toward Screen-Right horizon [X: 85%, Y: 48%]"
+        },
+        "subject2Box": null,
+        "contactTerrainGeometryEn": "Wet fractured black basalt cliff ledge 22 meters above the boiling sulfur lagoon, loose volcanic gravel vibrating on the rim",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "19-ton pelvis shifts forward onto the cliff rim, lowering center of gravity by 0.4m",
+          "spineAndThoraxTorsionEn": "Thoracic ribcage expands 30% with superheated air while cervical spine arches upward at +40°",
+          "primaryExtremityStrikeEn": "Massive hornless jaws unhinge to maximum gape, projecting a directional acoustic shockwave cone",
+          "newtonianGroundRecoilAndSettleEn": "Hind-leg claws dig 12cm into wet basalt to absorb the vocal recoil vibration",
+          "combinedKinematicsChainEn": "Pelvis forward shift -> Thorax expansion & +40° neck arch -> Maximum jaw gape roar -> Hind-claw basalt anchor"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: Sharp purple thunderclap, vibrating basalt pebbles, and an earth-shaking 19-ton territorial roar echoing across the caldera.",
+          "bespokeAmbientEn": "Ambient: Howling volcanic storm wind, torrential rain, and deep subterranean magma rumble."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 24mm IMAX Widescreen Prime at f/4.0 (Deep pan-focus across foreground, midground subject, and background caldera), Camera Distance Z=24m, Elevation Y=2.2m, Pitch +10° Epic Widescreen Horizon Tilt. WIDE ESTABLISHING ARENA FRAMING (24.0m distance, 2.2m elevation): Show full-body colossal proportions, clear spatial placement, contact terrain, and towering volcanic caldera horizon. 3D SPATIAL BOUNDING-BOX LAYOUT: [Solo Subject @BAO_CHUA_IGNIS_REX at X: 22% to 74% (Dominant Left-Center Anchor), Y: 10% to 94%, Depth Z=24m, Body Yaw +30° Facing Screen-Right along the 180-degree axis, Focus Zone: Fierce golden eye and hornless jaws oriented toward Screen-Right horizon [X: 85%, Y: 48%]]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Wet fractured black basalt cliff ledge 22 meters above the boiling sulfur lagoon, loose volcanic gravel vibrating on the rim (zero floating limbs). SOLO SUBJECT: @BAO_CHUA_IGNIS_REX [CHARACTER 1: BAO_CHUA_IGNIS_REX] (Charcoal-black basalt T-Rex with glowing orange magma veins; bipedal on 2 hind legs, tiny 2-fingered arms, hornless T-Rex skull) inside @STAGE: DAU_TRUONG_KRETA. STRICT SOLO SHOT: zero second dinosaur. [KEYFRAME POSE SNAPSHOT (Full-Body Colossal Proportions & Surrounding Volcanic Arena Geography)]: A jagged lightning bolt illuminates the cliff rim as @BAO_CHUA_IGNIS_REX steps into frame on two colossal hind legs, jaws parting to unleash an earth-shaking [ACTION_SEISMIC_ROAR]. Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: Stands pristine and towering in the center of the steaming lagoon. 3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] the lone colossal titan in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels. Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 24mm IMAX Widescreen Prime, Distance Z=24m, Elevation 2.2m, +10° Epic Widescreen Horizon Tilt — Sweeping orbital dolly movement at 1.2m/s establishing full arena geography and colossal scale. [SKELETAL KINEMATICS (Full-Body Colossal Proportions & Surrounding Volcanic Arena Geography)]: Pelvis forward shift -> Thorax expansion & +40° neck arch -> Maximum jaw gape roar -> Hind-claw basalt anchor. Skill: [ACTION_SEISMIC_ROAR]. [3-BEAT MOTION (OMINOUS_SILENCE)]: (0.0s-2.5s) Dark violet storm clouds churn above DAU_TRUONG_KRETA while concentric seismic rings tremble across boiling mud puddles and loose basalt gravel -> (2.5s-5.5s) A jagged lightning bolt illuminates the cliff rim as @BAO_CHUA_IGNIS_REX steps into frame on two colossal hind legs, jaws parting to unleash an earth-shaking [ACTION_SEISMIC_ROAR] -> (5.5s-8.0s) Acoustic shockwaves blow rain horizontally off the cliff ledge and send glowing volcanic embers spiraling down toward the dark lagoon below. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Wet fractured black basalt cliff ledge 22 meters above the boiling sulfur lagoon, loose volcanic gravel vibrating on the rim (@STAGE: DAU_TRUONG_KRETA). Solo Lock: Only @BAO_CHUA_IGNIS_REX [X: 22% to 74% (Dominant Left-Center Anchor), hornless bipedal T-Rex, tiny 2-fingered arms]; zero second dinosaur. Animate strictly from first frame without morphing. SFX: Sharp purple thunderclap, vibrating basalt pebbles, and an earth-shaking 19-ton territorial roar echoing across the caldera. Ambient: Howling volcanic storm wind, torrential rain, and deep subterranean magma rumble. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 1,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 1,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 24mm IMAX Widescreen Prime, Distance Z=24m, Elevation 2.2m, +10° Epic...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1648 chars (~300 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 2564 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=24m, Y=2.2m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage MASTER_ESTABLISHING (Z=24m, Y=2.2m) matched with zone \"Full-Body Colossal Proportions & Surrounding Volcanic Arena Geography\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Wet fractured black basalt cliff ledge 22 meters above the boilin...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"Pelvis forward shift -> Thorax expansion & +40° neck arch -> Maximum jaw ga...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Sharp purple thunderclap, vibrating basalt pebbles...\")"
+          }
+        },
+        "autoFixesApplied": []
+      },
+      "startKeyframeMediaId": "cached_shot_01",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_01_start_frame.png",
+      "referenceIds": [
+        "81d3fafc-de87-4bb5-8e47-c3428876ca33",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_01_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_01_vo.mp3"
+    },
+    {
+      "shotNumber": 2,
+      "canonical23Index": 1,
+      "macroPhase": "PRE_MAIN_BUILDUP",
+      "titleVi": "Dấu Chân Của Ngai Vàng Lửa",
+      "subtitleVi": "Mười chín tấn cơ bắp bọc đá bazan dẫm nát thềm lục địa. Với BAO_CHUA_IGNIS_REX, mỗi vết nứt dung nham dưới chân là lời tuyên bố: ngai vàng này không bao giờ chia đôi.",
+      "skillUsed": "[ACTION_SEISMIC_ROAR]",
+      "preparationBeatEn": "@BAO_CHUA_IGNIS_REX shifts its 19-ton center of mass forward, massive thigh muscles coiling as its raised right hind claw hovers above a crusted volcanic slab",
+      "mainActionBeatEn": "The colossal hind foot of @BAO_CHUA_IGNIS_REX slams down on two massive hind legs, pulverizing the black basalt crust while orange magma veins pulse brightly along its neck",
+      "aftermathConsequenceEn": "Molten lava oozes up into the deep three-toed footprint depression while hissed steam clouds wrap around @BAO_CHUA_IGNIS_REX scarred ankle scales",
+      "actionPromptEn": "Extreme low-angle close-up as @BAO_CHUA_IGNIS_REX crushes the volcanic shoreline underfoot on two massive hind legs, leaving deep molten footprints while magma veins pulse along its obsidian hide.",
+      "endFramePromptEn": "End Frame Lock [Shot 02]: Deep glowing three-toed footprint smoking in fractured basalt in foreground with @BAO_CHUA_IGNIS_REX massive hind legs braced in midground.",
+      "cameraAngle": "Extreme Close-Up Ground-Level Foot Macro",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 8,
+      "causalConnector": "THEREFORE_CONSEQUENCE",
+      "causalBridgeFromPrevVi": "[VÌ VẬY - THEREFORE]: Vì tiếng gầm ở Cảnh 1 vừa tuyên bố chủ quyền từ trên đỉnh vách đá, BAO_CHUA_IGNIS_REX bắt đầu bước xuống thềm đá bazan để tuần tra biên giới sông lửa.",
+      "causalBridgeFromPrevEn": "THEREFORE: Having proclaimed territory from the cliff top in Shot 1, @BAO_CHUA_IGNIS_REX descends onto the basalt shoreline to patrol the lava river bank.",
+      "dramaticStakesVi": "Khẳng định sức nặng 19 tấn không kẻ nào dám xâm phạm trên mặt đất.",
+      "valueChargeShift": "[-1 Điềm báo] -> [+1 Uy quyền Tuyệt đối trên Cạn]",
+      "microTurningPointTwistEn": "As @BAO_CHUA_IGNIS_REX hind claw crushes a cooled lava boulder at 2.5s, pressurized molten magma spurts upward through the newly formed cracks.",
+      "recurringMotifPropStateEn": "Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: Visible in the background across the river, vibrating slightly with each 19-ton footstep.",
+      "entryStateEn": "THEREFORE: Having proclaimed territory from the cliff top in Shot 1, @BAO_CHUA_IGNIS_REX descends onto the basalt shoreline to patrol the lava river bank.",
+      "exitStateEn": "End Frame Lock [Shot 02]: Deep glowing three-toed footprint smoking in fractured basalt in foreground with @BAO_CHUA_IGNIS_REX massive hind legs braced in midground.",
+      "coverageType": "INSERT_DETAIL_CUTAWAY",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Out-of-Focus Bokeh f/2.0] drifting rain droplets and glowing embers | [MG - Razor-Sharp Macro Subject] extreme tactile detail of claws, scales, or contracting eye pupil | [BG - Atmospheric Blur] volcanic canyon mist",
+      "stuntChoreography": {
+        "attackVectorEn": "Predatory stalking stance with coiled hind-leg tendons and lowered center of gravity",
+        "mechanicalContactPointEn": "Heavy claws gripping and fracturing wet volcanic basalt ledges under 19-ton static load",
+        "newtonianCounterForceEn": "Seismic ground reaction force sending concentric shock rings through boiling water puddles",
+        "guardTransitionEn": "Combat-ready guard posture locked on 180-degree confrontation axis",
+        "combinedChoreographyEn": "Stunt Choreography [Pre-Clash Stance]: Predatory coiled tendons, claws fracturing basalt under 19-ton load, seismic ground reaction ripples, locked combat guard."
+      },
+      "stageDestructionLevel": "STAGE_1_PRISTINE_OMINOUS",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels.",
+      "emotionalTensionMode": "OMINOUS_SILENCE",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: shockwave parting the rain curtain, muddy water and molten droplets splashing onto the camera lens, subtle kinetic camera shake on impact",
+      "colorScriptMoodEn": "Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow",
+      "shotIdx": "02",
+      "hasChar1": true,
+      "hasChar2": false,
+      "spatialPrevisDossier": {
+        "shotNumber": 2,
+        "cameraExtrinsics": {
+          "coverageType": "INSERT_DETAIL_CUTAWAY",
+          "focalLengthMm": "85mm Macro Anamorphic Prime",
+          "apertureStop": "f/2.0 (Shallow bokeh foreground & background, razor-sharp ground contact zone)",
+          "cameraDistanceMeters": 1.4,
+          "cameraElevationMeters": 0.45,
+          "cameraPitchDeg": "-6° Ground-Level Macro Tilt on Foot Contact",
+          "cameraRigMovementVectorEn": "High-speed 120fps ground-level micro-dolly locked on the three-toed hind foot impact",
+          "framingScaleConstraintEn": "GROUND-LEVEL FOOT MACRO INSERT FRAMING (1.4m distance, 0.45m elevation): Frame strictly the colossal three-toed hind foot, ankle osteoderms, and cracking magma slab underfoot (upper torso and head remain above top frame edge)",
+          "targetAnatomicalZoneEn": "Lower Hind-Limb Three-Toed Claws, Ankle Scales & Cracking Basalt Slab"
+        },
+        "subject1Box": {
+          "entityName": "BAO_CHUA_IGNIS_REX",
+          "screenZoneXPercent": "X: 22% to 74% (Dominant Left-Center Anchor)",
+          "screenZoneYPercent": "Y: 10% to 94%",
+          "depthDistanceMeters": 1.4,
+          "bodyYawDegAndFacingEn": "Body Yaw +30° Facing Screen-Right along the 180-degree axis",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Three-toed right hind claw and ankle osteoderms crushing basalt slab toward Screen-Right [X: 55%, Y: 78%]"
+        },
+        "subject2Box": null,
+        "contactTerrainGeometryEn": "Crusted geothermal shoreline slab with glowing orange magma fissures cracking open directly beneath 19-ton three-toed claws",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "Lower hind-limb knee and ankle joints drive full 19-ton mass vertically downward",
+          "spineAndThoraxTorsionEn": "Heavy tarsometatarsus ankle bone locks rigid under colossal load transfer",
+          "primaryExtremityStrikeEn": "Three-toed right hind foot slams vertically downward onto the crusted lava slab",
+          "newtonianGroundRecoilAndSettleEn": "Ankle tendons compress under impact as molten magma squirts through radial rock fractures",
+          "combinedKinematicsChainEn": "Lower hind-limb vertical drive -> Rigid ankle bone lock -> Three-toed hind-foot basalt slam -> Ankle tendon compression & lava spurt"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: Colossal 19-ton hind-foot impact crunching black basalt crust, cracking rock fissures, and pressurized lava hissing.",
+          "bespokeAmbientEn": "Ambient: Steaming geothermal vents, rain sizzling on hot scales, and distant thunder."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 85mm Macro Anamorphic Prime at f/2.0 (Shallow bokeh foreground & background, razor-sharp ground contact zone), Camera Distance Z=1.4m, Elevation Y=0.45m, Pitch -6° Ground-Level Macro Tilt on Foot Contact. GROUND-LEVEL FOOT MACRO INSERT FRAMING (1.4m distance, 0.45m elevation): Frame strictly the colossal three-toed hind foot, ankle osteoderms, and cracking magma slab underfoot (upper torso and head remain above top frame edge). 3D SPATIAL BOUNDING-BOX LAYOUT: [Solo Subject @BAO_CHUA_IGNIS_REX at X: 22% to 74% (Dominant Left-Center Anchor), Y: 10% to 94%, Depth Z=1.4m, Body Yaw +30° Facing Screen-Right along the 180-degree axis, Focus Zone: Three-toed right hind claw and ankle osteoderms crushing basalt slab toward Screen-Right [X: 55%, Y: 78%]]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Crusted geothermal shoreline slab with glowing orange magma fissures cracking open directly beneath 19-ton three-toed claws (zero floating limbs). SOLO GROUND-LEVEL FOOT MACRO SUBJECT: @BAO_CHUA_IGNIS_REX [CHARACTER 1: BAO_CHUA_IGNIS_REX] (EXTREME CLOSE-UP ON COLOSSAL THREE-TOED CHARCOAL-BLACK BASALT HIND FOOT, ANKLE SCALES WITH GLOWING ORANGE MAGMA VEINS, AND CURVED VOLCANIC TALONS CRUSHING DOWN INTO BASALT ROCK AT GROUND LEVEL — upper body, torso, head, and jaws are cropped out above top frame border and MUST NOT appear) inside @STAGE: DAU_TRUONG_KRETA. STRICT SOLO SHOT: zero second dinosaur. [KEYFRAME POSE SNAPSHOT (Lower Hind-Limb Three-Toed Claws, Ankle Scales & Cracking Basalt Slab)]: The colossal hind foot of @BAO_CHUA_IGNIS_REX slams down on two massive hind legs, pulverizing the black basalt crust while orange magma veins pulse brightly across its ankle osteoderms. Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: Visible in the background across the river, vibrating slightly with each 19-ton footstep. 3-Plane Studio Depth Staging: [FG - Out-of-Focus Bokeh f/2.0] drifting rain droplets and glowing embers | [MG - Razor-Sharp Macro Subject] extreme tactile detail of claws, scales, or cracking basalt crust | [BG - Atmospheric Blur] volcanic canyon mist Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels. Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 85mm Macro Anamorphic Prime, Distance Z=1.4m, Elevation 0.45m, -6° Ground-Level Macro Tilt on Foot Contact — High-speed 120fps ground-level micro-dolly locked on the three-toed hind foot impact. [SKELETAL KINEMATICS (Lower Hind-Limb Three-Toed Claws, Ankle Scales & Cracking Basalt Slab)]: Lower hind-limb vertical drive -> Rigid ankle bone lock -> Three-toed hind-foot basalt slam -> Ankle tendon compression & lava spurt. Skill: [ACTION_SEISMIC_ROAR]. [3-BEAT MOTION (OMINOUS_SILENCE)]: (0.0s-2.5s) @BAO_CHUA_IGNIS_REX shifts its 19-ton center of mass forward, massive thigh muscles coiling as its raised right hind claw hovers above a crusted volcanic slab -> (2.5s-5.5s) The colossal hind foot of @BAO_CHUA_IGNIS_REX slams down on two massive hind legs, pulverizing the black basalt crust while orange magma veins pulse brightly across its ankle osteoderms -> (5.5s-8.0s) Molten lava oozes up into the deep three-toed footprint depression while hissed steam clouds wrap around @BAO_CHUA_IGNIS_REX scarred ankle scales. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Crusted geothermal shoreline slab with glowing orange magma fissures cracking open directly beneath 19-ton three-toed claws (@STAGE: DAU_TRUONG_KRETA). Solo Foot Macro Lock: Only @BAO_CHUA_IGNIS_REX [X: 22% to 74% (Dominant Left-Center Anchor), three-toed basalt hind foot & talons crushing rock at ground level]; zero second dinosaur. Animate strictly from first frame without morphing. SFX: Colossal 19-ton hind-foot impact crunching black basalt crust, cracking rock fissures, and pressurized lava hissing. Ambient: Steaming geothermal vents, rain sizzling on hot scales, and distant thunder. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 2,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 1,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 85mm Macro Anamorphic Prime, Distance Z=1.4m, Elevation 0.45m, -6° Gr...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1720 chars (~313 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 2831 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=1.4m, Y=0.45m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage INSERT_DETAIL_CUTAWAY (Z=1.4m, Y=0.45m) matched with zone \"Lower Hind-Limb Three-Toed Claws, Ankle Scales & Cracking Basalt Slab\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Crusted geothermal shoreline slab with glowing orange magma fissu...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"Lower hind-limb vertical drive -> Rigid ankle bone lock -> Three-toed hind-...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Colossal 19-ton hind-foot impact crunching black b...\")"
+          }
+        },
+        "autoFixesApplied": []
+      },
+      "startKeyframeMediaId": "cached_shot_02",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_02_start_frame.png",
+      "referenceIds": [
+        "81d3fafc-de87-4bb5-8e47-c3428876ca33",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_02_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_02_vo.mp3"
+    },
+    {
+      "shotNumber": 3,
+      "canonical23Index": 3,
+      "macroPhase": "PRE_MAIN_BUILDUP",
+      "titleVi": "Kẻ Thách Thức Từ Vực Thẳm",
+      "subtitleVi": "Đôi vuốt dài một mét rưỡi bấm phập vào đá núi lửa. THUY_QUAI_VOLT_SPINO bước lên bờ, mang theo cơn thịnh nộ của đại dương cổ đại thách thức bá chủ mặt đất.",
+      "skillUsed": "[ACTION_AMPHIBIOUS_AMBUSH]",
+      "preparationBeatEn": "The shoreline water domes upward as @THUY_QUAI_VOLT_SPINO coils its paddle-shaped tail against the submerged rocks for an explosive amphibious breach",
+      "mainActionBeatEn": "@THUY_QUAI_VOLT_SPINO bursts onto the right-side basalt bank in [ACTION_AMPHIBIOUS_AMBUSH], digging its 1.5-meter razor foreclaws into the rock as blue lightning crackles over its dorsal sail",
+      "aftermathConsequenceEn": "Boiling water cascades off its dark abyssal-slate crocodilian scales and instantly vaporizes into white steam where stray bio-electric arcs scorch the wet stone",
+      "actionPromptEn": "@THUY_QUAI_VOLT_SPINO lunges out of the lagoon onto the right basalt bank in [ACTION_AMPHIBIOUS_AMBUSH], anchoring its 1.5-meter electrified foreclaws into the rock.",
+      "endFramePromptEn": "End Frame Lock [Shot 04]: @THUY_QUAI_VOLT_SPINO standing on the right shoreline facing left, dorsal sail glowing cyan and 1.5-meter foreclaws sparking against wet basalt.",
+      "cameraAngle": "Low-Angle Hero Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 8,
+      "causalConnector": "THEREFORE_CONSEQUENCE",
+      "causalBridgeFromPrevVi": "[VÌ VẬY - THEREFORE]: Vì đã rẽ nước tiếp cận sát bờ đá ở Cảnh 3, THUY_QUAI_VOLT_SPINO lập tức phóng vọt toàn thân từ dưới lòng hồ lên bờ đá đối diện để lộ diện hoàn toàn.",
+      "causalBridgeFromPrevEn": "THEREFORE: Having reached the shallow shoreline in Shot 3, @THUY_QUAI_VOLT_SPINO launches its full 18-ton body out of the lagoon onto the eastern basalt bank.",
+      "dramaticStakesVi": "Kẻ thách thức chính thức đặt chân lên mặt đất, xóa bỏ lợi thế độc quyền của bạo chúa.",
+      "valueChargeShift": "[-1 Đe dọa Ngầm] -> [-2 Kẻ Thách Thức Lộ Diện Trực Diện]",
+      "microTurningPointTwistEn": "As @THUY_QUAI_VOLT_SPINO lands on the wet rock at 2.5s, its 1.5-meter foreclaws dig deep grooves into the stone and discharge a blinding ring of blue high-voltage sparks.",
+      "recurringMotifPropStateEn": "Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: @THUY_QUAI_VOLT_SPINO emerges directly beside the Fang Pillar, using it as a scale reference.",
+      "entryStateEn": "THEREFORE: Having reached the shallow shoreline in Shot 3, @THUY_QUAI_VOLT_SPINO launches its full 18-ton body out of the lagoon onto the eastern basalt bank.",
+      "exitStateEn": "End Frame Lock [Shot 04]: @THUY_QUAI_VOLT_SPINO standing on the right shoreline facing left, dorsal sail glowing cyan and 1.5-meter foreclaws sparking against wet basalt.",
+      "coverageType": "KULESHOV_REACTION",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Blurred Sparks & Steam] rising battle smoke brushing past lens | [MG - Emotional Focal Center] intense close-up on scarred face, heaving chest, and fierce eyes | [BG - Dark Storm Clouds] high-contrast chiaroscuro sky",
+      "stuntChoreography": {
+        "attackVectorEn": "Predatory stalking stance with coiled hind-leg tendons and lowered center of gravity",
+        "mechanicalContactPointEn": "Heavy claws gripping and fracturing wet volcanic basalt ledges under 19-ton static load",
+        "newtonianCounterForceEn": "Seismic ground reaction force sending concentric shock rings through boiling water puddles",
+        "guardTransitionEn": "Combat-ready guard posture locked on 180-degree confrontation axis",
+        "combinedChoreographyEn": "Stunt Choreography [Pre-Clash Stance]: Predatory coiled tendons, claws fracturing basalt under 19-ton load, seismic ground reaction ripples, locked combat guard."
+      },
+      "stageDestructionLevel": "STAGE_1_PRISTINE_OMINOUS",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels.",
+      "emotionalTensionMode": "RISING_PRESSURE",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: shockwave parting the rain curtain, muddy water and molten droplets splashing onto the camera lens, subtle kinetic camera shake on impact",
+      "colorScriptMoodEn": "Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow",
+      "shotIdx": "03",
+      "hasChar1": false,
+      "hasChar2": true,
+      "spatialPrevisDossier": {
+        "shotNumber": 3,
+        "cameraExtrinsics": {
+          "coverageType": "KULESHOV_REACTION",
+          "focalLengthMm": "50mm Panavision Anamorphic Prime",
+          "apertureStop": "f/2.2 (Intimate emotional isolation with volumetric steam bokeh)",
+          "cameraDistanceMeters": 3.2,
+          "cameraElevationMeters": 3.6,
+          "cameraPitchDeg": "+12° Heroic Eye-Line Tilt",
+          "cameraRigMovementVectorEn": "Slow push-in dolly from 3.6m to 2.9m at 0.1m/s capturing visceral facial and chest reaction",
+          "framingScaleConstraintEn": "MEDIUM-CLOSE REACTION FRAMING (3.2m distance, 3.6m elevation): Frame head, jaws, contracting eye pupil, scarred neck, and heaving upper chest in razor focus",
+          "targetAnatomicalZoneEn": "Head, Jaws, Contracting Eye Pupil, Neck & Upper Thorax"
+        },
+        "subject1Box": {
+          "entityName": "THUY_QUAI_VOLT_SPINO",
+          "screenZoneXPercent": "X: 26% to 78% (Dominant Right-Center Anchor)",
+          "screenZoneYPercent": "Y: 12% to 94%",
+          "depthDistanceMeters": 3.2,
+          "bodyYawDegAndFacingEn": "Body Yaw -30° Facing Screen-Left along the 180-degree axis",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Towering cyan dorsal sail and crocodilian snout oriented toward Screen-Left shoreline [X: 15%, Y: 48%]"
+        },
+        "subject2Box": null,
+        "contactTerrainGeometryEn": "Sloping eastern basalt riverbank drenched in cascading muddy water and steaming volcanic mist",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "Hind legs push off the submerged river bottom, launching 18-ton mass up the eastern bank",
+          "spineAndThoraxTorsionEn": "Elongated spine uncoils in an S-curve as water sheets off dark abyssal-slate crocodilian scales",
+          "primaryExtremityStrikeEn": "1.5-meter hooked foreclaws rake deep trenches into the wet basalt ledge to haul the body ashore",
+          "newtonianGroundRecoilAndSettleEn": "Heavy landing shock sends muddy spray outward as dorsal sail flares with neon-cyan charge",
+          "combinedKinematicsChainEn": "Submerged hind-leg launch -> S-curve spine uncoil -> 1.5m foreclaw bank grip -> Heavy shore landing"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: Explosive water breach, giant organic keratin claws scraping wet basalt rock, and a deep amphibious hiss.",
+          "bespokeAmbientEn": "Ambient: Cascading waterfall spray off massive scales, storm wind, and crackling cyan dorsal energy."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 50mm Panavision Anamorphic Prime at f/2.2 (Intimate emotional isolation with volumetric steam bokeh), Camera Distance Z=3.2m, Elevation Y=3.6m, Pitch +12° Heroic Eye-Line Tilt. MEDIUM-CLOSE REACTION FRAMING (3.2m distance, 3.6m elevation): Frame head, jaws, contracting eye pupil, scarred neck, and heaving upper chest in razor focus. 3D SPATIAL BOUNDING-BOX LAYOUT: [Solo Subject @THUY_QUAI_VOLT_SPINO at X: 26% to 78% (Dominant Right-Center Anchor), Y: 12% to 94%, Depth Z=3.2m, Body Yaw -30° Facing Screen-Left along the 180-degree axis, Focus Zone: Towering cyan dorsal sail and crocodilian snout oriented toward Screen-Left shoreline [X: 15%, Y: 48%]]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Sloping eastern basalt riverbank drenched in cascading muddy water and steaming volcanic mist (zero floating limbs). SOLO SUBJECT: @THUY_QUAI_VOLT_SPINO [CHARACTER 2: THUY_QUAI_VOLT_SPINO] (100% organic prehistoric amphibious Spinosaurus with dark abyssal-slate crocodilian scales, glowing cyan dorsal sail, 1.5m foreclaws; zero metal or robot parts) inside @STAGE: DAU_TRUONG_KRETA. STRICT SOLO SHOT: zero second dinosaur. [KEYFRAME POSE SNAPSHOT (Head, Jaws, Contracting Eye Pupil, Neck & Upper Thorax)]: @THUY_QUAI_VOLT_SPINO bursts onto the right-side basalt bank in [ACTION_AMPHIBIOUS_AMBUSH], digging its 1.5-meter razor foreclaws into the rock as blue lightning crackles over its dorsal sail. Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: @THUY_QUAI_VOLT_SPINO emerges directly beside the Fang Pillar, using it as a scale reference. 3-Plane Studio Depth Staging: [FG - Blurred Sparks & Steam] rising battle smoke brushing past lens | [MG - Emotional Focal Center] intense close-up on scarred face, heaving chest, and fierce eyes | [BG - Dark Storm Clouds] high-contrast chiaroscuro sky Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels. Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 50mm Panavision Anamorphic Prime, Distance Z=3.2m, Elevation 3.6m, +12° Heroic Eye-Line Tilt — Slow push-in dolly from 3.6m to 2.9m at 0.1m/s capturing visceral facial and chest reaction. [SKELETAL KINEMATICS (Head, Jaws, Contracting Eye Pupil, Neck & Upper Thorax)]: Submerged hind-leg launch -> S-curve spine uncoil -> 1.5m foreclaw bank grip -> Heavy shore landing. Skill: [ACTION_AMPHIBIOUS_AMBUSH]. [3-BEAT MOTION (RISING_PRESSURE)]: (0.0s-2.5s) The shoreline water domes upward as @THUY_QUAI_VOLT_SPINO coils its paddle-shaped tail against the submerged rocks for an explosive amphibious breach -> (2.5s-5.5s) @THUY_QUAI_VOLT_SPINO bursts onto the right-side basalt bank in [ACTION_AMPHIBIOUS_AMBUSH], digging its 1.5-meter razor foreclaws into the rock as blue lightning crackles over its dorsal sail -> (5.5s-8.0s) Boiling water cascades off its dark abyssal-slate crocodilian scales and instantly vaporizes into white steam where stray bio-electric arcs scorch the wet stone. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Sloping eastern basalt riverbank drenched in cascading muddy water and steaming volcanic mist (@STAGE: DAU_TRUONG_KRETA). Solo Lock: Only @THUY_QUAI_VOLT_SPINO [X: 26% to 78% (Dominant Right-Center Anchor), organic cyan-sail Spinosaurus]; zero second dinosaur. Animate strictly from first frame without morphing. SFX: Explosive water breach, giant organic keratin claws scraping wet basalt rock, and a deep amphibious hiss. Ambient: Cascading waterfall spray off massive scales, storm wind, and crackling cyan dorsal energy. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 3,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 1,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 50mm Panavision Anamorphic Prime, Distance Z=3.2m, Elevation 3.6m, +1...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1611 chars (~293 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 2551 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=3.2m, Y=3.6m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage KULESHOV_REACTION (Z=3.2m, Y=3.6m) matched with zone \"Head, Jaws, Contracting Eye Pupil, Neck & Upper Thorax\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Sloping eastern basalt riverbank drenched in cascading muddy wate...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"Submerged hind-leg launch -> S-curve spine uncoil -> 1.5m foreclaw bank gri...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Explosive water breach, giant organic keratin claw...\")"
+          }
+        },
+        "autoFixesApplied": []
+      },
+      "startKeyframeMediaId": "cached_shot_03",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_03_start_frame.png",
+      "referenceIds": [
+        "4446c78e-5a78-4766-8cc8-7faacf8b94b9",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_03_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_03_vo.mp3"
+    },
+    {
+      "shotNumber": 4,
+      "canonical23Index": 4,
+      "macroPhase": "PRE_MAIN_BUILDUP",
+      "titleVi": "Hai Ánh Mắt Chia Đôi Bầu Trời",
+      "subtitleVi": "Một bên là huyết quản lửa ngàn độ, một bên là sấm sét vực sâu. Khoảnh khắc hai ánh mắt khóa chặt qua dòng sông dung nham, thời gian như đông cứng trước cơn bão.",
+      "skillUsed": "[ACTION_SEISMIC_ROAR]",
+      "preparationBeatEn": "On the left bank @BAO_CHUA_IGNIS_REX lowers its scarred skull glowing fiery orange, while on the right bank @THUY_QUAI_VOLT_SPINO arches its cyan-lit dorsal sail in a tense standoff",
+      "mainActionBeatEn": "Both titans roar simultaneously in [ACTION_SEISMIC_ROAR] across the molten river, fiery red thermal waves from the left colliding with cyan bio-electric arcs from the right",
+      "aftermathConsequenceEn": "The colliding acoustic pressure domes the rain curtain in the center and both predators dig their hind claws into the rock to launch their charge",
+      "actionPromptEn": "Wide 180-degree standoff: @BAO_CHUA_IGNIS_REX on the left glowing molten orange and @THUY_QUAI_VOLT_SPINO on the right glowing electric cyan roar across the lava river before charging.",
+      "endFramePromptEn": "End Frame Lock [Shot 05]: @BAO_CHUA_IGNIS_REX on the left and @THUY_QUAI_VOLT_SPINO on the right crouched in explosive sprint-start postures across the central lava channel.",
+      "cameraAngle": "Over-The-Shoulder Confrontation Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 8,
+      "causalConnector": "THEREFORE_CONSEQUENCE",
+      "causalBridgeFromPrevVi": "[VÌ VẬY - THEREFORE]: Vì THUY_QUAI_VOLT_SPINO đã bước lên bờ Đông ở Cảnh 4 còn BAO_CHUA_IGNIS_REX đang trấn giữ bờ Tây từ Cảnh 2, hai vị vua lần đầu tiên khóa chặt ánh mắt qua dòng sông dung nham.",
+      "causalBridgeFromPrevEn": "THEREFORE: With @BAO_CHUA_IGNIS_REX holding the left bank and @THUY_QUAI_VOLT_SPINO now standing on the right bank, both apex titans lock eyes across the dividing lava channel.",
+      "dramaticStakesVi": "Giây phút cân não cuối cùng: kẻ nào chớp mắt hoặc lùi bước trước sẽ mất quyền chủ động mở màn.",
+      "valueChargeShift": "[-2 Đối đầu Căng thẳng] -> [0 Cực Tĩnh Trước Cơn Bão]",
+      "microTurningPointTwistEn": "Both titans simultaneously inhale at 2.2s and unleash colliding roars that split the falling rain curtain right down the center of the frame.",
+      "recurringMotifPropStateEn": "Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: Framed dead-center between @BAO_CHUA_IGNIS_REX (Left) and @THUY_QUAI_VOLT_SPINO (Right) as the dividing line of fate.",
+      "entryStateEn": "THEREFORE: With @BAO_CHUA_IGNIS_REX holding the left bank and @THUY_QUAI_VOLT_SPINO now standing on the right bank, both apex titans lock eyes across the dividing lava channel.",
+      "exitStateEn": "End Frame Lock [Shot 05]: @BAO_CHUA_IGNIS_REX on the left and @THUY_QUAI_VOLT_SPINO on the right crouched in explosive sprint-start postures across the central lava channel.",
+      "coverageType": "POV_SUBJECTIVE",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] colossal titans in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm",
+      "stuntChoreography": {
+        "attackVectorEn": "Predatory stalking stance with coiled hind-leg tendons and lowered center of gravity",
+        "mechanicalContactPointEn": "Heavy claws gripping and fracturing wet volcanic basalt ledges under 19-ton static load",
+        "newtonianCounterForceEn": "Seismic ground reaction force sending concentric shock rings through boiling water puddles",
+        "guardTransitionEn": "Combat-ready guard posture locked on 180-degree confrontation axis",
+        "combinedChoreographyEn": "Stunt Choreography [Pre-Clash Stance]: Predatory coiled tendons, claws fracturing basalt under 19-ton load, seismic ground reaction ripples, locked combat guard."
+      },
+      "stageDestructionLevel": "STAGE_1_PRISTINE_OMINOUS",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels.",
+      "emotionalTensionMode": "RISING_PRESSURE",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: shockwave parting the rain curtain, muddy water and molten droplets splashing onto the camera lens, subtle kinetic camera shake on impact",
+      "colorScriptMoodEn": "Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow",
+      "shotIdx": "04",
+      "hasChar1": true,
+      "hasChar2": true,
+      "spatialPrevisDossier": {
+        "shotNumber": 4,
+        "cameraExtrinsics": {
+          "coverageType": "POV_SUBJECTIVE",
+          "focalLengthMm": "28mm Kinetic Combat Prime",
+          "apertureStop": "f/2.4 (Visceral kinetic focus)",
+          "cameraDistanceMeters": 5.8,
+          "cameraElevationMeters": 2.6,
+          "cameraPitchDeg": "+6° Dynamic Combat Vector",
+          "cameraRigMovementVectorEn": "High-velocity handheld/whip-pan combat tracking advancing along the strike vector at 2.4m/s",
+          "framingScaleConstraintEn": "SUBJECTIVE COMBAT PERSPECTIVE (5.8m distance, 2.6m elevation): Dynamic forward-looking combat framing placing the viewer directly inside the collision zone",
+          "targetAnatomicalZoneEn": "Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave"
+        },
+        "subject1Box": {
+          "entityName": "BAO_CHUA_IGNIS_REX",
+          "screenZoneXPercent": "X: 8% to 48% (Strict Left Hemisphere Slot)",
+          "screenZoneYPercent": "Y: 12% to 94%",
+          "depthDistanceMeters": 5.8,
+          "bodyYawDegAndFacingEn": "Body Yaw +35° Facing Screen-Right toward opponent",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave locked onto @THUY_QUAI_VOLT_SPINO at [X: 68%, Y: 45%]"
+        },
+        "subject2Box": {
+          "entityName": "THUY_QUAI_VOLT_SPINO",
+          "screenZoneXPercent": "X: 52% to 92% (Strict Right Hemisphere Slot)",
+          "screenZoneYPercent": "Y: 10% to 94%",
+          "depthDistanceMeters": 6.4,
+          "bodyYawDegAndFacingEn": "Body Yaw -35° Facing Screen-Left toward opponent",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave locked onto @BAO_CHUA_IGNIS_REX at [X: 32%, Y: 45%]"
+        },
+        "contactTerrainGeometryEn": "Flat rain-slicked obsidian fault-line arena flanked by the intact Ancient Fang-Shaped Basalt Pillar in the center lagoon",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "Both titans drop their pelvises into low predatory combat stances across the 180-degree axis",
+          "spineAndThoraxTorsionEn": "Necks crane forward at opposing 25° angles with dorsal osteoderms and cyan sail bristling",
+          "primaryExtremityStrikeEn": "Jaws part in synchronized acoustic challenge while tails whip laterally in counter-rhythm",
+          "newtonianGroundRecoilAndSettleEn": "Opposing acoustic pressure waves collide at X:50% center-frame, atomizing rain into mist",
+          "combinedKinematicsChainEn": "Dual low pelvis drop -> Opposing 25° neck crane -> Synchronized jaw roar -> Mid-air shockwave collision"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: Dual overlapping apex roars — guttural sub-bass magma bellow clashing against high-frequency electric shriek.",
+          "bespokeAmbientEn": "Ambient: Acoustic shockwave atomizing rain, forked lightning overhead, and bubbling lava river."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 28mm Kinetic Combat Prime at f/2.4 (Visceral kinetic focus), Camera Distance Z=5.8m, Elevation Y=2.6m, Pitch +6° Dynamic Combat Vector. SUBJECTIVE COMBAT PERSPECTIVE (5.8m distance, 2.6m elevation): Dynamic forward-looking combat framing placing the viewer directly inside the collision zone. 3D SPATIAL BOUNDING-BOX LAYOUT: [Subject 1 @BAO_CHUA_IGNIS_REX at X: 8% to 48% (Strict Left Hemisphere Slot), Y: 12% to 94%, Depth Z=5.8m, Body Yaw +35° Facing Screen-Right toward opponent] VERSUS [Subject 2 @THUY_QUAI_VOLT_SPINO at X: 52% to 92% (Strict Right Hemisphere Slot), Y: 10% to 94%, Depth Z=6.4m, Body Yaw -35° Facing Screen-Left toward opponent]. Focus Zone: Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave locked onto @THUY_QUAI_VOLT_SPINO at [X: 68%, Y: 45%]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Flat rain-slicked obsidian fault-line arena flanked by the intact Ancient Fang-Shaped Basalt Pillar in the center lagoon (zero floating limbs). TWO DISTINCT SUBJECTS ON 180-DEGREE AXIS — LEFT FACING RIGHT: @BAO_CHUA_IGNIS_REX [CHARACTER 1: BAO_CHUA_IGNIS_REX] (Charcoal-black basalt T-Rex with glowing orange magma veins; bipedal on 2 hind legs, tiny 2-fingered arms, hornless T-Rex skull) VERSUS RIGHT FACING LEFT: @THUY_QUAI_VOLT_SPINO [CHARACTER 2: THUY_QUAI_VOLT_SPINO] (100% organic prehistoric amphibious Spinosaurus with dark abyssal-slate crocodilian scales, glowing cyan dorsal sail, 1.5m foreclaws; zero metal or robot parts) inside @STAGE: DAU_TRUONG_KRETA. Keep both creatures 100% anatomically separate. [KEYFRAME POSE SNAPSHOT (Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave)]: Both titans roar simultaneously in [ACTION_SEISMIC_ROAR] across the molten river, fiery red thermal waves from the left colliding with cyan bio-electric arcs from the right. Motif Landmark [Ancient Fang-Shaped Basalt Pillar]: Framed dead-center between @BAO_CHUA_IGNIS_REX (Left) and @THUY_QUAI_VOLT_SPINO (Right) as the dividing line of fate. 3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] colossal titans in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels. Show-Dont-Tell Physical Proof: concentric seismic ripples in muddy water puddles, small volcanic pebbles bouncing upward from ground tremors, thermal heat-haze shimmering around nostrils Color Script [Phase 1 - Suspense]: desaturated cold slate-blue and ominous deep-violet storm mist with faint subterranean ember glow Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 28mm Kinetic Combat Prime, Distance Z=5.8m, Elevation 2.6m, +6° Dynamic Combat Vector — High-velocity handheld/whip-pan combat tracking advancing along the strike vector at 2.4m/s. [SKELETAL KINEMATICS (Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave)]: Dual low pelvis drop -> Opposing 25° neck crane -> Synchronized jaw roar -> Mid-air shockwave collision. Skill: [ACTION_SEISMIC_ROAR]. [3-BEAT MOTION (RISING_PRESSURE)]: (0.0s-2.5s) On the left bank @BAO_CHUA_IGNIS_REX lowers its scarred skull glowing fiery orange, while on the right bank @THUY_QUAI_VOLT_SPINO arches its cyan-lit dorsal sail in a tense standoff -> (2.5s-5.5s) Both titans roar simultaneously in [ACTION_SEISMIC_ROAR] across the molten river, fiery red thermal waves from the left colliding with cyan bio-electric arcs from the right -> (5.5s-8.0s) The colliding acoustic pressure domes the rain curtain in the center and both predators dig their hind claws into the rock to launch their charge. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Flat rain-slicked obsidian fault-line arena flanked by the intact Ancient Fang-Shaped Basalt Pillar in the center lagoon (@STAGE: DAU_TRUONG_KRETA). Dual Axis Lock: @BAO_CHUA_IGNIS_REX [Left X: 8% to 48% (Strict Left Hemisphere Slot), hornless bipedal T-Rex, tiny 2-fingered arms] vs @THUY_QUAI_VOLT_SPINO [Right X: 52% to 92% (Strict Right Hemisphere Slot), organic cyan-sail Spinosaurus]; zero trait bleeding. Animate strictly from first frame without morphing. SFX: Dual overlapping apex roars — guttural sub-bass magma bellow clashing against high-frequency electric shriek. Ambient: Acoustic shockwave atomizing rain, forked lightning overhead, and bubbling lava river. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 4,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 1,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 28mm Kinetic Combat Prime, Distance Z=5.8m, Elevation 2.6m, +6° Dynam...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1757 chars (~319 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 2981 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=5.8m, Y=2.6m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage POV_SUBJECTIVE (Z=5.8m, Y=2.6m) matched with zone \"Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Flat rain-slicked obsidian fault-line arena flanked by the intact...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"Dual low pelvis drop -> Opposing 25° neck crane -> Synchronized jaw roar ->...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: Dual overlapping apex roars — guttural sub-bass ma...\")"
+          }
+        },
+        "autoFixesApplied": []
+      },
+      "startKeyframeMediaId": "cached_shot_04",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_04_start_frame.png",
+      "referenceIds": [
+        "81d3fafc-de87-4bb5-8e47-c3428876ca33",
+        "4446c78e-5a78-4766-8cc8-7faacf8b94b9",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_04_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_04_vo.mp3"
+    },
+    {
+      "shotNumber": 5,
+      "canonical23Index": 7,
+      "macroPhase": "MAIN_CLIMAX_CONFLICT",
+      "titleVi": "Móng Vuốt Lôi Đình Xé Giáp",
+      "subtitleVi": "Chiến trường không tha thứ cho một nhịp chậm trễ. Đôi vuốt tích điện của sát thủ đầm lầy cào toạc lớp giáp đá, bắn tung những mảnh vảy nóng đỏ.",
+      "skillUsed": "[SKILL_1_RAZOR_CLAW_FRENZY]",
+      "preparationBeatEn": "Seeing @BAO_CHUA_IGNIS_REX off-balance from the previous collision, @THUY_QUAI_VOLT_SPINO rears back its right forelimb as high-voltage cyan currents surge from its dorsal sail into its 1.5-meter talons",
+      "mainActionBeatEn": "Insert close-up strike as @THUY_QUAI_VOLT_SPINO unleashes [SKILL_1_RAZOR_CLAW_FRENZY], raking its electrified talons diagonally across @BAO_CHUA_IGNIS_REX basalt shoulder armor in a blinding arc flash",
+      "aftermathConsequenceEn": "Shattered fragments of black obsidian scale fly past the camera lens while three smoking, ember-bleeding claw trenches appear on @BAO_CHUA_IGNIS_REX staggered shoulder",
+      "actionPromptEn": "Close-up kinetic strike as @THUY_QUAI_VOLT_SPINO exploits the opening to slash @BAO_CHUA_IGNIS_REX shoulder armor with [SKILL_1_RAZOR_CLAW_FRENZY], chipping basalt scales in a shower of blue sparks.",
+      "endFramePromptEn": "End Frame Lock [Shot 08]: @BAO_CHUA_IGNIS_REX wincing and staggering half a step down on the left with three glowing claw scars smoking on its shoulder.",
+      "cameraAngle": "Extreme Close-Up",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 8,
+      "causalConnector": "BUT_COMPLICATION_TWIST",
+      "causalBridgeFromPrevVi": "[NHƯNG MÀ - BUT]: Nhưng đúng khoảnh khắc BAO_CHUA_IGNIS_REX hơi trượt chân làm hở bả vai sau cú húc ở Cảnh 7, THUY_QUAI_VOLT_SPINO lập tức chớp thời cơ vung đôi vuốt điện 1.5m phản kích!",
+      "causalBridgeFromPrevEn": "BUT: Exploiting the exact split-second @BAO_CHUA_IGNIS_REX left shoulder is exposed after Shot 7 impact recoil, @THUY_QUAI_VOLT_SPINO unleashes a vicious claw counter-slash.",
+      "dramaticStakesVi": "Lớp giáp đá bazan bất khả xâm phạm của IGNIS_REX lần đầu tiên bị xé toạc.",
+      "valueChargeShift": "[+1 Ưu thế T-Rex] -> [-1 Bị Phản Đòn Xé Giáp]",
+      "microTurningPointTwistEn": "At 2.3s, @THUY_QUAI_VOLT_SPINO three electrified talons rake across @BAO_CHUA_IGNIS_REX shoulder armor, chipping off black basalt plates and exposing glowing red tissue beneath.",
+      "recurringMotifPropStateEn": "Motif Scar [Chipped Obsidian Shoulder Scales]: Three deep glowing claw trenches are carved into @BAO_CHUA_IGNIS_REX shoulder.",
+      "entryStateEn": "BUT: Exploiting the exact split-second @BAO_CHUA_IGNIS_REX left shoulder is exposed after Shot 7 impact recoil, @THUY_QUAI_VOLT_SPINO unleashes a vicious claw counter-slash.",
+      "exitStateEn": "End Frame Lock [Shot 08]: @BAO_CHUA_IGNIS_REX wincing and staggering half a step down on the left with three glowing claw scars smoking on its shoulder.",
+      "coverageType": "INSERT_DETAIL_CUTAWAY",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Out-of-Focus Bokeh f/2.0] drifting rain droplets and glowing embers | [MG - Razor-Sharp Macro Subject] extreme tactile detail of claws, scales, or contracting eye pupil | [BG - Atmospheric Blur] volcanic canyon mist",
+      "stuntChoreography": {
+        "attackVectorEn": "360-degree rotational hip-and-tail pendulum slam carrying maximum angular momentum",
+        "mechanicalContactPointEn": "Heavy spiked basalt tail club striking squarely against rival ribcage beneath the dorsal sail",
+        "newtonianCounterForceEn": "Brutal lateral impulse launches rival sideways into a towering basalt rock column, shattering the pillar on impact",
+        "guardTransitionEn": "Attacker lowers head and widens stance to press the offensive advantage",
+        "combinedChoreographyEn": "Stunt Choreography [87North/Marvel Mechanics]: Vector (360-degree rotational hip-and-tail pendulum slam carrying maximum angular momentum) -> Contact Point (Heavy spiked basalt tail club striking squarely against rival ribcage beneath the dorsal sail) -> Newtonian Recoil (Brutal lateral impulse launches rival sideways into a towering basalt rock column, shattering the pillar on impact) -> Guard Transition (Attacker lowers head and widens stance to press the offensive advantage)."
+      },
+      "stageDestructionLevel": "STAGE_1_PRISTINE_OMINOUS",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels.",
+      "emotionalTensionMode": "VULNERABILITY_LOW_POINT",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: ragged steamy breath clouds, cracked basalt armor plates leaking glowing magma like bleeding wounds, trembling knees fighting gravity, yet golden pupil locked in unyielding defiance",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: shockwave parting the rain curtain, muddy water and molten droplets splashing onto the camera lens, subtle kinetic camera shake on impact",
+      "colorScriptMoodEn": "Color Script [Phase 2A - Crisis & Vulnerability]: harsh chiaroscuro high-contrast dark shadows, oppressive cyan lightning dominating struggling dim crimson embers",
+      "shotIdx": "05",
+      "hasChar1": true,
+      "hasChar2": true,
+      "spatialPrevisDossier": {
+        "shotNumber": 5,
+        "cameraExtrinsics": {
+          "coverageType": "INSERT_DETAIL_CUTAWAY",
+          "focalLengthMm": "85mm Macro Anamorphic Prime",
+          "apertureStop": "f/2.0 (Shallow bokeh background, razor-sharp claw-on-armor contact zone)",
+          "cameraDistanceMeters": 1.8,
+          "cameraElevationMeters": 4.2,
+          "cameraPitchDeg": "+4° Shoulder-Level Combat Macro Tilt",
+          "cameraRigMovementVectorEn": "High-speed 120fps tracking micro-dolly following the diagonal foreclaw slash across shoulder armor",
+          "framingScaleConstraintEn": "UPPER-TORSO COMBAT INSERT FRAMING (1.8m distance, 4.2m elevation): Frame the 1.5-meter cyan-electrified foreclaws raking three glowing magma trenches across black basalt shoulder armor",
+          "targetAnatomicalZoneEn": "Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws"
+        },
+        "subject1Box": {
+          "entityName": "BAO_CHUA_IGNIS_REX",
+          "screenZoneXPercent": "X: 8% to 48% (Strict Left Hemisphere Slot)",
+          "screenZoneYPercent": "Y: 12% to 94%",
+          "depthDistanceMeters": 1.8,
+          "bodyYawDegAndFacingEn": "Body Yaw +35° Facing Screen-Right toward opponent",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws locked onto @THUY_QUAI_VOLT_SPINO at [X: 68%, Y: 45%]"
+        },
+        "subject2Box": {
+          "entityName": "THUY_QUAI_VOLT_SPINO",
+          "screenZoneXPercent": "X: 52% to 92% (Strict Right Hemisphere Slot)",
+          "screenZoneYPercent": "Y: 10% to 94%",
+          "depthDistanceMeters": 2.4,
+          "bodyYawDegAndFacingEn": "Body Yaw -35° Facing Screen-Left toward opponent",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws locked onto @BAO_CHUA_IGNIS_REX at [X: 32%, Y: 45%]"
+        },
+        "contactTerrainGeometryEn": "Jagged obsidian rock shelf slick with steaming rain and glowing magma droplets leaking from torn armor plates",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "@THUY_QUAI_VOLT_SPINO pivots +30° on its right hind leg to exploit @BAO_CHUA_IGNIS_REX off-balance skid",
+          "spineAndThoraxTorsionEn": "Upper torso twists rapidly, channeling cyan bio-electric current from dorsal sail into right shoulder",
+          "primaryExtremityStrikeEn": "1.5-meter right foreclaw slashes diagonally downward across @BAO_CHUA_IGNIS_REX left shoulder armor",
+          "newtonianGroundRecoilAndSettleEn": "@BAO_CHUA_IGNIS_REX reels 1.5m to the left as three deep claw trenches leak glowing orange magma",
+          "combinedKinematicsChainEn": "+30° hind-leg pivot -> Torso electric charge transfer -> Diagonal 1.5m foreclaw slash -> Leftward stagger recoil"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: High-voltage electric discharge whip and 1.5-meter claws tearing through obsidian shoulder armor with sizzling magma sparks.",
+          "bespokeAmbientEn": "Ambient: Agonized guttural snarl, hissing steam on bleeding lava wounds, and heavy rain."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 85mm Macro Anamorphic Prime at f/2.0 (Shallow bokeh background, razor-sharp claw-on-armor contact zone), Camera Distance Z=1.8m, Elevation Y=4.2m, Pitch +4° Shoulder-Level Combat Macro Tilt. UPPER-TORSO COMBAT INSERT FRAMING (1.8m distance, 4.2m elevation): Frame the 1.5-meter cyan-electrified foreclaws raking three glowing magma trenches across black basalt shoulder armor. 3D SPATIAL BOUNDING-BOX LAYOUT: [Subject 1 @BAO_CHUA_IGNIS_REX at X: 8% to 48% (Strict Left Hemisphere Slot), Y: 12% to 94%, Depth Z=1.8m, Body Yaw +35° Facing Screen-Right toward opponent] VERSUS [Subject 2 @THUY_QUAI_VOLT_SPINO at X: 52% to 92% (Strict Right Hemisphere Slot), Y: 10% to 94%, Depth Z=2.4m, Body Yaw -35° Facing Screen-Left toward opponent]. Focus Zone: Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws locked onto @THUY_QUAI_VOLT_SPINO at [X: 68%, Y: 45%]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Jagged obsidian rock shelf slick with steaming rain and glowing magma droplets leaking from torn armor plates (zero floating limbs). TWO DISTINCT SUBJECTS ON 180-DEGREE AXIS — LEFT FACING RIGHT: @BAO_CHUA_IGNIS_REX [CHARACTER 1: BAO_CHUA_IGNIS_REX] (Charcoal-black basalt T-Rex with glowing orange magma veins; bipedal on 2 hind legs, tiny 2-fingered arms, hornless T-Rex skull) VERSUS RIGHT FACING LEFT: @THUY_QUAI_VOLT_SPINO [CHARACTER 2: THUY_QUAI_VOLT_SPINO] (100% organic prehistoric amphibious Spinosaurus with dark abyssal-slate crocodilian scales, glowing cyan dorsal sail, 1.5m foreclaws; zero metal or robot parts) inside @STAGE: DAU_TRUONG_KRETA. Keep both creatures 100% anatomically separate. [KEYFRAME POSE SNAPSHOT (Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws)]: Insert close-up strike as @THUY_QUAI_VOLT_SPINO unleashes [SKILL_1_RAZOR_CLAW_FRENZY], raking its electrified talons diagonally across @BAO_CHUA_IGNIS_REX basalt shoulder armor in a blinding arc flash. Motif Scar [Chipped Obsidian Shoulder Scales]: Three deep glowing claw trenches are carved into @BAO_CHUA_IGNIS_REX shoulder. 3-Plane Studio Depth Staging: [FG - Out-of-Focus Bokeh f/2.0] drifting rain droplets and glowing embers | [MG - Razor-Sharp Macro Subject] extreme tactile detail of claws, scales, or contracting eye pupil | [BG - Atmospheric Blur] volcanic canyon mist Progressive Set State [Stage 1 - Intact Primordial Arena]: Towering intact black basalt columns, ominous storm clouds gathering overhead, undisturbed lava river channels. Show-Dont-Tell Physical Proof: ragged steamy breath clouds, cracked basalt armor plates leaking glowing magma like bleeding wounds, trembling knees fighting gravity, yet golden pupil locked in unyielding defiance Color Script [Phase 2A - Crisis & Vulnerability]: harsh chiaroscuro high-contrast dark shadows, oppressive cyan lightning dominating struggling dim crimson embers Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 85mm Macro Anamorphic Prime, Distance Z=1.8m, Elevation 4.2m, +4° Shoulder-Level Combat Macro Tilt — High-speed 120fps tracking micro-dolly following the diagonal foreclaw slash across shoulder armor. [SKELETAL KINEMATICS (Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws)]: +30° hind-leg pivot -> Torso electric charge transfer -> Diagonal 1.5m foreclaw slash -> Leftward stagger recoil. Skill: [SKILL_1_RAZOR_CLAW_FRENZY]. [3-BEAT MOTION (VULNERABILITY_LOW_POINT)]: (0.0s-2.5s) Seeing @BAO_CHUA_IGNIS_REX off-balance from the previous collision, @THUY_QUAI_VOLT_SPINO rears back its right forelimb -> (2.5s-5.5s) Insert close-up strike as @THUY_QUAI_VOLT_SPINO unleashes [SKILL_1_RAZOR_CLAW_FRENZY], raking its electrified talons diagonally across @BAO_CHUA_IGNIS_REX basalt shoulder armor in a blinding arc flash -> (5.5s-8.0s) Shattered fragments of black obsidian scale fly past the camera lens while three smoking, ember-bleeding claw trenches a. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Jagged obsidian rock shelf slick with steaming rain and glowing magma droplets leaking from torn armor plates (@STAGE: DAU_TRUONG_KRETA). Dual Axis Lock: @BAO_CHUA_IGNIS_REX [Left X: 8% to 48% (Strict Left Hemisphere Slot), hornless bipedal T-Rex, tiny 2-fingered arms] vs @THUY_QUAI_VOLT_SPINO [Right X: 52% to 92% (Strict Right Hemisphere Slot), organic cyan-sail Spinosaurus]; zero trait bleeding. Animate strictly from first frame without morphing. SFX: High-voltage electric discharge whip and 1.5-meter claws tearing through obsidian shoulder armor with sizzling magma sparks. Ambient: Agonized guttural snarl, hissing steam on bleeding lava wounds, and heavy rain. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 5,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 2,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 85mm Macro Anamorphic Prime, Distance Z=1.8m, Elevation 4.2m, +4° Sho...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1751 chars (~318 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 3115 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=1.8m, Y=4.2m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage INSERT_DETAIL_CUTAWAY (Z=1.8m, Y=4.2m) matched with zone \"Left Shoulder Basalt Armor Plates vs. Slashing 1.5m Electrified Foreclaws\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Jagged obsidian rock shelf slick with steaming rain and glowing m...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"+30° hind-leg pivot -> Torso electric charge transfer -> Diagonal 1.5m fore...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: High-voltage electric discharge whip and 1.5-meter...\")"
+          }
+        },
+        "autoFixesApplied": [
+          "Compacted prepBeatEn & aftermathBeatEn to reduce video prompt from 1881 chars to <= 1850 chars"
+        ]
+      },
+      "startKeyframeMediaId": "cached_shot_05",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_05_start_frame.png",
+      "referenceIds": [
+        "81d3fafc-de87-4bb5-8e47-c3428876ca33",
+        "4446c78e-5a78-4766-8cc8-7faacf8b94b9",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_05_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_05_vo.mp3"
+    },
+    {
+      "shotNumber": 6,
+      "canonical23Index": 11,
+      "macroPhase": "MAIN_CLIMAX_CONFLICT",
+      "titleVi": "Huyết Quản Hỏa Ngục Thức Tỉnh (DNA Shift)",
+      "subtitleVi": "Khoảnh khắc cận kề cái chết là lúc huyết quản thức tỉnh! Giáp đá nứt toác, lõi dung nham trắng rực bùng nổ biến vết thương thành ngọn lửa bất diệt.",
+      "skillUsed": "[ACTION_SEISMIC_ROAR]",
+      "preparationBeatEn": "[Sakuga Silence 0.0s-1.75s] Time slows to a standstill: falling raindrops suspend mid-air and flash-boil into steam as @BAO_CHUA_IGNIS_REX golden pupil contracts and white-hot light leaks from its cracked chest",
+      "mainActionBeatEn": "[Explosive DNA Shift 1.75s-5.5s] Awakened @BAO_CHUA_IGNIS_REX surges upright on two massive hind legs as its fractured basalt armor blazes crimson-white, unleashing a cataclysmic [ACTION_SEISMIC_ROAR]",
+      "aftermathConsequenceEn": "A spherical thermal shockwave blows the entire rainstorm outward into a clear dome while columns of liquid magma erupt from the cliff fissures behind the awakened king",
+      "actionPromptEn": "Climactic Sakuga DNA Shift: After 1.75s of suspended rain silence, @BAO_CHUA_IGNIS_REX fractured armor erupts with white-hot magma as it rises and unleashes a rain-parting [ACTION_SEISMIC_ROAR].",
+      "endFramePromptEn": "End Frame Lock [Shot 12]: Awakened Overdrive @BAO_CHUA_IGNIS_REX standing tall on the left with blinding white-hot and crimson magma veins blazing across its battle-scarred body.",
+      "cameraAngle": "Low-Angle Hero Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": true,
+      "durationSeconds": 8,
+      "causalConnector": "BUT_COMPLICATION_TWIST",
+      "causalBridgeFromPrevVi": "[NHƯNG MÀ - BUT (KHOẢNH KHẮC THỨC TỈNH SAKUGA)]: Nhưng chính những vết nứt sâu trên giáp ngực do cú bắn điện ở Cảnh 11 kết hợp với hơi nóng từ vực dung nham ngay dưới chân đã kích hoạt lò phản ứng tim của BAO_CHUA_IGNIS_REX — mở khóa trạng thái Thức Tỉnh Huyết Quản Hỏa Ngục (DNA Shift)!",
+      "causalBridgeFromPrevEn": "BUT [SAKUGA CATHARSIS]: The deep chest fractures from Shot 11 combined with the molten abyss below trigger @BAO_CHUA_IGNIS_REX primordial volcanic heart, igniting its Awakened Overdrive DNA Shift!",
+      "dramaticStakesVi": "Biến chính vết thương chí mạng thành nguồn sức mạnh hủy diệt để lật ngược thế cờ.",
+      "valueChargeShift": "[-3 Cửa Tử Nghịch Cảnh] -> [0 Nén Lò Xo Tĩnh Lặng 1.75s] -> [+3 THỨC TỈNH OVERDRIVE BÙNG NỔ]",
+      "microTurningPointTwistEn": "After 1.75s of eerie slow-motion silence where rain droplets freeze and boil in mid-air before @BAO_CHUA_IGNIS_REX contracting golden pupil, blinding white-hot magma erupts through every crack in its armor!",
+      "recurringMotifPropStateEn": "Motif Transformation [Awakened Overdrive Armor]: Every claw scar and chest fracture from Shots 8-11 now blazes with blinding white-hot and crimson liquid fire.",
+      "entryStateEn": "BUT [SAKUGA CATHARSIS]: The deep chest fractures from Shot 11 combined with the molten abyss below trigger @BAO_CHUA_IGNIS_REX primordial volcanic heart, igniting its Awakened Overdrive DNA Shift!",
+      "exitStateEn": "End Frame Lock [Shot 12]: Awakened Overdrive @BAO_CHUA_IGNIS_REX standing tall on the left with blinding white-hot and crimson magma veins blazing across its battle-scarred body.",
+      "coverageType": "LOW_ANGLE_HERO_APEX",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] colossal titans in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm",
+      "stuntChoreography": {
+        "attackVectorEn": "360-degree rotational hip-and-tail pendulum slam carrying maximum angular momentum",
+        "mechanicalContactPointEn": "Heavy spiked basalt tail club striking squarely against rival ribcage beneath the dorsal sail",
+        "newtonianCounterForceEn": "Brutal lateral impulse launches rival sideways into a towering basalt rock column, shattering the pillar on impact",
+        "guardTransitionEn": "Attacker lowers head and widens stance to press the offensive advantage",
+        "combinedChoreographyEn": "Stunt Choreography [87North/Marvel Mechanics]: Vector (360-degree rotational hip-and-tail pendulum slam carrying maximum angular momentum) -> Contact Point (Heavy spiked basalt tail club striking squarely against rival ribcage beneath the dorsal sail) -> Newtonian Recoil (Brutal lateral impulse launches rival sideways into a towering basalt rock column, shattering the pillar on impact) -> Guard Transition (Attacker lowers head and widens stance to press the offensive advantage)."
+      },
+      "stageDestructionLevel": "STAGE_2_CRATERED_BURNING_CLASH",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 2 - Battle-Damaged & Burning Arena]: Half-collapsed basalt rock pillars, deep impact craters radiating glowing magma fissures, overflowing lava streams, thick black battle smoke and flying embers.",
+      "emotionalTensionMode": "SAKUGA_DROP_SILENCE_TO_CATHARSIS",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: extreme macro focus on contracting golden eye pupil reflecting lightning, rain droplets suspended mid-air and flash-boiling into white steam before a blinding thermal shockwave distorts the air",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: spherical rain-parting shockwave blowing the downpour outward into a clear dome, basalt ground cratering underfoot, intense anamorphic lens flare and water droplets hitting the camera lens",
+      "colorScriptMoodEn": "Color Script [Phase 2B - Sakuga Catharsis]: brief high-contrast monochrome flash erupting into blinding white-hot core magma and fiery crimson-orange dominating neon cyan",
+      "shotIdx": "06",
+      "hasChar1": true,
+      "hasChar2": false,
+      "spatialPrevisDossier": {
+        "shotNumber": 6,
+        "cameraExtrinsics": {
+          "coverageType": "LOW_ANGLE_HERO_APEX",
+          "focalLengthMm": "24mm Ultra-Wide Anamorphic Prime",
+          "apertureStop": "f/2.8 (Monumental scale depth)",
+          "cameraDistanceMeters": 7.2,
+          "cameraElevationMeters": 0.4,
+          "cameraPitchDeg": "+24° Worm-Eye Upward Tilt",
+          "cameraRigMovementVectorEn": "Ground-level low-angle crane push-in with subtle seismic vibration on footfall",
+          "framingScaleConstraintEn": "WORM-EYE MONUMENTAL FRAMING (7.2m distance, 0.4m elevation): Look sharply upward past foreground shattered rock ledges at the towering 13-meter titan silhouette",
+          "targetAnatomicalZoneEn": "Full Towering Bipedal Silhouette from Grounded Claws to Crown"
+        },
+        "subject1Box": {
+          "entityName": "BAO_CHUA_IGNIS_REX",
+          "screenZoneXPercent": "X: 22% to 74% (Dominant Left-Center Anchor)",
+          "screenZoneYPercent": "Y: 10% to 94%",
+          "depthDistanceMeters": 7.2,
+          "bodyYawDegAndFacingEn": "Body Yaw +30° Facing Screen-Right along the 180-degree axis",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Fierce golden eye and hornless jaws oriented toward Screen-Right horizon [X: 85%, Y: 48%]"
+        },
+        "subject2Box": null,
+        "contactTerrainGeometryEn": "Melting vitrified volcanic glass crater glowing white-hot as subterranean magma vents erupt beneath both hind feet",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "From a kneeling posture, @BAO_CHUA_IGNIS_REX drives both hind legs vertically upward, vitrifying the rock beneath",
+          "spineAndThoraxTorsionEn": "Subdermal magma veins along spine and neck ignite from dim red to blinding white-hot crimson",
+          "primaryExtremityStrikeEn": "Head throws back in a cataclysmic [SKILL_2_PRIMORDIAL_SUPER_NOVA] eruption, releasing a 360° thermal dome",
+          "newtonianGroundRecoilAndSettleEn": "Spherical shockwave vaporizes the rain curtain and forces @THUY_QUAI_VOLT_SPINO two steps back",
+          "combinedKinematicsChainEn": "Vertical hind-leg drive -> Spine vein white-hot ignition -> Super-Nova upward roar -> 360° rain-parting shockwave"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: [0.0s-1.75s] Eerie muffled heartbeat silence and raindrop hiss -> [1.75s] Cataclysmic 46Hz thermonuclear magma roar and shockwave boom.",
+          "bespokeAmbientEn": "Ambient: Vitrifying rock cracking underfoot and rain vaporizing into a dome of white steam."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 24mm Ultra-Wide Anamorphic Prime at f/2.8 (Monumental scale depth), Camera Distance Z=7.2m, Elevation Y=0.4m, Pitch +24° Worm-Eye Upward Tilt. WORM-EYE MONUMENTAL FRAMING (7.2m distance, 0.4m elevation): Look sharply upward past foreground shattered rock ledges at the towering 13-meter titan silhouette. 3D SPATIAL BOUNDING-BOX LAYOUT: [Solo Subject @BAO_CHUA_IGNIS_REX at X: 22% to 74% (Dominant Left-Center Anchor), Y: 10% to 94%, Depth Z=7.2m, Body Yaw +30° Facing Screen-Right along the 180-degree axis, Focus Zone: Fierce golden eye and hornless jaws oriented toward Screen-Right horizon [X: 85%, Y: 48%]]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Melting vitrified volcanic glass crater glowing white-hot as subterranean magma vents erupt beneath both hind feet (zero floating limbs). SOLO SUBJECT: @BAO_CHUA_IGNIS_REX [CHARACTER 1: BAO_CHUA_IGNIS_REX] (Charcoal-black basalt T-Rex with glowing orange magma veins; bipedal on 2 hind legs, tiny 2-fingered arms, hornless T-Rex skull) inside @STAGE: DAU_TRUONG_KRETA. STRICT SOLO SHOT: zero second dinosaur. [KEYFRAME POSE SNAPSHOT (Full Towering Bipedal Silhouette from Grounded Claws to Crown)]: [Explosive DNA Shift 1.75s-5.5s] Awakened @BAO_CHUA_IGNIS_REX surges upright on two massive hind legs as its fractured basalt armor blazes crimson-white, unleashing a cataclysmic [ACTION_SEISMIC_ROAR]. Motif Transformation [Awakened Overdrive Armor]: Every claw scar and chest fracture from Shots 8-11 now blazes with blinding white-hot and crimson liquid fire. 3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] the lone colossal titan in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm Progressive Set State [Stage 2 - Battle-Damaged & Burning Arena]: Half-collapsed basalt rock pillars, deep impact craters radiating glowing magma fissures, overflowing lava streams, thick black battle smoke and flying embers. Show-Dont-Tell Physical Proof: extreme macro focus on contracting golden eye pupil reflecting lightning, rain droplets suspended mid-air and flash-boiling into white steam before a blinding thermal shockwave distorts the air Color Script [Phase 2B - Sakuga Catharsis]: brief high-contrast monochrome flash erupting into blinding white-hot core magma and fiery crimson-orange dominating neon cyan Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 24mm Ultra-Wide Anamorphic Prime, Distance Z=7.2m, Elevation 0.4m, +24° Worm-Eye Upward Tilt — Ground-level low-angle crane push-in with subtle seismic vibration on footfall. [SKELETAL KINEMATICS (Full Towering Bipedal Silhouette from Grounded Claws to Crown)]: Vertical hind-leg drive -> Spine vein white-hot ignition -> Super-Nova upward roar -> 360° rain-parting shockwave. Skill: [ACTION_SEISMIC_ROAR]. [3-BEAT MOTION (SAKUGA_DROP_SILENCE_TO_CATHARSIS)]: (0.0s-2.5s) [Sakuga Silence 0.0s-1.75s] Time slows to a standstill: falling raindrops suspend mid-air and flash-boil into steam as @BAO_CHUA_IGNIS_REX golden pupil contracts and white-hot light leaks from its cracked chest -> (2.5s-5.5s) [Explosive DNA Shift 1.75s-5.5s] Awakened @BAO_CHUA_IGNIS_REX surges upright on two massive hind legs as its fractured basalt armor blazes crimson-white, unleashing a cataclysmic [ACTION_SEISMIC_ROAR] -> (5.5s-8.0s) A spherical thermal shockwave blows the entire rainstorm outward into a clear dome while columns of liquid magma erupt from the cliff fissures behind the awakened king. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Melting vitrified volcanic glass crater glowing white-hot as subterranean magma vents erupt beneath both hind feet (@STAGE: DAU_TRUONG_KRETA). Solo Lock: Only @BAO_CHUA_IGNIS_REX [X: 22% to 74% (Dominant Left-Center Anchor), hornless bipedal T-Rex, tiny 2-fingered arms]; zero second dinosaur. Animate strictly from first frame without morphing. SFX: [0.0s-1.75s] Eerie muffled heartbeat silence and raindrop hiss -> [1.75s] Cataclysmic 46Hz thermonuclear magma roar and shockwave boom. Ambient: Vitrifying rock cracking underfoot and rain vaporizing into a dome of white steam. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 6,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 1,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 24mm Ultra-Wide Anamorphic Prime, Distance Z=7.2m, Elevation 0.4m, +2...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1762 chars (~320 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 2664 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=7.2m, Y=0.4m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage LOW_ANGLE_HERO_APEX (Z=7.2m, Y=0.4m) matched with zone \"Full Towering Bipedal Silhouette from Grounded Claws to Crown\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Melting vitrified volcanic glass crater glowing white-hot as subt...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"Vertical hind-leg drive -> Spine vein white-hot ignition -> Super-Nova upwa...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: [0.0s-1.75s] Eerie muffled heartbeat silence and r...\")"
+          }
+        },
+        "autoFixesApplied": []
+      },
+      "startKeyframeMediaId": "cached_shot_06",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_06_start_frame.png",
+      "referenceIds": [
+        "31ad33e0-c6b4-4e43-8c15-fd45ed7db089",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_06_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_06_vo.mp3"
+    },
+    {
+      "shotNumber": 7,
+      "canonical23Index": 17,
+      "macroPhase": "MAIN_CLIMAX_CONFLICT",
+      "titleVi": "Phán Quyết Cuối Cùng Của Tạo Hóa",
+      "subtitleVi": "Đòn kết liễu giáng xuống như búa tạ của tạo hóa! Cú ngoạm hàm nhiệt hạch tối thượng quật ngã hoàn toàn kẻ thách thức xuống thềm đá nứt toác.",
+      "skillUsed": "[SKILL_1_MAGMA_JAW_CRUSH]",
+      "preparationBeatEn": "[Sakuga Silence 0.0s-1.75s] As cornered @THUY_QUAI_VOLT_SPINO makes one final desperate lunge from the rubble, awakened @BAO_CHUA_IGNIS_REX widens its blinding white-hot magma jaws in slow-motion focus",
+      "mainActionBeatEn": "[Ultimate Finisher 1.75s-5.5s] @BAO_CHUA_IGNIS_REX intercepts @THUY_QUAI_VOLT_SPINO mid-air with its ultimate [SKILL_1_MAGMA_JAW_CRUSH] and slams the 18-ton rival down onto the fractured basalt plateau",
+      "aftermathConsequenceEn": "The seismic slam cracks the caldera floor and triggers twin volcanic magma geysers erupting skyward behind them, decisively ending the battle",
+      "actionPromptEn": "Climactic finisher: Awakened @BAO_CHUA_IGNIS_REX catches @THUY_QUAI_VOLT_SPINO final lunge with [SKILL_1_MAGMA_JAW_CRUSH] and slams the defeated rival onto the basalt plateau as magma geysers erupt.",
+      "endFramePromptEn": "End Frame Lock [Shot 18]: Victorious @BAO_CHUA_IGNIS_REX standing tall on the left over the downed @THUY_QUAI_VOLT_SPINO on the right with twin magma geysers erupting in the background.",
+      "cameraAngle": "Low-Angle Hero Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 8,
+      "causalConnector": "THEREFORE_CONSEQUENCE",
+      "causalBridgeFromPrevVi": "[VÌ VẬY - THEREFORE (ĐỈNH ĐIỂM CAO TRÀO)]: Vì đã dồn đối thủ vào chân vách đá sụp đổ ở Cảnh 17, khi THUY_QUAI_VOLT_SPINO gắng gượng nhoài người phản kháng lần cuối, BAO_CHUA_IGNIS_REX tung tuyệt kỹ Hàm Dung Nham Tối Thượng quật ngã hoàn toàn kẻ thách thức xuống thềm lục địa!",
+      "causalBridgeFromPrevEn": "THEREFORE [CLIMAX FINISHER]: With @THUY_QUAI_VOLT_SPINO cornered against the collapsed cliff from Shot 17, @BAO_CHUA_IGNIS_REX intercepts its final desperate lunge and slams the rival down onto the basalt plateau!",
+      "dramaticStakesVi": "Đòn phán quyết cuối cùng khép lại cuộc đại chiến giữa hai vị vua tiền sử.",
+      "valueChargeShift": "[+3 Áp Đảo] -> [0 Nén Lò Xo 1.75s] -> [+5 PHÁN QUYẾT TỐI THƯỢNG (ULTIMATE CLIMAX FINISHER)]",
+      "microTurningPointTwistEn": "After a 1.75s slow-motion close-up of @BAO_CHUA_IGNIS_REX white-hot jaws widening, it catches @THUY_QUAI_VOLT_SPINO mid-lunge and slams the 18-ton rival onto the ground as twin magma geysers erupt behind them!",
+      "recurringMotifPropStateEn": "Motif Climax [Twin Magma Geysers & Shattered Fang Pillar]: Magma geysers erupt behind the broken Fang Pillar at the moment of the seismic slam.",
+      "entryStateEn": "THEREFORE [CLIMAX FINISHER]: With @THUY_QUAI_VOLT_SPINO cornered against the collapsed cliff from Shot 17, @BAO_CHUA_IGNIS_REX intercepts its final desperate lunge and slams the rival down onto the basalt plateau!",
+      "exitStateEn": "End Frame Lock [Shot 18]: Victorious @BAO_CHUA_IGNIS_REX standing tall on the left over the downed @THUY_QUAI_VOLT_SPINO on the right with twin magma geysers erupting in the background.",
+      "coverageType": "LOW_ANGLE_HERO_APEX",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] colossal titans in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm",
+      "stuntChoreography": {
+        "attackVectorEn": "Diagonal downward whip-slash of 1.5-meter bio-electric foreclaws at 18 m/s angular velocity",
+        "mechanicalContactPointEn": "Three razor talons raking across dark obsidian pectoral scales, carving deep glowing trenches",
+        "newtonianCounterForceEn": "High-voltage arc discharge blasts chipped basalt scale fragments tangentially while staggering defender left leg",
+        "guardTransitionEn": "Attacker drops into low amphibious crouch to evade retaliatory jaw snap",
+        "combinedChoreographyEn": "Stunt Choreography [87North/Marvel Mechanics]: Vector (Diagonal downward whip-slash of 1.5-meter bio-electric foreclaws at 18 m/s angular velocity) -> Contact Point (Three razor talons raking across dark obsidian pectoral scales, carving deep glowing trenches) -> Newtonian Recoil (High-voltage arc discharge blasts chipped basalt scale fragments tangentially while staggering defender left leg) -> Guard Transition (Attacker drops into low amphibious crouch to evade retaliatory jaw snap)."
+      },
+      "stageDestructionLevel": "STAGE_3_SMOLDERING_RUINED_AFTERMATH",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 3 - Devastated Aftermath Battlefield]: Completely shattered canyon floor covered in smoking rubble, cooling black glass lava pools, falling volcanic ash snow, and golden-amber dusk rays piercing the smoke.",
+      "emotionalTensionMode": "SAKUGA_DROP_SILENCE_TO_CATHARSIS",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: extreme macro focus on contracting golden eye pupil reflecting lightning, rain droplets suspended mid-air and flash-boiling into white steam before a blinding thermal shockwave distorts the air",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: spherical rain-parting shockwave blowing the downpour outward into a clear dome, basalt ground cratering underfoot, intense anamorphic lens flare and water droplets hitting the camera lens",
+      "colorScriptMoodEn": "Color Script [Phase 2B - Sakuga Catharsis]: brief high-contrast monochrome flash erupting into blinding white-hot core magma and fiery crimson-orange dominating neon cyan",
+      "shotIdx": "07",
+      "hasChar1": true,
+      "hasChar2": true,
+      "spatialPrevisDossier": {
+        "shotNumber": 7,
+        "cameraExtrinsics": {
+          "coverageType": "LOW_ANGLE_HERO_APEX",
+          "focalLengthMm": "24mm Ultra-Wide Anamorphic Prime",
+          "apertureStop": "f/2.8 (Monumental scale depth)",
+          "cameraDistanceMeters": 7.2,
+          "cameraElevationMeters": 0.4,
+          "cameraPitchDeg": "+24° Worm-Eye Upward Tilt",
+          "cameraRigMovementVectorEn": "Ground-level low-angle crane push-in with subtle seismic vibration on footfall",
+          "framingScaleConstraintEn": "WORM-EYE MONUMENTAL FRAMING (7.2m distance, 0.4m elevation): Look sharply upward past foreground shattered rock ledges at the towering 13-meter titan silhouette",
+          "targetAnatomicalZoneEn": "Full Towering Bipedal Silhouette from Grounded Claws to Crown"
+        },
+        "subject1Box": {
+          "entityName": "BAO_CHUA_IGNIS_REX",
+          "screenZoneXPercent": "X: 8% to 48% (Strict Left Hemisphere Slot)",
+          "screenZoneYPercent": "Y: 12% to 94%",
+          "depthDistanceMeters": 7.2,
+          "bodyYawDegAndFacingEn": "Body Yaw +35° Facing Screen-Right toward opponent",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Full Towering Bipedal Silhouette from Grounded Claws to Crown locked onto @THUY_QUAI_VOLT_SPINO at [X: 68%, Y: 45%]"
+        },
+        "subject2Box": {
+          "entityName": "THUY_QUAI_VOLT_SPINO",
+          "screenZoneXPercent": "X: 52% to 92% (Strict Right Hemisphere Slot)",
+          "screenZoneYPercent": "Y: 10% to 94%",
+          "depthDistanceMeters": 7.8,
+          "bodyYawDegAndFacingEn": "Body Yaw -35° Facing Screen-Left toward opponent",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Full Towering Bipedal Silhouette from Grounded Claws to Crown locked onto @BAO_CHUA_IGNIS_REX at [X: 32%, Y: 45%]"
+        },
+        "contactTerrainGeometryEn": "Deep impact crater in the center of the valley floor ringed by radial tectonic fissures and spouting lava geysers",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "@BAO_CHUA_IGNIS_REX plants both hind feet firmly at the crater rim, coiling maximum core thermal energy",
+          "spineAndThoraxTorsionEn": "Throat pouch and dorsal veins flare blinding white-gold as magma surges upward",
+          "primaryExtremityStrikeEn": "Jaws unleash a concentrated stream of white-hot magma fire ([SKILL_2_PRIMORDIAL_SUPER_NOVA]) across the arena",
+          "newtonianGroundRecoilAndSettleEn": "@THUY_QUAI_VOLT_SPINO collapses onto its side in the smoking crater as shockwaves clear the storm clouds",
+          "combinedKinematicsChainEn": "Crater-rim hind-foot lock -> White-gold throat magma surge -> Concentrated fire-stream release -> Challenger knockdown"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: [0.0s-1.75s] Deep furnace inhalation silence -> [1.75s] Earth-shattering Primordial Super-Nova fire-stream blast and 18-ton body collapse.",
+          "bespokeAmbientEn": "Ambient: Tectonic crater fissures erupting and shockwaves parting the storm clouds."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 24mm Ultra-Wide Anamorphic Prime at f/2.8 (Monumental scale depth), Camera Distance Z=7.2m, Elevation Y=0.4m, Pitch +24° Worm-Eye Upward Tilt. WORM-EYE MONUMENTAL FRAMING (7.2m distance, 0.4m elevation): Look sharply upward past foreground shattered rock ledges at the towering 13-meter titan silhouette. 3D SPATIAL BOUNDING-BOX LAYOUT: [Subject 1 @BAO_CHUA_IGNIS_REX at X: 8% to 48% (Strict Left Hemisphere Slot), Y: 12% to 94%, Depth Z=7.2m, Body Yaw +35° Facing Screen-Right toward opponent] VERSUS [Subject 2 @THUY_QUAI_VOLT_SPINO at X: 52% to 92% (Strict Right Hemisphere Slot), Y: 10% to 94%, Depth Z=7.8m, Body Yaw -35° Facing Screen-Left toward opponent]. Focus Zone: Full Towering Bipedal Silhouette from Grounded Claws to Crown locked onto @THUY_QUAI_VOLT_SPINO at [X: 68%, Y: 45%]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Deep impact crater in the center of the valley floor ringed by radial tectonic fissures and spouting lava geysers (zero floating limbs). TWO DISTINCT SUBJECTS ON 180-DEGREE AXIS — LEFT FACING RIGHT: @BAO_CHUA_IGNIS_REX [CHARACTER 1: BAO_CHUA_IGNIS_REX] (Charcoal-black basalt T-Rex with glowing orange magma veins; bipedal on 2 hind legs, tiny 2-fingered arms, hornless T-Rex skull) VERSUS RIGHT FACING LEFT: @THUY_QUAI_VOLT_SPINO [CHARACTER 2: THUY_QUAI_VOLT_SPINO] (100% organic prehistoric amphibious Spinosaurus with dark abyssal-slate crocodilian scales, glowing cyan dorsal sail, 1.5m foreclaws; zero metal or robot parts) inside @STAGE: DAU_TRUONG_KRETA. Keep both creatures 100% anatomically separate. [KEYFRAME POSE SNAPSHOT (Full Towering Bipedal Silhouette from Grounded Claws to Crown)]: [Ultimate Finisher 1.75s-5.5s] @BAO_CHUA_IGNIS_REX intercepts @THUY_QUAI_VOLT_SPINO mid-air with its ultimate [SKILL_1_MAGMA_JAW_CRUSH] and slams the 18-ton rival down onto the fractured basalt plateau. Motif Climax [Twin Magma Geysers & Shattered Fang Pillar]: Magma geysers erupt behind the broken Fang Pillar at the moment of the seismic slam. 3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] colossal titans in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm Progressive Set State [Stage 3 - Devastated Aftermath Battlefield]: Completely shattered canyon floor covered in smoking rubble, cooling black glass lava pools, falling volcanic ash snow, and golden-amber dusk rays piercing the smoke. Show-Dont-Tell Physical Proof: extreme macro focus on contracting golden eye pupil reflecting lightning, rain droplets suspended mid-air and flash-boiling into white steam before a blinding thermal shockwave distorts the air Color Script [Phase 2B - Sakuga Catharsis]: brief high-contrast monochrome flash erupting into blinding white-hot core magma and fiery crimson-orange dominating neon cyan Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 24mm Ultra-Wide Anamorphic Prime, Distance Z=7.2m, Elevation 0.4m, +24° Worm-Eye Upward Tilt — Ground-level low-angle crane push-in with subtle seismic vibration on footfall. [SKELETAL KINEMATICS (Full Towering Bipedal Silhouette from Grounded Claws to Crown)]: Crater-rim hind-foot lock -> White-gold throat magma surge -> Concentrated fire-stream release -> Challenger knockdown. Skill: [SKILL_1_MAGMA_JAW_CRUSH]. [3-BEAT MOTION (SAKUGA_DROP_SILENCE_TO_CATHARSIS)]: (0.0s-2.5s) [Sakuga Silence 0.0s-1.75s] As cornered @THUY_QUAI_VOLT_SPINO makes one final desperate lunge from the rubble, awakened @BAO_CHUA_IGNIS_REX widens its blinding white-hot magma jaws in slow-motion focus -> (2.5s-5.5s) [Ultimate Finisher 1.75s-5.5s] @BAO_CHUA_IGNIS_REX intercepts @THUY_QUAI_VOLT_SPINO mid-air with its ultimate [SKILL_1_MAGMA_JAW_CRUSH] and slams the 18-ton rival down onto the fractured basalt plateau -> (5.5s-8.0s) The seismic slam cracks the caldera floor and triggers twin volcanic magma geysers erupting skyward behind them, decisively ending the battle. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Deep impact crater in the center of the valley floor ringed by radial tectonic fissures and spouting lava geysers (@STAGE: DAU_TRUONG_KRETA). Dual Axis Lock: @BAO_CHUA_IGNIS_REX [Left X: 8% to 48% (Strict Left Hemisphere Slot), hornless bipedal T-Rex, tiny 2-fingered arms] vs @THUY_QUAI_VOLT_SPINO [Right X: 52% to 92% (Strict Right Hemisphere Slot), organic cyan-sail Spinosaurus]; zero trait bleeding. Animate strictly from first frame without morphing. SFX: [0.0s-1.75s] Deep furnace inhalation silence -> [1.75s] Earth-shattering Primordial Super-Nova fire-stream blast and 18-ton body collapse. Ambient: Tectonic crater fissures erupting and shockwaves parting the storm clouds. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 7,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 1,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 24mm Ultra-Wide Anamorphic Prime, Distance Z=7.2m, Elevation 0.4m, +2...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1843 chars (~335 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 3131 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=7.2m, Y=0.4m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage LOW_ANGLE_HERO_APEX (Z=7.2m, Y=0.4m) matched with zone \"Full Towering Bipedal Silhouette from Grounded Claws to Crown\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Deep impact crater in the center of the valley floor ringed by ra...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"Crater-rim hind-foot lock -> White-gold throat magma surge -> Concentrated ...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: [0.0s-1.75s] Deep furnace inhalation silence -> [1...\")"
+          }
+        },
+        "autoFixesApplied": []
+      },
+      "startKeyframeMediaId": "cached_shot_07",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_07_start_frame.png",
+      "referenceIds": [
+        "31ad33e0-c6b4-4e43-8c15-fd45ed7db089",
+        "4446c78e-5a78-4766-8cc8-7faacf8b94b9",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_07_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_07_vo.mp3"
+    },
+    {
+      "shotNumber": 8,
+      "canonical23Index": 22,
+      "macroPhase": "POST_MAIN_AFTERMATH",
+      "titleVi": "Tiếng Gầm Khép Lại Huyền Thoại",
+      "subtitleVi": "Tiếng gầm khải hoàn vang vọng khắp đại ngàn Kỷ Phấn Trắng, khắc ghi định luật bất biến của thiên nhiên: chỉ kẻ bất khuất nhất mới xứng đáng thống trị.",
+      "skillUsed": "[ACTION_SEISMIC_ROAR]",
+      "preparationBeatEn": "Atop the volcanic summit, victorious @BAO_CHUA_IGNIS_REX inhales deeply as its battle-scarred chest và golden-crimson magma veins flare one final time against the clearing dusk sky",
+      "mainActionBeatEn": "Grand finale wide establishing shot: @BAO_CHUA_IGNIS_REX stands atop the volcanic peak on two massive hind legs, unleashing an earth-shaking [ACTION_SEISMIC_ROAR] into the golden heavens",
+      "aftermathConsequenceEn": "Echoes of the sovereign roar roll across the vast prehistoric valley as volcanic ash settles gently and golden twilight crowns the undisputed king",
+      "actionPromptEn": "Grand finale wide shot: @BAO_CHUA_IGNIS_REX stands atop the volcanic peak under golden dusk god rays, unleashing a triumphant [ACTION_SEISMIC_ROAR] that echoes across the prehistoric valley.",
+      "endFramePromptEn": "End Frame Lock [Shot 23]: Iconic wide poster frame of @BAO_CHUA_IGNIS_REX roaring atop the volcanic peak against golden-amber twilight god rays.",
+      "cameraAngle": "Wide Establishing Shot",
+      "transitionType": "CONTINUOUS_MATCH_FRAME",
+      "isDnaStateShift": false,
+      "durationSeconds": 8,
+      "causalConnector": "THEREFORE_CONSEQUENCE",
+      "causalBridgeFromPrevVi": "[VÌ VẬY - THEREFORE (KHÉP LẠI VÒNG TRÒN HUYỀN THOẠI)]: Vì đã đứng trên đỉnh ngai vàng cao nhất ở Cảnh 22 — đối xứng hoàn hảo với Cảnh 1 mở màn — BAO_CHUA_IGNIS_REX cất tiếng gầm khải hoàn vang vọng khắp đại ngàn, khép lại bộ phim.",
+      "causalBridgeFromPrevEn": "THEREFORE [MYTHIC BOOKEND FINALE]: Having reached the summit throne in Shot 22—mirroring Shot 1 opening cliff—@BAO_CHUA_IGNIS_REX unleashes a triumphant roar across the prehistoric world.",
+      "dramaticStakesVi": "Tạo dư âm cảm xúc hào hùng đọng lại mãi trong lòng khán giả khi màn hình khép lại.",
+      "valueChargeShift": "[+5 Đỉnh Vinh Quang] -> [+10 HUYỀN THOẠI BẤT DIỆT (IMMORTAL MYTHIC RESONANCE)]",
+      "microTurningPointTwistEn": "At 1.5s, @BAO_CHUA_IGNIS_REX roars into the golden dusk sky as a distant volcanic plume and a final lightning bolt frame its silhouette like a living crown.",
+      "recurringMotifPropStateEn": "Motif Bookend [Sovereign Cliff Silhouette]: Mirrors Shot 1, but transformed from cold purple storm omen into warm golden-amber mythic triumph.",
+      "entryStateEn": "THEREFORE [MYTHIC BOOKEND FINALE]: Having reached the summit throne in Shot 22—mirroring Shot 1 opening cliff—@BAO_CHUA_IGNIS_REX unleashes a triumphant roar across the prehistoric world.",
+      "exitStateEn": "End Frame Lock [Shot 23]: Iconic wide poster frame of @BAO_CHUA_IGNIS_REX roaring atop the volcanic peak against golden-amber twilight god rays.",
+      "coverageType": "POV_SUBJECTIVE",
+      "depthStagingEn": "3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] colossal titans in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm",
+      "stuntChoreography": {
+        "attackVectorEn": "Decelerating post-combat momentum with heavy chest heaving and grounded weight distribution",
+        "mechanicalContactPointEn": "Victor hind claws planted atop shattered obsidian rubble while defeated rival braces on wounded forelimbs",
+        "newtonianCounterForceEn": "Residual tremors settling across cracked canyon floor as smoke rises from impact craters",
+        "guardTransitionEn": "Dominant apex victory posture overlooking the surrendered territory",
+        "combinedChoreographyEn": "Stunt Choreography [Aftermath Posture]: Grounded 19-ton weight distribution atop shattered rubble, deep exhausted respiration, dominant apex stance."
+      },
+      "stageDestructionLevel": "STAGE_3_SMOLDERING_RUINED_AFTERMATH",
+      "stageDestructionPromptEn": "Progressive Set State [Stage 3 - Devastated Aftermath Battlefield]: Completely shattered canyon floor covered in smoking rubble, cooling black glass lava pools, falling volcanic ash snow, and golden-amber dusk rays piercing the smoke.",
+      "emotionalTensionMode": "RESONANT_AFTERMATH",
+      "visualExternalizationEn": "Show-Dont-Tell Physical Proof: smoking claw scars cooling into black glass, ash flakes drifting slowly across battle-worn scales, deep exhausted chest heaving",
+      "scaleAndInertiaEn": "Scale & Colossal Inertia: worm-eye low-angle perspective looking past foreground shattered rock ledges and splintered ancient tree trunks for human-scale contrast; 19-ton colossal mass with heavy slow-motion momentum and realistic weight transfer (zero weightless toy-like motion)",
+      "environmentalCollateralEn": "Environmental Collateral & Lens Viscerality: crumbling basalt pillars smoking in the background, glowing lava fissures cooling, drifting ash and mist brushing past the camera lens",
+      "colorScriptMoodEn": "Color Script [Phase 3 - Epic Resonance]: warm golden-amber dusk god rays breaking through settling volcanic ash and clearing purple storm clouds",
+      "shotIdx": "08",
+      "hasChar1": true,
+      "hasChar2": false,
+      "spatialPrevisDossier": {
+        "shotNumber": 8,
+        "cameraExtrinsics": {
+          "coverageType": "POV_SUBJECTIVE",
+          "focalLengthMm": "28mm Kinetic Combat Prime",
+          "apertureStop": "f/2.4 (Visceral kinetic focus)",
+          "cameraDistanceMeters": 5.8,
+          "cameraElevationMeters": 2.6,
+          "cameraPitchDeg": "+6° Dynamic Combat Vector",
+          "cameraRigMovementVectorEn": "High-velocity handheld/whip-pan combat tracking advancing along the strike vector at 2.4m/s",
+          "framingScaleConstraintEn": "SUBJECTIVE COMBAT PERSPECTIVE (5.8m distance, 2.6m elevation): Dynamic forward-looking combat framing placing the viewer directly inside the collision zone",
+          "targetAnatomicalZoneEn": "Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave"
+        },
+        "subject1Box": {
+          "entityName": "BAO_CHUA_IGNIS_REX",
+          "screenZoneXPercent": "X: 22% to 74% (Dominant Left-Center Anchor)",
+          "screenZoneYPercent": "Y: 10% to 94%",
+          "depthDistanceMeters": 5.8,
+          "bodyYawDegAndFacingEn": "Body Yaw +30° Facing Screen-Right along the 180-degree axis",
+          "anatomicalFocusAndGazeEn": "Focus Zone: Fierce golden eye and hornless jaws oriented toward Screen-Right horizon [X: 85%, Y: 48%]"
+        },
+        "subject2Box": null,
+        "contactTerrainGeometryEn": "Monumental volcanic summit pinnacle framed against clearing twilight skies and drifting golden embers",
+        "skeletalKinematics": {
+          "rootPelvisAndCenterOfMassEn": "@BAO_CHUA_IGNIS_REX anchors its 19-ton frame atop the volcanic throne at center-left apex",
+          "spineAndThoraxTorsionEn": "Neck arches skyward as glowing amber veins pulse in rhythm with the simmering volcano",
+          "primaryExtremityStrikeEn": "Jaws part in a final triumphant [ACTION_SEISMIC_ROAR] that echoes across the Cretaceous horizon",
+          "newtonianGroundRecoilAndSettleEn": "Camera pulls back into an epic widescreen tableau as embers drift into twilight",
+          "combinedKinematicsChainEn": "Summit throne anchor -> Skyward neck arch -> Triumphant apex roar -> Widescreen twilight pull-back"
+        },
+        "bespokeAudioDesign": {
+          "bespokeSfxEn": "SFX: One final monumental sovereign roar resonating across the prehistoric mountains and fading into mythic silence.",
+          "bespokeAmbientEn": "Ambient: Gentle twilight wind, drifting golden embers, and eternal volcanic horizon."
+        }
+      },
+      "spatialLayoutImagePromptEn": "[CAMERA OPTICS & PREVIS RIG]: 16:9 FULL-BLEED EDGE-TO-EDGE cinematic storyboard frame (SINGLE UNSPLIT WIDESCREEN FRAME, NO BLACK LETTERBOX BARS, NO GRID, NO TEXT). Lens: 28mm Kinetic Combat Prime at f/2.4 (Visceral kinetic focus), Camera Distance Z=5.8m, Elevation Y=2.6m, Pitch +6° Dynamic Combat Vector. SUBJECTIVE COMBAT PERSPECTIVE (5.8m distance, 2.6m elevation): Dynamic forward-looking combat framing placing the viewer directly inside the collision zone. 3D SPATIAL BOUNDING-BOX LAYOUT: [Solo Subject @BAO_CHUA_IGNIS_REX at X: 22% to 74% (Dominant Left-Center Anchor), Y: 10% to 94%, Depth Z=5.8m, Body Yaw +30° Facing Screen-Right along the 180-degree axis, Focus Zone: Fierce golden eye and hornless jaws oriented toward Screen-Right horizon [X: 85%, Y: 48%]]. [CONTACT TERRAIN GEOMETRY]: Grounded firmly on Monumental volcanic summit pinnacle framed against clearing twilight skies and drifting golden embers (zero floating limbs). SOLO SUBJECT: @BAO_CHUA_IGNIS_REX [CHARACTER 1: BAO_CHUA_IGNIS_REX] (Charcoal-black basalt T-Rex with glowing orange magma veins; bipedal on 2 hind legs, tiny 2-fingered arms, hornless T-Rex skull) inside @STAGE: DAU_TRUONG_KRETA. STRICT SOLO SHOT: zero second dinosaur. [KEYFRAME POSE SNAPSHOT (Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave)]: Grand finale wide establishing shot: @BAO_CHUA_IGNIS_REX stands atop the volcanic peak on two massive hind legs, unleashing an earth-shaking [ACTION_SEISMIC_ROAR] into the golden heavens. Motif Bookend [Sovereign Cliff Silhouette]: Mirrors Shot 1, but transformed from cold purple storm omen into warm golden-amber mythic triumph. 3-Plane Studio Depth Staging: [FG - Scale Anchor] shattered basalt rock ledges and splintered ancient trees in foreground bokeh | [MG - Core Action] the lone colossal titan in sharp anamorphic focus | [BG - Deep Horizon] towering caldera cliffs and lightning storm Progressive Set State [Stage 3 - Devastated Aftermath Battlefield]: Completely shattered canyon floor covered in smoking rubble, cooling black glass lava pools, falling volcanic ash snow, and golden-amber dusk rays piercing the smoke. Show-Dont-Tell Physical Proof: smoking claw scars cooling into black glass, ash flakes drifting slowly across battle-worn scales, deep exhausted chest heaving Color Script [Phase 3 - Epic Resonance]: warm golden-amber dusk god rays breaking through settling volcanic ash and clearing purple storm clouds Maintain 100% character anatomy and lighting consistency from locked Reference Sheets.",
+      "frontLoadedMotionVideoPromptEn": "[CAMERA MOTIONCTRL]: 16:9 28mm Kinetic Combat Prime, Distance Z=5.8m, Elevation 2.6m, +6° Dynamic Combat Vector — High-velocity handheld/whip-pan combat tracking advancing along the strike vector at 2.4m/s. [SKELETAL KINEMATICS (Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave)]: Summit throne anchor -> Skyward neck arch -> Triumphant apex roar -> Widescreen twilight pull-back. Skill: [ACTION_SEISMIC_ROAR]. [3-BEAT MOTION (RESONANT_AFTERMATH)]: (0.0s-2.5s) Atop the volcanic summit, victorious @BAO_CHUA_IGNIS_REX inhales deeply as its battle-scarred chest và golden-crimson magma veins flare one final time against the clearing dusk sky -> (2.5s-5.5s) Grand finale wide establishing shot: @BAO_CHUA_IGNIS_REX stands atop the volcanic peak on two massive hind legs, unleashing an earth-shaking [ACTION_SEISMIC_ROAR] into the golden heavens -> (5.5s-8.0s) Echoes of the sovereign roar roll across the vast prehistoric valley as volcanic ash settles gently and golden twilight crowns the undisputed king. [TERRAIN PHYSICS & ANATOMY LOCK]: Grounded on Monumental volcanic summit pinnacle framed against clearing twilight skies and drifting golden embers (@STAGE: DAU_TRUONG_KRETA). Solo Lock: Only @BAO_CHUA_IGNIS_REX [X: 22% to 74% (Dominant Left-Center Anchor), hornless bipedal T-Rex, tiny 2-fingered arms]; zero second dinosaur. Animate strictly from first frame without morphing. SFX: One final monumental sovereign roar resonating across the prehistoric mountains and fading into mythic silence. Ambient: Gentle twilight wind, drifting golden embers, and eternal volcanic horizon. (no subtitles) — no subtitles",
+      "promptAuditReport": {
+        "shotNumber": 8,
+        "totalScore": 100,
+        "passed": true,
+        "iterationsUsed": 1,
+        "metrics": {
+          "frontLoadedCameraCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "First 22 words: \"[CAMERA MOTIONCTRL]: 16:9 28mm Kinetic Combat Prime, Distance Z=5.8m, Elevation 2.6m, +6° Dynam...\""
+          },
+          "motionPromptTokenDensityCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Video prompt length: 1629 chars (~296 tokens; Optimal Veo/MovieGen range: 600-1850 chars, 100% uncut sentences)"
+          },
+          "spatialPromptPureStaticCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Image prompt length: 2524 chars, zero temporal timestamp pollution: true"
+          },
+          "spatialBoundingBoxCheck": {
+            "score": 15,
+            "max": 15,
+            "pass": true,
+            "detail": "Bounding Box [X%, Y%, Z=5.8m, Y=2.6m] & Body Yaw locked"
+          },
+          "scaleAndElevationZoneCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Coverage POV_SUBJECTIVE (Z=5.8m, Y=2.6m) matched with zone \"Forward Strike Zone: Jaws, Claws, Chest & Incoming Shockwave\""
+          },
+          "terrainContactPhysicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Terrain: \"Monumental volcanic summit pinnacle framed against clearing twili...\""
+          },
+          "skeletalKinematicsCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Kinematics: \"Summit throne anchor -> Skyward neck arch -> Triumphant apex roar -> Widesc...\""
+          },
+          "generativeNumeracyAndFoleyCoherenceCheck": {
+            "score": 10,
+            "max": 10,
+            "pass": true,
+            "detail": "Zero solo-plurality conflict (true) & Bespoke Foley SFX (\"SFX: One final monumental sovereign roar resonating acr...\")"
+          }
+        },
+        "autoFixesApplied": []
+      },
+      "startKeyframeMediaId": "cached_shot_08",
+      "startKeyframePath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_08_start_frame.png",
+      "referenceIds": [
+        "31ad33e0-c6b4-4e43-8c15-fd45ed7db089",
+        "101c3733-8dfd-4312-9d41-a066a9e91f89"
+      ],
+      "videoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/shot_08_video.mp4",
+      "vqqaScore": 95,
+      "voiceoverPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/voiceovers/shot_08_vo.mp3"
+    }
+  ]
+}

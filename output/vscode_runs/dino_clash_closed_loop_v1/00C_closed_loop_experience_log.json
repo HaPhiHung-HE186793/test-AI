@@ -1,0 +1,217 @@
+{
+  "updatedAt": "2026-10-28T10:00:01.561Z",
+  "projectDir": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1",
+  "stages": {
+    "stage1_script_and_writers_room": {
+      "status": "PASSED",
+      "shotCount": 8,
+      "plannedDurationSec": 64,
+      "entities": {
+        "char1": "BAO_CHUA_IGNIS_REX",
+        "char2": "THUY_QUAI_VOLT_SPINO",
+        "env": "DAU_TRUONG_KRETA"
+      },
+      "canonical23Mapping": [
+        {
+          "shotNumber": 1,
+          "canonical23Index": 0,
+          "macroPhase": "PRE_MAIN_BUILDUP",
+          "coverageType": "MASTER_ESTABLISHING",
+          "emotionalTensionMode": "OMINOUS_SILENCE",
+          "isDnaStateShift": false,
+          "titleVi": "Điềm Báo Trước Ngày Phán Quyết"
+        },
+        {
+          "shotNumber": 2,
+          "canonical23Index": 1,
+          "macroPhase": "PRE_MAIN_BUILDUP",
+          "coverageType": "INSERT_DETAIL_CUTAWAY",
+          "emotionalTensionMode": "OMINOUS_SILENCE",
+          "isDnaStateShift": false,
+          "titleVi": "Dấu Chân Của Ngai Vàng Lửa"
+        },
+        {
+          "shotNumber": 3,
+          "canonical23Index": 3,
+          "macroPhase": "PRE_MAIN_BUILDUP",
+          "coverageType": "KULESHOV_REACTION",
+          "emotionalTensionMode": "RISING_PRESSURE",
+          "isDnaStateShift": false,
+          "titleVi": "Kẻ Thách Thức Từ Vực Thẳm"
+        },
+        {
+          "shotNumber": 4,
+          "canonical23Index": 4,
+          "macroPhase": "PRE_MAIN_BUILDUP",
+          "coverageType": "POV_SUBJECTIVE",
+          "emotionalTensionMode": "RISING_PRESSURE",
+          "isDnaStateShift": false,
+          "titleVi": "Hai Ánh Mắt Chia Đôi Bầu Trời"
+        },
+        {
+          "shotNumber": 5,
+          "canonical23Index": 7,
+          "macroPhase": "MAIN_CLIMAX_CONFLICT",
+          "coverageType": "INSERT_DETAIL_CUTAWAY",
+          "emotionalTensionMode": "VULNERABILITY_LOW_POINT",
+          "isDnaStateShift": false,
+          "titleVi": "Móng Vuốt Lôi Đình Xé Giáp"
+        },
+        {
+          "shotNumber": 6,
+          "canonical23Index": 11,
+          "macroPhase": "MAIN_CLIMAX_CONFLICT",
+          "coverageType": "LOW_ANGLE_HERO_APEX",
+          "emotionalTensionMode": "SAKUGA_DROP_SILENCE_TO_CATHARSIS",
+          "isDnaStateShift": true,
+          "titleVi": "Huyết Quản Hỏa Ngục Thức Tỉnh (DNA Shift)"
+        },
+        {
+          "shotNumber": 7,
+          "canonical23Index": 17,
+          "macroPhase": "MAIN_CLIMAX_CONFLICT",
+          "coverageType": "LOW_ANGLE_HERO_APEX",
+          "emotionalTensionMode": "SAKUGA_DROP_SILENCE_TO_CATHARSIS",
+          "isDnaStateShift": false,
+          "titleVi": "Phán Quyết Cuối Cùng Của Tạo Hóa"
+        },
+        {
+          "shotNumber": 8,
+          "canonical23Index": 22,
+          "macroPhase": "POST_MAIN_AFTERMATH",
+          "coverageType": "POV_SUBJECTIVE",
+          "emotionalTensionMode": "RESONANT_AFTERMATH",
+          "isDnaStateShift": false,
+          "titleVi": "Tiếng Gầm Khép Lại Huyền Thoại"
+        }
+      ]
+    },
+    "stage2_visual_bible_and_character_folders": {
+      "status": "PASSED",
+      "char1MediaId": "fb9cc160-d891-46d1-b4bb-7e636d5f2187",
+      "char2MediaId": "f5213915-e224-4c67-ab3b-9696782a387b",
+      "envMediaId": "83553c63-1d92-4361-8251-898b173c17e2",
+      "auditDetails": {
+        "char1_3panel_sheet_attempt_1": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Solid organic anatomy with correct bipedal stance and theropod proportions. Panel separation is clear.",
+          "fixInstruction": "None required."
+        },
+        "char1_3panel_sheet_attempt_2": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Model adheres to standard bipedal theropod anatomy without text, rulers, or mechanical elements.",
+          "fixInstruction": "None required."
+        },
+        "char1_3panel_sheet_attempt_3": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Clean organic render adhering to standard bipedal theropod anatomy without overlays or mechanical artifacts.",
+          "fixInstruction": "None required."
+        },
+        "char2_3panel_sheet_attempt_1": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Model adheres to organic anatomy with correct sail and crocodilian snout, free of borders, text, or mechanical elements.",
+          "fixInstruction": "None required."
+        },
+        "char2_3panel_sheet_attempt_2": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Model adheres to organic reptilian anatomy with sail and snout intact. Bio-electric effects deviate slightly from strictly prehistoric realism.",
+          "fixInstruction": "Remove glowing electrical energy arcs from the claws and sail for complete prehistoric fidelity."
+        },
+        "char2_3panel_sheet_attempt_3": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Clean organic presentation meeting anatomical and visual turnaround requirements.",
+          "fixInstruction": "None required."
+        },
+        "clean_environment_lock_attempt_1": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Clean volcanic environment plate with no visible creatures, artifacts, borders, or text.",
+          "fixInstruction": "None needed; ready for production use."
+        },
+        "clean_environment_lock_attempt_2": {
+          "pass": false,
+          "score": 52,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": true,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Plate contains prominent letterbox borders along top and bottom edges.",
+          "fixInstruction": "Crop out letterbox bars to fill entire canvas frame."
+        },
+        "clean_environment_lock_attempt_3": {
+          "pass": true,
+          "score": 72,
+          "hasTextOrNumbers": false,
+          "hasRulersOrBorders": false,
+          "hasCyborgOrMetalParts": false,
+          "hasAnatomyDefect": false,
+          "critique": "Clean volcanic landscape plate free of text, borders, and biological subjects.",
+          "fixInstruction": "None required."
+        }
+      }
+    },
+    "stage3_storyboard_and_spatial_gatekeeper": {
+      "status": "PASSED",
+      "totalShotsRendered": 8,
+      "promptEngineeringScore": 100,
+      "gatekeeperLogs": {}
+    },
+    "stage4_and_5_video_generation_and_multiframe_vqqa": {
+      "status": "PASSED",
+      "totalVideosRendered": 8,
+      "totalDurationSec": 64,
+      "averageVqqaScore": 95,
+      "videoAuditLogs": {}
+    },
+    "stage6_and_7_post_production_and_master_export": {
+      "status": "PASSED",
+      "masterVideoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/MASTER_FINAL_MOVIE.mp4",
+      "directorsCutVideoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/MASTER_DIRECTORS_CUT.mp4",
+      "subtitlesPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/master_subtitles.srt",
+      "assSubtitlesPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/master_subtitles.ass",
+      "voiceoverCount": 8,
+      "promptAuditScore": 100
+    }
+  },
+  "lessonsLearned": [
+    "MEM-22.1 (Stage 1 Canonical Arc & Anti-Cyborg Lock): Khi rút gọn thời lượng thành 8 cảnh (64s), phải ánh xạ chuẩn qua resolveCanonical23Index [0,1,3,4,7,11,17,22] để bảo toàn đủ 3 Hồi + Nghịch cảnh + Thức tỉnh DNA ở Cảnh 6, đồng thời loại bỏ 100% từ khóa cơ khí (titanium/energy grid) và số đo mét khỏi prompt hình ảnh.",
+    "MEM-22.2 (Stage 2 Unannotated Turnaround & Anti-Typography Gatekeeper): Để Nano Banana Pro không bao giờ vẽ chữ tiêu đề, khung viền hay thước đo 14.2M lên Character Sheet, prompt Giai đoạn 2 tuyệt đối không dùng cụm \"reference sheet split into (1) (2) (3)\", không nhúng mã [CHARACTER: ...] hay con số mét, mà mô tả như một bức ảnh chụp xoay vòng liền mạch trên nền xám #808080 kèm Trạm Kiểm Duyệt Thị Giác tự động đúc lại nếu phát hiện chữ/viền/kim loại.",
+    "MEM-22.3 (Stage 3 Reference MediaId Direct Binding & Foot Macro Subject Override): Ở các cảnh Cận Chi Tiết Bàn Chân (INSERT_DETAIL_CUTAWAY tại Z=1.4m, Y=0.45m), phải ghi đè mô tả chủ thể thành \"three-toed basalt hind foot & talons only\" và chỉ truyền mỏ neo bối cảnh để mô hình không bị bức chân dung đầu khủng long trong Character Sheet kéo ra vẽ nguyên con. Đồng thời truyền trực tiếp referenceImageMediaIds của Stage 2 giúp triệt tiêu 100% lỗi pha loãng nhân vật trùng tên trên UI.",
+    "MEM-22.4 (Stage 5 Multi-Frame Actual Video VQQA): Thay vì chấm điểm trên ảnh tĩnh Start Frame, Trạm VQQA Giai đoạn 5 bắt buộc trích xuất 3 khung hình thực tế (1.0s, 4.0s, 7.0s) từ mỗi file MP4 bằng FFmpeg để kiểm định độ ổn định giải phẫu theo thời gian và chuyển động thực sự trước khi chuyển sang Hậu kỳ.",
+    "MEM-22.5 (Stage 7 Full-Bleed DI & 4-Stem Audio Mastering): Loại bỏ thanh đen drawbox chồng lặp ở Stage 7 để giữ khung hình 16:9 tràn viền sắc nét, kết hợp hòa âm 4 kênh (Veo SFX + ADR Narrator 3 Hồi + Symphonic Score/46Hz LFE + Sub-bass bed) và phụ đề ASS."
+  ]
+}

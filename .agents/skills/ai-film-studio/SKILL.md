@@ -40,6 +40,18 @@ Trước và trong khi chạy quy trình, Agent **BẮT BUỘC** tuân thủ 6 q
 6. **Giới hạn Kỹ thuật Ngầm của `flow-sdk`**:
    - Prompt gửi vào `Flow.generate.*` luôn cắt an toàn ở mức **`<= 3800` ký tự** (`MEM-01`).
    - Độ phân giải truyền vào `Flow.generate.video` chỉ dùng `"720p"` (cho `Veo 3.1`) hoặc `"360p"` (cho `Omni 1.1 Flash`) để tránh lỗi `Error("pl")` (`MEM-02`).
+7. **Cấu trúc Kịch bản & Prompt 3 Giai Đoạn (`Khởi động/Chuẩn bị` $\rightarrow$ `Nội dung Ý chính` $\rightarrow$ `Hậu quả/Dư chấn` — `MEM-16`)**:
+   - **Vĩ mô toàn bộ phim (`Macro 3-Phase`)**: Kể cả khi người dùng chỉ nhập 1 ý chính ngắn gọn, Đạo diễn AI tự động chia tổng số cảnh thành **20% Đầu (`PRE_MAIN_BUILDUP`: Khởi động / Chuẩn bị / Điềm báo trước cơn bão)** $\rightarrow$ **60% Giữa (`MAIN_CLIMAX_CONFLICT`: Nội dung Ý chính & Cao trào)** $\rightarrow$ **20% Cuối (`POST_MAIN_AFTERMATH`: Hậu quả chiến trường, thương tích, số phận kẻ bại trận & dư chấn khải hoàn)**.
+   - **Vi mô từng cảnh 8 giây (`Micro 3-Beat Temporal Prompt`)**: Mọi prompt Storyboard & Video đều khóa đủ 3 nhịp vật lý: **`[0.0s-2.5s Preparation/Wind-up: preparationBeatEn]`** $\rightarrow$ **`[2.5s-5.5s Main Action/Strike: mainActionBeatEn]`** $\rightarrow$ **`[5.5s-8.0s Immediate Aftermath/Fallout: aftermathConsequenceEn]`**.
+8. **Bộ Chuyển Đổi Cảm Xúc & Độ Đã Mắt Chuẩn Studio Lớn (`Story-to-Spectacle DOP Engine` — `MEM-17`)**:
+   - Tự động dịch cốt truyện chữ thông thường thành 5 lớp điện ảnh của *Pixar / Ufotable / Fortiche / DeepMind*: **(1) `Show, Don't Tell` (`visualExternalizationEn`)**, **(2) Vật chuẩn Tỷ lệ Tiền cảnh & Quán tính Khối lượng (`scaleAndInertiaEn`)**, **(3) Nén Lò Xo Cảm Xúc Sakuga & Khoảnh khắc Nghịch cảnh (`emotionalTensionMode` + `Sakuga Audio Drop`)**, **(4) Phản ứng Dây chuyền Môi trường & Ống kính (`environmentalCollateralEn`)**, và **(5) Bản đồ Màu sắc Tâm lý (`colorScriptMoodEn`)**.
+9. **Giáo Trình Đạo Diễn & Bàn Dựng Trường Lớp Studio Quốc Tế (`USC / AFI / CalArts / Walter Murch / DaVinci Resolve DI` — `MEM-18`)**:
+   - **Ngữ pháp Phủ Góc Máy 6 Loại Cảnh (`coverageType`)**: Luân phiên `MASTER_ESTABLISHING` $\rightarrow$ `INSERT_DETAIL_CUTAWAY` $\rightarrow$ `OTS_CONFRONTATION` $\rightarrow$ `KULESHOV_REACTION` $\rightarrow$ `POV_SUBJECTIVE` $\rightarrow$ `LOW_ANGLE_HERO_APEX`.
+   - **Bố cục 3 Lớp Chiều Sâu (`depthStagingEn`)**: Chia rõ Tiền cảnh mờ bokeh (`FG`) + Trung cảnh chủ thể nét căng (`MG`) + Hậu cảnh quy mô đại ngàn (`BG`).
+   - **Lời Bình Điện Ảnh Đa Tầng (`STUDIO_LITERARY_SUBTEXT_NARRATION_VI`)**: Không đọc lại hình ảnh mà khắc họa quy luật sinh tồn, xung đột số phận và cái giá của ngôi vương.
+   - **Bàn Dựng Đa Góc Máy & Chỉnh Màu DI Theo Hồi (`Stage 7B`)**: Tự động cắt cận cảnh va chạm (`Hard-Cut Punch-In 1.32x + Impact Flash` tại `t=2.25s`), áp LUT màu riêng cho từng Hồi (`colorbalance` + `eq`) và đóng khung màn ảnh rộng `2.39:1 CinemaScope`.
+10. **Kiến Trúc 12/12 Phòng Ban Điện Ảnh Chuẩn Marvel / DC / Disney (`services/studioDepartmentsEngine.ts` — `MEM-19`)**:
+    - Bổ sung 6 Phòng ban Chuyên sâu: **(1) Chỉ đạo Võ thuật & Biên đạo Đối kháng cơ học (`buildCombatChoreographyForShot`)**, **(2) Bối cảnh Phá hủy Cấp tiến 3 Giai đoạn (`resolveStageDestructionForShot` + `03B/03C`)**, **(3) Nhạc phim Giao hưởng 3 Hồi (`buildSymphonicScoreAndLfeAeval`)**, **(4) Tiếng nổ Siêu trầm 46Hz LFE Định điểm đúng giây va chạm**, **(5) Phòng ADR Biến điệu Giọng đọc theo tâm lý 3 Hồi (`buildAdrVoiceFilterForPhase`)**, và **(6) Phòng Thiết kế Poster IMAX (`00_theatrical_imax_poster.png`), Thẻ Địa danh (`LocationCard`) & Danh đề Kết phim (`EndCredits`)**.
 
 ---
 
@@ -78,12 +90,14 @@ node --experimental-strip-types .agents/skills/ai-film-studio/scripts/run-full-m
 
 Khi người dùng muốn can thiệp sâu vào từng giai đoạn, thực hiện tuần tự 7 bước sau:
 
-1. **Giai đoạn 1 (Bóc tách Kịch bản Kỹ thuật DOP — 0 Credit)**:
+1. **Giai đoạn 1 (Phòng Biên Kịch Phân Cấp 4 Tầng & Bộ Biên Dịch Kỹ Thuật DOP — `MEM-20`, 0 Credit)**:
+   - Khởi tạo **Hồ sơ Xương sống Kịch bản 4 Tầng (`00_writers_room_story_bible.json`)** qua [`writersRoomEngine.ts`](../../services/writersRoomEngine.ts) theo chuẩn *Google DeepMind Dramatron, Pixar "Therefore / But" Causality, Robert McKee Value Shift & LTX Studio Visual Motif Lexicon*: khóa Tiền đề tư tưởng, Hồ sơ Tâm lý Nhân vật, 3 Vật chứng Xuyên suốt, Chuỗi Domino Nhân-Quả (`THEREFORE_CONSEQUENCE` / `BUT_COMPLICATION_TWIST`), Đảo cực Giá trị (`valueChargeShift`), và 3 nhịp hành động độc bản cho từng cảnh trước khi biên dịch sang `compiledPromptBackboneEn` cho Ban Kỹ Thuật Prompt.
    - Gọi `Flow.generate.text` (`Omni 1.1 Flash`) bóc tách nhân vật, bối cảnh và danh sách phân cảnh (`shots`).
 2. **Giai đoạn 2 (Đúc 3-Panel Character Sheet & Clean Environment Lock — 0 Credit)**:
    - Gọi `Flow.generate.image` (`🍌 Nano Banana Pro`) tạo ảnh 3-Panel Character Sheet trên nền xám `#808080` và ảnh Bối cảnh sạch không người.
    - Gọi `Flow.save` để lưu ảnh vào dự án Google Flow và gọi `Flow.host.createCharacter({ name, personality, assetQuery })` để tạo nhân vật trong tab **"Nhân vật"** (Ảnh 1).
-3. **Giai đoạn 3 (Vẽ Storyboard Keyframes Start/End Frame — 0 Credit)**:
+3. **Giai đoạn 3 (Previs Không Gian 3D, Vẽ Storyboard Keyframes Start/End Frame & Kiểm Định `T2V-CompBench` — `MEM-21`, 0 Credit)**:
+   - Khởi tạo **Hồ sơ Tiền Trực Quan Hóa Không Gian 3D (`spatialPrevisDossier`)** và chạy **Vòng lặp Kiểm định 8 Tiêu chí `T2V-CompBench` (`auditAndHealShotPromptsInLoop`)** trong [`spatialPrevisAndPromptCompiler.ts`](../../services/spatialPrevisAndPromptCompiler.ts) để tách đôi **`spatialLayoutImagePromptEn`** (chuyên dựng khung tĩnh 3D) và **`frontLoadedMotionVideoPromptEn`** (đẩy Camera MotionCtrl + Skeletal Kinematics lên 22 từ đầu tiên cho `Veo 3.1`, đạt 100/100 điểm kiểm định tại `00B_prompt_engineering_audit_report.json`).
    - Với mỗi cảnh, gọi `Flow.generate.image` (`🍌 Nano Banana Pro`) kèm `referenceImageMediaIds: [characterMediaId, envMediaId]` để vẽ Start Frame (và End Frame nếu `cameraTransitionType === 'A_TO_B_BRIDGE'`).
    - Hiển thị toàn bộ ảnh Storyboard cho người dùng xem. Nếu chạy chế độ `--frames-only`, hỏi người dùng có muốn chỉnh sửa khung hình nào trước khi bấm máy quay video không.
 4. **Giai đoạn 4 (Bấm máy Quay Video — `Veo 3.1`)**:

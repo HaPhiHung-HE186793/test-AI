@@ -9,6 +9,18 @@ import {
   CameraTransitionType,
 } from '../types/cinemaCore';
 import { buildAutoBoundReferenceSlots } from './autoBindIngredients';
+import {
+  buildCombatChoreographyForShot,
+  resolveStageDestructionForShot,
+} from './studioDepartmentsEngine';
+import {
+  getBespokeNarrativeDossierForShot,
+  compileNarrativeDossierToPromptBackbone,
+} from './writersRoomEngine';
+import {
+  buildSpatialPrevisDossierForShot,
+  auditAndHealShotPromptsInLoop,
+} from './spatialPrevisAndPromptCompiler';
 
 declare const Flow: any;
 
@@ -83,6 +95,22 @@ Nhiệm vụ: Phân tích kịch bản của người dùng theo đúng 6 QUY T�
    - Các Shot nối tiếp chuyển động liền mạch dùng "CONTINUOUS_MATCH_FRAME".
    - Các Shot có chuyển động phức tạp cần kiểm soát chính xác điểm đầu và điểm cuối dùng "A_TO_B_BRIDGE" và bắt buộc điền "endKeyframePrompt" (Last Frame).
 5. Đánh dấu "isDnaStateShift": true ở ngay Shot đầu tiên mà nhân vật chuyển trạng thái (từ NORMAL sang DAMAGED_50 hoặc OVERDRIVE_100) để khóa Mỏ neo Ký ức Thị giác CANVAS.
+6. CẤU TRÚC KỊCH BẢN & PROMPT 3 GIAI ĐOẠN (KHỞI ĐỘNG -> Ý CHÍNH -> HẬU QUẢ - MEM-16):
+   - Vĩ mô toàn bộ phim: Kể cả khi người dùng chỉ nhập 1 ý chính ngắn gọn, BẮT BUỘC mở rộng thành 3 giai đoạn:
+     (a) Khởi động / Chuẩn bị / Điềm báo (20% cảnh đầu - OPENING/INCITING_ACTION): Bầu không khí trước cơn bão, thiên nhiên biến sắc, nhân vật lộ diện và lấy đà chuẩn bị.
+     (b) Nội dung Ý chính / Bùng nổ Cao trào (60% cảnh giữa - CLASH_ESCALATION/CLIMAX_IMPACT): Triển khai trọn vẹn ý chính, va chạm trực diện, thức tỉnh DNA và tung đòn quyết định.
+     (c) Hậu quả / Dư chấn Chiến trường (20% cảnh cuối - AFTERMATH): Khắc họa hậu quả vật lý & cảm xúc sau khi ý chính xảy ra (địa hình sụp đổ, khói bụi lắng xuống, số phận kẻ bại trận và vết sẹo của kẻ chiến thắng).
+   - Vi mô trong từng cảnh (8 giây): Trường "motionPrompt" BẮT BUỘC mô tả rõ 3 nhịp thời gian: [0.0s-2.5s Preparation/Wind-up] -> [2.5s-5.5s Main Action/Strike] -> [5.5s-8.0s Immediate Aftermath/Fallout].
+7. BỘ CHUYỂN ĐỔI CẢM XÚC & ĐỘ ĐÃ MẮT CHUẨN STUDIO LỚN (STORY-TO-SPECTACLE DOP - MEM-17):
+   - "Show, Don't Tell" (visualExternalization): CẤM dùng tính từ trừu tượng ("rất mạnh, rất tức giận"). Phải dịch thành bằng chứng vật lý (không khí méo mó vì nhiệt độ cao heat-haze, mưa chạm vảy bốc hơi tức thì, đồng tử co rút phản chiếu tia sét, sỏi đá nảy lên vì chấn động).
+   - Vật chuẩn Tỷ lệ & Quán tính Khối lượng (scaleAndInertia): Góc máy thấp (Worm's-eye 24mm) nhìn qua thân cây gãy/mỏm đá tiền cảnh để tạo cảm giác khổng lồ, chuyển động nặng nề có quán tính.
+   - Nén Lò Xo Cảm Xúc & Nghịch cảnh (emotionalTensionMode): Phải có cảnh Nhân vật chính bị dồn vào nghịch cảnh ("VULNERABILITY_LOW_POINT") trước khi thức tỉnh, và Pha Nén Lò Xo ("SAKUGA_DROP_SILENCE_TO_CATHARSIS": 2s đầu tĩnh lặng slow-motion cận cảnh ánh mắt trước khi bung nổ sóng xung kích).
+   - Phản ứng Dây chuyền Môi trường & Ống kính (environmentalCollateral): Sóng xung kích thổi bạt màn mưa thành vòm cầu trống rỗng, bụi nước và tia lửa bắn vào mặt ống kính (lens droplets & camera shake).
+   - Bản đồ Màu sắc Tâm lý (colorScriptMood): Xanh xám u ám (Điềm báo) -> Tương phản Chiaroscuro gắt (Nghịch cảnh) -> Đỏ cam lõi trắng rực rỡ (Cao trào) -> Vàng hổ phách bình minh xuyên qua tro bụi (Hậu quả).
+8. GIÁO TRÌNH ĐẠO DIỄN & DỰNG PHIM TRƯỜNG LỚP STUDIO QUỐC TẾ (USC / AFI / CALARTS / WALTER MURCH - MEM-18):
+   - Ngữ pháp Phủ Góc Máy 6 Loại Cảnh (coverageType): Tuyệt đối KHÔNG lặp lại 2 cảnh toàn thân liên tiếp. Phải luân phiên 6 loại góc máy trường lớp: "MASTER_ESTABLISHING" (Đại cảnh định vị địa lý), "INSERT_DETAIL_CUTAWAY" (Cận cảnh chi tiết vật lý: móng vuốt bấm nát đá, đồng tử mắt, giọt dung nham rơi), "OTS_CONFRONTATION" (Góc máy qua vai Over-The-Shoulder tạo chiều sâu đối kháng), "KULESHOV_REACTION" (Cận cảnh phản ứng ánh mắt/hơi thở ngay sau đòn đánh), "POV_SUBJECTIVE" (Góc nhìn chủ quan trực diện), "LOW_ANGLE_HERO_APEX" (Góc máy anh hùng 24mm sát đất).
+   - Bố cục 3 Lớp Chiều Sâu Không Gian (depthStaging): Mọi khung hình phải chia rõ 3 lớp: [FG - Foreground Out-of-Focus Bokeh] (vật cản mờ tiền cảnh) + [MG - Midground Sharp Subject] (chủ thể chính) + [BG - Background Atmospheric Scale] (hậu cảnh đại ngàn/núi lửa/sấm sét).
+   - Lời Bình Điện Ảnh Đa Tầng (Subtext & Dramatic Irony Narration trong dialogueLine): CẤM viết thuyết minh kiểu "đọc lại hình ảnh" nghiệp dư. Phải viết lời dẫn điện ảnh giàu tính triết lý sinh tồn, xung đột số phận và cái giá của ngai vàng.
 
 BẮT BUỘC TRẢ VỀ DUY NHẤT 1 JSON OBJECT HỢP LỆ THEO ĐÚNG CẤU TRÚC SAU (KHÔNG THÊM VĂN BẢN NGOÀI JSON):
 {
@@ -107,17 +135,27 @@ BẮT BUỘC TRẢ VỀ DUY NHẤT 1 JSON OBJECT HỢP LỆ THEO ĐÚNG CẤU TR
   },
   "shots": [
     {
-      "title": "Tiêu đề ngắn gọn của Shot (Tiếng Việt)",
+      "title": "Tiêu đề ngắn gọn của Shot (Tiếng Việt - ghi rõ thuộc Khởi động, Ý chính hay Hậu quả)",
       "Beat": "OPENING | INCITING_ACTION | CLASH_ESCALATION | CLIMAX_IMPACT | AFTERMATH",
+      "coverageType": "MASTER_ESTABLISHING | INSERT_DETAIL_CUTAWAY | OTS_CONFRONTATION | KULESHOV_REACTION | POV_SUBJECTIVE | LOW_ANGLE_HERO_APEX",
+      "depthStaging": "[FG - Foreground Out-of-Focus Bokeh]: ... | [MG - Midground Sharp Subject]: ... | [BG - Background Scale]: ...",
+      "emotionalTensionMode": "OMINOUS_SILENCE | RISING_PRESSURE | VULNERABILITY_LOW_POINT | SAKUGA_DROP_SILENCE_TO_CATHARSIS | VISCERAL_CLASH | RESONANT_AFTERMATH",
       "cameraAngle": "Góc máy & chuyển động (VD: Low-Angle Heroic Tracking / Whip-Pan Close-Up / 360 Orbit)",
       "transitionType": "HARD_CUT_NEW_ANGLE | CONTINUOUS_MATCH_FRAME | A_TO_B_BRIDGE",
       "entityState": "NORMAL | DAMAGED_50 | OVERDRIVE_100",
       "isDnaStateShift": false,
+      "preparationBeat": "Mô tả tiếng Anh nhịp 1 [0.0s-2.5s]: Khởi động, lấy đà, hoặc tĩnh lặng nén lò xo Sakuga trước đòn đánh",
+      "mainActionBeat": "Mô tả tiếng Anh nhịp 2 [2.5s-5.5s]: Hành động chính hoặc cú va chạm cực đại",
+      "aftermathConsequence": "Mô tả tiếng Anh nhịp 3 [5.5s-8.0s]: Hậu quả tức thời, sóng xung kích, đất đá vỡ vụn, phản lực",
+      "visualExternalization": "Bằng chứng vật lý Show-Dont-Tell bằng tiếng Anh (heat-haze distortion, rain flash-boiling on scales, contracting pupil)",
+      "scaleAndInertia": "Vật chuẩn tỷ lệ tiền cảnh & quán tính khối lượng nặng bằng tiếng Anh",
+      "environmentalCollateral": "Phản ứng dây chuyền môi trường & hiệu ứng ống kính bằng tiếng Anh (rain-parting shockwave, lens droplets)",
+      "colorScriptMood": "Bản đồ màu sắc tâm lý của cảnh bằng tiếng Anh",
       "visualPrompt": "Prompt tạo ảnh Keyframe đầu bằng tiếng Anh (kết hợp Tầng 1 Subject DNA + Tầng 3 Lighting & Environment, bố cục rõ nét, không nhòe)",
       "endKeyframePrompt": "Prompt tạo ảnh Keyframe đích bằng tiếng Anh (chỉ cần khi transitionType là A_TO_B_BRIDGE)",
-      "motionPrompt": "Prompt chuyển động Video bằng tiếng Anh (Tầng 2 Kinematic Camera + Vật lý va chạm chân thực, tốc độ khung hình ổn định, không biến dạng chi tiết)",
-      "dialogueLine": "Câu thoại hoặc hiệu ứng âm thanh điểm nhấn của cảnh (Tiếng Việt)",
-      "sfxCue": "Mô tả âm thanh SFX & nhạc nền cho cảnh"
+      "motionPrompt": "Prompt chuyển động Video 3 nhịp bằng tiếng Anh: [0.0s-2.5s Preparation] -> [2.5s-5.5s Main Strike] -> [5.5s-8.0s Immediate Aftermath]",
+      "dialogueLine": "Câu thoại hoặc lời dẫn thuyết minh phản ánh nguyên nhân - diễn biến - hậu quả của cảnh (Tiếng Việt)",
+      "sfxCue": "Mô tả âm thanh SFX 3 nhịp (tiếng lấy đà -> tiếng va chạm -> tiếng đất đá sụp đổ) & nhạc nền"
     }
   ]
 }`;
@@ -275,16 +313,80 @@ BẮT BUỘC TRẢ VỀ DUY NHẤT 1 JSON OBJECT HỢP LỆ THEO ĐÚNG CẤU TR
             ? matchedEntities.map((e) => e.id)
             : finalEntities.map((e) => e.id);
 
+        const STUDIO_COVERAGE_CYCLE = [
+          'MASTER_ESTABLISHING',
+          'INSERT_DETAIL_CUTAWAY',
+          'OTS_CONFRONTATION',
+          'KULESHOV_REACTION',
+          'POV_SUBJECTIVE',
+          'LOW_ANGLE_HERO_APEX',
+        ];
+        const coverageType = item.coverageType || STUDIO_COVERAGE_CYCLE[idx % STUDIO_COVERAGE_CYCLE.length];
+        const depthStaging =
+          item.depthStaging ||
+          '[FG - Foreground Out-of-Focus Bokeh]: shattered basalt fragments and rain mist | [MG - Midground Sharp Subject]: primary titan action in razor focus | [BG - Background Scale]: erupting volcanic caldera and forked lightning';
+
+        const macroPhaseForDept =
+          idx < Math.max(1, Math.round(rawShots.length * 0.2))
+            ? 'PRE_MAIN_BUILDUP'
+            : idx >= rawShots.length - Math.max(1, Math.round(rawShots.length * 0.2))
+            ? 'POST_MAIN_AFTERMATH'
+            : 'MAIN_CLIMAX_CONFLICT';
+        const stuntSpec = buildCombatChoreographyForShot(idx, macroPhaseForDept);
+        const stageDestruction = resolveStageDestructionForShot(idx + 1, rawShots.length);
+        const narrativeDossier = getBespokeNarrativeDossierForShot(idx, rawShots.length);
+        const compiledBackbone = compileNarrativeDossierToPromptBackbone(narrativeDossier);
+        const secondaryCharName = finalEntities[1]?.name || 'Challenger';
+        const spatialPrevis = buildSpatialPrevisDossierForShot(
+          idx,
+          coverageType,
+          true,
+          finalEntities.length > 1,
+          primaryCharName,
+          secondaryCharName
+        );
+        const { prompts: disentangledPrompts } = auditAndHealShotPromptsInLoop({
+          aspectRatio,
+          shotNumber: idx + 1,
+          previs: spatialPrevis,
+          subjectBindingPromptEn: taggedVisualPrompt,
+          char1AnatomicalLockEn: 'STRICT ANATOMY LOCK: preserve exact head, limb proportions, and silhouette from Reference Image [1]',
+          char2AnatomicalLockEn: 'STRICT ANATOMY LOCK: preserve exact head, limb proportions, and silhouette from Reference Image [2]',
+          hasChar1: true,
+          hasChar2: finalEntities.length > 1,
+          char1Name: primaryCharName,
+          char2Name: secondaryCharName,
+          envName: stageLockName,
+          skillUsed: item.skillUsed,
+          depthStagingEn: depthStaging,
+          stageDestructionPromptEn: stageDestruction.promptEn,
+          visualExternalizationEn:
+            item.visualExternalization ||
+            'Show-Dont-Tell physical proof: thermal heat-haze distortion, rain droplets flash-boiling on hot armor, contracting pupil',
+          colorScriptMoodEn: item.colorScriptMood || '',
+          prepBeatEn: item.preparationBeat || narrativeDossier.bespokePreparationBeatEn,
+          mainBeatEn: item.mainActionBeat || narrativeDossier.bespokeMainActionBeatEn,
+          aftermathBeatEn: item.aftermathConsequence || narrativeDossier.bespokeAftermathConsequenceEn,
+          microTurningPointTwistEn: narrativeDossier.microTurningPointTwistEn,
+          recurringMotifPropStateEn: narrativeDossier.recurringMotifPropStateEn,
+          emotionalTensionMode: item.emotionalTensionMode || 'VISCERAL_CLASH',
+          sfxCueEn: item.sfxCue ? `SFX: ${item.sfxCue}.` : 'SFX: Heavy impact clash and seismic tremor.',
+          ambientCueEn: 'Ambient: Volcanic storm wind and crackling embers.',
+        });
+
+        const spectacleClause = disentangledPrompts.spatialLayoutImagePromptEn;
+        const threePhaseMotion = disentangledPrompts.frontLoadedMotionVideoPromptEn;
+
         const shot: TimelineShot = {
           id: `shot_${Date.now()}_${idx + 1}`,
           order: idx + 1,
           title: item.title || `Cảnh ${idx + 1}`,
           narrativeBeat: item.Beat || 'CLASH_ESCALATION',
-          actionDescription: taggedVisualPrompt,
+          actionDescription: `${taggedVisualPrompt}. ${spectacleClause}`,
           endKeyframePrompt:
             transitionType === 'A_TO_B_BRIDGE'
               ? item.endKeyframePrompt ||
-                `[CHARACTER: ${primaryCharName}] [ENVIRONMENT LOCK: ${stageLockName}] ${rawVisualPrompt}, final impact pose, settled dust, dramatic framing`
+                `[CHARACTER: ${primaryCharName}] [ENVIRONMENT LOCK: ${stageLockName}] ${item.aftermathConsequence || rawVisualPrompt}, final impact aftermath pose, settled dust, dramatic framing`
               : undefined,
           cameraAngle: item.cameraAngle || 'Dynamic Tracking Shot',
           transitionType,
@@ -305,9 +407,7 @@ BẮT BUỘC TRẢ VỀ DUY NHẤT 1 JSON OBJECT HỢP LỆ THEO ĐÚNG CẤU TR
               startY: 60,
               endX: 80,
               endY: 40,
-              motionPrompt:
-                item.motionPrompt ||
-                'Smooth cinematic camera movement, realistic physics inertia, zero morphing',
+              motionPrompt: threePhaseMotion,
             },
           ],
           audioStems: {
