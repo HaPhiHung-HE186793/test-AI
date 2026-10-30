@@ -104,7 +104,13 @@ async function img(key: string, prompt: string, refs: string[] = [], kind: 'imag
       const ch = bible.characters.find((c: any) => c.id === cid);
       if (!ch) continue;
       refs.push(sheetIds[cid].turnaround); order.push(`${ch.displayNameEn} character turnaround sheet`);
-      if (isFace && shot.characters.length === 1) { refs.push(sheetIds[cid].portrait); order.push(`${ch.displayNameEn} face portrait`); }
+      if (isFace && shot.characters.length === 1) {
+        refs.push(sheetIds[cid].portrait); order.push(`${ch.displayNameEn} face portrait`);
+      } else if (!isFace && shot.characters.length === 1 && sheetIds[cid].master) {
+        // L25 (MEM-24.4 đã kiểm chứng): Cảnh hành động 1 nhân vật truyền kèm Master Sheet (chứa 4 Action Poses + Macro Details).
+        // Cảnh 2 nhân vật giữ nguyên [char1_turnaround, char2_turnaround, stage] vì NBP giới hạn 3 ảnh tham chiếu (L26).
+        refs.push(sheetIds[cid].master); order.push(`${ch.displayNameEn} master action pose sheet`);
+      }
     }
     // Cảnh hành động dùng bối cảnh "Hồ đấu" khoá cố định (hội đồng: 5 bối cảnh khác nhau làm mất mạch truyện)
     const stageId = shot.useStage && state.media['03S_stage_fight_pool'] ? state.media['03S_stage_fight_pool'] : envId;

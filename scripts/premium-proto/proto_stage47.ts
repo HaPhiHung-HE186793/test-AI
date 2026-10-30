@@ -47,12 +47,19 @@ async function judgeTake(shot: any, file: string, key: string) {
   const times = Array.from({ length: N }, (_, i) => Number((0.2 + (i * (dur - 0.5)) / (N - 1)).toFixed(2)));
   const images: Array<{ base64: string; mimeType: string }> = [];
   const id = String(shot.shotNumber).padStart(2, '0');
-  for (const cid of (shot.characters || []).slice(0, 1)) {
-    const tp = path.join(runDir, `02_${cid}_turnaround.png`);
-    if (fs.existsSync(tp)) {
-      const small = path.join(runDir, `${key}_ref_${cid}_sheet.jpg`);
-      execSync(`"${FF}" -hide_banner -loglevel error -y -i "${tp}" -vf scale=480:-2 -q:v 5 "${small}"`);
-      images.push({ base64: fs.readFileSync(small).toString('base64'), mimeType: 'image/jpeg' });
+  const lineupP = path.join(runDir, '02_cast_lineup_sheet.png');
+  if ((shot.characters || []).length >= 2 && fs.existsSync(lineupP)) {
+    const small = path.join(runDir, `${key}_ref_cast_lineup.jpg`);
+    execSync(`"${FF}" -hide_banner -loglevel error -y -i "${lineupP}" -vf scale=480:-2 -q:v 5 "${small}"`);
+    images.push({ base64: fs.readFileSync(small).toString('base64'), mimeType: 'image/jpeg' });
+  } else {
+    for (const cid of (shot.characters || []).slice(0, 1)) {
+      const tp = path.join(runDir, `02_${cid}_turnaround.png`);
+      if (fs.existsSync(tp)) {
+        const small = path.join(runDir, `${key}_ref_${cid}_sheet.jpg`);
+        execSync(`"${FF}" -hide_banner -loglevel error -y -i "${tp}" -vf scale=480:-2 -q:v 5 "${small}"`);
+        images.push({ base64: fs.readFileSync(small).toString('base64'), mimeType: 'image/jpeg' });
+      }
     }
   }
   const nSheet = images.length;
