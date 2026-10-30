@@ -29,20 +29,22 @@ for (const pair of flag('--override', '').split(',').filter(Boolean)) {
 const _ffStatic = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'node_modules', 'ffmpeg-static', process.platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg');
 const FF = fs.existsSync(_ffStatic) ? _ffStatic : 'ffmpeg';
 const pad = (n: number) => String(n).padStart(2, '0');
-const bible = JSON.parse(fs.readFileSync(path.join(runDir, 'bible.json'), 'utf-8'));
+const bibleFile = flag('--bible', 'bible.json');
+const bible = JSON.parse(fs.readFileSync(path.isAbsolute(bibleFile) ? bibleFile : path.join(runDir, bibleFile), 'utf-8'));
 
 const inputs = bible.shots
   .map((s: any) => ({ s, f: overrides[s.shotNumber] || path.join(runDir, `shot_${pad(s.shotNumber)}_${tag}_best.mp4`) }))
   .filter((x: any) => fs.existsSync(x.f))
   .map((x: any) => {
     const ov = Boolean(overrides[x.s.shotNumber]);
-    // Clip dựng tay đã được cắt với lề 0.25s trước / 0.45s sau -> khoá cứng đúng đoạn (giữ cả đoạn "hold" cuối phim).
+    // Clip dựng tay đã được cắt với lề 0.25s trước / 0.45s sau -> khoá cứng đúng đoạn (giữ cả đoạn "hold" cuối phim và trọn câu thoại).
     const dur = ov ? M.probeMedia(FF, x.f).durationSec : 0;
     const hold = x.s.shotNumber === bible.shots[bible.shots.length - 1].shotNumber;
+    const hasDlg = Boolean(x.s.dialogue);
     return {
-      shotIdx: pad(x.s.shotNumber), videoPath: x.f, beat: x.s.beat, shotSize: x.s.shotSize, hasDialogue: Boolean(x.s.dialogue), subtitleVi: x.s.dialogue?.lineVi || '',
+      shotIdx: pad(x.s.shotNumber), videoPath: x.f, beat: x.s.beat, shotSize: x.s.shotSize, hasDialogue: hasDlg, subtitleVi: x.s.dialogue?.lineVi || '',
       actingBeat: x.s.actingBeatEn, action: x.s.actionEn,
-      ...(ov && dur > 0.8 ? { forceWindow: { inSec: 0.25, outSec: Number((dur - (hold ? 0.05 : 0.45)).toFixed(3)) } } : {}),
+      ...(ov && dur > 0.8 ? { forceWindow: { inSec: hasDlg ? 0.05 : 0.25, outSec: Number((dur - (hold || hasDlg ? 0.05 : 0.45)).toFixed(3)) } } : {}),
     };
   });
 console.log('shots:', inputs.map((i: any) => `${i.shotIdx}${overrides[parseInt(i.shotIdx, 10)] ? '*' : ''}`).join(' '));
