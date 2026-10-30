@@ -74,16 +74,24 @@ async function img(key: string, prompt: string, refs: string[] = [], kind: 'imag
   }
   console.log(`🎬 ${bible.movieTitle} — ${bible.shots.length} cảnh, nhân vật: ${bible.characters.map((c: any) => c.displayNameEn).join(' / ')}`);
 
-  // Stage 2 — bible sheets + env plate
-  const sheetIds: Record<string, { turnaround: string; expression: string; portrait: string }> = {};
+  // Stage 2 — bible sheets + all-in-one master sheet + 2-character cast lineup + env plate
+  const sheetIds: Record<string, { turnaround: string; expression: string; portrait: string; master: string }> = {};
   for (const ch of bible.characters) {
     const p = E.buildCharacterSheetPrompts({ style, character: ch } as any);
+    const pRef = E.buildCharacterSheetPrompts({ style, character: ch, withReferenceImage: true } as any);
     sheetIds[ch.id] = {
       turnaround: await img(`02_${ch.id}_turnaround`, p.turnaroundEn, [], 'sheet'),
-      expression: '', portrait: '',
+      expression: '', portrait: '', master: '',
     };
-    sheetIds[ch.id].expression = await img(`02_${ch.id}_expression_sheet`, p.expressionSheetEn, [sheetIds[ch.id].turnaround], 'sheet');
-    sheetIds[ch.id].portrait = await img(`02_${ch.id}_portrait`, p.portraitEn, [sheetIds[ch.id].turnaround], 'sheet');
+    sheetIds[ch.id].expression = await img(`02_${ch.id}_expression_sheet`, pRef.expressionSheetEn, [sheetIds[ch.id].turnaround], 'sheet');
+    sheetIds[ch.id].portrait = await img(`02_${ch.id}_portrait`, pRef.portraitEn, [sheetIds[ch.id].turnaround], 'sheet');
+    sheetIds[ch.id].master = await img(`02_${ch.id}_master_sheet`, pRef.masterSheetEn, [sheetIds[ch.id].turnaround], 'sheet');
+  }
+  let castLineupId = '';
+  if (bible.characters.length >= 2 && (E as any).buildCastLineupSheetPrompt) {
+    const lineupPrompt = (E as any).buildCastLineupSheetPrompt({ style, characters: bible.characters, withReferenceImages: true });
+    const lineupRefs = bible.characters.slice(0, 2).map((c: any) => sheetIds[c.id]?.turnaround).filter(Boolean);
+    castLineupId = await img('02_cast_lineup_sheet', lineupPrompt, lineupRefs, 'sheet');
   }
   const envId = await img('03_environment_plate', E.buildEnvironmentPlatePrompt({ style, environment: bible.environment, aspectRatio } as any), [], 'image');
 
@@ -108,7 +116,8 @@ async function img(key: string, prompt: string, refs: string[] = [], kind: 'imag
     const sid = String(shot.shotNumber).padStart(2, '0');
     const startId = await img(`shot_${sid}_start_frame`, kp, refs.slice(0, 3), 'image', false);
     // Cảnh tiếp xúc giữa hai nhân vật: khung KẾT THÚC khoá danh tính + buộc hành động xảy ra (Veo first+last frame)
-    if (shot.endStateEn) {
+    // Nếu shot.singleFrame === true (MEM-24.4 Hybrid I2V cho cảnh thoại CU hoặc cú cắt ngắn), bỏ qua end_frame.
+    if (shot.endStateEn && !shot.singleFrame) {
       // Khung kết thúc = CHỈNH SỬA khung đầu (Nano Banana giữ nền/ánh sáng/góc máy), chỉ đổi tư thế -> Veo nội suy không bị trôi nền.
       const inShot = shot.characters.map((cid: string) => bible.characters.find((c: any) => c.id === cid)).filter(Boolean);
       const keepLooks = inShot.map((c: any, i: number) => `${c.displayNameEn} keeps the exact same character design, proportions and markings as image ${i + 2}: ${c.lookEn}`).join('. ');

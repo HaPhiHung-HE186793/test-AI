@@ -16,6 +16,7 @@ const model = flag('--model', 'Veo 3.1 - Lite');
 const takes = Math.max(1, Math.min(4, parseInt(flag('--takes', '1'), 10)));
 const parallel = Math.max(1, parseInt(flag('--parallel', '3'), 10));
 const only = flag('--only', '').split(',').map((n) => parseInt(n, 10)).filter((n) => n > 0);
+const singleFrameShots = flag('--single-frame-shots', '').split(',').map((n) => parseInt(n, 10)).filter((n) => n > 0);
 const masterOnly = argv.includes('--master-only');
 const durationSec = parseInt(flag('--duration', '8'), 10);
 // ffmpeg-static của dự án (Windows: ffmpeg.exe, Linux/macOS: ffmpeg) — đường dẫn tương đối, chạy được trên mọi máy.
@@ -115,8 +116,9 @@ async function renderShot(shot: any) {
         try {
           const t0 = Date.now();
           const endMedia = state.media[`shot_${id}_end_frame`];
+          const useSingleFrame = Boolean(shot.singleFrame) || singleFrameShots.includes(shot.shotNumber);
           const req: any = { prompt: motion, modelDisplayName: model, aspectRatio: '16:9', durationSeconds: durationSec, resolution: '720p', firstFrameImageMediaId: kfMedia };
-          if (endMedia && !dropLastFrame) req.lastFrameImageMediaId = endMedia;
+          if (endMedia && !dropLastFrame && !useSingleFrame) req.lastFrameImageMediaId = endMedia;
           const res: any = await withTimeout(Flow.generate.video(req), 900_000, `video ${id}`);
           fs.writeFileSync(file, Buffer.from(res.base64, 'base64'));
           console.log(`   ✅ video shot_${id} ${tag} take ${k} (${((Date.now() - t0) / 1000).toFixed(0)}s, ${model}${req.lastFrameImageMediaId ? ', first+last frame' : ''})`);

@@ -1,8 +1,8 @@
 # 🔁 HANDOFF — đọc file này TRƯỚC TIÊN ở mọi phiên / máy / AI mới
 
-> Cập nhật lần cuối: **2026-10-30** (hoàn tất Vòng 6 → `master_final_v7/MASTER_FINAL_v7_music.mp4`, đạt **8.30/10**).
+> Cập nhật lần cuối: **2026-10-30** (hoàn tất Vòng 6 → `master_final_v7/MASTER_FINAL_v7_music.mp4`, đạt **8.30/10** + tích hợp kiến trúc Viral Studio **MEM-24.4 (`L25–L28`)**).
 > Người dùng nói tiếng Việt → **luôn trả lời bằng tiếng Việt**.
-> Sau khi đọc file này, đọc tiếp theo thứ tự: `AGENTS.md` → `MEMORY.md` mục **4.8 (MEM-24.1)**, **4.9 (MEM-24.2)** và **4.10 (MEM-24.3)** → `scripts/premium-proto/README.md` → `output/vscode_runs/dino_premium_v2/EDL_v7.json`.
+> Sau khi đọc file này, đọc tiếp theo thứ tự: `AGENTS.md` → `MEMORY.md` mục **4.8 (MEM-24.1)**, **4.9 (MEM-24.2)**, **4.10 (MEM-24.3)** và **4.11 (MEM-24.4)** → `scripts/premium-proto/README.md` → `output/vscode_runs/dino_premium_v2/EDL_v7.json`.
 
 ---
 
@@ -35,14 +35,14 @@ Dừng vòng lặp khi **tất cả** đúng:
 | Thứ | Ở đâu |
 | :--- | :--- |
 | Quy tắc dự án (luôn bật) | `AGENTS.md`, `AGENT.md`, `context.md`, `.agents/skills/ai-film-studio/SKILL.md` |
-| Bài học đã kiểm chứng (bắt buộc đọc) | `MEMORY.md` mục **4.3–4.10** (MEM-24, 24.1 = L1–L11, 24.2 = L12–L18, 24.3 = L19–L24) |
-| Engine prompt Premium | `services/premiumPromptEngine.ts` (story room, prompt khung đầu/cuối/chuyển động, lint, giám khảo) |
+| Bài học đã kiểm chứng (bắt buộc đọc) | `MEMORY.md` mục **4.3–4.11** (MEM-24, 24.1 = L1–L11, 24.2 = L12–L18, 24.3 = L19–L24, 24.4 = L25–L28) |
+| Engine prompt Premium | `services/premiumPromptEngine.ts` (story room, `masterSheetEn`, `buildCastLineupSheetPrompt`, prompt khung đầu/cuối/chuyển động, lint, giám khảo) |
 | Engine hậu kỳ Premium | `services/premiumMasteringEngine.ts` (`masterFilm`: forceWindow/beatWindow/hflip, gain map, ambience, tone curve, -14 LUFS) |
 | Nối dây Flow ↔ engine | `services/premiumShotProduction.ts`, `.agents/skills/ai-film-studio/scripts/run-full-movie-pipeline.ts` (đường Premium mặc định) |
 | Vòng lặp làm phim bằng tay (đã tạo ra v1→v7) | `scripts/premium-proto/*` + `scripts/premium-proto/README.md` |
 | Remaster run cũ | `scripts/remaster-run.ts` (`npm run remaster -- --run <runDir>`) |
-| Kiểm thử offline (0 credit) | `npm run test:premium` (21.598 kiểm tra, PASS 100%), `npx tsc --noEmit -p .` (mốc nền 201 lỗi cũ — không được tăng) |
-| Run phim hiện tại | `output/vscode_runs/dino_premium_v2/` — `bible.json` (kịch bản + thứ tự cảnh), `state.json` (mediaId Flow, prompt, phán quyết giám khảo), `EDL_v7.json` (cảnh nào lấy take nào, cắt đâu), `edit_r7/` (clip đã cắt), `audio_r3/` (nhạc/âm nền/foley), `master_final_v7/MASTER_FINAL_v7_music.mp4`, `eval_v6_panel_report.json`, `eval_v7_panel_report.json` |
+| Kiểm thử offline (0 credit) | `npm run test:premium` (21.800 kiểm tra: `19.854` engine + `1.946` shot-production, PASS 100%), `npx tsc --noEmit -p .` (mốc nền 201 lỗi cũ — không được tăng) |
+| Run phim hiện tại | `output/vscode_runs/dino_premium_v2/` — `bible.json` (kịch bản + thứ tự cảnh), `state.json` (mediaId Flow, prompt, phán quyết giám khảo), `02_char1_master_sheet.png`, `02_char2_master_sheet.png`, `02_cast_lineup_sheet.png` (All-in-One & Versus Sheets chuẩn Shayan Sadiq), `EDL_v7.json` (cảnh nào lấy take nào, cắt đâu), `edit_r7/` (clip đã cắt), `audio_r3/` (nhạc/âm nền/foley), `master_final_v7/MASTER_FINAL_v7_music.mp4`, `eval_v6_panel_report.json`, `eval_v7_panel_report.json` |
 | Hội đồng đánh giá | `docs/handoff/eval-panel-workflow.js` (4 góc nhìn + chủ tọa), báo cáo các vòng trước tóm tắt ở mục 7 |
 
 **Lưu ý git**: các take bị loại, ảnh kiểm tra, bản master cũ (v1–v5) **chỉ còn trên máy gốc** (bị `.gitignore`, ~1 GB). Repo giữ đủ để làm tiếp: keyframe hiện hành, take hiện hành, clip dựng v6, nhạc, master v6.

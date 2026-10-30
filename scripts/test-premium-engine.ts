@@ -29,6 +29,7 @@ import {
   buildFallbackStoryBible,
   planCoverage,
   buildCharacterSheetPrompts,
+  buildCastLineupSheetPrompt,
   buildEnvironmentPlatePrompt,
   buildKeyframePrompt,
   buildMotionPrompt,
@@ -242,6 +243,15 @@ function assertPrompts(label: string, b: PremiumStoryBible, aspectRatio: string,
     }
     check(/front|three-quarter/i.test(sheets.turnaroundEn) && /back/i.test(sheets.turnaroundEn), `${label} ${c.id}: turnaround lacks views`);
     check(/six/i.test(sheets.expressionSheetEn) && /surprised/i.test(sheets.expressionSheetEn), `${label} ${c.id}: expression sheet lacks six expressions`);
+    check(/master character model sheet/i.test(sheets.masterSheetEn) && /action poses/i.test(sheets.masterSheetEn) && /swatches/i.test(sheets.masterSheetEn), `${label} ${c.id}: master sheet lacks Shayan sections`);
+  }
+  if (b.characters.length >= 2) {
+    const lineup = buildCastLineupSheetPrompt({ style, characters: b.characters, withReferenceImages: withRefs });
+    const lr = lintPremiumPrompt(lineup, 'sheet', { style });
+    wordStats.sheet.push(lr.words);
+    check(lr.words >= WORDS.sheet[0] && lr.words <= WORDS.sheet[1], `${label} cast lineup: ${lr.words} words outside ${WORDS.sheet.join('-')}`);
+    check(lr.ok, `${label} cast lineup: ${lr.issues.join(' | ')}\n      ${lineup}`);
+    check(/#808080/.test(lineup) && /screen-right/i.test(lineup) && /screen-left/i.test(lineup), `${label} cast lineup: missing #808080 or 180-deg facing`);
   }
   const plate = buildEnvironmentPlatePrompt({ style, environment: b.environment, aspectRatio });
   const pr = lintPremiumPrompt(plate, 'image', { style });

@@ -83,6 +83,8 @@ export interface PremiumShot {
   endStateEn?: string;
   /** Ghi đè hướng nhìn trên màn hình cho cảnh này (mặc định char1 -> 'right', char2 -> 'left'). */
   facing?: Partial<Record<PremiumCharId, PremiumScreenFacing>>;
+  /** Chế độ Hybrid Keyframe (MEM-24.4): true = chỉ dùng Start Frame (I2V) cho cảnh thoại cận mặt hoặc cú cắt hành động ngắn, không ép khớp End Frame. */
+  singleFrame?: boolean;
 }
 
 export interface PremiumStoryBible {
@@ -1746,6 +1748,7 @@ export function buildStoryRoomPrompt(params: {
       ? '- narrationVi: for shots WITHOUT dialogue, one short Vietnamese voice-over line (at most 12 words) that adds meaning the picture cannot show; "" for dialogue shots. All other sound comes from the scene.'
       : '- There is no narrator and no voice-over. All sound comes from the scene.',
     `- A character with canSpeak true may say one short in-character line in a shot: at most 8 words, specific and natural. ${langRule}`,
+    '- For speaking characters, plant a confident or curious setup line in an early close-up and land a short deadpan punchline in the final resolution close-up. Keep speaking shots framed as steady close-ups or over-the-shoulder shots where the body stays still and the face carries the performance.',
     '- Animals that should stay animal-like and creatures set canSpeak false and use vocalEn instead: a short non-verbal sound such as "a low curious rumble" or "a startled squeak".',
     '- Put dialogue in at most half of the shots; silence and reactions carry the rest.',
     '- sfxEn: the specific sounds of the action. ambientEn: the background sound of the place.',
@@ -3255,6 +3258,7 @@ export function buildCharacterSheetPrompts(params: { style: PremiumStyleKey; cha
   turnaroundEn: string;
   expressionSheetEn: string;
   portraitEn: string;
+  masterSheetEn: string;
 } {
   const p = preset(coerceStyle(params.style));
   const c = params.character;
@@ -3285,7 +3289,52 @@ export function buildCharacterSheetPrompts(params: { style: PremiumStyleKey; cha
     ),
     110
   );
-  return { turnaroundEn, expressionSheetEn, portraitEn };
+  const masterSheetEn = fitLevels(
+    [24, 18, 14, 10, 7].map(
+      (n, idx) => () =>
+        `${p.sheetStyleEn} All-in-one master character model sheet of ${name}, ${idx >= 3 ? lookPhrase(c, n) : look(n)}. Left: hero pose beside front, side and back turnaround views. Top right: six facial expressions showing confident, happy, curious, serious, surprised and angry moods. Middle right: four action poses: ${poses}. Bottom strip: close-up eye, nose and surface texture details with five colour swatches. ${NEUTRAL_BG}, soft even studio light, clean unlabeled layout.${refTail}`
+    ),
+    108
+  );
+  return { turnaroundEn, expressionSheetEn, portraitEn, masterSheetEn };
+}
+
+/**
+ * Bảng đối kháng / so sánh tỷ lệ 2 nhân vật (Shayan Sadiq Versus / Two-Character Production Sheet, MEM-24.4):
+ * đặt char1 bên trái nhìn sang phải và char2 bên phải nhìn sang trái trên cùng một khung 16:9 (#808080) để khoá cứng
+ * tỷ lệ kích thước tương đối (relative scale) và trục 180 độ cho mọi cảnh Two-Shot.
+ */
+export function buildCastLineupSheetPrompt(params: {
+  style: PremiumStyleKey;
+  characters: PremiumCharacter[];
+  withReferenceImages?: boolean;
+}): string {
+  const p = preset(coerceStyle(params.style));
+  const cs = (params.characters || []).filter(Boolean).slice(0, 2);
+  if (cs.length < 2) {
+    return buildCharacterSheetPrompts({ style: params.style, character: cs[0], withReferenceImage: params.withReferenceImages }).masterSheetEn;
+  }
+  const [c1, c2] = cs;
+  const n1 = c1.displayNameEn || 'Character One';
+  const n2 = c2.displayNameEn || 'Character Two';
+  let full1 = softenEffects(cleanEn(c1.lookEn)) || withArticle(c1.species || 'character');
+  let full2 = softenEffects(cleanEn(c2.lookEn)) || withArticle(c2.species || 'character');
+  if (hasHueTrio(`${full1} ${full2}`)) {
+    full1 = stripPurple(full1) || withArticle(c1.species || 'character');
+    full2 = stripPurple(full2) || withArticle(c2.species || 'character');
+  }
+  const look1 = (n: number, short: boolean) => lcArticle( lookSummary(full1, n, !short) );
+  const look2 = (n: number, short: boolean) => lcArticle( lookSummary(full2, n, !short) );
+  const refTail = params.withReferenceImages
+    ? ` ${n1} matches reference image one and ${n2} matches reference image two with identical design and colours.`
+    : '';
+  return fitLevels(
+    [16, 12, 9, 7, 5].map(
+      (n, idx) => () =>
+        `${p.sheetStyleEn} Two-character versus model sheet, both facing each other. Left half: ${n1}, ${look1(n, idx >= 2)}, on the left in profile facing screen-right, with small front and side views below. Right half: ${n2}, ${look2(n, idx >= 2)}, on the right in profile facing screen-left toward ${n1} at true relative scale, with small front and side views below. ${NEUTRAL_BG}, even studio lighting, clean unlabeled layout.${refTail}`
+    ),
+    108
+  );
 }
 
 /** Ảnh nền bối cảnh sạch (không nhân vật), một nguồn sáng chủ đạo, một họ màu. */
