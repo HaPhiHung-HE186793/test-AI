@@ -1,0 +1,72 @@
+   ✅ video shot_14 final take 1 (110s, Veo 3.1 - Fast, first+last frame)
+   ✅ video shot_15 final take 1 (110s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_15 take 1: 42/100 FAIL — Ember breaks the closed-mouth acting beat with an open-mouth expression and unexpectedly flips facing direction away from camera. | artifacts: mouth opens; 180 flip; erratic motion | beat 0-0.2-0.5s
+   🏅 judge shot_14 take 1: 72/100 PASS — The jaw snap and subsequent annoyed squint execute cleanly without design drift. | artifacts: slight eye pop during blink | beat 2.15-3.13-3.62s
+   ✅ video shot_14 final take 2 (80s, Veo 3.1 - Fast, first+last frame)
+   ✅ video shot_15 final take 2 (95s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_15 take 2: 48/100 FAIL — Ember performs the ducking motion but breaks character emotion by opening his mouth into an unintended grin, violating the required shocked, closed-mouth expression. | artifacts: facial expression break; unintended smiling; open mouth grin | beat 0.2-0.4-0.7s
+   🏅 judge shot_14 take 2: 67/100 FAIL — The jaw snap stutters before closing, but the final annoyance beat reads clearly. | artifacts: jaw motion hitch | beat 2.6-3.4-3.7s
+   ✅ video shot_14 final take 3 (86s, Veo 3.1 - Fast, first+last frame)
+   ✅ video shot_15 final take 3 (104s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_14 take 3: 68/100 FAIL — The mouth closure stutters slightly before snapping, but Tide stays solidly on-model and resolves into the intended annoyed expression. | artifacts: jaw hitching; secondary mouth flutter | beat 2.4-3.1-3.6s
+   🏅 judge shot_15 take 3: 46/100 FAIL — Ember breaks the mandated beat by opening his mouth into a toothy grin during the duck action. | artifacts: open mouth grin; motion blur; expression drift | beat 0-0.2-0.7s
+   ✅ video shot_07 final take 1 (86s, Veo 3.1 - Fast, first+last frame)
+   ✅ video shot_13 final take 1 (86s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_13 take 1: 40/100 FAIL — Ember lands on his stomach instead of his back before abruptly snapping into the target pose at the final frame. | artifacts: belly_landing_instead_of_back; sudden_pose_snap; incorrect_expression | beat 3.4-3.7-3.7s
+   🏅 judge shot_07 take 1: 68/100 FAIL — The tail sweep executes the scripted action cleanly with coherent mud interaction and stable anatomy. | artifacts: minor rubberiness; mud particle pop | beat 1.2-2.2-3.2s
+   ✅ video shot_07 final take 2 (89s, Veo 3.1 - Fast, first+last frame)
+   ✅ video shot_13 final take 2 (103s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_13 take 2: 72/100 PASS — Ember completes the fall cleanly, maintaining solid volume and holding a clear frozen shock read upon landing. | artifacts: mud splash simulation jitter; mild rigid settling | beat 2.7-3.2-3.7s
+   🏅 judge shot_07 take 2: 68/100 FAIL — The tail sweep and mud splash execute the action convincingly with stable asset continuity. | artifacts: minor fluid clipping; tail elasticity glitch | beat 1.67-2.15-2.64s
+   ✅ video shot_13 final take 3 (102s, Veo 3.1 - Fast, first+last frame)
+   ✅ video shot_07 final take 3 (94s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_07 take 3: 68/100 FAIL — The tail sweep executes cleanly across the frame with good fluid interaction, though the secondary return motion softens the initial impact. | artifacts: mud splash fx; tail motion arc | beat 1.5-2.2-2.9s
+   🏅 judge shot_13 take 3: 68/100 FAIL — Ember lands clearly on the back with consistent model tracking and holds a solid frozen shock read through the impact. | artifacts: heavy mud splash; minor motion blur | beat 2.7-3.2-3.7s
+   ✅ video shot_09 final take 1 (89s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_09 take 1: 68/100 FAIL — Ember maintains consistent character identity while performing the fierce charge along the shore. | artifacts: minor foot slide; slight mouth flutter | beat 0.2-0.69-1.18s
+   ✅ video shot_09 final take 2 (101s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_09 take 2: 68/100 FAIL — Ember maintains consistent model fidelity and captures the fierce charging beat well despite slight foot-sliding in the mud. | artifacts: minor mouth shape fluctuation; slight foot sliding | beat 2.2-2.7-3.7s
+   ✅ video shot_09 final take 3 (102s, Veo 3.1 - Fast, first+last frame)
+   🏅 judge shot_09 take 3: 68/100 FAIL — Ember executes the forward charge well with solid model continuity and intense focus throughout. | artifacts: minor foot sliding; mud splash popping | beat 1.2-2.5-3.2s
+   🎚️    -> ✂️  Shot 01: 0.54s → 3.13s (2.58s) · establishing/setup: chuyển động 0.23, năng lượng âm 0.26 (trọng số -0.15) (viral-reel 2.2-3s)
+   🎚️    -> ✂️  Shot 02: 0.54s → 3.33s (2.79s) · acting/setup: chuyển động 0.70, năng lượng âm 0.42 (trọng số -0.15) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 03: 2.00s → 3.92s (1.92s) · action/inciting: chuyển động 0.47, năng lượng âm 0.64 (trọng số +0.3) (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 04: 2.83s → 5.29s (2.46s) · acting/inciting: chuyển động 0.73, năng lượng âm 0.61 (trọng số +0.12) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 14: 0.33s → 2.79s (2.46s) · acting/escalation: chuyển động 0.50, năng lượng âm 0.61 (trọng số +0.12) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 15: 0.33s → 2.63s (2.29s) · acting/escalation: chuyển động 0.60, năng lượng âm 0.57 (trọng số +0.12) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 06: 0.50s → 3.08s (2.58s) · acting/escalation: chuyển động 0.62, năng lượng âm 0.58 (trọng số +0.12) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 07: 1.54s → 3.46s (1.92s) · insert/reversal: chuyển động 0.71, năng lượng âm 0.59 (trọng số +0.3) (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 13: 0.46s → 2.92s (2.46s) · establishing/reversal: chuyển động 0.61, năng lượng âm 0.61 (trọng số +0.1) (viral-reel 2.2-3s)
+   🎚️    -> ✂️  Shot 08: 2.63s → 5.33s (2.71s) · acting/reversal: chuyển động 0.55, năng lượng âm 0.43 (trọng số +0.12) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 09: 1.08s → 2.29s (1.21s) · action/climax: chuyển động 0.79, năng lượng âm 0.90 (trọng số +0.3) (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 10: 0.25s → 2.25s (2.00s) · acting/climax: chuyển động 0.51, năng lượng âm 0.52 (trọng số +0.12) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 11: 0.38s → 3.00s (2.63s) · acting/climax: chuyển động 0.56, năng lượng âm 0.63 (trọng số +0.12) (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 12: 3.29s → 5.29s (2.00s) · acting/resolution: chuyển động 0.69, năng lượng âm 0.18 (trọng số -0.15) (viral-reel 2-4.7s)
+   🎚️    -> 🔊 Kế hoạch hỗn âm lượt 1 (14 shot, crossfade 5 khung): độ trải nhịp lắng ×3 / cao trào ×1, liền mạch 0.3 → mục tiêu -14 LUFS, dự kiến LRA 7.58, nhảy mức median 3.3 dB, limiter ép tối đa 3.94 dB (18.31% khối bị chạm, 0.76% > 3 dB)
+   🎚️    -> 🔊 Cắt 03→04: L-cut (tiếng cảnh trước kéo dài 0.42s)
+   🎚️    -> 🔊 Shot 14: hạ 0.09 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Shot 15: hạ 0.45 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Shot 06: hạ 2.36 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Shot 06: sửa đỉnh nhọn cô lập 1.233s (nguồn), 25 ms, -0.87 dB
+   🎚️    -> 🔊 Shot 06: sửa đỉnh nhọn cô lập 1.908s (nguồn), 33 ms, -1.85 dB
+   🎚️    -> 🔊 Shot 06: sửa đỉnh nhọn cô lập 2.158s (nguồn), 25 ms, -5.17 dB
+   🎚️    -> 🔊 Shot 06: sửa đỉnh nhọn cô lập 2.275s (nguồn), 25 ms, -1.44 dB
+   🎚️    -> 🔊 Shot 07: hạ 0.61 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Cắt 06→07: J-cut (tiếng cảnh sau vào sớm 0.42s)
+   🎚️    -> 🔊 Shot 13: hạ 3.35 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Cắt 07→13: J-cut (tiếng cảnh sau vào sớm 0.42s)
+   🎚️    -> 🔊 Shot 08: hạ 0.90 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Shot 09: hạ 1.11 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Shot 09: sửa đỉnh nhọn cô lập 2.150s (nguồn), 42 ms, -3.76 dB
+   🎚️    -> 🔊 Shot 10: hạ 2.69 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Cắt 09→10: L-cut (tiếng cảnh trước kéo dài 0.42s)
+   🎚️    -> 🔊 Shot 11: hạ 0.88 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Cắt 10→11: L-cut (tiếng cảnh trước kéo dài 0.21s)
+   🎚️    -> 🔊 Shot 12: hạ 0.20 dB so với bản đồ kịch tính để đỉnh vừa trần limiter
+   🎚️    -> 🔊 Cắt 11→12: L-cut (tiếng cảnh trước kéo dài 0.42s)
+   🎚️    -> 🔊 Premix -23.8 LUFS / TP -8.6 dBTP / LRA 9 — tìm mục tiêu cao nhất (từ -14 LUFS) giữ limiter <= 3 dB (+1 dB trên <= 1% khối) và LRA 8-11 LU
+   🎚️    -> 🔊 Kiểm tra AAC -14 LUFS lượt 1: -14.4 LUFS, TP -1.7 dBTP, LRA 8.5 (gain tĩnh 9.80 dB, trần -1.75 dB)
+   🎚️    -> 🔊 Kiểm tra AAC -14 LUFS lượt 2: -14.1 LUFS, TP -1.5 dBTP, LRA 8.3 (gain tĩnh 10.20 dB, trần -1.75 dB)
+   🎚️    -> 🔊 Chốt -14 LUFS: gain tĩnh 10.20 dB, limiter ép tối đa ~3.52 dB (5.47% khối 10 ms bị chạm, 0.47% > 3 dB)
+   🎚️    -> 🎞️  Encode master 1920x1080 24fps (libx264 slow CRF16 tune film, 1 lần duy nhất)...
+🏁 MASTER {"path":"D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\master_final\\MASTER_FINAL_MOVIE.mp4","res":"1920x1080","dur":32,"shots":14,"asl":2.286,"median":2.458,"lufs":{"integratedLufs":-14.1,"lra":8.3,"truePeakDb":-1.5},"warnings":["14/14 clip nguồn độ phân giải thấp hơn 1920x1080 — đã upscale lanczos; dùng bản upscale 1080p của Flow để nét hơn."]}

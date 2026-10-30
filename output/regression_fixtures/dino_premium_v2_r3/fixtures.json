@@ -1,0 +1,18 @@
+{
+  "purpose": "Frozen regression inputs for npm run test:premium (the live output/vscode_runs/dino_premium_v2 run keeps changing while the user renders).",
+  "createdAt": "2026-10-30",
+  "files": {
+    "bible_0149.json": "dino_premium_v2 bible.json as rendered in r3 (01:49) — truncation, open-mouth, judge-cleaning and impact-SFX regressions.",
+    "bible_0352.json": "dino_premium_v2 bible.json at 03:52 (start keyframes of the live 03:53-03:58 render were built from it).",
+    "bible_0430.json": "dino_premium_v2 bible.json at 04:30 (shot 5 split into shots 14/15).",
+    "shot_09_r3_take.mp4": "Shot 9 r3 Veo Quality take (charge; mud burst at ~6.25-7.0 s, contact ~5.5 s). Default window used to land on the burst (fxMid 0.38).",
+    "shot_13_r3_take.mp4": "Shot 13 r3 Veo Quality take (fall into mud; mud crown replaces Ember at ~2.0-2.75 s). Default window used to cover the crown (fxMid 0.39)."
+  },
+  "md5": {
+    "bible_0149.json": "9ddd9e20fc76fd08e1da0f3170458ffc",
+    "bible_0352.json": "2553a886c0f7f5521304b21d39b11b5e",
+    "bible_0430.json": "f939b0b152e12bce9096e336c0723022",
+    "shot_09_r3_take.mp4": "649723a6be79608edf56ea29a196792b",
+    "shot_13_r3_take.mp4": "5b580416038600209ae5390a7a3a16f0"
+  }
+}

@@ -1,0 +1,25 @@
+   ✅ video shot_09 final take 1 (89s, Veo 3.1 - Quality, first+last frame)
+[h264 @ 000002c1e178c1c0] mmco: unref short failure
+   🏅 judge shot_09 take 1: 52/100 FAIL — Ember's stripes inconsistently disappear and reappear while the charge direction erratically shifts. | artifacts: plastic look
+   ✅ video shot_11 final take 1 (141s, Veo 3.1 - Quality, first+last frame)
+   🏅 judge shot_11 take 1: 72/100 PASS — Initial expression reads as playful rather than fierce rage. | artifacts: 
+   ✅ video shot_09 final take 2 (99s, Veo 3.1 - Quality, first+last frame)
+   🏅 judge shot_09 take 2: 54/100 FAIL — Ember's orientation and scale jump erratically instead of maintaining a continuous charge. | artifacts: blurry face
+   ✅ video shot_11 final take 2 (105s, Veo 3.1 - Quality, first+last frame)
+   🏅 judge shot_11 take 2: 72/100 PASS — Framing is looser than the requested tight close-up and the facial scar slightly shifts position. | artifacts: 
+   🎚️    -> ✂️  Shot 01: 0.33s → 3.04s (2.71s) · establishing/setup: chuyển động 0.23, năng lượng âm 0.24 (viral-reel 2.2-3s)
+   🎚️    -> ✂️  Shot 02: 0.25s → 3.04s (2.79s) · acting/setup: chuyển động 0.70, năng lượng âm 0.46 (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 03: 1.29s → 3.00s (1.71s) · action/inciting: chuyển động 0.84, năng lượng âm 0.63 (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 04: 0.96s → 3.54s (2.58s) · acting/inciting: chuyển động 0.74, năng lượng âm 0.52 (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 05: 0.71s → 1.92s (1.21s) · action/escalation: chuyển động 0.89, năng lượng âm 0.89 (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 06: 0.63s → 3.04s (2.42s) · acting/escalation: chuyển động 0.65, năng lượng âm 0.59 (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 07: 2.96s → 4.67s (1.71s) · action/reversal: chuyển động 0.72, năng lượng âm 0.76 (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 08: 0.42s → 3.00s (2.58s) · acting/reversal: chuyển động 0.58, năng lượng âm 0.50 (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 09: 6.04s → 7.54s (1.50s) · action/climax: chuyển động 0.84, năng lượng âm 0.86 (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 10: 0.46s → 2.88s (2.42s) · acting/climax: chuyển động 0.49, năng lượng âm 0.58 (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 11: 0.25s → 2.67s (2.42s) · acting/climax: chuyển động 0.54, năng lượng âm 0.46 (viral-reel 2-3.2s)
+   🎚️    -> ✂️  Shot 12: 0.96s → 5.25s (4.29s) · acting/resolution: chuyển động 0.73, năng lượng âm 0.64 (viral-reel 2-4.7s)
+   🎚️    -> 🔊 Đo loudness hỗn âm (12 shot, 28.33s) để chuẩn hoá -14 LUFS / -1.5 dBTP...
+   🎚️    -> 🔊 Kiểm tra AAC lần 1: -14.1 LUFS, TP -1.3 dBTP, LRA 5.8 (dynamic, limiter -8.20 dB)
+   🎚️    -> 🎞️  Encode master 1920x1080 24fps (libx264 slow CRF16, 1 lần duy nhất)...
+🏁 MASTER {"path":"D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\master_final\\MASTER_FINAL_MOVIE.mp4","res":"1920x1080","dur":28.333,"shots":12,"asl":2.361,"median":2.417,"lufs":{"integratedLufs":-14.1,"lra":5.8,"truePeakDb":-1.3},"warnings":["12/12 clip nguồn độ phân giải thấp hơn 1920x1080 — đã upscale lanczos; dùng bản upscale 1080p của Flow để nét hơn."]}

@@ -27,7 +27,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 2564 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 2810 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
@@ -84,7 +84,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 2831 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 3006 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
@@ -141,7 +141,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 2551 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 2797 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
@@ -198,7 +198,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 2981 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 3227 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
@@ -255,7 +255,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 3115 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 3345 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
@@ -314,7 +314,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 2664 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 2910 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
@@ -371,7 +371,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 3131 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 3377 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
@@ -428,7 +428,7 @@
           "score": 15,
           "max": 15,
           "pass": true,
-          "detail": "Image prompt length: 2524 chars, zero temporal timestamp pollution: true"
+          "detail": "Image prompt length: 2770 chars, zero temporal timestamp pollution: true"
         },
         "spatialBoundingBoxCheck": {
           "score": 15,
