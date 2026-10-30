@@ -51,7 +51,7 @@ console.log('shots:', inputs.map((i: any) => `${i.shotIdx}${overrides[parseInt(i
 const outDir = path.join(runDir, outName);
 fs.mkdirSync(outDir, { recursive: true });
 const report = M.masterFilm(inputs, {
-  ffmpegPath: FF, outDir, aspectRatio: '16:9', pacing: flag('--pacing', 'viral-reel') as any, subtitles: 'dialogue',
+  ffmpegPath: FF, outDir, aspectRatio: '16:9', pacing: flag('--pacing', 'viral-reel') as any, subtitles: flag('--subtitles', 'dialogue') as any,
   musicPath: flag('--music', '') || undefined, ambiencePath: flag('--ambience', '') || undefined, grain: true, log: (m: string) => console.log('   🎚️', m),
 });
 console.log('🏁 MASTER', JSON.stringify({ path: report.masterPath, res: `${report.width}x${report.height}`, dur: report.durationSec, shots: report.shotCount, asl: report.avgShotSec, median: report.medianShotSec, lufs: report.measured, warnings: report.warnings }));

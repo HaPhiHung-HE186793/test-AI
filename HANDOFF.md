@@ -1,23 +1,24 @@
 # 🔁 HANDOFF — đọc file này TRƯỚC TIÊN ở mọi phiên / máy / AI mới
 
-> Cập nhật lần cuối: **2026-10-30** (hoàn tất Vòng 7 → `master_final_v8/MASTER_FINAL_v8_subtitled.mp4` & `master_final_v8/MASTER_FINAL_v8_music.mp4`, kiểm chứng thực chiến **MEM-24.4 (`L25–L28`)** trên phim hoàn chỉnh 15 cảnh).
+> Cập nhật lần cuối: **2026-10-30** (hoàn tất Vòng 8 → `master_final_v9/MASTER_FINAL_v9_subtitled.mp4` & `master_final_v9/MASTER_FINAL_v9_music.mp4` + `03_storyboard_grid_sheet_saqib.png`, kiểm chứng thực chiến **MEM-24.5** từ 3 tác giả Facebook `D.Pommikox`, `Shayan Sadiq`, `Muhammad Saqib` trên phim hoàn chỉnh 15 cảnh).
 > Người dùng nói tiếng Việt → **luôn trả lời bằng tiếng Việt**.
-> Sau khi đọc file này, đọc tiếp theo thứ tự: `AGENTS.md` → `MEMORY.md` mục **4.8 (MEM-24.1)**, **4.9 (MEM-24.2)**, **4.10 (MEM-24.3)** và **4.11 (MEM-24.4)** → `scripts/premium-proto/README.md` → `output/vscode_runs/dino_premium_v2/bible_v8.json`.
+> Sau khi đọc file này, đọc tiếp theo thứ tự: `AGENTS.md` → `MEMORY.md` mục **4.8 (MEM-24.1)**, **4.9 (MEM-24.2)**, **4.10 (MEM-24.3)**, **4.11 (MEM-24.4)** và **4.12 (MEM-24.5)** → `scripts/premium-proto/README.md` → `output/vscode_runs/dino_premium_v2/bible_v9.json`.
 
 ---
 
 ## 0. TL;DR — đang ở đâu, làm gì tiếp
 
 - **Mục tiêu của người dùng**: làm lại trận đấu 2 khủng long *từ đầu*, rồi tự kiểm tra – tự cải tiến **liên tục cho đến khi chất lượng ngang (hoặc hơn) 5 reel tham chiếu** (POMMI, reel rái cá, reel đấm bốc… — xem mục 2). Không dừng giữa chừng để hỏi, trừ khi bị chặn thật.
-- **Bản phim hoàn chỉnh mới nhất (ĐÃ ĐẠT TIÊU CHÍ HOÀN THÀNH MỤC 1 + TÍCH HỢP MEM-24.4 L25–L28)**:
-  - Bản có phụ đề song ngữ đốt sẵn: [`output/vscode_runs/dino_premium_v2/master_final_v8/MASTER_FINAL_v8_subtitled.mp4`](output/vscode_runs/dino_premium_v2/master_final_v8/MASTER_FINAL_v8_subtitled.mp4)
-  - Bản sạch không đốt cứng phụ đề (kèm SRT rời): [`output/vscode_runs/dino_premium_v2/master_final_v8/MASTER_FINAL_v8_music.mp4`](output/vscode_runs/dino_premium_v2/master_final_v8/MASTER_FINAL_v8_music.mp4)
-  - Thông số: `33.21s`, 15 cảnh hoàn chỉnh, `1920x1080` `24fps`, `-14.2 LUFS`, `TP -1.5 dBTP`, tích hợp đầy đủ:
-    1. **Hook Dialogue (Shot 02, `02.25s–05.75s`)**: Ember thở dài nói câu mở đầu (`"One quiet sip. Every single time."` / `"Chỉ xin một ngụm yên bình thôi mà."`) bằng Single-Frame I2V (`L27 + L28`).
-    2. **Confrontation Warning Dialogue (Shot 04, `07.50s–11.00s`)**: Tide gằn giọng cảnh cáo (`"Step back. This pool is mine."` / `"Lùi lại đi. Hồ nước này là của ta."`).
-    3. **Action Pose Charge từ All-in-One Master Sheet (Shot 09, `20.21s–22.42s`)**: Ember lao húc đầu búa lấy trực tiếp dáng chạy/húc từ `02_char1_master_sheet.png` (`L25`).
-    4. **Closing Deadpan Punchline (Shot 12, `26.50s–30.00s`)**: Ember nhếch mép nói câu chốt hạ sau khi tha thứ (`"Not bad for a puddle swimmer."` / `"Không tệ cho một gã bơi vũng bùn."`).
-- **Điểm hội đồng đánh giá (thang 10, so với reel)**: vòng 2 = 4.5 → vòng 3 = 5.0 → vòng 4 = 5.5 → vòng 5 (`v6`) = **6.45** (`eval_v6_panel_report.json`) → vòng 6 (`v7`) = **8.30 / 10** (`eval_v7_panel_report.json`) → **vòng 7 (`v8`) = hoàn thiện thoại viral + dáng hành động Master Sheet (`MEM-24.4`)**.
+- **Bản phim hoàn chỉnh mới nhất (ĐÃ ĐẠT TIÊU CHÍ HOÀN THÀNH MỤC 1 + TÍCH HỢP MEM-24.4 & MEM-24.5)**:
+  - Bản có phụ đề song ngữ đốt sẵn: [`output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_subtitled.mp4`](output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_subtitled.mp4) (bản sao nhanh: [`output/vscode_runs/dino_premium_v2/MASTER_FINAL_MOVIE_v9.mp4`](output/vscode_runs/dino_premium_v2/MASTER_FINAL_MOVIE_v9.mp4))
+  - Bản sạch không đốt cứng phụ đề (kèm SRT rời): [`output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_music.mp4`](output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_music.mp4)
+  - Bảng Storyboard Grid 3x3 chuẩn `Muhammad Saqib`: [`output/vscode_runs/dino_premium_v2/03_storyboard_grid_sheet_saqib.png`](output/vscode_runs/dino_premium_v2/03_storyboard_grid_sheet_saqib.png)
+  - Thông số: `33.00s`, 15 cảnh hoàn chỉnh, `1920x1080` `24fps`, `-14.3 LUFS`, `LRA 7.5`, `TP -1.5 dBTP`, tích hợp đầy đủ các kỹ thuật từ bình luận ghim Facebook của 3 tác giả (`MEM-24.5`):
+    1. **Comment-Bait Comedy Gag (Shot 02, `02.33s–05.75s`)**: Ember ngọ nguậy đôi tay T-Rex ngắn ngủn hài hước (`D.Pommikox` style) và dọa: `"Don't make me roll up my sleeves!"` / `"Đừng để ta phải xắn tay áo lên nhé!"`.
+    2. **Confrontation Comment-Bait Gag (Shot 06, `13.42s–16.92s`)**: Tide nhô lên chế giễu đôi tay ngắn của Ember trên một hồ nước cạn: `"Back off, short-arms! This ocean is mine."` / `"Lùi lại đi đồ tay ngắn! Cả đại dương này là của ta."` (0% morphing nhờ gắn đúng `shot_06_start_frame` của Tide).
+    3. **Shayan Sadiq Verbatim Time-Coded Prompt `[0–1.5s] / [1.5–4s]` + `Sound: brief silence, ...` (Shot 09, `21.38s–23.17s`)**: Ember lao húc đầu búa với nhịp cắt thời gian và âm thanh vật lý nguyên bản từ bình luận ghim của `Shayan Sadiq`.
+    4. **Closing Deadpan Punchline Gag (Shot 12, `29.46s–32.88s`)**: Ember định giơ tay đập tay ăn mừng nhưng sực nhớ tay quá ngắn: `"High five... oh wait. Just drink the water."` / `"Đập tay cái nào... à quên tay ngắn. Thôi uống nước đi."`.
+- **Điểm hội đồng đánh giá (thang 10, so với reel)**: vòng 2 = 4.5 → vòng 3 = 5.0 → vòng 4 = 5.5 → vòng 5 (`v6`) = **6.45** (`eval_v6_panel_report.json`) → vòng 6 (`v7`) = **8.30 / 10** (`eval_v7_panel_report.json`) → vòng 7 (`v8`) = hoàn thiện thoại viral (`MEM-24.4`) → **vòng 8 (`v9`) = áp dụng nguyên bản Prompt + Comment-Bait Gag từ Facebook của `D.Pommikox`, `Shayan Sadiq`, `Muhammad Saqib` (`MEM-24.5`)**.
 - **Nếu người dùng muốn tinh chỉnh thêm hoặc mở rộng sang phim mới**:
   1. Thiết lập máy (mục 4), mở `npm run bridge` và kiểm tra `curl http://localhost:4321/api/status` → `"ok":true`.
   2. Xem báo cáo chi tiết Vòng 6 tại [`output/vscode_runs/dino_premium_v2/eval_v7_panel_report.json`](output/vscode_runs/dino_premium_v2/eval_v7_panel_report.json) và [`output/vscode_runs/dino_premium_v2/EDL_v7.json`](output/vscode_runs/dino_premium_v2/EDL_v7.json).

@@ -1,0 +1,394 @@
+{
+  "movieTitle": "Bạo Chúa Dung Nham và Thủy Quái Lôi Đình",
+  "loglineVi": "Giữa Thung lũng Nham thạch Kreta, Bạo Chúa Dung Nham phải giữ lấy nguồn nước cuối cùng trước Thủy Quái Lôi Đình đang đói khát — và ở khoảnh khắc chiến thắng, nhận ra sức mạnh thật sự nằm ở lòng khoan dung.",
+  "style": "pixar3d",
+  "characters": [
+    {
+      "id": "char1",
+      "safeId": "BAO_CHUA_DUNG_NHAM_BAO_CHUA_IGNIS_REX",
+      "displayNameVi": "Bạo Chúa Dung Nham",
+      "displayNameEn": "Ember",
+      "species": "tyrannosaurus",
+      "lookEn": "a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head, short broad snout, big amber eyes, a nicked brow scar and bright ember-orange stripes along the spine and tail as a signature accent",
+      "voiceEn": "deep chesty growls and proud huffs",
+      "canSpeak": false,
+      "personalityVi": "• Chỉ số hình thể: Cao 6 m, dài 12 m, nặng khoảng 8 tấn; đầu to, mõm rộng biểu cảm, tay trước ngắn hai ngón, chân sau to khỏe, đuôi dày; da xám than sần với sọc cam rực dọc lưng, vết sẹo nhỏ trên chân mày.\n• Tính cách & Linh hồn cảm xúc: Kiêu hãnh, nóng nảy nhưng giàu lòng trắc ẩn; giấu nỗi sợ mất mái nhà sau tiếng gầm, càng bị dồn ép càng bùng lên ý chí.\n• Hành động & Chiêu thức đặc trưng:\n  - [ACTION_WARNING_ROAR]: Dậm chân và gầm cảnh cáo để bảo vệ lãnh thổ.\n  - [SKILL_1_HEADBUTT_CHARGE]: Cúi đầu lao tới húc trán cực mạnh vào ngực đối thủ.\n  - [SKILL_2_STOMP_QUAKE]: Dậm chân thật mạnh làm mặt đất rung chuyển khiến đối thủ mất thăng bằng."
+    },
+    {
+      "id": "char2",
+      "safeId": "THUY_QUAI_LOI_DINH_THUY_QUAI_VOLT_SPINO",
+      "displayNameVi": "Thủy Quái Lôi Đình",
+      "displayNameEn": "Tide",
+      "species": "spinosaurus",
+      "lookEn": "a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent",
+      "voiceEn": "raspy hisses and clicking chuffs",
+      "canSpeak": false,
+      "personalityVi": "• Chỉ số hình thể: Cao 5 m tính cả buồm lưng, dài 14 m, nặng khoảng 7 tấn; thân thon dài, mõm hẹp như cá sấu, vuốt trước cong, buồm lưng cao; da xanh xám đá phiến với sọc xanh ngọc trên buồm.\n• Tính cách & Linh hồn cảm xúc: Xảo quyệt, kiên nhẫn, đói khát nhưng biết tôn trọng kẻ mạnh hơn mình.\n• Hành động & Chiêu thức đặc trưng:\n  - [ACTION_REED_AMBUSH]: Ẩn mình trong lau sậy rồi trồi lên bất ngờ.\n  - [SKILL_1_SNAP_LUNGE]: Lao tới đớp nhanh bằng chiếc mõm dài.\n  - [SKILL_2_TAIL_SWEEP]: Xoay người quật đuôi quét ngã đối thủ."
+    }
+  ],
+  "environment": {
+    "safeId": "THUNG_LUNG_NHAM_THACH_KRETA",
+    "displayNameVi": "Thung Lũng Nham Thạch Kreta",
+    "lookEn": "a wide volcanic valley of dark basalt ridges and warm steaming pools, with sparse ferns on the rocks and a slow lava river glowing far in the background",
+    "timeOfDayEn": "golden hour",
+    "lightingEn": "a low golden sun from the right raking across the rocks",
+    "paletteEn": "warm amber and dusty rust tones with a small teal accent"
+  },
+  "shots": [
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "looking down at the last warm pool",
+      "vocalEn": "a weary rumbling sigh",
+      "sfxEn": "heavy footsteps crunching on gravel",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Hồ nước cuối cùng",
+      "beat": "setup",
+      "shotSize": "EWS",
+      "startStateEn": "Ember stands small on a ridge above the last warm pool, the valley stretching out below",
+      "actionEn": "Ember stops at the edge of the ridge and spots the last warm pool below",
+      "actingBeatEn": "tired drooping shoulders lift as hope returns to the eyes",
+      "shotNumber": 1,
+      "endStateEn": "Ember stands at the edge of the ridge with tired shoulders lifted and hopeful eyes fixed on the pool below"
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "eyes flicking to the side",
+      "dialogue": {
+        "character": "char1",
+        "lineEn": "Don't make me roll up my sleeves!",
+        "lineVi": "Đừng để ta phải xắn tay áo lên nhé!"
+      },
+      "vocalEn": "a low questioning rumble",
+      "sfxEn": "water lapping, then sudden stillness",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Ngụm nước bị cắt ngang",
+      "beat": "setup",
+      "shotSize": "CU",
+      "startStateEn": "side-angle close-up at the edge of the jade pool, Ember standing on two hind legs with tiny arms tucked to the chest, bending the neck down to sip the clear water with eyes half closed in relief",
+      "actionEn": "Ember sips the water, then freezes mid-sip and lifts the chin",
+      "actingBeatEn": "relief turns into sharp alert suspicion, brows tightening",
+      "shotNumber": 2,
+      "endStateEn": "the same side-angle close-up, Ember frozen with the chin lifted slightly above the water, mouth firmly closed, brows tightened and amber eyes flicking sideways in sharp suspicion, a single droplet on the chin",
+      "useStage": true,
+      "singleFrame": true
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char1",
+        "char2"
+      ],
+      "gazeEn": "Tide stares straight at Ember",
+      "vocalEn": "a raspy clicking chuff",
+      "sfxEn": "reeds parting and wet footsteps",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Kẻ lạ trong lau sậy",
+      "beat": "inciting",
+      "shotSize": "OTS",
+      "startStateEn": "over the shoulder of chubby young Ember on the left bank, whose rounded striped back and head fill the left foreground in soft blur, Tide stands in the shallow jade pool at the far reed-lined bank facing screen-left in three-quarter profile, long crocodile snout level and green eyes narrowed",
+      "actionEn": "Tide tilts the head slightly and curls the long snout into a slow smirk",
+      "actingBeatEn": "watchful narrowed eyes turn into a sly closed-mouth smirk",
+      "shotNumber": 3,
+      "endStateEn": "the same over-the-shoulder view across the jade pool, Tide standing in the exact same spot in the shallow water with the head tilted slightly and a sly closed-mouth smirk on the long crocodile snout, while Ember's blurred striped back stays in the left foreground",
+      "useStage": true
+    },
+    {
+      "cameraMoveEn": "slow push in",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "locked on Tide",
+      "vocalEn": "a deep warning roar",
+      "sfxEn": "a deep rumbling chest growl and pebbles vibrating",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Lời cảnh cáo",
+      "beat": "inciting",
+      "shotSize": "MCU",
+      "startStateEn": "Ember straightens to full height, chest puffed out, water dripping from the jaw",
+      "actionEn": "Ember puffs out the chest and lets out a fierce warning roar",
+      "actingBeatEn": "surprise hardens into a fierce, protective glare",
+      "shotNumber": 4,
+      "endStateEn": "Ember mid-roar with the mouth wide open and a fierce protective glare, the head and chest still filling the frame exactly as in image 1"
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char1",
+        "char2"
+      ],
+      "gazeEn": "",
+      "vocalEn": "low warning growls",
+      "sfxEn": "slow wet footsteps",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Đối đầu hai bờ hồ",
+      "beat": "inciting",
+      "shotSize": "WS",
+      "startStateEn": "wide shot across the jade pool, Ember on the left bank facing right and Tide on the right bank facing left, both crouched low and tense, the water between them",
+      "actionEn": "Ember and Tide edge one step closer across the pool",
+      "actingBeatEn": "tense locked stares, mouths firmly closed",
+      "shotNumber": 16,
+      "endStateEn": "the same wide shot, both have edged one step closer to the water, eyes locked on each other, mouths firmly closed",
+      "useStage": true
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char2"
+      ],
+      "gazeEn": "",
+      "vocalEn": "a frustrated hiss",
+      "sfxEn": "a sharp jaw clack",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Cú đớp (cận hàm Tide)",
+      "beat": "escalation",
+      "shotSize": "CU",
+      "startStateEn": "side-view close-up of Tide facing screen-left at the pool edge, the head pulled back with the long crocodile jaws wide open",
+      "actionEn": "Tide's long jaws snap shut with a sharp clack",
+      "actingBeatEn": "the eyes narrow in annoyance after the miss",
+      "shotNumber": 14,
+      "endStateEn": "the same side-view close-up, Tide's long jaws snapped shut and the eyes narrowed in annoyance",
+      "useStage": true
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "",
+      "vocalEn": "a sharp startled breath",
+      "sfxEn": "a whoosh passing overhead",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Ember cúi né",
+      "beat": "escalation",
+      "shotSize": "CU",
+      "startStateEn": "reverse angle close-up of chubby young Ember facing screen-right with the tall dark landmark rock behind, big rounded head, smooth grey neck, amber eyes wide looking up in alarm, mouth pressed firmly shut",
+      "actionEn": "Ember ducks the big rounded head low into the shoulders as a gust of wind rushes past",
+      "actingBeatEn": "startled alarm turns into wide-eyed braced shock, mouth pressed shut",
+      "shotNumber": 15,
+      "endStateEn": "the same close-up with the clear golden sky and dark landmark rock behind, chubby young Ember ducked low with the rounded head pulled down into the shoulders, amber eyes wide, mouth pressed firmly shut",
+      "useStage": true
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char2"
+      ],
+      "gazeEn": "looking screen-left",
+      "dialogue": {
+        "character": "char2",
+        "lineEn": "Back off, short-arms! This ocean is mine.",
+        "lineVi": "Lùi lại đi đồ tay ngắn! Cả đại dương này là của ta."
+      },
+      "vocalEn": "a low amused hiss",
+      "sfxEn": "a low raspy chuckle",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Nụ cười xảo quyệt",
+      "beat": "escalation",
+      "shotSize": "CU",
+      "startStateEn": "close-up of Tide's head in left profile, the dry long crocodile snout pointing toward the left edge of the frame and the teal-striped sail on the right side of the frame, green eyes narrowed",
+      "actionEn": "Tide's narrowed green eyes glint and the long snout curls into a slow cunning smirk",
+      "actingBeatEn": "annoyance turns into a cunning closed-mouth smile",
+      "shotNumber": 6,
+      "endStateEn": "the same left-profile close-up with the dry snout pointing to the left edge of the frame, Tide with a cunning closed-mouth smile, green eyes half-lidded and smug",
+      "useStage": true,
+      "facing": {
+        "char2": "left"
+      },
+      "singleFrame": true
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char2"
+      ],
+      "gazeEn": "",
+      "vocalEn": "",
+      "sfxEn": "a whoosh and a wet slap",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Đuôi Tide quét",
+      "beat": "reversal",
+      "shotSize": "INSERT",
+      "startStateEn": "low-angle close-up on the wet mud shore beside the jade pool, Tide's thick muscular slate-blue crocodile tail poised low on the right side of the frame just above the glistening mud",
+      "actionEn": "Tide's thick slate-blue tail whips fast across the wet mud from right to left, flinging a low spray of mud",
+      "actingBeatEn": "",
+      "shotNumber": 7,
+      "endStateEn": "the same low-angle close-up of the wet mud shore, Tide's thick slate-blue crocodile tail now swept all the way across to the left side of the frame low over the mud, carving a groove in the mud and flinging a low spray of mud droplets to the left",
+      "useStage": true
+    },
+    {
+      "cameraMoveEn": "slow push in",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "eye sliding toward Tide",
+      "vocalEn": "a shaky breath that turns into a low growl",
+      "sfxEn": "slow heavy footsteps drawing closer",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Ánh mắt không khuất phục",
+      "beat": "reversal",
+      "shotSize": "ECU",
+      "startStateEn": "Ember's half-open eye with mud on the eyelid, the face pressed sideways in the mud",
+      "actionEn": "Ember's eye snaps into focus at the sound of approaching footsteps",
+      "actingBeatEn": "fear in the eye hardens into stubborn determination",
+      "shotNumber": 8,
+      "endStateEn": "Ember's eye wide open and narrowed with stubborn determination"
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "",
+      "vocalEn": "a full-throated battle roar",
+      "sfxEn": "a scrape of claws and a burst of footsteps in wet mud",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Cú húc trời giáng",
+      "beat": "climax",
+      "shotSize": "MCU",
+      "startStateEn": "three-quarter front view on the mud shore, Ember crouched low facing screen-right with the head lowered, eyes narrowed, back feet digging into the mud",
+      "actionEn": "Ember springs forward to the right with the rounded head lowered like a battering ram",
+      "actingBeatEn": "fierce focused eyes, mouth firmly closed",
+      "shotNumber": 9,
+      "endStateEn": "Ember still facing screen-right with the striped tail on the left and the big rounded head on the right, having lunged one powerful step forward into the right half of the frame with the rounded head lowered like a battering ram, eyes fiercely narrowed, mouth firmly closed",
+      "useStage": true
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char2"
+      ],
+      "gazeEn": "looking screen-left",
+      "vocalEn": "a small dazed whimper",
+      "sfxEn": "a heavy thud and a dazed grunt",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Choáng váng",
+      "beat": "climax",
+      "shotSize": "CU",
+      "startStateEn": "close-up of Tide's head in left profile, the long snout pointing toward the LEFT edge of the frame and the sail on the right, the head jolted backward toward the right from a hit, eyes squeezed shut, mouth open in a gasp",
+      "actionEn": "Tide's head rocks back from the hit, then Tide blinks dazedly and closes the mouth in wary respect",
+      "actingBeatEn": "shock melts into wary respect",
+      "shotNumber": 10,
+      "endStateEn": "the same left-profile close-up with the snout pointing to the left edge of the frame, Tide blinking, eyes round and wary, mouth closed",
+      "useStage": true,
+      "facing": {
+        "char2": "left"
+      }
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "looking down to screen-right",
+      "vocalEn": "a long low exhale",
+      "sfxEn": "a slow calm exhale",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Lòng khoan dung",
+      "beat": "climax",
+      "shotSize": "ECU",
+      "startStateEn": "extreme close-up of Ember's eye and brow with mud on the brow, the eye narrowed in fury and the brow pulled down hard",
+      "actionEn": "Ember's narrowed eye slowly softens",
+      "actingBeatEn": "fury slowly softens into mercy",
+      "shotNumber": 11,
+      "endStateEn": "the same extreme close-up, the brow lifts and softens and the eye opens round, kind and calm",
+      "useStage": true
+    },
+    {
+      "cameraMoveEn": "static",
+      "characters": [
+        "char2"
+      ],
+      "gazeEn": "",
+      "vocalEn": "a soft grateful hum",
+      "sfxEn": "gentle lapping water",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Tide được uống nước",
+      "beat": "resolution",
+      "shotSize": "MS",
+      "startStateEn": "Tide at the far side of the jade pool, head low and tentative, eyes glancing screen-left",
+      "actionEn": "Tide tentatively lowers the snout and drinks",
+      "actingBeatEn": "wariness eases into quiet relief",
+      "shotNumber": 17,
+      "endStateEn": "Tide lowering the long snout to drink from the pool, eyes half closed in quiet relief, mouth closed around the water",
+      "useStage": true,
+      "facing": {
+        "char2": "left"
+      }
+    },
+    {
+      "cameraMoveEn": "slow push in",
+      "characters": [
+        "char1"
+      ],
+      "gazeEn": "eyes half closed in relief",
+      "dialogue": {
+        "character": "char1",
+        "lineEn": "High five... oh wait. Just drink the water.",
+        "lineVi": "Đập tay cái nào... à quên tay ngắn. Thôi uống nước đi."
+      },
+      "vocalEn": "a contented rumbling purr",
+      "sfxEn": "water lapping gently",
+      "ambientEn": "low wind, bubbling hot springs and a distant rumble",
+      "fxLevel": 0,
+      "fxEn": "",
+      "durationSeconds": 8,
+      "titleVi": "Ngụm nước chiến thắng",
+      "beat": "resolution",
+      "shotSize": "MCU",
+      "startStateEn": "muddy tired Ember standing on two hind legs at the edge of the warm pool, bending at the hips to drink with tiny arms tucked, mud specks on the body",
+      "actionEn": "Ember drinks, then lifts the head with quiet pride",
+      "actingBeatEn": "exhaustion eases into a small proud closed-mouth smile",
+      "shotNumber": 12,
+      "endStateEn": "Ember raises the head from the water with eyes half closed and a small proud closed-mouth smile, a few droplets on the chin",
+      "singleFrame": true
+    }
+  ]
+}
