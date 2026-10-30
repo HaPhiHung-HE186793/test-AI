@@ -19,7 +19,8 @@ const only = flag('--only', '').split(',').map((n) => parseInt(n, 10)).filter((n
 const masterOnly = argv.includes('--master-only');
 const durationSec = parseInt(flag('--duration', '8'), 10);
 // ffmpeg-static của dự án (Windows: ffmpeg.exe, Linux/macOS: ffmpeg) — đường dẫn tương đối, chạy được trên mọi máy.
-const FF = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'node_modules', 'ffmpeg-static', process.platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg');
+const _ffStatic = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'node_modules', 'ffmpeg-static', process.platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg');
+const FF = fs.existsSync(_ffStatic) ? _ffStatic : 'ffmpeg';
 
 const bible = JSON.parse(fs.readFileSync(path.join(runDir, 'bible.json'), 'utf-8'));
 const stateP = path.join(runDir, 'state.json');
@@ -45,6 +46,15 @@ async function judgeTake(shot: any, file: string, key: string) {
   const times = Array.from({ length: N }, (_, i) => Number((0.2 + (i * (dur - 0.5)) / (N - 1)).toFixed(2)));
   const images: Array<{ base64: string; mimeType: string }> = [];
   const id = String(shot.shotNumber).padStart(2, '0');
+  for (const cid of (shot.characters || []).slice(0, 1)) {
+    const tp = path.join(runDir, `02_${cid}_turnaround.png`);
+    if (fs.existsSync(tp)) {
+      const small = path.join(runDir, `${key}_ref_${cid}_sheet.jpg`);
+      execSync(`"${FF}" -hide_banner -loglevel error -y -i "${tp}" -vf scale=480:-2 -q:v 5 "${small}"`);
+      images.push({ base64: fs.readFileSync(small).toString('base64'), mimeType: 'image/jpeg' });
+    }
+  }
+  const nSheet = images.length;
   for (const ref of [`shot_${id}_start_frame.png`, `shot_${id}_end_frame.png`]) {
     const rp = path.join(runDir, ref);
     if (fs.existsSync(rp)) {
@@ -61,8 +71,8 @@ async function judgeTake(shot: any, file: string, key: string) {
   });
   const happy = /smile|proud|happy|laugh|grin|smug|sly/i.test(String(shot.actingBeatEn || ''));
   const gates = `
-REFERENCE: the first ${nRef} image(s) are the approved START${nRef > 1 ? ' and END' : ''} keyframes of this shot — elements present in them (steam, water, rocks, light) are intended. The remaining ${N} images are frames of the take at t=${times.join(', ')} s.
-HARD FAIL GATES (any true => pass=false, overall <= 55): (1) any body turns translucent, melts, or fuses with mud/water/FX; (2) a character's design drifts from the keyframes (proportions, snout shape, stripes, colours, cartoon style becoming realistic); (3) an extra character, human, or on-screen text appears; (4) the scripted action "${shot.actionEn}" is not visible at any point; ${happy ? '' : `(5) any character smiles, grins or laughs — this beat is "${shot.actingBeatEn}" and must read as that emotion; `}(6) facing direction flips unexpectedly.
+REFERENCE: ${nSheet ? 'image 1 is the official CHARACTER TURNAROUND SHEET (ground-truth anatomy, head-to-body ratio, snout shape, stripe placement, bipedal stance); ' : ''}the first ${nRef} images are the reference sheet and approved START/END keyframes of this shot — elements present in them (steam, water, rocks, light) are intended. The remaining ${N} images are frames of the take at t=${times.join(', ')} s.
+HARD FAIL GATES (any true => pass=false, overall <= 55): (1) any body turns translucent, melts, or fuses with mud/water/FX; (2) a character's design drifts from the turnaround sheet or keyframes (proportions, snout shape, stripes, colours, bipedal stance turning quadruped, cartoon style becoming realistic); (3) an extra character, human, black matte blob, or on-screen text appears; (4) the scripted action "${shot.actionEn}" is not visible at any point; ${happy ? '' : `(5) any character smiles, grins or laughs — this beat is "${shot.actingBeatEn}" and must read as that emotion; `}(6) facing direction flips unexpectedly; (7) water or mud sprays out of a dry mouth from nowhere.
 Also return "beat_in", "beat_peak", "beat_out" in seconds (take time) where the scripted acting beat "${shot.actingBeatEn}" reads best and cleanest, inside the gates.`;
   // Dịch vụ văn bản của Flow hay báo lỗi tạm thời khi đang có nhiều lệnh video -> thử lại 4 lần, chờ tăng dần.
   for (let attempt = 1; attempt <= 4; attempt++) {

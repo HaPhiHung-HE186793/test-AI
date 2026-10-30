@@ -9,14 +9,25 @@ const argv = process.argv.slice(2);
 const runDir = path.resolve(argv[0]);
 const flag = (name: string, def = '') => { const i = argv.indexOf(name); return i >= 0 && argv[i + 1] ? argv[i + 1] : def; };
 const tag = flag('--tag', 'final');
-const outName = flag('--out', `master_${tag}_v2`);
+const outName = flag('--out-dir', '') || flag('--out', `master_${tag}_v2`);
 const overrides: Record<number, string> = {};
+const editDir = flag('--edit-dir', '');
+if (editDir) {
+  const edAbs = path.isAbsolute(editDir) ? editDir : path.join(runDir, editDir);
+  if (fs.existsSync(edAbs)) {
+    for (const fn of fs.readdirSync(edAbs)) {
+      const m = fn.match(/^shot_(\d+)_edit\.mp4$/);
+      if (m) overrides[parseInt(m[1], 10)] = path.join(edAbs, fn);
+    }
+  }
+}
 for (const pair of flag('--override', '').split(',').filter(Boolean)) {
   const [n, p] = pair.split('=');
   overrides[parseInt(n, 10)] = path.isAbsolute(p) ? p : path.join(runDir, p);
 }
 // ffmpeg-static của dự án (Windows: ffmpeg.exe, Linux/macOS: ffmpeg) — đường dẫn tương đối, chạy được trên mọi máy.
-const FF = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'node_modules', 'ffmpeg-static', process.platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg');
+const _ffStatic = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'node_modules', 'ffmpeg-static', process.platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg');
+const FF = fs.existsSync(_ffStatic) ? _ffStatic : 'ffmpeg';
 const pad = (n: number) => String(n).padStart(2, '0');
 const bible = JSON.parse(fs.readFileSync(path.join(runDir, 'bible.json'), 'utf-8'));
 

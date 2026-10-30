@@ -17,7 +17,8 @@ const onlyKf = flag('--only-keyframes', '').split(',').map((n) => parseInt(n, 10
 const redoStory = argv.includes('--redo-story');
 const script = flag('--script', 'Đại chiến sinh tồn tiền sử tại Thung lũng Nham thạch Kreta giữa hai đại quái thú khủng long: Bạo chúa dung nham BAO_CHUA_IGNIS_REX và Thủy quái lôi đình THUY_QUAI_VOLT_SPINO.');
 // ffmpeg-static của dự án (Windows: ffmpeg.exe, Linux/macOS: ffmpeg) — đường dẫn tương đối, chạy được trên mọi máy.
-const FF = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'node_modules', 'ffmpeg-static', process.platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg');
+const _ffStatic = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'node_modules', 'ffmpeg-static', process.platform === 'win32' ? 'ffmpeg.exe' : 'ffmpeg');
+const FF = fs.existsSync(_ffStatic) ? _ffStatic : 'ffmpeg';
 fs.mkdirSync(outDir, { recursive: true });
 
 const stateP = path.join(outDir, 'state.json');
@@ -94,8 +95,8 @@ async function img(key: string, prompt: string, refs: string[] = [], kind: 'imag
     for (const cid of shot.characters) {
       const ch = bible.characters.find((c: any) => c.id === cid);
       if (!ch) continue;
-      refs.push(isFace ? sheetIds[cid].portrait : sheetIds[cid].turnaround); order.push(`${ch.displayNameEn} character design`);
-      if (isFace && shot.characters.length === 1) { refs.push(sheetIds[cid].expression); order.push(`${ch.displayNameEn} expression sheet`); }
+      refs.push(sheetIds[cid].turnaround); order.push(`${ch.displayNameEn} character turnaround sheet`);
+      if (isFace && shot.characters.length === 1) { refs.push(sheetIds[cid].portrait); order.push(`${ch.displayNameEn} face portrait`); }
     }
     // Cảnh hành động dùng bối cảnh "Hồ đấu" khoá cố định (hội đồng: 5 bối cảnh khác nhau làm mất mạch truyện)
     const stageId = shot.useStage && state.media['03S_stage_fight_pool'] ? state.media['03S_stage_fight_pool'] : envId;
@@ -105,15 +106,15 @@ async function img(key: string, prompt: string, refs: string[] = [], kind: 'imag
     state.prompts[`shot_${String(shot.shotNumber).padStart(2, '0')}_motion`] = mp;
     state.lint[`shot_${String(shot.shotNumber).padStart(2, '0')}_motion`] = (E as any).lintPremiumPrompt ? (E as any).lintPremiumPrompt(mp, 'video') : null;
     const sid = String(shot.shotNumber).padStart(2, '0');
-    const startId = await img(`shot_${sid}_start_frame`, kp, refs.slice(0, 3), 'image', onlyKf.includes(shot.shotNumber));
+    const startId = await img(`shot_${sid}_start_frame`, kp, refs.slice(0, 3), 'image', false);
     // Cảnh tiếp xúc giữa hai nhân vật: khung KẾT THÚC khoá danh tính + buộc hành động xảy ra (Veo first+last frame)
     if (shot.endStateEn) {
       // Khung kết thúc = CHỈNH SỬA khung đầu (Nano Banana giữ nền/ánh sáng/góc máy), chỉ đổi tư thế -> Veo nội suy không bị trôi nền.
       const inShot = shot.characters.map((cid: string) => bible.characters.find((c: any) => c.id === cid)).filter(Boolean);
-      const keepLooks = inShot.map((c: any, i: number) => `${c.displayNameEn} keeps exactly the same design as image ${i + 2}: ${c.lookEn}`).join('. ');
-      const ep = `Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: ${shot.endStateEn}. ${keepLooks}. Same scale and same positions in the frame as image 1.`;
+      const keepLooks = inShot.map((c: any, i: number) => `${c.displayNameEn} keeps the exact same character design, proportions and markings as image ${i + 2}: ${c.lookEn}`).join('. ');
+      const ep = `Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: ${shot.endStateEn}. ${keepLooks}. Same character scale and camera framing as image 1.`;
       const endRefs = [startId, ...shot.characters.map((cid: string) => sheetIds[cid]?.turnaround)].filter(Boolean).slice(0, 3) as string[];
-      await img(`shot_${sid}_end_frame`, ep, endRefs, 'image', onlyKf.includes(shot.shotNumber));
+      await img(`shot_${sid}_end_frame`, ep, endRefs, 'image', false);
     }
   }
 

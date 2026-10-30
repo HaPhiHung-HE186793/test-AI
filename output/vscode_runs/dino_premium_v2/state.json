@@ -5,20 +5,16 @@
     "02_char1_portrait": "e36944dd-c622-4211-84ef-db14ebe1bb15",
     "03_environment_plate": "4b710239-2ac7-448a-bb3a-e36067d63f05",
     "shot_01_start_frame": "16180329-eb82-46bd-bace-8156e6db2343",
-    "shot_02_start_frame": "4ec75c49-37de-4b5c-9743-5adaa28cbc49",
     "02_char2_turnaround": "1ce6e3a1-adad-4301-b92d-7fc33bf6cf06",
     "02_char2_expression_sheet": "24410ec8-0f92-4e34-be80-75fbc9056dd8",
     "02_char2_portrait": "0b79b8fa-5f65-4917-a442-dff8345d8c5c",
     "shot_04_start_frame": "8c31a0f1-8b66-4953-8474-b28325909f81",
     "shot_08_start_frame": "0354461a-1cd0-4d87-b885-5238c74b6484",
     "shot_01_end_frame": "eab48e2b-f0ca-4e82-9c03-ebfa3af5f2d2",
-    "shot_02_end_frame": "3a1734a8-305e-4ee8-bb22-ebfd5d10b8d3",
     "shot_08_end_frame": "be40b90d-1d25-4bcf-9f37-a6d9e319043a",
     "shot_04_end_frame": "3f3624ee-df1b-4533-9319-0de266ba79b4",
     "shot_12_start_frame": "48ffa7ee-e97e-4780-8b12-33474140be01",
     "shot_12_end_frame": "f38a0d49-04e9-47ad-876a-c1b282e60634",
-    "shot_03_start_frame": "734a3052-d76c-4607-a51a-76c4d9934748",
-    "shot_03_end_frame": "11895186-ce3c-4b7b-ac77-5f523a57e0a7",
     "03S_stage_fight_pool": "ee08e742-a07c-4ad5-b28c-d8b56b72c811",
     "shot_11_start_frame": "e9688a64-8753-4b0f-82de-b4e4b79f4d7c",
     "shot_11_end_frame": "f53a163a-5859-44be-833f-806299b4c76f",
@@ -26,65 +22,69 @@
     "shot_05_end_frame": "aac96c11-046f-4649-9658-df5e434a1604",
     "shot_14_start_frame": "67a74cf4-a55c-41a6-96d5-dffadb69538d",
     "shot_14_end_frame": "2cacdbea-b289-4998-ba22-60df35b2223d",
-    "shot_07_start_frame": "d378402a-9041-44ab-830f-20b325799328",
     "shot_13_start_frame": "0fc9a9d2-827f-46a8-a899-25f3de05c52d",
     "shot_13_end_frame": "4974d871-36e5-4094-92e7-19524c31a311",
-    "shot_07_end_frame": "599177cd-9427-410d-9644-ff69f606e9a7",
     "shot_16_start_frame": "1dca3132-23e8-436e-bfa3-0b919c1758a6",
     "shot_16_end_frame": "0c264592-3203-43eb-8099-98deba28f2e3",
-    "shot_15_start_frame": "4dabc167-1c94-41c7-b308-3bcd2dfba876",
-    "shot_15_end_frame": "54df7daf-031c-4677-8a8a-67b06f9b0195",
     "shot_09_start_frame": "534290c3-c864-4f49-8652-1b0983b569d1",
-    "shot_09_end_frame": "bafa7aea-51fb-4854-a4cd-68d40e5f961c",
     "shot_17_start_frame": "1dac076b-b158-4769-b249-81ef38558b64",
     "shot_17_end_frame": "5f841200-a281-4634-ac08-8e77f37f6599",
-    "shot_06_start_frame": "ffabee2e-775c-46d1-b237-4c8f7710a62d",
-    "shot_06_end_frame": "f986b8a3-d8f6-4dbc-b961-9ebedc6fe6b4",
     "shot_10_start_frame": "b262c9d1-61e0-47b0-8f50-32784079c257",
-    "shot_10_end_frame": "b7c79d01-c4f3-4611-aab1-a0f0d6a605c6"
+    "shot_10_end_frame": "b7c79d01-c4f3-4611-aab1-a0f0d6a605c6",
+    "shot_02_start_frame": "006d5312-6d0d-4ef3-a4e4-40f068d389cc",
+    "shot_02_end_frame": "407f2795-0853-4186-a58a-ce90d41b43e0",
+    "shot_03_start_frame": "72c9fa88-e76d-4df9-bbf1-bd78a35c216f",
+    "shot_03_end_frame": "3b38e5f7-6ea3-41a0-9a55-060c9ea8d9c1",
+    "shot_15_start_frame": "f104757b-1e29-4bc6-9a6e-d4d382250707",
+    "shot_15_end_frame": "7fa21674-f912-4f6f-b5a8-ff51e9fe5373",
+    "shot_06_start_frame": "3a296699-b247-4a5d-ab64-a92f2fe8c4a4",
+    "shot_06_end_frame": "ec32834c-4dbf-4eda-a1de-b4d454c1487e",
+    "shot_07_start_frame": "8d4dcb83-37a9-4bb8-a81d-70839f29ccba",
+    "shot_07_end_frame": "6a25374e-9120-47cc-b666-2b60d622e790",
+    "shot_09_end_frame": "01f41031-5eb3-477c-ba35-e001be1d0073"
   },
   "prompts": {
-    "02_char1_turnaround": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Character turnaround sheet of Ember, a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin and bright ember-orange stripes down the back. The same character shown four times side by side at equal size: front view, three-quarter view, side view and back view, standing in a relaxed neutral pose with the full body visible. Identical proportions, colours and markings in every view. Flat neutral grey #808080 background, even soft studio lighting, clean unlabeled layout with generous spacing.",
-    "02_char1_expression_sheet": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Expression and pose sheet of Ember, a stocky young tyrannosaurus standing upright on two hind legs, a broad expressive snout and bright ember-orange stripes down the back. Top row: six head-and-shoulders close-ups of the same face showing confident, happy, curious, serious, surprised and angry expressions with clear eye and brow acting. Bottom row: four full-body action poses: walking mid-stride, running at full speed, crouched ready to spring, and a proud victory stance. Identical design in every panel. Flat neutral grey #808080 background, soft even studio light, clean unlabeled grid.",
-    "02_char1_portrait": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Head-and-shoulders portrait of Ember, a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back. Three-quarter view turned slightly toward camera, calm confident expression, eyes looking just past the lens with bright catchlights. Soft key light from the front left with a gentle rim light along the silhouette. Flat neutral grey #808080 background, centred composition, sharp focus on the eyes.",
+    "02_char1_turnaround": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Character turnaround sheet of Ember, a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head and tail. The same character shown four times side by side at equal size: front view, three-quarter view, side view and back view, standing in a relaxed neutral pose with the full body visible. Identical proportions, colours and markings in every view. Flat neutral grey #808080 background, even soft studio lighting, clean unlabeled layout with generous spacing.",
+    "02_char1_expression_sheet": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Expression and pose sheet of Ember, a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest and tail. Top row: six head-and-shoulders close-ups of the same face showing confident, happy, curious, serious, surprised and angry expressions with clear eye and brow acting. Bottom row: four full-body action poses: walking mid-stride, running at full speed, crouched ready to spring, and a proud victory stance. Identical design in every panel. Flat neutral grey #808080 background, soft even studio light, clean unlabeled grid.",
+    "02_char1_portrait": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Head-and-shoulders portrait of Ember, a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head, short broad snout, big amber eyes and tail. Three-quarter view turned slightly toward camera, calm confident expression, eyes looking just past the lens with bright catchlights. Soft key light from the front left with a gentle rim light along the silhouette. Flat neutral grey #808080 background, centred composition, sharp focus on the eyes.",
     "02_char2_turnaround": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Character turnaround sheet of Tide, a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin and a huge fan-shaped sail with bold teal stripes. The same character shown four times side by side at equal size: front view, three-quarter view, side view and back view, standing in a relaxed neutral pose with the full body visible. Identical proportions, colours and markings in every view. Flat neutral grey #808080 background, even soft studio lighting, clean unlabeled layout with generous spacing.",
     "02_char2_expression_sheet": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Expression and pose sheet of Tide, a sleek spinosaurus with a level horizontal back and long balancing tail and a huge fan-shaped sail with bold teal stripes. Top row: six head-and-shoulders close-ups of the same face showing confident, happy, curious, serious, surprised and angry expressions with clear eye and brow acting. Bottom row: four full-body action poses: walking mid-stride, running at full speed, crouched ready to spring, and a proud victory stance. Identical design in every panel. Flat neutral grey #808080 background, soft even studio light, clean unlabeled grid.",
     "02_char2_portrait": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Head-and-shoulders portrait of Tide, a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Three-quarter view turned slightly toward camera, calm confident expression, eyes looking just past the lens with bright catchlights. Soft key light from the front left with a gentle rim light along the silhouette. Flat neutral grey #808080 background, centred composition, sharp focus on the eyes.",
     "03_environment_plate": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, soft global illumination, clean physically based materials. An empty establishing view of a wide volcanic valley of dark basalt ridges and warm steaming pools, with sparse ferns on the rocks and a slow lava river glowing far in the background, golden hour. Lit by a low golden sun from the right raking across the rocks, in a palette of warm amber and dusty rust tones. Clear readable geography with distinct foreground, midground and background, and open ground in the centre of the set. Wide horizontal composition.",
     "shot_01_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus stops at the edge of the ridge and spots the last warm pool below. On the animated tyrannosaurus's face, tired drooping shoulders lift as hope returns to the eyes. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus stays upright on two hind legs. The animated tyrannosaurus lets out a weary rumbling sigh. SFX: heavy footsteps crunching on gravel. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
     "shot_01_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials. High-angle extreme wide shot, 24mm lens feel, deep focus. Ember (image 1), a stocky young tyrannosaurus with bright ember-orange stripes. Ember stands small on a ridge above the last warm pool, the valley stretching out below. Ember's mouth is firmly closed, lips covering the teeth, serious tired expression. Ember stands on two strong hind legs, tiny arms tucked to the chest. Ember tiny against the vast landscape facing screen-right, placed on a rule-of-thirds line with generous open space. A wide volcanic valley (image 2), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
-    "shot_02_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus with bright ember-orange stripes laps the water, then freezes mid-sip. On the animated tyrannosaurus's face, relief turns into sharp alert suspicion, brows tightening. The animated tyrannosaurus ends with the mouth firmly closed, lips covering the teeth, and a serious suspicious expression. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a low questioning rumble. SFX: water lapping, then sudden stillness. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_02_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level close-up, 85mm lens feel, shallow focus. Ember (image 2), a stocky young tyrannosaurus with bright ember-orange stripes. Ember lowers a broad snout to the water, eyes half closed with relief. Ember's eyes flicking to the side. Ember's face fills most of the frame in three-quarter view facing screen-right. A wide volcanic valley of dark basalt ridges and warm pools, with sparse ferns (image 3), golden hour, lit by a low golden sun from the right raking across the rocks, in a palette of warm amber and dusty rust tones with a small teal accent.",
-    "shot_03_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus rises slowly a little higher out of the reeds. On the animated spinosaurus's face, sly narrowed eyes and a slow closed-mouth smirk. The stocky young animated tyrannosaurus stays left, the animated spinosaurus stays right. The animated spinosaurus stays upright on two hind legs. The animated spinosaurus lets out a raspy clicking chuff. SFX: reeds parting and wet footsteps. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_03_start_frame": "Pixar-like 3D animation, soft global illumination, expressive faces. Eye-level over-the-shoulder shot, 50mm lens feel, shallow focus. Ember (image 1), a stocky young tyrannosaurus with bright ember-orange stripes, and Tide (image 2), a sleek spinosaurus with a huge fan-shaped sail. Over the shoulder of Ember, whose single rounded striped head and back fill the left foreground softly blurred, Tide's head and long needle-thin crocodile snout rise out of the tall reeds in three-quarter profile facing screen-left, sly narrowed eyes. Over Ember's shoulder in soft foreground blur on the left, Tide on the right faces camera in sharp focus, turned toward screen-left. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber.",
-    "shot_04_motion": "Slow push in, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus with bright ember-orange stripes stamps one foot and lets out a warning roar. On the animated tyrannosaurus's face, surprise hardens into a fierce, protective glare, with lowered brows. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus's tiny arms stay tucked to the chest. The animated tyrannosaurus lets out a deep warning roar. SFX: a heavy foot stamp and pebbles skittering. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_04_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level medium close-up, 50mm lens feel, shallow focus. Ember (image 2), a stocky young tyrannosaurus with bright ember-orange stripes. Ember straightens to full height, chest puffed out, a few droplets on the jaw. Ember's mouth is firmly closed, lips covering the teeth, serious startled expression. Ember's tiny arms stay tucked to the chest. Ember's head and chest fill the frame in three-quarter view facing screen-right, background softly blurred. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
+    "shot_02_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The cute chubby young animated tyrannosaurus with tail sips the water, then freezes and lifts the chin slightly. On the animated tyrannosaurus's face, relief turns into sharp alert suspicion, brows tightening, ending with the mouth firmly closed, lips covering the teeth. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a low questioning rumble. SFX: water lapping, then sudden stillness. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_02_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level close-up, 85mm lens feel, shallow focus. Ember (image 1), a cute chubby young tyrannosaurus with tail. Side-angle close-up at the edge of the jade pool, Ember standing on two hind legs with tiny arms tucked to the chest, bending the neck down to sip the clear water with eyes half closed in relief. Ember's face fills most of the frame in three-quarter view facing screen-right. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
+    "shot_03_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus tilts the head slightly and curls the long snout into a slow smirk. On the animated spinosaurus's face, watchful narrowed eyes turn into a sly closed-mouth smirk. The cute chubby young animated tyrannosaurus stays left, the animated spinosaurus stays right. The animated spinosaurus lets out a raspy clicking chuff. SFX: reeds parting and wet footsteps. Ambient noise: low wind. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_03_start_frame": "Pixar-like 3D animation, soft global illumination, expressive faces. Eye-level over-the-shoulder shot, 50mm lens feel, shallow focus. Ember (image 1), a cute chubby young tyrannosaurus with tail, and Tide (image 2), a sleek spinosaurus with a huge fan-shaped sail. Over the shoulder of chubby young Ember on the left bank, whose rounded striped back and head fill the left foreground in soft blur. Tide's mouth is firmly closed, lips covering the teeth, serious wary expression. Over Ember's shoulder in soft foreground blur on the left, Tide on the right faces camera in sharp focus, turned toward screen-left. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber.",
+    "shot_04_motion": "Slow push in, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The cute chubby young animated tyrannosaurus with tail puffs out the chest and lets out a fierce warning roar. On the animated tyrannosaurus's face, surprise hardens into a fierce, protective glare, with lowered brows. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus's tiny arms stay tucked to the chest. The animated tyrannosaurus lets out a deep warning roar. SFX: a deep rumbling chest growl. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_04_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level medium close-up, 50mm lens feel, shallow focus. Ember (image 1), a cute chubby young tyrannosaurus with tail. Ember straightens to full height, chest puffed out, a few droplets on the jaw. Ember's mouth is firmly closed, lips covering the teeth, serious startled expression. Ember's tiny arms stay tucked to the chest. Ember's head and chest fill the frame in three-quarter view facing screen-right, background softly blurred. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
     "shot_05_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus snaps down and the stocky young animated tyrannosaurus ducks low just in time. The animated tyrannosaurus's eyes go wide with shock, mouth firmly closed. The animated tyrannosaurus stays left, the animated spinosaurus stays right. The animated spinosaurus stays upright on two hind legs. The animated tyrannosaurus lets out a sharp startled snort. SFX: a sharp jaw clap. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
     "shot_05_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level medium shot, 35mm lens feel, softly blurred background. Ember (image 1), a stocky young tyrannosaurus with bright ember-orange stripes, and Tide (image 2), a sleek spinosaurus with a huge fan-shaped sail. Side view at the pool edge, Ember. Ember's mouth is firmly closed, lips covering the teeth, serious worried expression. Ember on the left facing right, Tide on the right facing left, framed head to midsection, both faces readable. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber.",
-    "shot_06_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus with huge fan-shaped sail with bold teal stripes shakes off a few droplets and smirks. On the animated spinosaurus's face, annoyance turns into a cunning closed-mouth smile. The animated spinosaurus keeps facing screen-left. The animated spinosaurus keeps looking screen-left. The animated spinosaurus lets out a low amused hiss. SFX: droplets flicking off. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_06_start_frame": "Pixar-like 3D animation, soft global illumination, expressive faces. Eye-level close-up, 85mm lens feel, shallow focus. Tide (image 2), a sleek spinosaurus with a huge fan-shaped sail. Close-up of Tide's head in left profile, the long crocodile snout pointing toward the LEFT edge of the frame and the striped sail on the right side of the frame, a few droplets on the snout, eyes narrowed. Tide's mouth is firmly closed, lips covering the teeth, serious angry expression. Tide is looking screen-left. Tide's face fills most of the frame in three-quarter view facing screen-left. A wide volcanic valley of dark basalt ridges (image 3), golden hour, lit by a low golden sun from the right, in a palette of warm amber and dusty rust tones.",
-    "shot_07_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus's tail sweeps fast across the mud from right to left. SFX: a whoosh and a wet slap. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_07_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Insert detail shot, macro lens feel, shallow focus. Tide (image 1), a sleek spinosaurus with a huge fan-shaped sail. Low close-up of the wet mud shore with only the tip of Tide's long blue-grey tail entering low from the right edge of frame. The detail fills the frame against a softly blurred background. A wide volcanic valley of dark basalt ridges and warm steaming pools, with sparse ferns (image 2), golden hour, lit by a low golden sun from the right raking across the rocks, in a palette of warm amber and dusty rust tones with a small teal accent.",
+    "shot_06_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus's narrowed green eyes glint and the long snout curls into a slow cunning smirk. On the animated spinosaurus's face, annoyance turns into a cunning closed-mouth smile. The animated spinosaurus keeps facing screen-left. The animated spinosaurus keeps looking screen-left. The animated spinosaurus lets out a low amused hiss. SFX: a low raspy chuckle. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_06_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level close-up, 85mm lens feel, shallow focus. Tide (image 1), a sleek spinosaurus with a huge fan-shaped sail. Close-up of Tide's head in left profile, the dry long crocodile snout pointing toward the left edge of the frame and the teal-striped sail on the right side of the frame, green eyes narrowed. Tide's mouth is firmly closed, lips covering the teeth, serious angry expression. Tide's face fills most of the frame in three-quarter view facing screen-left. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
+    "shot_07_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus's thick slate-blue tail whips fast across the wet mud from right to left, flinging a low spray of mud. SFX: a whoosh and a wet slap. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_07_start_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Tide's hind leg and hip stay anchored on the right side of the frame exactly as in image 1, while Tide's thick slate-blue crocodile tail is coiled back toward the right side of the frame low above the smooth flat wet mud shore. Tide keeps the exact same character design, proportions and markings as image 2: a sleek spinosaurus with slate-blue crocodile-like skin and a huge fan-shaped sail with bold teal stripes. Same character scale and camera framing as image 1.",
     "shot_08_motion": "Slow push in, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus's eye snaps into focus at the sound of approaching footsteps. On the animated tyrannosaurus's face, fear in the eye hardens into stubborn determination. The animated tyrannosaurus's eyes and brows keep a serious determined look. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a shaky breath that turns into a low growl. SFX: slow heavy footsteps drawing closer. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
     "shot_08_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. High-angle extreme close-up, macro lens feel, very shallow focus. Ember (image 2), a stocky young tyrannosaurus with bright ember-orange stripes. Ember's half-open eye with mud on the eyelid, the face pressed sideways in the mud. Ember's eyes and brows show a serious fearful look. Ember's eye sliding toward Tide. Ember's eyes and brow fill the frame, the head turned toward screen-right. A wide volcanic valley of dark basalt ridges and warm pools (image 3), golden hour, lit by a low golden sun from the right, in a palette of warm amber and dusty rust tones.",
-    "shot_09_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus with bright ember-orange stripes springs forward and bursts out of frame to the right. On the animated tyrannosaurus's face, fierce focused eyes, mouth firmly closed. The animated tyrannosaurus's expression stays serious and determined, with lowered brows. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a full-throated battle roar. SFX: a scrape of claws. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_09_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Low-angle medium close-up, 50mm lens feel, shallow focus. Ember (image 2), a stocky young tyrannosaurus with bright ember-orange stripes. Three-quarter front view on the mud shore, Ember crouched low facing screen-right with the head lowered, eyes narrowed, back feet digging into the mud. Ember's mouth is firmly closed, lips covering the teeth, serious determined expression. Ember's head and chest fill the frame in three-quarter view facing screen-right, background softly blurred. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
-    "shot_10_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus's head reels back, then slowly recovers. On the animated spinosaurus's face, shock melts into wary respect. The animated spinosaurus ends with the mouth firmly closed, lips covering the teeth, and a serious respectful expression. The animated spinosaurus keeps facing screen-left. The animated spinosaurus lets out a small dazed whimper. SFX: a dazed grunt and dripping mud. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_10_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Low-angle close-up, 85mm lens feel, shallow focus. Tide (image 2), a sleek spinosaurus with a huge fan-shaped sail. Close-up of Tide's head in left profile, the long snout pointing toward the LEFT edge of the frame and the sail on the right, the head jolted backward toward the right from a hit, eyes squeezed shut. Tide has a serious shocked expression with raised brows. Tide's face fills most of the frame in three-quarter view facing screen-left. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
+    "shot_09_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The cute chubby young animated tyrannosaurus with tail lunges one powerful step forward to the right with the rounded head lowered like a battering ram. On the animated tyrannosaurus's face, fierce focused eyes, mouth firmly closed. The animated tyrannosaurus's expression stays serious and determined, with lowered brows. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a full-throated battle roar. SFX: a scrape of claws. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_09_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Low-angle medium close-up, 50mm lens feel, shallow focus. Ember (image 1), a cute chubby young tyrannosaurus with tail. Three-quarter front view on the mud shore, Ember crouched low facing screen-right with the head lowered, eyes narrowed, back feet digging into the mud. Ember's mouth is firmly closed, lips covering the teeth, serious determined expression. Ember's head and chest fill the frame in three-quarter view facing screen-right, background softly blurred. A wide volcanic valley of dark basalt ridges (image 3), golden hour, lit by a low golden sun from the right, in a palette of warm amber and dusty rust tones.",
+    "shot_10_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus's head rocks back from the hit, then the animated spinosaurus blinks dazedly and closes the mouth in wary respect. On the animated spinosaurus's face, shock melts into wary respect, ending with the mouth firmly closed, lips covering the teeth. The animated spinosaurus keeps facing screen-left. The animated spinosaurus lets out a small dazed whimper. SFX: a heavy thud and a dazed grunt. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_10_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Low-angle close-up, 85mm lens feel, shallow focus. Tide (image 1), a sleek spinosaurus with a huge fan-shaped sail. Close-up of Tide's head in left profile, the long snout pointing toward the LEFT edge of the frame and the sail on the right, the head jolted backward toward the right from a hit, eyes squeezed shut. Tide has a serious shocked expression with raised brows. Tide's face fills most of the frame in three-quarter view facing screen-left. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
     "shot_11_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus's narrowed eye slowly softens. On the animated tyrannosaurus's face, fury slowly softens into mercy. The animated tyrannosaurus's eyes and brows keep a serious merciful look. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus keeps looking down to screen-right. The animated tyrannosaurus lets out a long low exhale. SFX: a slow calm exhale. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
     "shot_11_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level extreme close-up, macro lens feel, very shallow focus. Ember (image 2), a stocky young tyrannosaurus with bright ember-orange stripes. Extreme close-up of Ember's eye and brow with mud on the brow, the eye narrowed in fury and the brow pulled down hard. Ember's eyes and brows show a serious angry look. Ember's eyes and brow fill the frame, the head turned toward screen-right. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
     "shot_12_motion": "Slow push in, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus with bright ember-orange stripes drinks, then lifts the head with quiet pride. On the animated tyrannosaurus's face, exhaustion eases into a small proud closed-mouth smile. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus's tiny arms stay tucked to the chest. The animated tyrannosaurus lets out a contented rumbling purr. SFX: water lapping gently. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
     "shot_12_start_frame": "Pixar-like 3D animation, soft global illumination, expressive faces. Eye-level medium close-up, 50mm lens feel, shallow focus. Ember (image 2), a stocky young tyrannosaurus with bright ember-orange stripes. Muddy tired Ember standing on two hind legs at the edge of the warm pool, bending at the hips to drink with tiny arms tucked, mud specks on the body. Ember's mouth is firmly closed, lips covering the teeth, serious tired expression. Ember's tiny arms stay tucked to the chest. Ember's eyes half closed in relief. Ember's head and chest fill the frame in three-quarter view facing screen-right, background softly blurred. A wide volcanic valley of dark basalt ridges (image 3), golden hour, lit by a low golden sun from the right, in a palette of warm amber and dusty rust tones.",
     "shot_05_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: side view, Tide's long jaws snapped shut in the air just above Ember's ducked head, Ember crouched even lower with wide shocked eyes and the mouth firmly closed. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Tide keeps exactly the same design as image 3: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_07_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same low close-up of the mud shore where only the long blue-grey tail is visible, now swept across to the left side of frame low over the mud with a spray of mud droplets, the rest of the body out of frame to the right. Tide keeps exactly the same design as image 2: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_09_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember has sprung forward toward the right edge of frame with the head lowered like a battering ram, half of the body already out of frame on the right. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
+    "shot_07_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same low-angle close-up of the wet mud shore, Tide's thick slate-blue crocodile tail now swept all the way across to the left side of the frame low over the mud, carving a groove in the mud and flinging a low spray of mud droplets to the left. Tide keeps the exact same character design, proportions and markings as image 2: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same character scale and camera framing as image 1.",
+    "shot_09_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember still facing screen-right with the striped tail on the left and the big rounded head on the right, having lunged one powerful step forward into the right half of the frame with the rounded head lowered like a battering ram, eyes fiercely narrowed, mouth firmly closed. Ember keeps the exact same character design, proportions and markings as image 2: a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head, short broad snout, big amber eyes, a nicked brow scar and bright ember-orange stripes along the spine and tail as a signature accent. Same character scale and camera framing as image 1.",
     "shot_01_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember stands at the edge of the ridge with tired shoulders lifted and hopeful eyes fixed on the pool below. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_02_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember frozen mid-sip with eyes turned sideways in sharp suspicion, brows tightened, water dripping from the chin. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_03_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Tide has risen a little higher in the same reeds with more of the sail showing and a sly closed-mouth smirk, long crocodile snout in three-quarter profile, while Ember's striped back stays in the left foreground exactly as in image 1. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Tide keeps exactly the same design as image 3: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_04_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember mid-roar with the mouth wide open and a fierce protective glare, the head and chest still filling the frame exactly as in image 1. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_06_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same left-profile close-up with the snout still pointing to the left edge of the frame, Tide with a cunning closed-mouth smile, eyes half-lidded and smug. Tide keeps exactly the same design as image 2: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same scale and same positions in the frame as image 1.",
+    "shot_02_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same side-angle close-up, Ember frozen with the chin lifted slightly above the water, mouth firmly closed, brows tightened and amber eyes flicking sideways in sharp suspicion, a single droplet on the chin. Ember keeps the exact same character design, proportions and markings as image 2: a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head, short broad snout, big amber eyes, a nicked brow scar and bright ember-orange stripes along the spine and tail as a signature accent. Same character scale and camera framing as image 1.",
+    "shot_03_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same over-the-shoulder view across the jade pool, Tide standing in the exact same spot in the shallow water with the head tilted slightly and a sly closed-mouth smirk on the long crocodile snout, while Ember's blurred striped back stays in the left foreground. Ember keeps the exact same character design, proportions and markings as image 2: a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head, short broad snout, big amber eyes, a nicked brow scar and bright ember-orange stripes along the spine and tail as a signature accent. Tide keeps the exact same character design, proportions and markings as image 3: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same character scale and camera framing as image 1.",
+    "shot_04_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember mid-roar with the mouth wide open and a fierce protective glare, the head and chest still filling the frame exactly as in image 1. Ember keeps the exact same character design, proportions and markings as image 2: a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head, short broad snout, big amber eyes, a nicked brow scar and bright ember-orange stripes along the spine and tail as a signature accent. Same character scale and camera framing as image 1.",
+    "shot_06_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same left-profile close-up with the dry snout pointing to the left edge of the frame, Tide with a cunning closed-mouth smile, green eyes half-lidded and smug. Tide keeps the exact same character design, proportions and markings as image 2: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same character scale and camera framing as image 1.",
     "shot_08_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember's eye wide open and narrowed with stubborn determination. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_10_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same left-profile close-up with the snout pointing to the left edge of the frame, Tide blinking, eyes round and wary, mouth closed. Tide keeps exactly the same design as image 2: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same scale and same positions in the frame as image 1.",
+    "shot_10_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same left-profile close-up with the snout pointing to the left edge of the frame, Tide blinking, eyes round and wary, mouth closed. Tide keeps the exact same character design, proportions and markings as image 2: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same character scale and camera framing as image 1.",
     "shot_11_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same extreme close-up, the brow lifts and softens and the eye opens round, kind and calm. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
     "shot_12_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: Ember raises the head from the water with eyes half closed and a small proud closed-mouth smile, a few droplets on the chin. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
     "shot_13_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus with bright ember-orange stripes lands flat on the back in the shallow mud. A small mud splash. On the animated tyrannosaurus's face, frozen shock. The animated tyrannosaurus's expression stays serious and shocked, with raised brows. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a surprised grunt. SFX: a heavy wet thud of a body. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
@@ -94,9 +94,9 @@
     "shot_14_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The sleek animated spinosaurus's long jaws snap shut with a sharp clack. The animated spinosaurus's eyes narrow in annoyance after the miss. The animated spinosaurus ends with the mouth firmly closed, lips covering the teeth, and a serious angry expression. The animated spinosaurus keeps facing screen-left. The animated spinosaurus lets out a frustrated hiss. SFX: a sharp jaw clack. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
     "shot_14_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level close-up, 85mm lens feel, shallow focus. Tide (image 2), a sleek spinosaurus with a huge fan-shaped sail. Side-view close-up of Tide facing screen-left at the pool edge, the head pulled back with the long crocodile jaws wide open. Tide has a serious angry expression with lowered brows. Tide's face fills most of the frame in three-quarter view facing screen-left. A wide volcanic valley of dark basalt ridges and warm pools (image 3), golden hour, lit by a low golden sun from the right, in a palette of warm amber and dusty rust tones.",
     "shot_14_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same side-view close-up, Tide's long jaws snapped shut and the eyes narrowed in annoyance. Tide keeps exactly the same design as image 2: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same scale and same positions in the frame as image 1.",
-    "shot_15_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus with bright ember-orange stripes ducks low as a shadow passes overhead. On the animated tyrannosaurus's face, wide shocked eyes, mouth pressed shut. The animated tyrannosaurus keeps the mouth firmly closed, lips covering the teeth, with a serious shocked expression. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a sharp startled breath. SFX: a whoosh passing overhead. Ambient noise: low wind, bubbling hot springs and a distant rumble. Pixar-like 3D animation, soft global illumination, expressive faces.",
-    "shot_15_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level close-up, 85mm lens feel, shallow focus. Ember (image 2), a stocky young tyrannosaurus with bright ember-orange stripes. Reverse angle, close-up of Ember facing screen-right with the tall dark landmark rock behind, eyes wide looking up, mouth pressed shut. Ember's mouth is firmly closed, lips covering the teeth, serious shocked expression. Ember's face fills most of the frame in three-quarter view facing screen-right. A wide volcanic valley of dark basalt ridges and warm pools (image 3), golden hour, lit by a low golden sun from the right, in a palette of warm amber and dusty rust tones.",
-    "shot_15_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same close-up, Ember ducked low with the head pulled down into the shoulders, eyes wide, mouth pressed shut, a dark shadow passing overhead. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Same scale and same positions in the frame as image 1.",
+    "shot_15_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The cute chubby young animated tyrannosaurus with tail ducks the big rounded head low into the shoulders as a gust of wind rushes past. On the animated tyrannosaurus's face, startled alarm turns into wide-eyed braced shock, mouth pressed shut. The animated tyrannosaurus keeps facing screen-right. The animated tyrannosaurus lets out a sharp startled breath. SFX: a whoosh passing overhead. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
+    "shot_15_start_frame": "Stylized 3D animated feature film look, Pixar-like 3D animation, appealing rounded shapes, expressive faces with large readable eyes, soft global illumination, clean physically based materials, shallow cinematic depth of field. Eye-level close-up, 85mm lens feel, shallow focus. Ember (image 1), a cute chubby young tyrannosaurus with tail. Reverse angle close-up of chubby young Ember facing screen-right with the tall dark landmark rock behind, big rounded head, smooth grey neck, amber eyes wide looking up in alarm, mouth pressed firmly shut. Ember's mouth is firmly closed, lips covering the teeth, serious startled expression. Ember's face fills most of the frame in three-quarter view facing screen-right. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust tones.",
+    "shot_15_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same close-up with the clear golden sky and dark landmark rock behind, chubby young Ember ducked low with the rounded head pulled down into the shoulders, amber eyes wide, mouth pressed firmly shut. Ember keeps the exact same character design, proportions and markings as image 2: a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head, short broad snout, big amber eyes, a nicked brow scar and bright ember-orange stripes along the spine and tail as a signature accent. Same character scale and camera framing as image 1.",
     "shot_16_motion": "Static camera, one continuous shot. Same 3D animated character design and scale as the first frame throughout. The stocky young animated tyrannosaurus and the sleek animated spinosaurus edge one step closer across the pool. On the animated tyrannosaurus's face, tense locked stares, mouths firmly closed, mouth firmly closed, lips covering the teeth. The animated tyrannosaurus stays left, the animated spinosaurus stays right. The animated tyrannosaurus lets out a low warning growls. SFX: slow wet footsteps. Ambient noise: low wind and bubbling hot springs. Pixar-like 3D animation, soft global illumination, expressive faces.",
     "shot_16_start_frame": "Pixar-like 3D animation, soft global illumination, expressive faces. Eye-level wide shot, 28mm lens feel, deep focus. Ember (image 1), a stocky young tyrannosaurus with bright ember-orange stripes, and Tide (image 2), a sleek spinosaurus with a huge fan-shaped sail. Wide shot across the jade pool, Ember on the left bank facing right and Tide on the right bank facing left, both crouched low and tense, the water between them. Ember's mouth is firmly closed, lips covering the teeth, serious wary expression. Ember on the left facing right, Tide on the right facing left, full bodies filling half the frame height. A wide volcanic valley (image 3), golden hour, lit by a low golden sun, in a palette of warm amber and dusty rust.",
     "shot_16_end_frame": "Edit image 1. Keep the background, rocks, steam, water, lighting, colours, camera angle, lens and Pixar-like 3D animation style of image 1 exactly the same. Change only the poses and expressions: the same wide shot, both have edged one step closer to the water, eyes locked on each other, mouths firmly closed. Ember keeps exactly the same design as image 2: a stocky young tyrannosaurus standing upright on two hind legs with tiny arms tucked to the chest with charcoal-grey pebbly skin, a broad expressive snout, big amber eyes, a nicked brow scar and bright ember-orange stripes down the back as a signature accent. Tide keeps exactly the same design as image 3: a sleek spinosaurus with a level horizontal back and long balancing tail, slate-blue crocodile-like skin, a long narrow snout with a sly smile, sharp green eyes and a huge fan-shaped sail with bold teal stripes as a signature accent. Same scale and same positions in the frame as image 1.",
@@ -117,7 +117,7 @@
     },
     "02_char1_portrait": {
       "ok": true,
-      "words": 107,
+      "words": 102,
       "issues": []
     },
     "02_char2_turnaround": {
@@ -151,33 +151,35 @@
       "issues": []
     },
     "shot_02_motion": {
-      "ok": true,
-      "words": 100,
-      "issues": []
+      "ok": false,
+      "words": 95,
+      "issues": [
+        "dangling fragment after truncation: \"slightly.\""
+      ]
     },
     "shot_02_start_frame": {
-      "ok": true,
-      "words": 125,
-      "issues": []
-    },
-    "shot_03_motion": {
-      "ok": true,
-      "words": 95,
-      "issues": []
-    },
-    "shot_03_start_frame": {
       "ok": true,
       "words": 120,
       "issues": []
     },
+    "shot_03_motion": {
+      "ok": true,
+      "words": 88,
+      "issues": []
+    },
+    "shot_03_start_frame": {
+      "ok": true,
+      "words": 116,
+      "issues": []
+    },
     "shot_04_motion": {
       "ok": true,
-      "words": 100,
+      "words": 99,
       "issues": []
     },
     "shot_04_start_frame": {
       "ok": true,
-      "words": 122,
+      "words": 121,
       "issues": []
     },
     "shot_05_motion": {
@@ -197,17 +199,17 @@
     },
     "shot_06_start_frame": {
       "ok": true,
-      "words": 123,
+      "words": 130,
       "issues": []
     },
     "shot_07_motion": {
       "ok": true,
-      "words": 57,
+      "words": 66,
       "issues": []
     },
     "shot_07_start_frame": {
       "ok": true,
-      "words": 130,
+      "words": 125,
       "issues": []
     },
     "shot_08_motion": {
@@ -222,17 +224,17 @@
     },
     "shot_09_motion": {
       "ok": true,
-      "words": 97,
+      "words": 100,
       "issues": []
     },
     "shot_09_start_frame": {
       "ok": true,
-      "words": 124,
+      "words": 130,
       "issues": []
     },
     "shot_10_motion": {
       "ok": true,
-      "words": 93,
+      "words": 99,
       "issues": []
     },
     "shot_10_start_frame": {
@@ -269,15 +271,17 @@
     },
     "shot_07_end_frame": {
       "ok": false,
-      "words": 136,
+      "words": 140,
       "issues": [
-        "word count 136 outside 50-130 for image"
+        "word count 140 outside 50-130 for image"
       ]
     },
     "shot_09_end_frame": {
-      "ok": true,
-      "words": 123,
-      "issues": []
+      "ok": false,
+      "words": 149,
+      "issues": [
+        "word count 149 outside 50-130 for image"
+      ]
     },
     "shot_01_end_frame": {
       "ok": true,
@@ -285,25 +289,27 @@
       "issues": []
     },
     "shot_02_end_frame": {
-      "ok": true,
-      "words": 111,
-      "issues": []
+      "ok": false,
+      "words": 135,
+      "issues": [
+        "word count 135 outside 50-130 for image"
+      ]
     },
     "shot_03_end_frame": {
       "ok": false,
-      "words": 183,
+      "words": 198,
       "issues": [
-        "word count 183 outside 50-130 for image"
+        "word count 198 outside 50-130 for image"
       ]
     },
     "shot_04_end_frame": {
       "ok": true,
-      "words": 119,
+      "words": 127,
       "issues": []
     },
     "shot_06_end_frame": {
       "ok": true,
-      "words": 116,
+      "words": 119,
       "issues": []
     },
     "shot_08_end_frame": {
@@ -313,7 +319,7 @@
     },
     "shot_10_end_frame": {
       "ok": true,
-      "words": 113,
+      "words": 115,
       "issues": []
     },
     "shot_11_end_frame": {
@@ -358,18 +364,20 @@
     },
     "shot_15_motion": {
       "ok": true,
-      "words": 100,
+      "words": 92,
       "issues": []
     },
     "shot_15_start_frame": {
       "ok": true,
-      "words": 127,
+      "words": 128,
       "issues": []
     },
     "shot_15_end_frame": {
-      "ok": true,
-      "words": 118,
-      "issues": []
+      "ok": false,
+      "words": 136,
+      "issues": [
+        "word count 136 outside 50-130 for image"
+      ]
     },
     "shot_16_motion": {
       "ok": true,
@@ -431,103 +439,101 @@
         }
       ],
       "draft_best": 1,
+      "final_best": 2,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_10_final_take_1.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_10_final_take_1.mp4",
           "verdict": {
-            "overall": 63,
-            "scores": {
-              "identityMatch": 7,
-              "anatomyStable": 6,
-              "noMorphing": 5,
-              "actingVisible": 7,
-              "compositionClear": 7,
-              "effectsRestraint": 5,
-              "motionQuality": 6
-            },
-            "artifacts": [
-              "unscripted jaw drip",
-              "fleeting chin discoloration"
-            ],
-            "pass": false,
-            "note": "The shock-to-respect acting beat and head recoil track cleanly, marred only by spontaneous dark fluid dripping from the jaw.",
-            "failedGates": [],
-            "beatInSec": 0.7,
-            "beatPeakSec": 1.7,
-            "beatOutSec": 3.2,
-            "beat": {
-              "inSec": 0.7,
-              "peakSec": 1.7,
-              "outSec": 3.2
-            }
-          }
-        },
-        {
-          "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_10_final_take_2.mp4",
-          "verdict": {
-            "overall": 50,
-            "scores": {
-              "identityMatch": 6,
-              "anatomyStable": 4,
-              "noMorphing": 4,
-              "actingVisible": 6,
-              "compositionClear": 6,
-              "effectsRestraint": 4,
-              "motionQuality": 5
-            },
-            "artifacts": [
-              "jaw melting artifact",
-              "unprompted black fluid drip",
-              "excessive facial steam"
-            ],
-            "pass": false,
-            "note": "Tide's lower jaw discolors and melts into dripping liquid during the reel-back, violating anatomical stability and FX restraint.",
-            "failedGates": [],
-            "beatInSec": 1.2,
-            "beatPeakSec": 2.2,
-            "beatOutSec": 3.7,
-            "beat": {
-              "inSec": 1.2,
-              "peakSec": 2.2,
-              "outSec": 3.7
-            }
-          }
-        },
-        {
-          "k": 3,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_10_final_take_3.mp4",
-          "verdict": {
-            "overall": 66,
+            "overall": 68,
             "scores": {
               "identityMatch": 7,
               "anatomyStable": 6,
               "noMorphing": 6,
               "actingVisible": 7,
               "compositionClear": 7,
-              "effectsRestraint": 5,
+              "effectsRestraint": 7,
               "motionQuality": 6
             },
             "artifacts": [
-              "unprompted mouth dripping",
-              "fleeting chin artifact"
+              "minor snout drift",
+              "teeth popping"
             ],
             "pass": false,
-            "note": "The head recoil and emotional shift to wary respect read clearly, despite spurious dark dripping fluid on the jaw.",
+            "note": "The head recoil and transition from dazed recoil to a closed-mouth wary expression reads clearly and matches the approved keys.",
             "failedGates": [],
-            "beatInSec": 1.2,
+            "beatInSec": 0.7,
             "beatPeakSec": 2.2,
             "beatOutSec": 3.7,
             "beat": {
-              "inSec": 1.2,
+              "inSec": 0.7,
               "peakSec": 2.2,
               "outSec": 3.7
             }
           }
+        },
+        {
+          "k": 2,
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_10_final_take_2.mp4",
+          "verdict": {
+            "overall": 72,
+            "scores": {
+              "identityMatch": 7,
+              "anatomyStable": 7,
+              "noMorphing": 7,
+              "actingVisible": 7,
+              "compositionClear": 7,
+              "effectsRestraint": 7,
+              "motionQuality": 6
+            },
+            "artifacts": [
+              "slight perspective distortion during turn"
+            ],
+            "pass": true,
+            "note": "The acting beat reads clearly as dazed shock transitions cleanly into closed-mouth wary respect with stable model continuity.",
+            "failedGates": [],
+            "beatInSec": 1.67,
+            "beatPeakSec": 2.64,
+            "beatOutSec": 3.62,
+            "beat": {
+              "inSec": 1.67,
+              "peakSec": 2.64,
+              "outSec": 3.62
+            }
+          }
+        },
+        {
+          "k": 3,
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_10_final_take_3.mp4",
+          "verdict": {
+            "overall": 68,
+            "scores": {
+              "identityMatch": 7,
+              "anatomyStable": 7,
+              "noMorphing": 6,
+              "actingVisible": 7,
+              "compositionClear": 7,
+              "effectsRestraint": 7,
+              "motionQuality": 6
+            },
+            "artifacts": [
+              "motion blur on jaw",
+              "minor dental popping"
+            ],
+            "pass": false,
+            "note": "The transition from physical shock to cautious respect reads clearly and aligns with the approved keyframes.",
+            "failedGates": [],
+            "beatInSec": 1.67,
+            "beatPeakSec": 2.64,
+            "beatOutSec": 3.62,
+            "beat": {
+              "inSec": 1.67,
+              "peakSec": 2.64,
+              "outSec": 3.62
+            }
+          }
         }
-      ],
-      "final_best": 3
+      ]
     },
     "11": {
       "draft": [
@@ -897,103 +903,104 @@
       "final_best": 1
     },
     "15": {
+      "final_best": 2,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_15_final_take_1.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_15_final_take_1.mp4",
           "verdict": {
-            "overall": 68,
+            "overall": 44,
             "scores": {
-              "identityMatch": 7,
-              "anatomyStable": 6,
+              "identityMatch": 6,
+              "anatomyStable": 5,
               "noMorphing": 6,
-              "actingVisible": 6,
-              "compositionClear": 7,
-              "effectsRestraint": 7,
-              "motionQuality": 6
+              "actingVisible": 4,
+              "compositionClear": 6,
+              "effectsRestraint": 5,
+              "motionQuality": 5
             },
             "artifacts": [
-              "mid-shot mouth open scream"
+              "open mouth grin",
+              "acting drift"
             ],
             "pass": false,
-            "note": "Ember ducks appropriately beneath the passing shadow, though the mouth opens briefly in fear before closing to the requested pressed-shut expression.",
+            "note": "Ember breaks the required braced shock beat by smiling with an open mouth during the wind blast.",
             "failedGates": [],
-            "beatInSec": 3,
-            "beatPeakSec": 3.4,
+            "beatInSec": 2.2,
+            "beatPeakSec": 2.7,
             "beatOutSec": 3.7,
             "beat": {
-              "inSec": 3,
-              "peakSec": 3.4,
+              "inSec": 2.2,
+              "peakSec": 2.7,
               "outSec": 3.7
             }
           }
         },
         {
           "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_15_final_take_2.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_15_final_take_2.mp4",
           "verdict": {
-            "overall": 42,
+            "overall": 46,
             "scores": {
               "identityMatch": 6,
-              "anatomyStable": 4,
-              "noMorphing": 4,
-              "actingVisible": 3,
+              "anatomyStable": 6,
+              "noMorphing": 5,
+              "actingVisible": 4,
               "compositionClear": 6,
               "effectsRestraint": 5,
-              "motionQuality": 4
+              "motionQuality": 5
             },
             "artifacts": [
-              "inappropriate smiling",
-              "mouth opened",
-              "overhead shadow distortion"
+              "smiling mouth",
+              "acting drift",
+              "harsh particle fx"
             ],
             "pass": false,
-            "note": "Ember breaks the required shocked expression by opening his mouth into an inappropriate toothy grin as the overhead shadow passes.",
+            "note": "Hard fail triggered as Ember breaks character to smile with an open mouth between ducking motions.",
             "failedGates": [],
-            "beatInSec": 0,
-            "beatPeakSec": 0.2,
-            "beatOutSec": 0.5,
+            "beatInSec": 1.9,
+            "beatPeakSec": 2.2,
+            "beatOutSec": 2.5,
             "beat": {
-              "inSec": 0,
-              "peakSec": 0.2,
-              "outSec": 0.5
+              "inSec": 1.9,
+              "peakSec": 2.2,
+              "outSec": 2.5
             }
           }
         },
         {
           "k": 3,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_15_final_take_3.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_15_final_take_3.mp4",
           "verdict": {
             "overall": 46,
             "scores": {
               "identityMatch": 6,
               "anatomyStable": 5,
-              "noMorphing": 6,
-              "actingVisible": 3,
+              "noMorphing": 5,
+              "actingVisible": 4,
               "compositionClear": 6,
               "effectsRestraint": 6,
-              "motionQuality": 4
+              "motionQuality": 5
             },
             "artifacts": [
-              "inappropriate grinning",
-              "mouth open during closed-mouth beat",
-              "acting drift"
+              "mouth_opened",
+              "smug_expression",
+              "teeth_bared"
             ],
             "pass": false,
-            "note": "Hard fail triggered as the character displays an open-mouthed grin instead of maintaining shocked eyes with the mouth pressed shut.",
+            "note": "Ember violates the acting beat by breaking into an open-mouthed, smug toothy grin instead of keeping the mouth pressed shut in shock.",
             "failedGates": [],
-            "beatInSec": 3.2,
-            "beatPeakSec": 3.7,
-            "beatOutSec": 3.7,
+            "beatInSec": 0.2,
+            "beatPeakSec": 0.69,
+            "beatOutSec": 1.18,
             "beat": {
-              "inSec": 3.2,
-              "peakSec": 3.7,
-              "outSec": 3.7
+              "inSec": 0.2,
+              "peakSec": 0.69,
+              "outSec": 1.18
             }
           }
         }
-      ],
-      "final_best": 1
+      ]
     },
     "16": {
       "final": [
@@ -1283,49 +1290,104 @@
         }
       ],
       "draft_best": 1,
+      "final_best": 1,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_02_final_take_1.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_02_final_take_1.mp4",
           "verdict": {
-            "overall": 64,
+            "overall": 46,
             "scores": {
-              "identityMatch": 7,
-              "anatomyStable": 7,
-              "noMorphing": 7,
-              "faceReadable": 7,
-              "actingVisible": 5,
-              "compositionClear": 7,
+              "identityMatch": 6,
+              "anatomyStable": 6,
+              "noMorphing": 6,
+              "actingVisible": 4,
+              "compositionClear": 6,
               "effectsRestraint": 6,
-              "motionQuality": 6
+              "motionQuality": 5
             },
-            "artifacts": [],
+            "artifacts": [
+              "inappropriate smiling",
+              "tongue protrusion",
+              "missed emotional beat"
+            ],
             "pass": false,
-            "note": "The acting beat fails to maintain suspicion and freeze, reverting to drinking with an upbeat expression."
+            "note": "The character grins and sticks out its tongue mid-shot, directly violating the required alert suspicion beat.",
+            "failedGates": [],
+            "beatInSec": 3.2,
+            "beatPeakSec": 3.5,
+            "beatOutSec": 3.7,
+            "beat": {
+              "inSec": 3.2,
+              "peakSec": 3.5,
+              "outSec": 3.7
+            }
           }
         },
         {
           "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_02_final_take_2.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_02_final_take_2.mp4",
           "verdict": {
-            "overall": 74,
+            "overall": 46,
             "scores": {
-              "identityMatch": 7,
-              "anatomyStable": 7,
-              "noMorphing": 7,
-              "faceReadable": 7,
-              "actingVisible": 7,
-              "compositionClear": 7,
-              "effectsRestraint": 7,
-              "motionQuality": 7
+              "identityMatch": 6,
+              "anatomyStable": 6,
+              "noMorphing": 5,
+              "actingVisible": 4,
+              "compositionClear": 6,
+              "effectsRestraint": 5,
+              "motionQuality": 4
             },
-            "artifacts": [],
-            "pass": true,
-            "note": "Clear acting transition from relief to suspicion with consistent character model."
+            "artifacts": [
+              "unintended smiling",
+              "drool flickering",
+              "expression wavering"
+            ],
+            "pass": false,
+            "note": "Ember breaks into an unscripted smile mid-shot and fluctuates expressions before finally hitting the suspicious pose.",
+            "failedGates": [],
+            "beatInSec": 3,
+            "beatPeakSec": 3.5,
+            "beatOutSec": 3.7,
+            "beat": {
+              "inSec": 3,
+              "peakSec": 3.5,
+              "outSec": 3.7
+            }
+          }
+        },
+        {
+          "k": 3,
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_02_final_take_3.mp4",
+          "verdict": {
+            "overall": 46,
+            "scores": {
+              "identityMatch": 6,
+              "anatomyStable": 6,
+              "noMorphing": 5,
+              "actingVisible": 4,
+              "compositionClear": 6,
+              "effectsRestraint": 4,
+              "motionQuality": 5
+            },
+            "artifacts": [
+              "smiling/grinning expression",
+              "unprompted water discharge"
+            ],
+            "pass": false,
+            "note": "The performance fails the emotional beat by displaying an unauthorized grin and mouth regurgitation mid-take.",
+            "failedGates": [],
+            "beatInSec": 3.2,
+            "beatPeakSec": 3.5,
+            "beatOutSec": 3.7,
+            "beat": {
+              "inSec": 3.2,
+              "peakSec": 3.5,
+              "outSec": 3.7
+            }
           }
         }
-      ],
-      "final_best": 2
+      ]
     },
     "03": {
       "draft": [
@@ -1350,10 +1412,11 @@
         }
       ],
       "draft_best": 1,
+      "final_best": 1,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_03_final_take_1.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_03_final_take_1.mp4",
           "verdict": {
             "overall": 66,
             "scores": {
@@ -1362,60 +1425,89 @@
               "noMorphing": 6,
               "actingVisible": 6,
               "compositionClear": 7,
-              "effectsRestraint": 6,
+              "effectsRestraint": 7,
               "motionQuality": 6
             },
             "artifacts": [
-              "unscripted open mouth",
-              "minor foot sliding"
+              "mid-take open mouth",
+              "minor jaw drift"
             ],
             "pass": false,
-            "note": "The animation links the keyframes smoothly with solid identity preservation, though an unscripted open-mouthed expression precedes the final smirk.",
+            "note": "Tide executes the head tilt and smirk cleanly, though the mouth unintentionally parts to reveal teeth mid-shot before re-closing.",
             "failedGates": [],
-            "beatInSec": 6.2,
-            "beatPeakSec": 7.2,
-            "beatOutSec": 7.7,
+            "beatInSec": 0.2,
+            "beatPeakSec": 3.13,
+            "beatOutSec": 3.62,
             "beat": {
-              "inSec": 6.2,
-              "peakSec": 7.2,
-              "outSec": 7.7
+              "inSec": 0.2,
+              "peakSec": 3.13,
+              "outSec": 3.62
             }
           }
         },
         {
           "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_03_final_take_2.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_03_final_take_2.mp4",
           "verdict": {
-            "overall": 44,
+            "overall": 64,
             "scores": {
-              "identityMatch": 5,
-              "anatomyStable": 4,
+              "identityMatch": 7,
+              "anatomyStable": 6,
+              "noMorphing": 6,
+              "actingVisible": 6,
+              "compositionClear": 7,
+              "effectsRestraint": 7,
+              "motionQuality": 6
+            },
+            "artifacts": [
+              "unscripted mouth opening",
+              "jaw chatter"
+            ],
+            "pass": false,
+            "note": "Tide momentarily breaks into an unscripted open-mouth gape before settling cleanly into the required closed-mouth smirk.",
+            "failedGates": [],
+            "beatInSec": 2.5,
+            "beatPeakSec": 3.2,
+            "beatOutSec": 3.7,
+            "beat": {
+              "inSec": 2.5,
+              "peakSec": 3.2,
+              "outSec": 3.7
+            }
+          }
+        },
+        {
+          "k": 3,
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_03_final_take_3.mp4",
+          "verdict": {
+            "overall": 56,
+            "scores": {
+              "identityMatch": 6,
+              "anatomyStable": 5,
               "noMorphing": 4,
               "actingVisible": 5,
               "compositionClear": 6,
               "effectsRestraint": 6,
-              "motionQuality": 3
+              "motionQuality": 5
             },
             "artifacts": [
-              "end frame snap pop",
-              "missing scripted action",
-              "anatomy drift in frontal view"
+              "sprouting foliage",
+              "unscripted mouth opening"
             ],
             "pass": false,
-            "note": "Tide wanders forward with anatomical distortion before abruptly snapping into the end keyframe, failing the scripted action.",
+            "note": "The subtle smirk beat lands early before dissolving into unprompted dialogue motion and popping ground foliage.",
             "failedGates": [],
-            "beatInSec": 4.5,
-            "beatPeakSec": 5.2,
-            "beatOutSec": 6,
+            "beatInSec": 0.2,
+            "beatPeakSec": 0.69,
+            "beatOutSec": 1.18,
             "beat": {
-              "inSec": 4.5,
-              "peakSec": 5.2,
-              "outSec": 6
+              "inSec": 0.2,
+              "peakSec": 0.69,
+              "outSec": 1.18
             }
           }
         }
-      ],
-      "final_best": 1
+      ]
     },
     "04": {
       "draft": [
@@ -1441,49 +1533,101 @@
         }
       ],
       "draft_best": 1,
+      "final_best": 1,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_04_final_take_1.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_04_final_take_1.mp4",
           "verdict": {
-            "overall": 73,
+            "overall": 68,
             "scores": {
               "identityMatch": 7,
               "anatomyStable": 7,
-              "noMorphing": 7,
-              "faceReadable": 7,
-              "actingVisible": 6,
+              "noMorphing": 6,
+              "actingVisible": 7,
               "compositionClear": 7,
               "effectsRestraint": 7,
               "motionQuality": 6
             },
-            "artifacts": [],
-            "pass": true,
-            "note": "Closing the eyes during the roar weakens the intended glare."
+            "artifacts": [
+              "minor eyelid jitter"
+            ],
+            "pass": false,
+            "note": "Ember maintains solid model consistency and effectively delivers the transition from caution to an aggressive warning roar.",
+            "failedGates": [],
+            "beatInSec": 1.2,
+            "beatPeakSec": 2.2,
+            "beatOutSec": 3.2,
+            "beat": {
+              "inSec": 1.2,
+              "peakSec": 2.2,
+              "outSec": 3.2
+            }
           }
         },
         {
           "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_04_final_take_2.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_04_final_take_2.mp4",
           "verdict": {
-            "overall": 75,
+            "overall": 68,
             "scores": {
               "identityMatch": 7,
               "anatomyStable": 7,
-              "noMorphing": 7,
-              "faceReadable": 7,
+              "noMorphing": 6,
               "actingVisible": 7,
               "compositionClear": 7,
               "effectsRestraint": 7,
-              "motionQuality": 7
+              "motionQuality": 6
             },
-            "artifacts": [],
-            "pass": true,
-            "note": "Strong performance and consistency with only minor framing shifts."
+            "artifacts": [
+              "secondary roar cycle",
+              "minor jaw snap"
+            ],
+            "pass": false,
+            "note": "Model maintains character fidelity and delivers the scripted glare and roar despite slight pacing repetition.",
+            "failedGates": [],
+            "beatInSec": 0.5,
+            "beatPeakSec": 1.2,
+            "beatOutSec": 2.2,
+            "beat": {
+              "inSec": 0.5,
+              "peakSec": 1.2,
+              "outSec": 2.2
+            }
+          }
+        },
+        {
+          "k": 3,
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_04_final_take_3.mp4",
+          "verdict": {
+            "overall": 68,
+            "scores": {
+              "identityMatch": 7,
+              "anatomyStable": 6,
+              "noMorphing": 6,
+              "actingVisible": 7,
+              "compositionClear": 7,
+              "effectsRestraint": 7,
+              "motionQuality": 6
+            },
+            "artifacts": [
+              "minor head stripe shifting",
+              "drool inconsistency"
+            ],
+            "pass": false,
+            "note": "Ember smoothly transitions from alert focus into an intense protective glare before executing the warning roar without major structural breakdown.",
+            "failedGates": [],
+            "beatInSec": 0.69,
+            "beatPeakSec": 1.67,
+            "beatOutSec": 2.15,
+            "beat": {
+              "inSec": 0.69,
+              "peakSec": 1.67,
+              "outSec": 2.15
+            }
           }
         }
-      ],
-      "final_best": 2
+      ]
     },
     "05": {
       "draft": [
@@ -1605,102 +1749,103 @@
         }
       ],
       "draft_best": 1,
+      "final_best": 1,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_06_final_take_1.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_06_final_take_1.mp4",
           "verdict": {
-            "overall": 67,
+            "overall": 68,
             "scores": {
               "identityMatch": 7,
               "anatomyStable": 6,
               "noMorphing": 6,
-              "actingVisible": 7,
+              "actingVisible": 6,
               "compositionClear": 7,
-              "effectsRestraint": 6,
+              "effectsRestraint": 7,
               "motionQuality": 6
             },
             "artifacts": [
-              "heavy water spray",
-              "temporary teeth exposure"
+              "teeth exposure",
+              "double blink flutter"
             ],
             "pass": false,
-            "note": "The acting beat transitions clearly from the droplet shake into the required closed-mouth smirk while maintaining strong character likeness.",
+            "note": "The performance resolves cleanly into the intended smirk, though intermediate frames introduce unprompted mouth parting and rapid eye blinks.",
             "failedGates": [],
-            "beatInSec": 2.2,
-            "beatPeakSec": 3.2,
-            "beatOutSec": 3.7,
+            "beatInSec": 0.69,
+            "beatPeakSec": 3.13,
+            "beatOutSec": 3.62,
             "beat": {
-              "inSec": 2.2,
-              "peakSec": 3.2,
-              "outSec": 3.7
+              "inSec": 0.69,
+              "peakSec": 3.13,
+              "outSec": 3.62
             }
           }
         },
         {
           "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_06_final_take_2.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_06_final_take_2.mp4",
           "verdict": {
-            "overall": 68,
+            "overall": 58,
             "scores": {
-              "identityMatch": 7,
-              "anatomyStable": 6,
+              "identityMatch": 6,
+              "anatomyStable": 5,
               "noMorphing": 6,
-              "actingVisible": 7,
-              "compositionClear": 7,
-              "effectsRestraint": 6,
-              "motionQuality": 6
+              "actingVisible": 5,
+              "compositionClear": 6,
+              "effectsRestraint": 7,
+              "motionQuality": 5
             },
             "artifacts": [
-              "mouth water burst",
-              "motion blur"
+              "unprompted head turn",
+              "open mouth teeth reveal",
+              "acting beat delay"
             ],
             "pass": false,
-            "note": "Tide performs the head shake and resolves cleanly into the requested cunning closed-mouth smirk.",
+            "note": "Tide turns toward camera and unnecessarily opens his mouth before finally settling into the required closed-mouth smirk at the tail of the shot.",
             "failedGates": [],
-            "beatInSec": 2.15,
-            "beatPeakSec": 3.13,
-            "beatOutSec": 3.62,
+            "beatInSec": 2.7,
+            "beatPeakSec": 3.4,
+            "beatOutSec": 3.7,
             "beat": {
-              "inSec": 2.15,
-              "peakSec": 3.13,
-              "outSec": 3.62
+              "inSec": 2.7,
+              "peakSec": 3.4,
+              "outSec": 3.7
             }
           }
         },
         {
           "k": 3,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_06_final_take_3.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_06_final_take_3.mp4",
           "verdict": {
-            "overall": 68,
+            "overall": 60,
             "scores": {
-              "identityMatch": 7,
+              "identityMatch": 6,
               "anatomyStable": 6,
               "noMorphing": 6,
-              "actingVisible": 7,
-              "compositionClear": 7,
-              "effectsRestraint": 6,
-              "motionQuality": 6
+              "actingVisible": 5,
+              "compositionClear": 6,
+              "effectsRestraint": 7,
+              "motionQuality": 5
             },
             "artifacts": [
-              "open mouth deviation",
-              "minor dental jitter"
+              "unscripted open mouth",
+              "erratic head turn"
             ],
             "pass": false,
-            "note": "The performance captures the shake and smirk well, though the smile briefly opens rather than staying strictly closed.",
+            "note": "Tide turns forward and opens his mouth instead of holding a subtle closed smirk, though keyframe targets are met.",
             "failedGates": [],
-            "beatInSec": 1.18,
-            "beatPeakSec": 3.13,
-            "beatOutSec": 3.62,
+            "beatInSec": 3,
+            "beatPeakSec": 3.7,
+            "beatOutSec": 3.7,
             "beat": {
-              "inSec": 1.18,
-              "peakSec": 3.13,
-              "outSec": 3.62
+              "inSec": 3,
+              "peakSec": 3.7,
+              "outSec": 3.7
             }
           }
         }
-      ],
-      "final_best": 2
+      ]
     },
     "07": {
       "draft": [
@@ -1725,102 +1870,100 @@
         }
       ],
       "draft_best": 1,
+      "final_best": 2,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_07_final_take_1.mp4",
-          "verdict": {
-            "overall": 68,
-            "scores": {
-              "identityMatch": 7,
-              "anatomyStable": 6,
-              "noMorphing": 6,
-              "actingVisible": 7,
-              "compositionClear": 7,
-              "effectsRestraint": 6,
-              "motionQuality": 6
-            },
-            "artifacts": [
-              "minor rubberiness",
-              "mud particle pop"
-            ],
-            "pass": false,
-            "note": "The tail sweep executes the scripted action cleanly with coherent mud interaction and stable anatomy.",
-            "failedGates": [],
-            "beatInSec": 1.2,
-            "beatPeakSec": 2.2,
-            "beatOutSec": 3.2,
-            "beat": {
-              "inSec": 1.2,
-              "peakSec": 2.2,
-              "outSec": 3.2
-            }
-          }
-        },
-        {
-          "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_07_final_take_2.mp4",
-          "verdict": {
-            "overall": 68,
-            "scores": {
-              "identityMatch": 7,
-              "anatomyStable": 6,
-              "noMorphing": 6,
-              "actingVisible": 7,
-              "compositionClear": 7,
-              "effectsRestraint": 6,
-              "motionQuality": 6
-            },
-            "artifacts": [
-              "minor fluid clipping",
-              "tail elasticity glitch"
-            ],
-            "pass": false,
-            "note": "The tail sweep and mud splash execute the action convincingly with stable asset continuity.",
-            "failedGates": [],
-            "beatInSec": 1.67,
-            "beatPeakSec": 2.15,
-            "beatOutSec": 2.64,
-            "beat": {
-              "inSec": 1.67,
-              "peakSec": 2.15,
-              "outSec": 2.64
-            }
-          }
-        },
-        {
-          "k": 3,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_07_final_take_3.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_07_final_take_1.mp4",
           "verdict": {
             "overall": 68,
             "scores": {
               "identityMatch": 7,
               "anatomyStable": 7,
-              "noMorphing": 7,
-              "actingVisible": 6,
+              "noMorphing": 6,
+              "actingVisible": 7,
               "compositionClear": 7,
               "effectsRestraint": 6,
               "motionQuality": 6
             },
             "artifacts": [
-              "mud splash fx",
-              "tail motion arc"
+              "minor particle noise"
             ],
             "pass": false,
-            "note": "The tail sweep executes cleanly across the frame with good fluid interaction, though the secondary return motion softens the initial impact.",
+            "note": "The tail whip and mud splash match keyframe continuity and execute the action cleanly.",
             "failedGates": [],
-            "beatInSec": 1.5,
-            "beatPeakSec": 2.2,
-            "beatOutSec": 2.9,
+            "beatInSec": 2.2,
+            "beatPeakSec": 2.7,
+            "beatOutSec": 3.7,
             "beat": {
-              "inSec": 1.5,
+              "inSec": 2.2,
+              "peakSec": 2.7,
+              "outSec": 3.7
+            }
+          }
+        },
+        {
+          "k": 2,
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_07_final_take_2.mp4",
+          "verdict": {
+            "overall": 72,
+            "scores": {
+              "identityMatch": 7,
+              "anatomyStable": 7,
+              "noMorphing": 6,
+              "actingVisible": 7,
+              "compositionClear": 7,
+              "effectsRestraint": 6,
+              "motionQuality": 6
+            },
+            "artifacts": [
+              "minor mud popping"
+            ],
+            "pass": true,
+            "note": "The tail whip and mud spray match the approved keyframes cleanly with stable anatomy throughout.",
+            "failedGates": [],
+            "beatInSec": 1.2,
+            "beatPeakSec": 2.2,
+            "beatOutSec": 3.7,
+            "beat": {
+              "inSec": 1.2,
               "peakSec": 2.2,
-              "outSec": 2.9
+              "outSec": 3.7
+            }
+          }
+        },
+        {
+          "k": 3,
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_07_final_take_3.mp4",
+          "verdict": {
+            "overall": 63,
+            "scores": {
+              "identityMatch": 7,
+              "anatomyStable": 6,
+              "noMorphing": 6,
+              "actingVisible": 6,
+              "compositionClear": 7,
+              "effectsRestraint": 5,
+              "motionQuality": 6
+            },
+            "artifacts": [
+              "extraneous ground fx",
+              "delayed whip motion"
+            ],
+            "pass": false,
+            "note": "Tail whip action executes adequately to the end keyframe despite an odd mid-shot splash glitch.",
+            "failedGates": [],
+            "beatInSec": 1.7,
+            "beatPeakSec": 3.2,
+            "beatOutSec": 3.7,
+            "beat": {
+              "inSec": 1.7,
+              "peakSec": 3.2,
+              "outSec": 3.7
             }
           }
         }
-      ],
-      "final_best": 1
+      ]
     },
     "08": {
       "draft": [
@@ -1913,106 +2056,103 @@
         }
       ],
       "draft_best": 1,
+      "final_best": 2,
       "final": [
         {
           "k": 1,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_09_final_take_1.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_09_final_take_1.mp4",
           "verdict": {
-            "overall": 42,
+            "overall": 44,
             "scores": {
-              "identityMatch": 6,
-              "anatomyStable": 4,
-              "noMorphing": 4,
-              "actingVisible": 4,
-              "compositionClear": 5,
-              "effectsRestraint": 6,
-              "motionQuality": 3
+              "identityMatch": 6.5,
+              "anatomyStable": 5.5,
+              "noMorphing": 5,
+              "actingVisible": 3.8,
+              "compositionClear": 6,
+              "effectsRestraint": 6.5,
+              "motionQuality": 4.2
             },
             "artifacts": [
-              "mouth opens into roar",
-              "erratic facing flip",
-              "fails to exit frame",
-              "teleport end snap"
+              "mouth_opened_teeth_exposed",
+              "no_forward_step",
+              "foot_sliding"
             ],
             "pass": false,
-            "note": "Ember opens his mouth into a roar, turns erratically toward the camera instead of bursting offscreen, and suddenly snaps to the end pose.",
+            "note": "Ember never takes the scripted forward lunge step, and the mouth uncharacteristically opens to expose teeth midway through.",
             "failedGates": [],
             "beatInSec": 0.2,
             "beatPeakSec": 0.7,
-            "beatOutSec": 1.2,
+            "beatOutSec": 1.7,
             "beat": {
               "inSec": 0.2,
               "peakSec": 0.7,
-              "outSec": 1.2
+              "outSec": 1.7
             }
           }
         },
         {
           "k": 2,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_09_final_take_2.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_09_final_take_2.mp4",
           "verdict": {
-            "overall": 42,
+            "overall": 66,
             "scores": {
-              "identityMatch": 6,
-              "anatomyStable": 4,
-              "noMorphing": 4,
-              "actingVisible": 4,
-              "compositionClear": 5,
-              "effectsRestraint": 6,
-              "motionQuality": 4
+              "identityMatch": 7,
+              "anatomyStable": 6,
+              "noMorphing": 6,
+              "actingVisible": 6,
+              "compositionClear": 7,
+              "effectsRestraint": 7,
+              "motionQuality": 6
             },
             "artifacts": [
-              "failed_scripted_action",
-              "facing_flip",
-              "open_mouth_drift"
+              "mouth opens during lunge",
+              "slight foot sliding"
             ],
             "pass": false,
-            "note": "Ember fails to burst out of frame to the right, opening the mouth wide to roar before abruptly flipping facing direction.",
+            "note": "Ember maintains solid model consistency and a fierce expression, though the mouth breaks the closed-mouth beat during the lunge.",
             "failedGates": [],
             "beatInSec": 0.2,
-            "beatPeakSec": 0.69,
-            "beatOutSec": 1.18,
+            "beatPeakSec": 1.2,
+            "beatOutSec": 1.7,
             "beat": {
               "inSec": 0.2,
-              "peakSec": 0.69,
-              "outSec": 1.18
+              "peakSec": 1.2,
+              "outSec": 1.7
             }
           }
         },
         {
           "k": 3,
-          "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\shot_09_final_take_3.mp4",
+          "path": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_premium_v2/shot_09_final_take_3.mp4",
           "verdict": {
-            "overall": 45,
+            "overall": 63,
             "scores": {
               "identityMatch": 6,
-              "anatomyStable": 5,
-              "noMorphing": 5,
-              "actingVisible": 4,
-              "compositionClear": 5,
-              "effectsRestraint": 5,
-              "motionQuality": 4
+              "anatomyStable": 6,
+              "noMorphing": 6,
+              "actingVisible": 6,
+              "compositionClear": 7,
+              "effectsRestraint": 6,
+              "motionQuality": 6
             },
             "artifacts": [
-              "action mismatch",
-              "failed screen exit",
-              "open mouth roar"
+              "unscripted mouth opening",
+              "slight foot slippage"
             ],
             "pass": false,
-            "note": "Ember roars and splashes forward in place rather than bursting out of frame to the right with mouth closed.",
+            "note": "Ember executes the battering-ram lunge with solid model fidelity, though the mouth opens into a roar during the mid-section.",
             "failedGates": [],
-            "beatInSec": 0.2,
-            "beatPeakSec": 0.5,
-            "beatOutSec": 1,
+            "beatInSec": 0.7,
+            "beatPeakSec": 1.7,
+            "beatOutSec": 2,
             "beat": {
-              "inSec": 0.2,
-              "peakSec": 0.5,
-              "outSec": 1
+              "inSec": 0.7,
+              "peakSec": 1.7,
+              "outSec": 2
             }
           }
         }
-      ],
-      "final_best": 3
+      ]
     }
   }
 }

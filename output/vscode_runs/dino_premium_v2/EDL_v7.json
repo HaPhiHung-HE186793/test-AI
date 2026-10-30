@@ -1,0 +1,182 @@
+{
+  "version": "v7",
+  "round": 6,
+  "master_video": "output/vscode_runs/dino_premium_v2/master_final_v7/MASTER_FINAL_v7_music.mp4",
+  "duration_sec": 29.375,
+  "shot_count": 15,
+  "asl_sec": 1.958,
+  "median_shot_sec": 2.0,
+  "shot_order": [1, 2, 3, 4, 16, 14, 15, 6, 7, 8, 9, 10, 11, 17, 12],
+  "cut_times_sec": [
+    0.0,
+    2.333,
+    4.333,
+    6.0,
+    8.042,
+    9.375,
+    10.875,
+    12.0,
+    14.0,
+    15.708,
+    18.458,
+    19.667,
+    21.75,
+    23.625,
+    25.958,
+    29.375
+  ],
+  "trim_rule": "Mỗi clip edit_r7/shot_XX_edit.mp4 có lề 0.25s đầu và 0.45s cuối (riêng cảnh 12 cuối phim là 0.05s); proto_master khoá cứng forceWindow [0.25, dur-0.45] và nối bằng crossfade 5 khung (0.2083s).",
+  "shots": [
+    {
+      "shotNumber": 1,
+      "titleVi": "Hồ nước cuối cùng",
+      "source": "shot_01_final_best.mp4",
+      "inSec": 0.8,
+      "outSec": 3.133,
+      "edit_clip": "edit_r7/shot_01_edit.mp4",
+      "note": "EWS mở màn trên mỏm đá nhìn xuống hồ ngọc bích"
+    },
+    {
+      "shotNumber": 2,
+      "titleVi": "Ngụm nước bị cắt ngang",
+      "source": "shot_02_final_take_2.mp4",
+      "inSec": 0.0,
+      "outSec": 3.95,
+      "edit_clip": "edit_r7/shot_02_edit.mp4",
+      "note": "Góc nghiêng 3/4 bên bờ hồ (useStage=true), Ember đứng 2 chân sau, tay nhỏ thu trước ngực, uống nước rồi khựng lại liếc ngang cảnh giác (miệng khép kín)"
+    },
+    {
+      "shotNumber": 3,
+      "titleVi": "Kẻ lạ trong lau sậy",
+      "source": "shot_03_final_take_1.mp4",
+      "inSec": 0.0,
+      "outSec": 3.95,
+      "edit_clip": "edit_r7/shot_03_edit.mp4",
+      "note": "OTS qua vai trái Ember, Tide đúng thiết kế Pixar 3D đứng ở bờ bên kia hồ ngọc bích, nghiêng đầu nhếch mép cười khẩy (miệng khép)"
+    },
+    {
+      "shotNumber": 4,
+      "titleVi": "Lời cảnh cáo",
+      "source": "shot_04_final_take_1.mp4",
+      "inSec": 1.5,
+      "outSec": 3.95,
+      "edit_clip": "edit_r7/shot_04_edit.mp4",
+      "note": "MCU Ember đúng tỷ lệ baby T-rex (đầu tròn lớn, sẹo mày, sọc cam dọc lưng), ưỡn ngực gầm cảnh cáo"
+    },
+    {
+      "shotNumber": 16,
+      "titleVi": "Đối đầu hai bờ hồ",
+      "source": "shot_16_final_take_1.mp4",
+      "inSec": 2.2,
+      "outSec": 3.533,
+      "edit_clip": "edit_r7/shot_16_edit.mp4",
+      "note": "WS thiết lập trục 180 độ: Ember bên trái nhìn phải, Tide bên phải nhìn trái"
+    },
+    {
+      "shotNumber": 14,
+      "titleVi": "Cú đớp (cận hàm Tide)",
+      "source": "shot_14_final_take_1.mp4",
+      "inSec": 0.25,
+      "outSec": 1.75,
+      "edit_clip": "edit_r7/shot_14_edit.mp4",
+      "note": "CU Tide lao sang trái đớp mạnh làm nước bắn tung"
+    },
+    {
+      "shotNumber": 15,
+      "titleVi": "Ember cúi né",
+      "source": "shot_15_final_take_1.mp4",
+      "inSec": 0.0,
+      "outSec": 3.95,
+      "edit_clip": "edit_r7/shot_15_edit.mp4",
+      "note": "CU Ember đúng thiết kế baby T-rex rụt đầu né luồng gió với mắt mở to kinh ngạc và miệng mím chặt (xoá hoàn toàn mảng đen che khung hình)"
+    },
+    {
+      "shotNumber": 6,
+      "titleVi": "Nụ cười xảo quyệt",
+      "source": "shot_06_final_take_1.mp4",
+      "inSec": 0.0,
+      "outSec": 2.7,
+      "edit_clip": "edit_r7/shot_06_edit.mp4",
+      "note": "CU Tide profile trái, mõm khô sạch (không còn thác nước trắng trào từ miệng), mắt xanh nheo lại rồi nhếch mép cười xảo quyệt"
+    },
+    {
+      "shotNumber": 7,
+      "titleVi": "Đuôi Tide quét",
+      "source": "shot_07_final_take_2.mp4",
+      "inSec": 0.6,
+      "outSec": 2.95,
+      "edit_clip": "edit_r7/shot_07_edit.mp4",
+      "note": "INSERT chân sau Tide trụ cố định bên phải, đuôi quét ngang từ phải sang trái cày rãnh bùn và hất văng bùn sang trái (72/100 PASS)"
+    },
+    {
+      "shotNumber": 8,
+      "titleVi": "Ánh mắt không khuất phục",
+      "source": "shot_08_final_take_2.mp4",
+      "inSec": 2.35,
+      "outSec": 5.75,
+      "edit_clip": "edit_r7/shot_08_edit.mp4",
+      "note": "ECU Ember nằm trong bùn nhắm mắt rồi mở bừng mắt hổ phách, hạ chân mày sẹo xuống đầy quyết tâm, miệng khép (bỏ hoàn toàn đoạn cười nhe răng đầu take)"
+    },
+    {
+      "shotNumber": 9,
+      "titleVi": "Cú húc trời giáng",
+      "source": "shot_09_final_take_2.mp4",
+      "inSec": 0.35,
+      "outSec": 3.95,
+      "edit_clip": "edit_r7/shot_09_edit.mp4",
+      "note": "MCU Ember đúng thiết kế baby T-rex lấy đà trên bờ bùn rồi lao mạnh sang phải với đầu tròn hạ thấp như đầu búa công thành, cắt ngay điểm va chạm"
+    },
+    {
+      "shotNumber": 10,
+      "titleVi": "Choáng váng",
+      "source": "shot_10_final_take_3.mp4",
+      "inSec": 0.25,
+      "outSec": 3.9,
+      "edit_clip": "edit_r7/shot_10_edit.mp4",
+      "note": "CU Tide profile trái (mõm sạch không dính bùn đen), đầu giật ngửa về sau vì cú húc rồi chớp mắt choáng váng, khép miệng nhìn Ember đầy dè chừng tôn trọng"
+    },
+    {
+      "shotNumber": 11,
+      "titleVi": "Lòng khoan dung",
+      "source": "shot_11_final_take_1.mp4",
+      "inSec": 1.6,
+      "outSec": 3.55,
+      "edit_clip": "edit_r7/shot_11_edit.mp4",
+      "note": "ECU mắt Ember dịu lại từ giận dữ sang tha thứ; đã nâng sáng nhẹ (eq brightness=0.045:gamma=1.12) để xoá nhảy sáng tại điểm cắt 10->11->17"
+    },
+    {
+      "shotNumber": 17,
+      "titleVi": "Tide được uống nước",
+      "source": "shot_17_final_take_2.mp4",
+      "inSec": 1.2,
+      "outSec": 3.533,
+      "edit_clip": "edit_r7/shot_17_edit.mp4",
+      "note": "MS Tide bước tới cúi uống nước sau khi được Ember nhường"
+    },
+    {
+      "shotNumber": 12,
+      "titleVi": "Ngụm nước chiến thắng",
+      "source": "shot_12_final_take_1.mp4",
+      "inSec": 2.95,
+      "outSec": 6.65,
+      "edit_clip": "edit_r7/shot_12_edit.mp4",
+      "note": "MCU Ember cúi uống nước rồi ngẩng đầu mỉm cười tự hào với chuyển động tự nhiên suốt 3.42s (không dùng tpad đóng băng khung hình)"
+    }
+  ],
+  "audio_mix": {
+    "command": "python3 scripts/premium-proto/proto_music_mix.py output/vscode_runs/dino_premium_v2 output/vscode_runs/dino_premium_v2/master_final_v7/MASTER_FINAL_MOVIE.mp4 output/vscode_runs/dino_premium_v2/master_final_v7/MASTER_FINAL_v7_music.mp4 \"0.0,2.333,4.333,6.0,8.042,9.375,10.875,12.0,14.0,15.708,18.458,19.667,21.75,23.625,25.958,29.375\" 4 11 12 9",
+    "index_args": {
+      "fight_music_start_idx": 4,
+      "splat_idx": 9,
+      "impact_idx": 11,
+      "resolve_music_idx": 12
+    },
+    "result": {
+      "I_LUFS": -14.4,
+      "LRA_LU": 8.1,
+      "TP_dBTP": -1.5,
+      "tail_splat_phone_delta_dB": 6.39,
+      "headbutt_phone_delta_dB": 12.42
+    }
+  }
+}

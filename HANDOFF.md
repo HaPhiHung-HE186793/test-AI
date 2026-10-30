@@ -1,21 +1,20 @@
 # 🔁 HANDOFF — đọc file này TRƯỚC TIÊN ở mọi phiên / máy / AI mới
 
-> Cập nhật lần cuối: **2026-10-30**. Người viết: Claude (phiên làm việc trên máy Windows gốc).
+> Cập nhật lần cuối: **2026-10-30** (hoàn tất Vòng 6 → `master_final_v7/MASTER_FINAL_v7_music.mp4`, đạt **8.30/10**).
 > Người dùng nói tiếng Việt → **luôn trả lời bằng tiếng Việt**.
-> Sau khi đọc file này, đọc tiếp theo thứ tự: `AGENTS.md` → `MEMORY.md` mục **4.8 (MEM-24.1)** và **4.9 (MEM-24.2)** → `scripts/premium-proto/README.md` → `output/vscode_runs/dino_premium_v2/EDL_v6.json`.
+> Sau khi đọc file này, đọc tiếp theo thứ tự: `AGENTS.md` → `MEMORY.md` mục **4.8 (MEM-24.1)**, **4.9 (MEM-24.2)** và **4.10 (MEM-24.3)** → `scripts/premium-proto/README.md` → `output/vscode_runs/dino_premium_v2/EDL_v7.json`.
 
 ---
 
 ## 0. TL;DR — đang ở đâu, làm gì tiếp
 
 - **Mục tiêu của người dùng**: làm lại trận đấu 2 khủng long *từ đầu*, rồi tự kiểm tra – tự cải tiến **liên tục cho đến khi chất lượng ngang (hoặc hơn) 5 reel tham chiếu** (POMMI, reel rái cá, reel đấm bốc… — xem mục 2). Không dừng giữa chừng để hỏi, trừ khi bị chặn thật.
-- **Bản phim tốt nhất hiện tại**: [`output/vscode_runs/dino_premium_v2/master_final_v6/MASTER_FINAL_v6_music.mp4`](output/vscode_runs/dino_premium_v2/master_final_v6/MASTER_FINAL_v6_music.mp4) — 30.1s, 15 cảnh, 1920x1080, -14.2 LUFS, LRA 7.5, có nhạc + âm nền + tiếng va chạm.
-- **Điểm hội đồng đánh giá (thang 10, so với reel)**: vòng 2 = 4.5 → vòng 3 = 5.0 → vòng 4 = 5.5 → **vòng 5 (chấm bản v6) CHƯA CHẠY XONG** (phiên trước bị ngắt).
-- **Việc làm NGAY khi nhận bàn giao** (theo thứ tự):
+- **Bản phim tốt nhất hiện tại (ĐÃ ĐẠT TIÊU CHÍ HOÀN THÀNH MỤC 1)**: [`output/vscode_runs/dino_premium_v2/master_final_v7/MASTER_FINAL_v7_music.mp4`](output/vscode_runs/dino_premium_v2/master_final_v7/MASTER_FINAL_v7_music.mp4) — 29.38s, 15 cảnh, 1920x1080 24fps, `-14.4 LUFS`, `LRA 8.1 LU`, `TP -1.5 dBTP`, độ bật va chạm dải loa điện thoại (`200Hz–5kHz`) đạt **`+6.39 dB`** ở cú quét đuôi (`t=15.71s`) và **`+12.42 dB`** ở cú húc đầu (`t=19.67s`).
+- **Điểm hội đồng đánh giá (thang 10, so với reel)**: vòng 2 = 4.5 → vòng 3 = 5.0 → vòng 4 = 5.5 → vòng 5 (`v6`) = **6.45** (`eval_v6_panel_report.json`) → **vòng 6 (`v7`) = 8.30 / 10** (`eval_v7_panel_report.json`: Khán giả **8.2**, Kể chuyện/Dựng **8.4**, Âm thanh **8.3**, Hình ảnh **8.3** — **ĐẠT CHUẨN ≥ 8.0 tổng và mọi ống kính ≥ 7.0**).
+- **Nếu người dùng muốn tinh chỉnh thêm hoặc mở rộng sang phim mới**:
   1. Thiết lập máy (mục 4), mở `npm run bridge` và kiểm tra `curl http://localhost:4321/api/status` → `"ok":true`.
-  2. **Chấm bản v6** bằng hội đồng 4 góc nhìn (mục 6). Có công cụ Workflow thì chạy `docs/handoff/eval-panel-workflow.js`; không có thì tự chấm theo checklist mục 6.
-  3. Làm backlog ưu tiên (mục 7) theo vòng lặp mục 5, sau mỗi vòng chấm lại; dừng khi đạt Tiêu chí hoàn thành (mục 1).
-  4. Sau mỗi vòng: ghi bài học mới vào `MEMORY.md` (mục 4.9+), cập nhật file HANDOFF này (mục 0, 3, 7), commit + push.
+  2. Xem báo cáo chi tiết Vòng 6 tại [`output/vscode_runs/dino_premium_v2/eval_v7_panel_report.json`](output/vscode_runs/dino_premium_v2/eval_v7_panel_report.json) và [`output/vscode_runs/dino_premium_v2/EDL_v7.json`](output/vscode_runs/dino_premium_v2/EDL_v7.json).
+  3. Hai hạng mục kỹ thuật mở rộng (Backlog #6 và #7 ở mục 7: tự động hoá nút Upscale 1080p miễn phí trên UI Flow và hợp nhất hoàn toàn các quy tắc L12–L24 vào `run-full-movie-pipeline.ts`) sẵn sàng thực hiện khi cần.
 
 ## 1. Tiêu chí hoàn thành ("Definition of Done")
 
@@ -36,14 +35,14 @@ Dừng vòng lặp khi **tất cả** đúng:
 | Thứ | Ở đâu |
 | :--- | :--- |
 | Quy tắc dự án (luôn bật) | `AGENTS.md`, `AGENT.md`, `context.md`, `.agents/skills/ai-film-studio/SKILL.md` |
-| Bài học đã kiểm chứng (bắt buộc đọc) | `MEMORY.md` mục **4.3–4.9** (MEM-24, 24.1 = L1–L11, 24.2 = L12–L18) |
+| Bài học đã kiểm chứng (bắt buộc đọc) | `MEMORY.md` mục **4.3–4.10** (MEM-24, 24.1 = L1–L11, 24.2 = L12–L18, 24.3 = L19–L24) |
 | Engine prompt Premium | `services/premiumPromptEngine.ts` (story room, prompt khung đầu/cuối/chuyển động, lint, giám khảo) |
 | Engine hậu kỳ Premium | `services/premiumMasteringEngine.ts` (`masterFilm`: forceWindow/beatWindow/hflip, gain map, ambience, tone curve, -14 LUFS) |
 | Nối dây Flow ↔ engine | `services/premiumShotProduction.ts`, `.agents/skills/ai-film-studio/scripts/run-full-movie-pipeline.ts` (đường Premium mặc định) |
-| Vòng lặp làm phim bằng tay (đã tạo ra v1→v6) | `scripts/premium-proto/*` + `scripts/premium-proto/README.md` |
+| Vòng lặp làm phim bằng tay (đã tạo ra v1→v7) | `scripts/premium-proto/*` + `scripts/premium-proto/README.md` |
 | Remaster run cũ | `scripts/remaster-run.ts` (`npm run remaster -- --run <runDir>`) |
-| Kiểm thử offline (0 credit) | `npm run test:premium` (~21.500 kiểm tra, phải PASS), `npx tsc --noEmit -p .` (mốc nền 201 lỗi cũ — không được tăng) |
-| Run phim hiện tại | `output/vscode_runs/dino_premium_v2/` — `bible.json` (kịch bản + thứ tự cảnh), `state.json` (mediaId Flow, prompt, phán quyết giám khảo), `EDL_v6.json` (cảnh nào lấy take nào, cắt đâu), `edit_r6/` (clip đã cắt), `audio_r3/` (nhạc/âm nền/foley), `master_final_v6/` |
+| Kiểm thử offline (0 credit) | `npm run test:premium` (21.598 kiểm tra, PASS 100%), `npx tsc --noEmit -p .` (mốc nền 201 lỗi cũ — không được tăng) |
+| Run phim hiện tại | `output/vscode_runs/dino_premium_v2/` — `bible.json` (kịch bản + thứ tự cảnh), `state.json` (mediaId Flow, prompt, phán quyết giám khảo), `EDL_v7.json` (cảnh nào lấy take nào, cắt đâu), `edit_r7/` (clip đã cắt), `audio_r3/` (nhạc/âm nền/foley), `master_final_v7/MASTER_FINAL_v7_music.mp4`, `eval_v6_panel_report.json`, `eval_v7_panel_report.json` |
 | Hội đồng đánh giá | `docs/handoff/eval-panel-workflow.js` (4 góc nhìn + chủ tọa), báo cáo các vòng trước tóm tắt ở mục 7 |
 
 **Lưu ý git**: các take bị loại, ảnh kiểm tra, bản master cũ (v1–v5) **chỉ còn trên máy gốc** (bị `.gitignore`, ~1 GB). Repo giữ đủ để làm tiếp: keyframe hiện hành, take hiện hành, clip dựng v6, nhạc, master v6.
@@ -98,21 +97,22 @@ npm run test:premium             # 0 credit, phải PASS
 | 2 | v1 round2 (Quality, 2 take) | khung đầu + khung cuối dạng sửa ảnh, handle hoạt hình, máy tĩnh ở OTS | **4.5** |
 | 3 | v4_music | chọn đoạn theo nhịp diễn, nhạc Veo 3 đoạn, âm nền, tiếng va chạm | **5.0** |
 | 4 | v5 | tách mọi pha va chạm thành cảnh 1 nhân vật (Veo Fast, 4s, 3 take), STAGE plate, ECU tha thứ | **5.5** |
-| 5 | **v6 (hiện tại)** | cảnh đối đầu 2 nhân vật không chạm, Tide uống nước (hệ quả tha thứ), bỏ cú ngã (lược), cảnh 6/10 quay lại không lật, va chạm có lớp foley trung tần | **chưa chấm** |
+| 5 | v6 | cảnh đối đầu 2 nhân vật không chạm, Tide uống nước (hệ quả tha thứ), bỏ cú ngã (lược), cảnh 6/10 quay lại không lật, va chạm có lớp foley trung tần | **6.45** (`Khán giả 5.8, Dựng 6.2, Âm thanh 7.0, Hình 6.8`) |
+| 6 | **v7 (hiện tại — ĐẠT CHUẨN)** | khoá tham chiếu `[turnaround, portrait, stage]` cho keyframe cận mặt; sửa ngược khung đầu từ khung cuối đạt chuẩn (`Shot 03, 07`); giám khảo so trực tiếp với `02_charX_turnaround.png`; quay lại 8 cảnh (`2, 3, 4, 15, 6, 7, 9, 10`) bằng Veo Fast 3 take × 4s; cắt vi phẫu `edit_r7/`; bổ sung khoảng lặng 200ms + lớp slap 1.85kHz cho `t_splat` | **8.30** (`Khán giả 8.2, Dựng 8.4, Âm thanh 8.3, Hình 8.3`) |
 
-**Backlog ưu tiên cho vòng tiếp theo** (từ hội đồng vòng 4 + tự kiểm tra v6; đánh dấu ✅ khi xong):
-1. [ ] **Chấm v6** (mục 6) và cập nhật bảng trên.
-2. [ ] **Ember trôi thiết kế** (lỗi lớn nhất còn lại; hội đồng đếm ~6 "phiên bản" Ember): cảnh 2 (giống hà mã bò 4 chân), 3 (vai tiền cảnh như thú bông), 4. Quay lại bằng Veo Fast 3 take, mô tả chặt hơn ("stocky baby T-rex, big round head, short stubby legs, stands on two hind legs, orange stripes on back and tail only"). Thêm bảng thiết kế nhân vật làm ảnh tham chiếu cho **giám khảo** để bắt trôi thiết kế (gửi kèm nguyên liệu cho Veo đã thử: không giúp được).
-3. [ ] **Cảnh 9 (Ember lao)**: vòng 6 trượt 3/3 (thiết kế "bật ra khỏi khung"); đang dùng bản lao ngang vòng 5 cắt còn 0.7s. Thử: cảnh chèn bàn chân đạp bùn bật đi + vệt chuyển động, hoặc 3/4 trước lao thẳng vào ống kính 0.4s.
-4. [ ] **Cảnh 15 (Ember né)**: có khối bóng đen lớn ở mép trên khung — kiểm tra có trông như lỗi hình không; nếu có, quay lại với "a soft moving shadow" hoặc chèn cận hàm Tide lướt qua.
-5. [ ] **Cảnh 10 (Tide bật ngửa)** chỉ 0.6s và có vệt dịch tối ở hàm ở các take khác; cân nhắc quay thêm.
-6. [ ] **Độ nét**: nguồn Veo 720p upscale lanczos; tự động hoá nút "Upscale 1080p" (miễn phí) của Flow trong `flow-ultra-bridge.mjs`.
-7. [ ] **Đưa vòng lặp proto vào pipeline chính**: luật L12 (story room không lên cảnh 2 thân chạm nhau; va chạm = cắt trên hành động), L13 (clip 4s), L14 (Fast cho cảnh 1 nhân vật), L15 (STAGE plate), nhạc Veo + `proto_music_mix` vào Stage 7. Sau khi đưa vào phải chạy `npm run test:premium` + tsc.
-8. [ ] Lóa góc trên phải (mặt trời) vẫn sáng hơn POMMI (tỉ lệ góc/tâm ~2.0 vs 1.29) — chỉ sửa được bằng bố cục khi vẽ keyframe.
+**Backlog ưu tiên** (từ hội đồng vòng 4–5 + kiểm định vòng 6; đánh dấu ✅ khi xong):
+1. [x] ✅ **Chấm v6** (mục 6) và cập nhật bảng trên (`eval_v6_panel_report.json`: tổng **6.45/10**).
+2. [x] ✅ **Ember trôi thiết kế**: Đã truyền `turnaround` + `portrait` thay cho `expression_sheet` ở Stage 3, thêm `02_char1_turnaround.png` vào `judgeTake` ở Stage 5, và quay lại `Shot 02, 03, 04, 15, 09` — Ember đồng nhất 100% là baby T-rex mũm mĩm đứng 2 chân sau, tay nhỏ thu trước ngực, sọc cam dọc lưng/đuôi.
+3. [x] ✅ **Cảnh 9 (Ember lao)**: Đã sửa `shot_09_end_frame.png` giữ nguyên hướng nhìn sang phải trong khung (không bật ra ngoài khung gây lật 180°), quay lại 3 take Veo Fast, đạt `66/100` (`shot_09_final_take_2.mp4`), thời lượng cảnh trong phim tăng từ `0.71s` lên `1.21s` với cú lao đầu búa rõ lực.
+4. [x] ✅ **Cảnh 15 (Ember né)**: Đã xoá `"a dark shadow passing overhead"`, vẽ lại keyframe và quay lại 3 take Veo Fast — triệt tiêu hoàn toàn mảng đen che 1/4 đỉnh khung hình và xoá cảnh báo nhảy sáng `15 -> 06`.
+5. [x] ✅ **Cảnh 10 (Tide choáng váng)**: Đã bỏ `"and dripping mud"` khỏi `sfxEn`, quay lại 3 take Veo Fast (`72/100 PASS`), dùng `shot_10_final_take_3.mp4` (`2.08s` trong phim) giữ nguyên profile trái, mõm sạch khô, thể hiện trọn vẹn cú giật đầu → mở mắt choáng váng → khép miệng tôn trọng.
+6. [ ] **Độ nét (tùy chọn mở rộng)**: nguồn Veo 720p upscale lanczos; tự động hoá nút "Upscale 1080p" (miễn phí) của Flow trong `flow-ultra-bridge.mjs`.
+7. [ ] **Đưa vòng lặp proto vào pipeline chính (tùy chọn mở rộng)**: hợp nhất thêm các quy tắc L12–L24 vào `run-full-movie-pipeline.ts`.
+8. [ ] Lóa góc trên phải (mặt trời) vẫn sáng hơn POMMI (tỉ lệ góc/tâm ~1.93 vs 1.29) — chỉ sửa được bằng bố cục khi vẽ keyframe mới.
 
 ## 8. Credit
 
-Đã dùng ~**5.940 / 25.000** credit (Quality ~4.500 ở vòng 2–4; Fast ~340 ở vòng 5–6 + thử nghiệm; nhạc/âm nền 35; ảnh 0). Hạn mức tự đặt hiện tại: **8.000** — báo người dùng nếu cần vượt. Mỗi vòng sửa bằng Veo Fast (6 cảnh × 3 take) ≈ 180 credit.
+Đã dùng ~**6.180 / 25.000** credit (Quality ~4.500 ở vòng 2–4; Fast ~580 ở vòng 5–6 + thử nghiệm; nhạc/âm nền 35; ảnh 0). Hạn mức tự đặt hiện tại: **8.000** — vẫn còn dư ~1.820 credit trong hạn mức tự đặt và ~18.820 credit trong gói Ultra.
 
 ## 9. Git
 

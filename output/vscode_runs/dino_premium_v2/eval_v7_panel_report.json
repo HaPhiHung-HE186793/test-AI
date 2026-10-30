@@ -1,0 +1,31 @@
+{
+  "version": "v7",
+  "round": 6,
+  "evaluated_at": "2026-10-30T11:02:00+07:00",
+  "video_path": "output/vscode_runs/dino_premium_v2/master_final_v7/MASTER_FINAL_v7_music.mp4",
+  "contact_sheets": [
+    "output/vscode_runs/dino_premium_v2/master_final_v7/v7_contact_part1.png",
+    "output/vscode_runs/dino_premium_v2/master_final_v7/v7_contact_part2.png",
+    "output/vscode_runs/dino_premium_v2/master_final_v7/v7_contact_part3.png"
+  ],
+  "overall_score": 8.3,
+  "passed_definition_of_done": true,
+  "lenses": {
+    "audience": {
+      "score": 8.2,
+      "summary": "Toàn bộ 15 cảnh giữ đồng nhất thiết kế Pixar 3D theo bảng xoay 4 góc (02_char1_turnaround.png & 02_char2_turnaround.png). Đã triệt tiêu hoàn toàn 5 lỗi 'mùi AI' của v6: (1) Shot 02 Ember đứng 2 chân sau với 2 tay nhỏ thu trước ngực thay vì quỳ 4 chân như hà mã; (2) Shot 04 & Shot 09 giữ nguyên tỷ lệ baby T-rex đầu tròn lớn, sọc cam dọc lưng thay vì biến thành T-rex trưởng thành Jurassic Park; (3) Shot 15 xoá sạch mảng đen che 1/4 đỉnh khung hình; (4) Shot 06 & Shot 10 xoá sạch lỗi thác nước trắng và bùn đen trào từ mõm Tide; (5) Shot 08 cắt đúng cửa sổ mắt mở bừng quyết tâm, không còn nụ cười lệch nhịp."
+    },
+    "story_edit": {
+      "score": 8.4,
+      "summary": "15 cảnh (29.38s, ASL 1.96s, median 2.00s) kể trọn vẹn 6 nhịp câu chuyện (Hồ nước cuối cùng -> Kẻ lạ xâm nhập -> Cú đớp & né -> Quét đuôi ngã bùn & ánh mắt bất khuất -> Cú húc đầu búa & choáng váng -> Khoan dung chia sẻ nguồn nước). Trục 180 độ (Ember trái nhìn phải, Tide phải nhìn trái) giữ nghiêm ngặt 15/15 cảnh. Shot 09 (1.21s) và Shot 10 (2.08s) đủ thời lượng để đọc rõ lực lao và phản ứng choáng váng chuyển sang tôn trọng; Shot 12 (3.42s) kết bằng chuyển động sống động thay cho khung đóng băng tpad."
+    },
+    "sound": {
+      "score": 8.3,
+      "summary": "Đạt chuẩn phát hành: Integrated -14.4 LUFS (mục tiêu -14 ± 1), LRA 8.1 LU (mục tiêu 7-11), True Peak -1.5 dBTP. Nhạc nền 3 chương tách biệt cảm xúc, khoảng lặng 200ms trước cả 2 điểm va chạm (quét đuôi t=15.708s và cú húc t=19.667s) kết hợp lớp slap dải trung (1.85-2.5 kHz) giúp độ bật dải loa điện thoại (200Hz-5kHz) đạt +6.39 dB ở cú quét đuôi (v6 là -2.25 dB) và +12.42 dB ở cú húc đầu (v6 là +4.85 dB)."
+    },
+    "image": {
+      "score": 8.3,
+      "summary": "Master 1920x1080 24fps, 0 khung trùng (dup=0), redClipPct = 0.004%. Đã xoá sạch cả 3 cảnh báo nhảy sáng tại điểm cắt (15->06, 10->11, 11->17) và 2 cảnh báo tối khung (Shot 15, Shot 11) của v6 nhờ bỏ mảng đen ở Shot 15 và cân chỉnh ánh sáng Shot 11."
+    }
+  }
+}

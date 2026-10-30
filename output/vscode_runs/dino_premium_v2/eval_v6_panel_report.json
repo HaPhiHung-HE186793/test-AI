@@ -1,0 +1,149 @@
+{
+  "round": 5,
+  "version_evaluated": "v6",
+  "master_path": "output/vscode_runs/dino_premium_v2/master_final_v6/MASTER_FINAL_v6_music.mp4",
+  "evaluated_at": "2026-10-30T09:14:00+07:00",
+  "overall_score_0_10": 6.45,
+  "lens_scores": {
+    "audience_ai_tells": 5.8,
+    "story_and_editing": 6.2,
+    "sound": 7.0,
+    "image_finishing": 6.8
+  },
+  "measured_metrics": {
+    "duration_s": 30.083,
+    "shot_count": 15,
+    "asl_s": 2.006,
+    "integrated_lufs": -14.2,
+    "lra_lu": 7.4,
+    "true_peak_dbtp": -1.4,
+    "median_abs_cut_jump_db": 3.66,
+    "max_abs_cut_jump_db": 7.53,
+    "headbutt_impact_21_458s_phone_delta_db": 4.85,
+    "tail_splat_17_458s_phone_delta_db": -2.25,
+    "p50_luma": 76,
+    "red_clip_pct": 0.004,
+    "corner_centre_ratio": 1.93,
+    "median_cut_exposure_jump": 7.8
+  },
+  "lenses": [
+    {
+      "lens": "audience",
+      "score_0_10": 5.8,
+      "verdict_vs_reels": "Chất liệu Pixar 3D và diễn xuất mắt ở các cảnh ECU (Cảnh 08, 11) đã tiệm cận POMMI, không còn lỗi hai thân dính nhau nhờ luật L12. Tuy nhiên khán giả vẫn nhận ra AI ngay lập tức vì nhân vật chính Ember bị trôi thành 5 thiết kế khác nhau (bò 4 chân như hà mã ở Cảnh 02, thú bông ở Cảnh 03, T-rex trưởng thành răng nhọn ở Cảnh 04 & 09) và Cảnh 15 có một mảng đen đặc che 25% đỉnh khung hình.",
+      "already_at_reel_level": [
+        "Cảnh 01 (0.00-2.33s): Đại cảnh mở đầu đẹp, đúng thiết kế Ember đứng 2 chân trên mỏm đá.",
+        "Cảnh 14 (11.00-12.50s): Cận hàm Tide đớp sập rất sắc nét, giữ chuẩn thiết kế Spinosaurus.",
+        "Cảnh 11 (22.08-23.96s): ECU ánh mắt Ember chuyển từ giận dữ sang khoan dung đạt đẳng cấp hoạt hình studio."
+      ],
+      "issues": [
+        {
+          "title": "Ember bò 4 chân như hà mã và mõm phình to ở Cảnh 02",
+          "where": "Shot 02 (2.33s - 4.62s)",
+          "evidence": "Trong cả 3 frame (2.55s, 3.48s, 4.41s), hai chân trước của Ember chống thẳng xuống đất hai bên đầu như động vật 4 chân, đầu bè ngang khác hẳn 02_char1_turnaround.png.",
+          "severity": "critical",
+          "fix": "Vẽ lại keyframe đầu/cuối và quay lại Cảnh 02 (Veo Fast, 4s, 3 take) với góc 3/4 nghiêng thấy rõ thân đứng bằng 2 chân sau, hai tay nhỏ xíu thu sát ngực, cúi đầu uống nước.",
+          "fix_type": "rerender"
+        },
+        {
+          "title": "Ember biến thành T-rex người lớn răng nhọn ở Cảnh 04 và Cảnh 09",
+          "where": "Shot 04 (7.42s - 9.67s) & Shot 09 (20.75s - 21.46s)",
+          "evidence": "Ở Cảnh 04 (8.54s) và Cảnh 09 (21.10s), Ember có đầu dài góc cạnh, cổ dài, răng nhọn kiểu Jurassic Park và da đen-đỏ, lệch hoàn toàn khỏi T-rex con đầu tròn mũm mĩm ở Cảnh 01/11/12.",
+          "severity": "critical",
+          "fix": "Vẽ lại keyframe + quay lại Cảnh 04 và Cảnh 09 (Veo Fast, 4s, 3 take), khóa chặt tỷ lệ 'chubby baby tyrannosaurus with a big rounded head, short stubby snout, large round amber eyes, orange stripes ONLY along the spine and tail'.",
+          "fix_type": "rerender"
+        },
+        {
+          "title": "Mảng đen đặc che lấp 25% đỉnh khung hình ở Cảnh 15",
+          "where": "Shot 15 (12.50s - 13.54s)",
+          "evidence": "Do cụm từ 'a dark shadow passing overhead', mô hình vẽ một khối đen đặc lơ lửng ở mép trên khung hình suốt từ 12.50s đến 13.54s, đồng thời Ember nhe răng và có vằn cam khắp cổ.",
+          "severity": "critical",
+          "fix": "Sửa bible Cảnh 15: bỏ hoàn toàn 'a dark shadow passing overhead', thay bằng cận cảnh Ember đúng thiết kế cúi đầu né nhanh với vài giọt nước bắn qua và luồng gió làm bụi đất bay ngang, miệng ngậm chặt.",
+          "fix_type": "rerender"
+        },
+        {
+          "title": "Nước bọt trắng xóa chảy từ mõm Tide trên bờ khô ở đầu Cảnh 06",
+          "where": "Shot 06 (13.54s - 14.80s)",
+          "evidence": "Frame 13.76s và 14.69s có dòng nước trắng đục tuôn ra từ cằm Tide dù miệng đang ngậm.",
+          "severity": "major",
+          "fix": "Quay lại Cảnh 06 không có cụm 'droplets flicking off' (hoặc cắt lấy nửa sau từ 1.8s-3.5s nơi dòng nước đã biến mất).",
+          "fix_type": "rerender"
+        },
+        {
+          "title": "Cảnh 08 Ember mỉm cười nhe 2 răng nanh khi đang nằm bùn",
+          "where": "Shot 08 (17.46s - 20.75s)",
+          "evidence": "Frame 17.68s và 20.53s thấy khóe miệng Ember cong lên như đang cười mỉm và lộ 2 răng nhỏ.",
+          "severity": "major",
+          "fix": "Cắt gọn cửa sổ Cảnh 08 tập trung vào 1.8s ánh mắt đanh lại hoặc vẽ lại ECU chỉ lấy mắt và chân mày (cắt khỏi khóe miệng như Cảnh 11).",
+          "fix_type": "edit"
+        }
+      ]
+    },
+    {
+      "lens": "story_edit",
+      "score_0_10": 6.2,
+      "verdict_vs_reels": "Câu chuyện đã có đầu–cuối rõ ràng hơn nhờ Cảnh 16 (đối đầu qua hồ) và Cảnh 17 (Tide được uống nước sau khi được tha thứ). Tuy nhiên 2 pha hành động quan trọng nhất là Quét đuôi (Cảnh 07->08) và Lao húc (Cảnh 09->10) vẫn chưa đọc được trên màn ảnh.",
+      "already_at_reel_level": [
+        "Nhịp cắt trung bình ASL 2.01s đúng chuẩn viral-reel (POMMI 2.33s).",
+        "Chuỗi kết phim Cảnh 11 (Tha thứ) -> Cảnh 17 (Tide uống nước) -> Cảnh 12 (Ember uống nước) truyền tải trọn vẹn thông điệp nhân văn."
+      ],
+      "issues": [
+        {
+          "title": "Cú quét đuôi ở Cảnh 07 không có lực và thiếu cảnh Ember bị đánh ngã",
+          "where": "Shot 07 (15.83s - 17.46s) -> Shot 08 (17.46s)",
+          "evidence": "Ở Cảnh 07 (16.65s), chóp đuôi Tide chỉ cong xuống chấm nhẹ vào bùn như vòi voi rồi nhấc lên, không hề quét ngang. Ngay sau đó Cảnh 08 Ember đã nằm bẹp trong bùn khiến khán giả không hiểu chuyện gì vừa xảy ra.",
+          "severity": "critical",
+          "fix": "Quay lại Cảnh 07: chiếc đuôi xanh xám to khỏe quất ngang thật mạnh sát mặt bùn từ phải sang trái làm bùn văng ngang theo lực quét, kết hợp thêm/khôi phục nhịp Ember trượt ngã hoặc văng xuống bùn.",
+          "fix_type": "rerender"
+        },
+        {
+          "title": "Cú lao húc (Cảnh 09, 0.71s) và Choáng váng (Cảnh 10, 0.62s) quá ngắn, không kịp đọc",
+          "where": "Shot 09 (20.75s - 21.46s) & Shot 10 (21.46s - 22.08s)",
+          "evidence": "Cảnh 09 chỉ dài 0.71s và Cảnh 10 chỉ dài 0.625s (15 khung hình). Người xem chớp mắt là qua mất pha cao trào của cả bộ phim.",
+          "severity": "critical",
+          "fix": "Quay lại Cảnh 09 (Ember con cúi thấp đầu lấy đà đạp bùn lao vọt sang phải, dài ~1.4s) và Cảnh 10 (Tide bị húc bật ngửa đầu rồi lắc đầu choáng váng nhìn sang trái với ánh mắt nể phục, dài ~1.6s).",
+          "fix_type": "rerender"
+        }
+      ]
+    },
+    {
+      "lens": "sound",
+      "score_0_10": 7.0,
+      "verdict_vs_reels": "Bản mix v6 đạt -14.2 LUFS, LRA 7.4 LU, True Peak -1.4 dBTP và cú húc ở 21.46s đạt +4.85 dB trên dải loa điện thoại. Điểm yếu duy nhất còn lại là tiếng quét đuôi/ngã bùn ở 17.46s bị hụt (-2.25 dB) và 2 điểm cắt nhảy âm > 5.5 dB.",
+      "already_at_reel_level": [
+        "Loudness -14.2 LUFS, LRA 7.4 LU, True Peak -1.4 dBTP.",
+        "Cú húc 21.458s có khoảng lặng trước va chạm và nổ rõ +4.85 dB trên dải 200Hz-5kHz."
+      ],
+      "issues": [
+        {
+          "title": "Tiếng va chạm quét đuôi / ngã bùn (splat_idx) bị âm (-2.25 dB) trên dải loa điện thoại",
+          "where": "17.458s (Cut Shot 07 -> Shot 08)",
+          "evidence": "Đo RMS dải 200Hz-5kHz: 0.3s trước điểm cắt = -21.1 dB, 0.3s sau điểm cắt = -23.35 dB (delta = -2.25 dB < +3 dB mục tiêu).",
+          "severity": "major",
+          "fix": "Nâng cấp proto_music_mix.py: tại splat_idx, thêm khoảng lặng ngắn 0.15s trước điểm cắt và bổ sung lớp tiếng quất bùn trung tần (800Hz-3.5kHz) + tiếng thân đập bùn để đạt >= +3.5 dB trên dải điện thoại.",
+          "fix_type": "audio"
+        }
+      ]
+    },
+    {
+      "lens": "image",
+      "score_0_10": 6.8,
+      "verdict_vs_reels": "Màu sắc ấm áp đồng nhất, không còn cháy kênh đỏ (0.004%), p50 luma 76 rất gần POMMI (71). Còn 2 điểm cắt bị nhảy sáng mạnh do mảng đen ở Cảnh 15 và độ tối của Cảnh 11, cùng độ nét nguồn 720p cần lọc CAS nhẹ.",
+      "already_at_reel_level": [
+        "0% khung hình lặp, 24fps chuẩn xác, redClipPct = 0.004%.",
+        "Tone curve toe/shoulder giữ vùng tối và vùng sáng mềm mại."
+      ],
+      "issues": [
+        {
+          "title": "Nhảy phơi sáng mạnh ở điểm cắt sang Cảnh 15/06 (+20 luma) và Cảnh 10/11 (-19 luma)",
+          "where": "12.50s, 13.54s, 22.08s",
+          "evidence": "Report ghi cutExposureJumps có 2 đỉnh +20 và -19 (do Cảnh 15 có mảng đen lớn p50=67 và Cảnh 11 quá tối p50=60).",
+          "severity": "major",
+          "fix": "Khi quay lại Cảnh 15 bỏ mảng đen và nâng nhẹ gamma của Cảnh 11 trong masterFilm, nhảy sáng sẽ tự động về < 8 luma.",
+          "fix_type": "finishing"
+        }
+      ]
+    }
+  ]
+}
+
