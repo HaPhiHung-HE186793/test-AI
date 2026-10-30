@@ -44,7 +44,13 @@
     "shot_09_end_frame": "01f41031-5eb3-477c-ba35-e001be1d0073",
     "02_char1_master_sheet": "8406af5b-e48b-40e8-ba07-064ed283fd46",
     "02_char2_master_sheet": "e4376d7c-8033-4703-bb5e-de49732755ed",
-    "02_cast_lineup_sheet": "a0c7e966-448c-4014-bc4a-b1eacdf24222"
+    "02_cast_lineup_sheet": "a0c7e966-448c-4014-bc4a-b1eacdf24222",
+    "03_storyboard_grid_sheet_saqib": "beab264f-7ce1-43f6-ad06-26b42c6779ef",
+    "verify_v9_shot02_sleeves_gag": "638814e7-b8a6-41d3-8262-432b8fdb7ccc",
+    "verify_v9_shot04_ocean_gag": "d22cc4f1-4ef0-4e97-8fff-7f678c5e2d47",
+    "verify_v9_shot09_shayan_timeline": "5792eac7-e765-46f1-af1a-76f895392413",
+    "verify_v9_shot12_highfive_gag": "b5f3ed51-9c2d-4c37-8809-619bf8baf35a",
+    "verify_v9_shot06_ocean_gag": "27842795-e161-420b-a47c-c36445116175"
   },
   "prompts": {
     "02_char1_turnaround": "Stylized 3D animated feature character design, Pixar-like 3D animation, appealing rounded shapes, large readable eyes, clean physically based materials. Character turnaround sheet of Ember, a cute chubby young tyrannosaurus standing upright on two short hind legs with tiny arms tucked to the chest, charcoal-grey pebbly skin, a big rounded head and tail. The same character shown four times side by side at equal size: front view, three-quarter view, side view and back view, standing in a relaxed neutral pose with the full body visible. Identical proportions, colours and markings in every view. Flat neutral grey #808080 background, even soft studio lighting, clean unlabeled layout with generous spacing.",
