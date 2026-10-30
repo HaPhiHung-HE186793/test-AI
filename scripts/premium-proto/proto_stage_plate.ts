@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { Flow } from '../../services/flowSdkClient.ts';
+const D = process.argv[2];
+const st = JSON.parse(fs.readFileSync(path.join(D, 'state.json'), 'utf-8'));
+const prompt = `Edit image 1. Keep the same volcanic valley, rocks, golden-hour sun at the top right, warm amber light, teal steam accents and Pixar-like 3D animation style. Turn the middle ground into one wide shallow jade-green warm pool with a smooth wet mud shore across the foreground and one tall dark landmark rock standing on the right bank. Calm water, gentle steam, an empty set ready for a scene, wide eye-level view.`;
+const res: any = await Flow.generate.image({ prompt, modelDisplayName: '🍌 Nano Banana Pro', aspectRatio: '16:9', referenceImageMediaIds: [st.media['03_environment_plate']] });
+fs.writeFileSync(path.join(D, '03S_stage_fight_pool.png'), Buffer.from(res.base64, 'base64'));
+st.media['03S_stage_fight_pool'] = res.mediaId; st.prompts['03S_stage_fight_pool'] = prompt;
+fs.writeFileSync(path.join(D, 'state.json'), JSON.stringify(st, null, 2), 'utf-8');
+console.log('✅ stage plate', res.mediaId);

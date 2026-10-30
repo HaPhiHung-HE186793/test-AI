@@ -1,0 +1,18 @@
+   ✅ video shot_01 final take 1 (107s, Veo 3.1 - Quality, first+last frame)
+   ✅ video shot_03 final take 1 (153s, Veo 3.1 - Quality, first+last frame)
+   ✅ video shot_09 final take 1 (154s, Veo 3.1 - Quality, first+last frame)
+[h264 @ 00000219f2c490c0] mmco: unref short failure
+   🏅 judge shot_01 take 1: 58/100 FAIL — Ember's head proportions and eye shapes warp noticeably in the final frame. | artifacts: blurry face
+   🏅 judge shot_09 take 1: 63/100 FAIL — Tide's facial structure temporarily morphs and loses definition during the impact. | artifacts: plastic look
+   🏅 judge shot_03 take 1: 74/100 PASS — Tide's neck and sail stretch slightly inconsistently as he rises. | artifacts: 
+   🎚️    -> ✂️  Shot 01: 0.63s → 3.33s (2.71s) · establishing/setup: chuyển động 0.18, năng lượng âm 0.42 (viral-reel 2.2-3s)
+   🎚️    -> ✂️  Shot 03: 1.29s → 3.00s (1.71s) · action/inciting: chuyển động 0.84, năng lượng âm 0.63 (viral-reel 1.2-2.2s)
+   🎚️    -> ✂️  Shot 09: 3.50s → 6.42s (2.92s) · action/climax: chuyển động 0.71, năng lượng âm 0.76 (viral-reel 1.2-3.7s)
+   🎚️    -> 🔊 Đo loudness hỗn âm (3 shot, 7.33s) để chuẩn hoá -14 LUFS / -1.5 dBTP...
+   🎚️    -> 🔊 Kiểm tra AAC lần 1: -13.4 LUFS, TP -1.1 dBTP, LRA 3.5 (dynamic, limiter -7.82 dB)
+   🎚️    -> 🔊 Kiểm tra AAC lần 2: -13.4 LUFS, TP -1.3 dBTP, LRA 3.5 (dynamic, limiter -8.12 dB)
+   🎚️    -> 🔊 Kiểm tra AAC lần 3: -15.5 LUFS, TP -1.4 dBTP, LRA 9.5 (linear, limiter -8.50 dB)
+   🎚️    -> 🔊 Kiểm tra AAC lần 4: -12.4 LUFS, TP -1.1 dBTP, LRA 3.3 (dynamic, limiter -10.11 dB)
+   🎚️    -> 🔊 Kiểm tra AAC lần 5: -14 LUFS, TP -1.4 dBTP, LRA 8.8 (linear, limiter -10.41 dB)
+   🎚️    -> 🎞️  Encode master 1920x1080 24fps (libx264 slow CRF16, 1 lần duy nhất)...
+🏁 MASTER {"path":"D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\master_final\\MASTER_FINAL_MOVIE.mp4","res":"1920x1080","dur":7.333,"shots":3,"asl":2.444,"median":2.708,"lufs":{"integratedLufs":-14,"lra":8.8,"truePeakDb":-1.4},"warnings":["3/3 clip nguồn độ phân giải thấp hơn 1920x1080 — đã upscale lanczos; dùng bản upscale 1080p của Flow để nét hơn."]}

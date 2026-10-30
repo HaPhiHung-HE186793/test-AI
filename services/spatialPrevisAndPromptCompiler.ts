@@ -780,6 +780,11 @@ export function compileDisentangledShotPrompts(params: {
     `[CONTACT TERRAIN GEOMETRY]: Grounded firmly on ${previs.contactTerrainGeometryEn} (zero floating limbs).`,
     cleanSubjectBinding,
     `[KEYFRAME POSE SNAPSHOT (${cam.targetAnatomicalZoneEn})]: ${cleanMainBeat}. ${recurringMotifPropStateEn}`,
+    isGroundFootMacro
+      ? `[MACRO MATERIAL CALLOUT (Reel #2/#3 Standard)]: Razor-sharp organic scale/claw keratin grooves, wet mud compression, and glowing magma cracks at f/2.0 shallow depth of field.`
+      : cam.coverageType === 'INSERT_DETAIL_CUTAWAY' || emotionalTensionMode === 'VISCERAL_CLASH'
+      ? `[TACTILE IMPACT & SHADER LOCK (Reel #3 Fight & POMMI 49M Standard)]: Visible surface compression at the strike contact zone, 120fps radial burst of sparks/droplets, wet specular eye tearline, and f/2.0 foreground bokeh occlusion.`
+      : `[OPTICAL DEPTH & GLOBAL LIGHTING CONTINUITY (POMMI 49M & Reel #4 Grid Standard)]: 15%-25% foreground bokeh occlusion anchor, wet corneal eye reflections, subsurface scattering, and smooth atmospheric lighting continuity across consecutive shots.`,
     cleanDepthStaging,
     stageDestructionPromptEn,
     visualExternalizationEn,

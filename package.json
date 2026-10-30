@@ -14,8 +14,18 @@
     "skill:storyboard": "node --experimental-strip-types .agents/skills/ai-film-studio/scripts/run-full-movie-pipeline.ts --frames-only",
     "create-character": "node --experimental-strip-types vscode-cli-producer.ts --create-character",
     "create-scene": "node --experimental-strip-types vscode-cli-producer.ts --create-scene",
+    "remaster": "node --experimental-strip-types scripts/remaster-run.ts",
+    "test:premium": "node --experimental-strip-types scripts/test-premium-engine.ts && node --experimental-strip-types scripts/test-premium-shot-production.ts",
+    "test:premium:engine": "node --experimental-strip-types scripts/test-premium-engine.ts",
+    "test:premium:shots": "node --experimental-strip-types scripts/test-premium-shot-production.ts",
     "dev:ui": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "proto:keyframes": "node --experimental-strip-types scripts/premium-proto/proto_stage123.ts",
+    "proto:render": "node --experimental-strip-types scripts/premium-proto/proto_stage47.ts",
+    "proto:master": "node --experimental-strip-types scripts/premium-proto/proto_master.ts",
+    "proto:audio": "node --experimental-strip-types scripts/premium-proto/proto_audio.ts",
+    "proto:stage-plate": "node --experimental-strip-types scripts/premium-proto/proto_stage_plate.ts",
+    "proto:mix": "python scripts/premium-proto/proto_music_mix.py"
   },
   "dependencies": {
     "ffmpeg-static": "^5.2.0",

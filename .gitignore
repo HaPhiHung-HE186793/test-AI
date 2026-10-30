@@ -15,3 +15,28 @@ output/vscode_runs/media_*.png
 output/vscode_runs/*/mastered_segments/
 output/vscode_runs/*/MASTER_JOINED_AUDIO_BRIDGED.mp4
 output/vscode_runs/*/MASTER_DIRECTORS_CUT.mp4
+
+# ── dino_premium_v2 (render Premium thật, 1.3 GB trên máy gốc) ──
+# Chỉ commit những gì cần để LÀM TIẾP: bible/state/EDL, bảng nhân vật, bối cảnh, keyframe hiện hành,
+# take hiện hành, clip dựng edit_r6, nhạc/âm nền, bản master v6. Phần còn lại chỉ nằm ở máy gốc.
+output/vscode_runs/dino_premium_v2/_rejected*/
+output/vscode_runs/dino_premium_v2/review_*/
+output/vscode_runs/dino_premium_v2/edit_r3/
+output/vscode_runs/dino_premium_v2/edit_r4/
+output/vscode_runs/dino_premium_v2/edit_r5/
+output/vscode_runs/dino_premium_v2/master_draft/
+output/vscode_runs/dino_premium_v2/master_final/
+output/vscode_runs/dino_premium_v2/master_final_v2/
+output/vscode_runs/dino_premium_v2/master_final_v3_edit/
+output/vscode_runs/dino_premium_v2/master_final_v4/
+output/vscode_runs/dino_premium_v2/master_final_v5/
+output/vscode_runs/dino_premium_v2/master_r3_engine_test/
+output/vscode_runs/dino_premium_v2/master_final_v6/MASTER_FINAL_MOVIE.mp4
+output/vscode_runs/dino_premium_v2/audio_r3/mix_work/
+output/vscode_runs/dino_premium_v2/audio_r3/*.f32
+output/vscode_runs/dino_premium_v2/*.jpg
+output/vscode_runs/dino_premium_v2/*_draft_*.mp4
+output/vscode_runs/dino_premium_v2/*_ingredient_test.mp4
+output/vscode_runs/dino_premium_v2/_portability_test/
+# Remaster của run cũ (tạo lại được bằng `npm run remaster -- --run output/vscode_runs/dino_clash_closed_loop_v1`)
+output/vscode_runs/dino_clash_closed_loop_v1/premium_master/

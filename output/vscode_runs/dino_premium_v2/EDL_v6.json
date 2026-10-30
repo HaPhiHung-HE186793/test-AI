@@ -1,0 +1,215 @@
+{
+  "version": "v6",
+  "master": "master_final_v6/MASTER_FINAL_v6_music.mp4",
+  "duration_s": 30.083,
+  "film_order": [
+    1,
+    2,
+    3,
+    4,
+    16,
+    14,
+    15,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    17,
+    12
+  ],
+  "cut_times_s": [
+    0.0,
+    2.333,
+    4.625,
+    7.417,
+    9.667,
+    11.0,
+    12.5,
+    13.542,
+    15.833,
+    17.458,
+    20.75,
+    21.458,
+    22.083,
+    23.958,
+    26.292,
+    30.083
+  ],
+  "trim_rule": "Mỗi clip edit_r6/shot_XX_edit.mp4 = nguồn cắt từ (in-0.25) dài (out-in+0.7); proto_master khoá cứng forceWindow [0.25, dur-0.45] (cảnh cuối dur-0.05 để giữ phần hold).",
+  "shots": [
+    {
+      "shotNumber": 1,
+      "titleVi": "Hồ nước cuối cùng",
+      "source": "shot_01_final_best.mp4 (vòng 2)",
+      "inSec": 0.8,
+      "outSec": 3.13,
+      "note": "",
+      "edit_clip": "edit_r6/shot_01_edit.mp4",
+      "best_judge": 64
+    },
+    {
+      "shotNumber": 2,
+      "titleVi": "Ngụm nước bị cắt ngang",
+      "source": "shot_02_final_take_2.mp4",
+      "inSec": 2.0,
+      "outSec": 4.3,
+      "note": "",
+      "edit_clip": "edit_r6/shot_02_edit.mp4",
+      "best_judge": 74
+    },
+    {
+      "shotNumber": 3,
+      "titleVi": "Kẻ lạ trong lau sậy",
+      "source": "shot_03_final_take_1.mp4",
+      "inSec": 1.0,
+      "outSec": 3.8,
+      "note": "",
+      "edit_clip": "edit_r6/shot_03_edit.mp4",
+      "best_judge": 66
+    },
+    {
+      "shotNumber": 4,
+      "titleVi": "Lời cảnh cáo",
+      "source": "shot_04_final_best.mp4 (vòng 2)",
+      "inSec": 3.55,
+      "outSec": 5.8,
+      "note": "cú gầm cảnh cáo",
+      "edit_clip": "edit_r6/shot_04_edit.mp4",
+      "best_judge": 75
+    },
+    {
+      "shotNumber": 16,
+      "titleVi": "Đối đầu hai bờ hồ",
+      "source": "shot_16_final_take_1.mp4",
+      "inSec": 2.2,
+      "outSec": 3.55,
+      "note": "đối đầu, bỏ đoạn gầm 0.5-2.0s",
+      "edit_clip": "edit_r6/shot_16_edit.mp4",
+      "best_judge": 60
+    },
+    {
+      "shotNumber": 14,
+      "titleVi": "Cú đớp (cận hàm Tide)",
+      "source": "shot_14_final_take_1.mp4",
+      "inSec": 0.25,
+      "outSec": 1.75,
+      "note": "Tide đớp sập",
+      "edit_clip": "edit_r6/shot_14_edit.mp4",
+      "best_judge": 72
+    },
+    {
+      "shotNumber": 15,
+      "titleVi": "Ember cúi né",
+      "source": "shot_15_final_take_1.mp4",
+      "inSec": 0.6,
+      "outSec": 1.6,
+      "note": "Ember né, há miệng vì sợ",
+      "edit_clip": "edit_r6/shot_15_edit.mp4",
+      "best_judge": 68
+    },
+    {
+      "shotNumber": 6,
+      "titleVi": "Nụ cười xảo quyệt",
+      "source": "shot_06_final_take_2.mp4",
+      "inSec": 1.2,
+      "outSec": 3.55,
+      "note": "KHÔNG lật",
+      "edit_clip": "edit_r6/shot_06_edit.mp4",
+      "best_judge": 68
+    },
+    {
+      "shotNumber": 7,
+      "titleVi": "Đuôi Tide quét",
+      "source": "shot_07_final_take_1.mp4",
+      "inSec": 1.0,
+      "outSec": 2.6,
+      "note": "chèn chỉ có đuôi",
+      "edit_clip": "edit_r6/shot_07_edit.mp4",
+      "best_judge": 68
+    },
+    {
+      "shotNumber": 8,
+      "titleVi": "Ánh mắt không khuất phục",
+      "source": "shot_08_final_take_2.mp4",
+      "inSec": 1.2,
+      "outSec": 4.5,
+      "note": "phép lược: cú ngã bị bỏ, Ember đã nằm trong bùn",
+      "edit_clip": "edit_r6/shot_08_edit.mp4",
+      "best_judge": 71
+    },
+    {
+      "shotNumber": 9,
+      "titleVi": "Cú húc trời giáng",
+      "source": "shot_09_r5_take_3.mp4 (vòng 5, lao ngang)",
+      "inSec": 1.2,
+      "outSec": 1.9,
+      "note": "cắt giữa sải chân trước khi mõm chạm bùn",
+      "edit_clip": "edit_r6/shot_09_edit.mp4",
+      "best_judge": 45
+    },
+    {
+      "shotNumber": 10,
+      "titleVi": "Choáng váng",
+      "source": "shot_10_final_take_3.mp4",
+      "inSec": 0.25,
+      "outSec": 0.85,
+      "note": "Tide giật đầu, KHÔNG lật",
+      "edit_clip": "edit_r6/shot_10_edit.mp4",
+      "best_judge": 66
+    },
+    {
+      "shotNumber": 11,
+      "titleVi": "Lòng khoan dung",
+      "source": "shot_11_final_take_1.mp4",
+      "inSec": 1.6,
+      "outSec": 3.55,
+      "note": "ECU mắt: giận -> tha thứ",
+      "edit_clip": "edit_r6/shot_11_edit.mp4",
+      "best_judge": 68
+    },
+    {
+      "shotNumber": 17,
+      "titleVi": "Tide được uống nước",
+      "source": "shot_17_final_take_2.mp4",
+      "inSec": 1.2,
+      "outSec": 3.55,
+      "note": "Tide uống nước = hệ quả tha thứ",
+      "edit_clip": "edit_r6/shot_17_edit.mp4",
+      "best_judge": 72
+    },
+    {
+      "shotNumber": 12,
+      "titleVi": "Ngụm nước chiến thắng",
+      "source": "shot_12_final_take_1.mp4",
+      "inSec": 4.5,
+      "outSec": 6.45,
+      "note": "giữ khung cuối 1.4s (tpad) rồi mờ dần",
+      "edit_clip": "edit_r6/shot_12_edit.mp4",
+      "best_judge": 76
+    }
+  ],
+  "audio_mix": {
+    "command": "python scripts/premium-proto/proto_music_mix.py <runDir> <runDir>/master_final_v6/MASTER_FINAL_MOVIE.mp4 <runDir>/master_final_v6/MASTER_FINAL_v6_music.mp4 \"<cut_times_s nối bằng dấu phẩy>\" 4 11 12 9",
+    "index_args": {
+      "fight_music_start_idx": 4,
+      "impact_idx": 11,
+      "resolve_music_idx": 12,
+      "splat_idx": 9
+    },
+    "cues": [
+      "audio_r3/music_setup.wav",
+      "audio_r3/music_fight.wav",
+      "audio_r3/music_resolve.wav",
+      "audio_r3/ambience.wav",
+      "audio_r3/hit_foley.wav"
+    ],
+    "result": {
+      "I_LUFS": -14.2,
+      "LRA": 7.5,
+      "TP_dBTP": -1.5,
+      "impact_phone_band_vs_before_dB": 3.5
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T10:00:01.561Z",
+  "updatedAt": "2026-10-29T10:57:53.633Z",
   "projectDir": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1",
   "stages": {
     "stage1_script_and_writers_room": {
@@ -199,10 +199,10 @@
     },
     "stage6_and_7_post_production_and_master_export": {
       "status": "PASSED",
-      "masterVideoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/MASTER_FINAL_MOVIE.mp4",
-      "directorsCutVideoPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/MASTER_DIRECTORS_CUT.mp4",
-      "subtitlesPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/master_subtitles.srt",
-      "assSubtitlesPath": "/mnt/data/backup/project_personal/test-AI/output/vscode_runs/dino_clash_closed_loop_v1/master_subtitles.ass",
+      "masterVideoPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_clash_closed_loop_v1\\MASTER_FINAL_MOVIE.mp4",
+      "directorsCutVideoPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_clash_closed_loop_v1\\MASTER_DIRECTORS_CUT.mp4",
+      "subtitlesPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_clash_closed_loop_v1\\master_subtitles.srt",
+      "assSubtitlesPath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_clash_closed_loop_v1\\master_subtitles.ass",
       "voiceoverCount": 8,
       "promptAuditScore": 100
     }
