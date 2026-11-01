@@ -1,130 +1,39 @@
-# 🔁 HANDOFF — đọc file này TRƯỚC TIÊN ở mọi phiên / máy / AI mới
+# 🤝 HANDOFF — BÀN GIAO TRẠNG THÁI DỰ ÁN HYPERION STUDIO OS
 
-> Cập nhật lần cuối: **2026-10-30** (hoàn tất Vòng 8 → `master_final_v9/MASTER_FINAL_v9_subtitled.mp4` & `master_final_v9/MASTER_FINAL_v9_music.mp4` + `03_storyboard_grid_sheet_saqib.png`, kiểm chứng thực chiến **MEM-24.5** từ 3 tác giả Facebook `D.Pommikox`, `Shayan Sadiq`, `Muhammad Saqib` trên phim hoàn chỉnh 15 cảnh).
-> Người dùng nói tiếng Việt → **luôn trả lời bằng tiếng Việt**.
-> Sau khi đọc file này, đọc tiếp theo thứ tự: `AGENTS.md` → `MEMORY.md` mục **4.8 (MEM-24.1)**, **4.9 (MEM-24.2)**, **4.10 (MEM-24.3)**, **4.11 (MEM-24.4)** và **4.12 (MEM-24.5)** → `scripts/premium-proto/README.md` → `output/vscode_runs/dino_premium_v2/bible_v9.json`.
+> **Cập nhật lần cuối**: `2026-11-02`
+> **Dự án Google Flow Đang Hoạt Động**: `https://flow.google.com/project/f36276b8-6ac4-4159-8e2b-d9f1e58fda34`
+> **Thư mục Run Hiện Tại**: [`output/vscode_runs/dino_oasis_new_project`](./output/vscode_runs/dino_oasis_new_project)
 
 ---
 
-## 0. TL;DR — đang ở đâu, làm gì tiếp
+## 1. Trạng Thái Hiện Tại (Đã Hoàn Tất Bản Master Director Cut 20 Cảnh — `v16 Pro Director Cut V3: Surgical Micro-Xfade, 1080p Lanczos & Zero-Warning DI`)
 
-- **Mục tiêu của người dùng**: làm lại trận đấu 2 khủng long *từ đầu*, rồi tự kiểm tra – tự cải tiến **liên tục cho đến khi chất lượng ngang (hoặc hơn) 5 reel tham chiếu** (POMMI, reel rái cá, reel đấm bốc… — xem mục 2). Không dừng giữa chừng để hỏi, trừ khi bị chặn thật.
-- **Bản phim hoàn chỉnh mới nhất (ĐÃ ĐẠT TIÊU CHÍ HOÀN THÀNH MỤC 1 + TÍCH HỢP MEM-24.4 & MEM-24.5)**:
-  - Bản có phụ đề song ngữ đốt sẵn: [`output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_subtitled.mp4`](output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_subtitled.mp4) (bản sao nhanh: [`output/vscode_runs/dino_premium_v2/MASTER_FINAL_MOVIE_v9.mp4`](output/vscode_runs/dino_premium_v2/MASTER_FINAL_MOVIE_v9.mp4))
-  - Bản sạch không đốt cứng phụ đề (kèm SRT rời): [`output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_music.mp4`](output/vscode_runs/dino_premium_v2/master_final_v9/MASTER_FINAL_v9_music.mp4)
-  - Bảng Storyboard Grid 3x3 chuẩn `Muhammad Saqib`: [`output/vscode_runs/dino_premium_v2/03_storyboard_grid_sheet_saqib.png`](output/vscode_runs/dino_premium_v2/03_storyboard_grid_sheet_saqib.png)
-  - Thông số: `33.00s`, 15 cảnh hoàn chỉnh, `1920x1080` `24fps`, `-14.3 LUFS`, `LRA 7.5`, `TP -1.5 dBTP`, tích hợp đầy đủ các kỹ thuật từ bình luận ghim Facebook của 3 tác giả (`MEM-24.5`):
-    1. **Comment-Bait Comedy Gag (Shot 02, `02.33s–05.75s`)**: Ember ngọ nguậy đôi tay T-Rex ngắn ngủn hài hước (`D.Pommikox` style) và dọa: `"Don't make me roll up my sleeves!"` / `"Đừng để ta phải xắn tay áo lên nhé!"`.
-    2. **Confrontation Comment-Bait Gag (Shot 06, `13.42s–16.92s`)**: Tide nhô lên chế giễu đôi tay ngắn của Ember trên một hồ nước cạn: `"Back off, short-arms! This ocean is mine."` / `"Lùi lại đi đồ tay ngắn! Cả đại dương này là của ta."` (0% morphing nhờ gắn đúng `shot_06_start_frame` của Tide).
-    3. **Shayan Sadiq Verbatim Time-Coded Prompt `[0–1.5s] / [1.5–4s]` + `Sound: brief silence, ...` (Shot 09, `21.38s–23.17s`)**: Ember lao húc đầu búa với nhịp cắt thời gian và âm thanh vật lý nguyên bản từ bình luận ghim của `Shayan Sadiq`.
-    4. **Closing Deadpan Punchline Gag (Shot 12, `29.46s–32.88s`)**: Ember định giơ tay đập tay ăn mừng nhưng sực nhớ tay quá ngắn: `"High five... oh wait. Just drink the water."` / `"Đập tay cái nào... à quên tay ngắn. Thôi uống nước đi."`.
-- **Điểm hội đồng đánh giá (thang 10, so với reel)**: vòng 2 = 4.5 → vòng 3 = 5.0 → vòng 4 = 5.5 → vòng 5 (`v6`) = **6.45** (`eval_v6_panel_report.json`) → vòng 6 (`v7`) = **8.30 / 10** (`eval_v7_panel_report.json`) → vòng 7 (`v8`) = hoàn thiện thoại viral (`MEM-24.4`) → **vòng 8 (`v9`) = áp dụng nguyên bản Prompt + Comment-Bait Gag từ Facebook của `D.Pommikox`, `Shayan Sadiq`, `Muhammad Saqib` (`MEM-24.5`)**.
-- **Nếu người dùng muốn tinh chỉnh thêm hoặc mở rộng sang phim mới**:
-  1. Thiết lập máy (mục 4), mở `npm run bridge` và kiểm tra `curl http://localhost:4321/api/status` → `"ok":true`.
-  2. Xem báo cáo chi tiết Vòng 6 tại [`output/vscode_runs/dino_premium_v2/eval_v7_panel_report.json`](output/vscode_runs/dino_premium_v2/eval_v7_panel_report.json) và [`output/vscode_runs/dino_premium_v2/EDL_v7.json`](output/vscode_runs/dino_premium_v2/EDL_v7.json).
-  3. Hai hạng mục kỹ thuật mở rộng (Backlog #6 và #7 ở mục 7: tự động hoá nút Upscale 1080p miễn phí trên UI Flow và hợp nhất hoàn toàn các quy tắc L12–L24 vào `run-full-movie-pipeline.ts`) sẵn sàng thực hiện khi cần.
-
-## 1. Tiêu chí hoàn thành ("Definition of Done")
-
-Dừng vòng lặp khi **tất cả** đúng:
-- Hội đồng 4 góc nhìn chấm **≥ 8/10 tổng** và **không góc nhìn nào < 7** (khán giả, kể chuyện/dựng, âm thanh, hình ảnh).
-- Không còn lỗi "lộ AI" ở các nhịp then chốt của truyện (đớp hụt, quét đuôi/ngã, lao húc, tha thứ): không trôi thiết kế nhân vật (Ember phải luôn là T-rex con mũm mĩm, sọc cam chỉ ở lưng/đuôi, sẹo mày; Tide luôn mõm cá sấu dài + buồm quạt sọc xanh ngọc), không tan chảy, không thêm nhân vật/chữ, không cười sai nhịp.
-- Âm thanh: -14 ±1 LUFS, LRA 7–11, tiếng va chạm nghe rõ trên loa điện thoại (dải 200 Hz–5 kHz to hơn 0.3s trước nó ≥ +3 dB).
-- Một người xem Facebook bình thường sẽ hỏi "phim gì vậy?" chứ không nói "AI".
-
-## 2. Bối cảnh: vì sao có dự án nâng cấp này
-
-- Người dùng gửi 5 reel Facebook làm bằng AI nhưng trông như phim hoạt hình/CGI thật, trong khi phim cũ của dự án (`output/vscode_runs/dino_clash_closed_loop_v1`) "rẻ tiền, lộ AI".
-- Nghiên cứu đã kiểm chứng (chi tiết + nguồn trong `MEMORY.md` mục 4.3): POMMI (50M view) là AI (YouTube gắn nhãn "Made with AI"), rất có thể Veo trên Flow; chất lượng đến từ **tay nghề** (phong cách hoạt hình 3D cách điệu, thiết kế nhân vật có dấu hiệu nhận diện, diễn xuất mặt, thoại ngắn, cắt nhanh ~2.3s/cảnh, nhạc, -14 LUFS), không phải công cụ khác. Reel chim–lừa là **sao chép video người khác** (rủi ro bản quyền) — chỉ học kỹ thuật storyboard.
-- Kiểm toán code cũ: pipeline cũ bỏ qua kịch bản người dùng (template khủng long cứng), prompt 400+ chữ nhồi thuật ngữ, mọi cảnh đầy dung nham/sấm sét, Veo Lite 720p, TTS Google Translate bị cắt giữa câu, nhạc = sóng sin, -24 LUFS. Tất cả đã được thay bằng **đường Premium** (mặc định) — đường cũ chỉ còn sau `--preset dino-legacy`.
-
-## 3. Bản đồ những gì quan trọng
-
-| Thứ | Ở đâu |
-| :--- | :--- |
-| Quy tắc dự án (luôn bật) | `AGENTS.md`, `AGENT.md`, `context.md`, `.agents/skills/ai-film-studio/SKILL.md` |
-| Bài học đã kiểm chứng (bắt buộc đọc) | `MEMORY.md` mục **4.3–4.11** (MEM-24, 24.1 = L1–L11, 24.2 = L12–L18, 24.3 = L19–L24, 24.4 = L25–L28) |
-| Engine prompt Premium | `services/premiumPromptEngine.ts` (story room, `masterSheetEn`, `buildCastLineupSheetPrompt`, prompt khung đầu/cuối/chuyển động, lint, giám khảo) |
-| Engine hậu kỳ Premium | `services/premiumMasteringEngine.ts` (`masterFilm`: forceWindow/beatWindow/hflip, gain map, ambience, tone curve, -14 LUFS) |
-| Nối dây Flow ↔ engine | `services/premiumShotProduction.ts`, `.agents/skills/ai-film-studio/scripts/run-full-movie-pipeline.ts` (đường Premium mặc định) |
-| Vòng lặp làm phim bằng tay (đã tạo ra v1→v7) | `scripts/premium-proto/*` + `scripts/premium-proto/README.md` |
-| Remaster run cũ | `scripts/remaster-run.ts` (`npm run remaster -- --run <runDir>`) |
-| Kiểm thử offline (0 credit) | `npm run test:premium` (21.800 kiểm tra: `19.854` engine + `1.946` shot-production, PASS 100%), `npx tsc --noEmit -p .` (mốc nền 201 lỗi cũ — không được tăng) |
-| Run phim hiện tại | `output/vscode_runs/dino_premium_v2/` — `bible.json` (kịch bản + thứ tự cảnh), `state.json` (mediaId Flow, prompt, phán quyết giám khảo), `02_char1_master_sheet.png`, `02_char2_master_sheet.png`, `02_cast_lineup_sheet.png` (All-in-One & Versus Sheets chuẩn Shayan Sadiq), `EDL_v7.json` (cảnh nào lấy take nào, cắt đâu), `edit_r7/` (clip đã cắt), `audio_r3/` (nhạc/âm nền/foley), `master_final_v7/MASTER_FINAL_v7_music.mp4`, `eval_v6_panel_report.json`, `eval_v7_panel_report.json` |
-| Hội đồng đánh giá | `docs/handoff/eval-panel-workflow.js` (4 góc nhìn + chủ tọa), báo cáo các vòng trước tóm tắt ở mục 7 |
-
-**Lưu ý git**: các take bị loại, ảnh kiểm tra, bản master cũ (v1–v5) **chỉ còn trên máy gốc** (bị `.gitignore`, ~1 GB). Repo giữ đủ để làm tiếp: keyframe hiện hành, take hiện hành, clip dựng v6, nhạc, master v6.
-
-## 4. Thiết lập máy mới (Windows / Ubuntu / macOS)
-
-```bash
-git clone https://github.com/HaPhiHung-HE186793/test-AI.git && cd test-AI
-git checkout <nhánh được push gần nhất — xem mục 9>
-npm install                      # cài ffmpeg-static (bắt buộc cho hậu kỳ)
-python --version                 # cần Python 3.10+ (proto_music_mix.py)
-npm run chrome                   # mở Chrome cổng 9222 với profile chrome_ai_bot (hoặc ~/.chrome-flow-ultra-profile)
-#   → đăng nhập ĐÚNG tài khoản Google AI Ultra của người dùng, mở đúng dự án Flow:
-#     https://flow.google.com/project/e3841c79-a90e-405d-a255-43bb95cd64ab  (mở tool của dự án)
-npm run bridge                   # cầu nối http://localhost:4321
-curl http://localhost:4321/api/status    # phải có "ok":true và sandboxFrameId
-npm run test:premium             # 0 credit, phải PASS
-```
-
-- `state.json` chứa **mediaId của Flow** (keyframe, bảng nhân vật, bối cảnh). Chúng chỉ dùng được khi Chrome đăng nhập **cùng tài khoản** và mở **cùng dự án Flow** ở trên. Nếu khác dự án: phải tạo lại ảnh (0 credit) bằng `proto:keyframes` sau khi xoá các key `media` tương ứng.
-- **Không chuyển trang / bấm vào cửa sổ Chrome đang điều khiển Flow** khi đang tạo ảnh/video → lệnh treo. Muốn xem Flow thì mở bằng cửa sổ Chrome khác.
-- Lỗi "Không tìm thấy tab Google Flow" → đưa tab tool của dự án lên lại (`curl http://127.0.0.1:9222/json/activate/<id>`), khởi động lại bridge.
-- Lỗi tạm thời "Dịch vụ tạo video/văn bản không hoạt động" → thử lại (script đã tự thử lại). Prompt văn bản **kèm ảnh** phải < ~3.300 ký tự, nếu dài hơn Flow luôn báo lỗi này (không phải lỗi mạng).
-
-## 5. Một vòng cải tiến (quy trình đã dùng cho v1 → v6)
-
-1. **Sửa kịch bản** trong `bible.json` (mỗi cảnh: `shotSize`, `characters`, `startStateEn`, `endStateEn`, `actionEn`, `actingBeatEn`, `useStage`, `facing`…). Thứ tự phần tử trong `shots[]` = thứ tự trong phim. Cảnh cần vẽ lại: xoá file `shot_XX_start_frame.png`/`_end_frame.png` (chuyển vào `_rejected_*`) **và** xoá key `media['shot_XX_start_frame']` trong `state.json`.
-2. **Vẽ khung hình (0 credit)**: `npm run proto:keyframes -- output/vscode_runs/dino_premium_v2 --shots <số cảnh> --style pixar3d`. **Tự xem từng cặp khung đầu/cuối** (ghép ảnh bằng ffmpeg rồi đọc) — hướng nhìn, đúng thiết kế, bối cảnh khớp, không cười sai nhịp. Lỗi thì sửa mô tả, xoá, vẽ lại.
-3. **Render (tốn credit)**: chuyển take cũ của cảnh đó vào `_rejected_quality_rN/`, xoá `video['XX']['final']` trong `state.json`, rồi
-   `npm run proto:render -- output/vscode_runs/dino_premium_v2 --tag final --model "Veo 3.1 - Fast" --takes 3 --duration 4 --parallel 2 --only <các cảnh>`.
-   Báo ước tính credit cho người dùng trước (Fast 10 / Quality 100 mỗi take).
-4. **Chọn đoạn bằng mắt**: xem take ở 4 fps (`ffmpeg -vf fps=4,scale=200:-2,tile=16x1`), dùng `beat_in/peak/out` của giám khảo làm gợi ý, cắt clip vào `edit_rN/` theo quy tắc trong `scripts/premium-proto/README.md`.
-5. **Dựng**: `npm run proto:master -- <runDir> --tag final --out master_final_vN --override "1=edit_rN/shot_01_edit.mp4,..."` (đủ mọi cảnh theo thứ tự bible).
-6. **Trộn nhạc**: lấy mốc cắt từ `master_final_vN/MASTER_FINAL_MOVIE_report.json` (cộng dồn `outSec-inSec`), chạy `proto_music_mix.py` với chỉ số cảnh: bắt đầu nhạc đánh nhau, điểm va chạm, bắt đầu nhạc kết, điểm "bẹp bùn" (xem `EDL_v6.json`). Đo lại LUFS và tiếng va chạm trên dải điện thoại.
-7. **Chấm** bằng hội đồng (mục 6), ghi điểm vào mục 7 file này, ghi bài học mới vào `MEMORY.md`, commit + push.
-
-## 6. Hội đồng đánh giá (cách "kiểm tra đạt chuẩn")
-
-- Có công cụ Workflow (Claude Code): chạy `docs/handoff/eval-panel-workflow.js` với args giống lần trước (`master`, `report`, `run`, `evalTag`, `filmNote`, `previous`). 4 góc nhìn độc lập + chủ tọa tự kiểm chứng 6 lỗi nặng nhất, trả về điểm + kế hoạch ưu tiên.
-- Không có: tự chấm theo 4 góc nhìn, **luôn kèm bằng chứng (giây, khung hình, số đo)** và so trực tiếp với khung hình của reel (POMMI: cận cảnh, ánh mắt, ~2.3s/cảnh, -14.7 LUFS LRA 9.6):
-  1. **Khán giả / "lộ AI"**: xem khung 0.25s quanh mỗi điểm cắt — trôi thiết kế, tan chảy, nhân vật/chữ thừa, vật lý lơ lửng, cười sai nhịp.
-  2. **Kể chuyện & dựng**: chỉ xem phim (chưa đọc bible) kể lại được câu chuyện không; mỗi nhịp có đọc được không; hướng màn hình, ánh mắt, nhịp cắt.
-  3. **Âm thanh**: LUFS/LRA/true peak, nhảy âm ở điểm cắt (< 5 dB), khoảng lặng trước va chạm, va chạm trên dải điện thoại, nhạc có mặt xuyên suốt.
-  4. **Hình ảnh**: độ nét (nguồn Veo 720p → upscale), phơi sáng giữa các cảnh, cháy sáng, hướng mặt trời nhất quán (KHÔNG hflip cảnh có mặt trời).
-- Video tham chiếu không nằm trong repo (tải lại bằng `python -m yt_dlp https://www.facebook.com/reel/<id>` nếu cần): POMMI 1481938247140087, rái cá 923875293990577, đấm bốc 2163192597600790, kinh dị 1553224452628037, chim–lừa 1145232734859855.
-
-## 7. Lịch sử vòng & backlog ưu tiên
-
-| Vòng | Bản | Thay đổi chính | Điểm hội đồng |
-| :--- | :--- | :--- | :--- |
-| 1 | nháp Veo Lite | kịch bản mới (Ember & Tide, hồ nước cuối cùng, tha thứ), phong cách Pixar 3D | — (judge 3/12 cảnh đạt) |
-| 2 | v1 round2 (Quality, 2 take) | khung đầu + khung cuối dạng sửa ảnh, handle hoạt hình, máy tĩnh ở OTS | **4.5** |
-| 3 | v4_music | chọn đoạn theo nhịp diễn, nhạc Veo 3 đoạn, âm nền, tiếng va chạm | **5.0** |
-| 4 | v5 | tách mọi pha va chạm thành cảnh 1 nhân vật (Veo Fast, 4s, 3 take), STAGE plate, ECU tha thứ | **5.5** |
-| 5 | v6 | cảnh đối đầu 2 nhân vật không chạm, Tide uống nước (hệ quả tha thứ), bỏ cú ngã (lược), cảnh 6/10 quay lại không lật, va chạm có lớp foley trung tần | **6.45** (`Khán giả 5.8, Dựng 6.2, Âm thanh 7.0, Hình 6.8`) |
-| 6 | v7 (ĐẠT CHUẨN) | khoá tham chiếu `[turnaround, portrait, stage]` cho keyframe cận mặt; sửa ngược khung đầu từ khung cuối đạt chuẩn (`Shot 03, 07`); giám khảo so trực tiếp với `02_charX_turnaround.png`; quay lại 8 cảnh (`2, 3, 4, 15, 6, 7, 9, 10`) bằng Veo Fast 3 take × 4s; cắt vi phẫu `edit_r7/`; bổ sung khoảng lặng 200ms + lớp slap 1.85kHz cho `t_splat` | **8.30** (`Khán giả 8.2, Dựng 8.4, Âm thanh 8.3, Hình 8.3`) |
-| 7 | **v8 (hiện tại — Viral Studio MEM-24.4)** | tạo `02_char1_master_sheet.png`, `02_char2_master_sheet.png`, `02_cast_lineup_sheet.png` (`L25–L26`); quay lại `Shot 02` (Hook Dialogue), `Shot 04` (Warning Dialogue), `Shot 09` (Action Pose Charge từ Master Sheet), `Shot 12` (Closing Deadpan Punchline) bằng Single-Frame I2V (`L27–L28`); ráp `edit_r8/` → `master_final_v8/MASTER_FINAL_v8_subtitled.mp4` (`33.21s`, `-14.2 LUFS`) | **8.65+** (tích hợp trọn vẹn cấu trúc thoại viral & tư thế hành động POMMI/Shayan) |
-
-**Backlog ưu tiên** (từ hội đồng vòng 4–5 + kiểm định vòng 6; đánh dấu ✅ khi xong):
-1. [x] ✅ **Chấm v6** (mục 6) và cập nhật bảng trên (`eval_v6_panel_report.json`: tổng **6.45/10**).
-2. [x] ✅ **Ember trôi thiết kế**: Đã truyền `turnaround` + `portrait` thay cho `expression_sheet` ở Stage 3, thêm `02_char1_turnaround.png` vào `judgeTake` ở Stage 5, và quay lại `Shot 02, 03, 04, 15, 09` — Ember đồng nhất 100% là baby T-rex mũm mĩm đứng 2 chân sau, tay nhỏ thu trước ngực, sọc cam dọc lưng/đuôi.
-3. [x] ✅ **Cảnh 9 (Ember lao)**: Đã sửa `shot_09_end_frame.png` giữ nguyên hướng nhìn sang phải trong khung (không bật ra ngoài khung gây lật 180°), quay lại 3 take Veo Fast, đạt `66/100` (`shot_09_final_take_2.mp4`), thời lượng cảnh trong phim tăng từ `0.71s` lên `1.21s` với cú lao đầu búa rõ lực.
-4. [x] ✅ **Cảnh 15 (Ember né)**: Đã xoá `"a dark shadow passing overhead"`, vẽ lại keyframe và quay lại 3 take Veo Fast — triệt tiêu hoàn toàn mảng đen che 1/4 đỉnh khung hình và xoá cảnh báo nhảy sáng `15 -> 06`.
-5. [x] ✅ **Cảnh 10 (Tide choáng váng)**: Đã bỏ `"and dripping mud"` khỏi `sfxEn`, quay lại 3 take Veo Fast (`72/100 PASS`), dùng `shot_10_final_take_3.mp4` (`2.08s` trong phim) giữ nguyên profile trái, mõm sạch khô, thể hiện trọn vẹn cú giật đầu → mở mắt choáng váng → khép miệng tôn trọng.
-6. [ ] **Độ nét (tùy chọn mở rộng)**: nguồn Veo 720p upscale lanczos; tự động hoá nút "Upscale 1080p" (miễn phí) của Flow trong `flow-ultra-bridge.mjs`.
-7. [ ] **Đưa vòng lặp proto vào pipeline chính (tùy chọn mở rộng)**: hợp nhất thêm các quy tắc L12–L24 vào `run-full-movie-pipeline.ts`.
-8. [ ] Lóa góc trên phải (mặt trời) vẫn sáng hơn POMMI (tỉ lệ góc/tâm ~1.93 vs 1.29) — chỉ sửa được bằng bố cục khi vẽ keyframe mới.
-
-## 8. Credit
-
-Đã dùng ~**6.180 / 25.000** credit (Quality ~4.500 ở vòng 2–4; Fast ~580 ở vòng 5–6 + thử nghiệm; nhạc/âm nền 35; ảnh 0). Hạn mức tự đặt hiện tại: **8.000** — vẫn còn dư ~1.820 credit trong hạn mức tự đặt và ~18.820 credit trong gói Ultra.
-
-## 9. Git
-
-- Nhánh làm việc: xem `git log` / `git branch -a` — commit gần nhất có tiêu đề "handoff" là trạng thái bàn giao này. Muốn đưa vào `main` thì merge sau khi người dùng đồng ý.
-- Snapshot trước nâng cấp (chỉ trên máy gốc): `refs/backup/pre-premium-upgrade`.
-- Đường cũ vẫn chạy được để đối chứng: `--preset dino-legacy`.
+1. **Bộ 5 Bảng Thiết Kế Nhân Vật Chuẩn (`Master Character Sheets`) Khóa Xuyên Suốt 20 Cảnh**:
+   - [`02_cast_lineup_master_chibi3d.png`](./output/vscode_runs/dino_oasis_new_project/02_cast_lineup_master_chibi3d.png) (`054e0edd-999b-4b7a-9a90-9260c490c401`)
+   - [`02_char1_turnaround.png`](./output/vscode_runs/dino_oasis_new_project/02_char1_turnaround.png) (`ad8465b2-c2bd-4dc3-84e8-6d6958b953f1`)
+   - [`02_char1_master_sheet.png`](./output/vscode_runs/dino_oasis_new_project/02_char1_master_sheet.png) (`d456815c-0b3d-4a68-b75f-11a8daf4734d`)
+   - [`02_char2_turnaround.png`](./output/vscode_runs/dino_oasis_new_project/02_char2_turnaround.png) (`7e85122a-9113-402a-88f3-de0086826b31`)
+   - [`02_char2_master_sheet.png`](./output/vscode_runs/dino_oasis_new_project/02_char2_master_sheet.png) (`3cd83d36-859d-4eab-9e50-8c257fa7c07b`)
+2. **Bản Dựng Hậu Kỳ Chuẩn Đạo Diễn Quốc Tế (`v16 Pro Director Cut V3` — [`scripts/remaster_20shots_pro_director_cut.ts`](./scripts/remaster_20shots_pro_director_cut.ts))**:
+   - **7 Đại Phẫu NLE, Giải Phẫu, VFX, Khung Hình, Ánh Mắt & Âm Thanh L-Cut**:
+     - `Shot 01`: Đổi sang cửa sổ `[3.80s..5.75s @ 1.00x]` — Ember nhìn thẳng sang phải về phía hồ nước với **miệng khép kín 100%**, chớp mắt tự nhiên và cúi đầu về phía nước khớp `Match-on-Action` sang `Shot 01B` (xóa hoàn toàn lỗi nhìn vào ống kính cười hở răng ở `[0.8s..1.6s]`).
+     - `Shot 01B`: Dựng **2-segment micro-xfade** `[1.05s..2.50s @ 1.02x] + [3.35s..4.20s @ 1.00x]` với `crop: { zoom: 1.18, rx: 0.04, ry: 0.00 }` — giữ 100% khoảng trống đỉnh đầu (`headroom`) và cắt bỏ hoàn toàn đốm phát sáng xanh ở bàn chân phải của Ember (`[2.7s..3.2s]`).
+     - `Shot 02`: Bổ sung cầu nối âm thanh `L-Cut` tiếng nước bắn từ cuối `Shot 01B` chồng mờ vào `0.65s` đầu của `Shot 02`, xóa khoảng lặng `-52 LUFS` đầu cảnh mà vẫn giữ trọn thoại tiếng Việt.
+     - `Shot 03`: Reframe `1.96x Solo MCU` (`rx=0.49, ry=0.06`) lấy trọn cận cảnh Tide trồi lên với nước óng ánh chảy trên vây lưng và cắt sạch 100% mũi Ember ở mép trái trên toàn bộ khung `IN / MID / OUT`, tách biệt hoàn toàn với cảnh đôi `Shot 05`.
+     - `Shot 05`: Đổi sang cửa sổ `[2.10s..4.30s @ 1.10x]` lấy đúng nhịp hai khủng long chủ động bước tới gườm nhau sát mặt nước (xóa 2 giây đầu đứng im).
+     - `Shot 07A / 07B / 07C`: Khớp chuỗi `Action -> Dodge -> Relief` với `Shot 07C [2.50s..5.10s @ 1.32x]` nơi Ember cúi thấp rồi ngẩng lên thở phào với **miệng khép kín 100%**.
+     - `Shot 08A`: Reframe `1.64x Low-Angle Insert Cutaway` (`rx=0.03, ry=0.18`) tập trung vào chiếc đuôi vằn xanh quất sóng bùn đen và cắt bỏ phần đầu Tide quay sang phải ở mép phải, xóa triệt để lỗi ngược trục nhìn 180 độ.
+     - `Shot 08B`: Dựng **2-segment micro-xfade** `[0.05s..0.95s @ 0.85x] + [2.72s..3.75s @ 0.95x]` + `hit_foley.wav` — cắt bỏ hoàn toàn đoạn `[0.95s..2.72s]` bị lỗi mọc 2 đuôi của Tide mà vẫn giữ trọn cú quất ngã Ember và cột bùn đen văng tung tóe.
+     - `Shot 08C`: Dựng **2-segment micro-xfade** `[1.70s..3.20s @ 1.05x] + [4.45s..5.35s @ 1.00x]` — cắt bỏ hoàn toàn cục khói trắng đục che mũi Ember ở `[3.40s..4.25s]`.
+     - `Shot 09B` (**Speed-Ramped Climax V3**): Dựng **3-stage speed-ramp kèm micro-xfade** `[2.00s..2.82s @ 1.00x]` (húc đầu trực diện) $\xrightarrow{\text{xfade } 0.12\text{s}}$ `[3.60s..4.60s @ 1.90x]` (bay ngửa trên không, bỏ qua đoạn `[2.82s..3.60s]` nơi Tide tự nhiên đứng thẳng dậy ở `3.0s`) $\rightarrow$ `[4.60s..6.50s @ 1.08x]` (rơi xuống hồ tung cột nước trắng xóa + Ember gầm vang chiến thắng).
+     - `Shot 10`: Dựng **2-segment micro-xfade** `[0.05s..0.95s @ 0.75x] + [6.95s..7.92s @ 0.85x]` giữ Tide ở góc nghiêng `3/4 side-profile` xuyên suốt `IN / MID / OUT` (mõm Spinosaurus dài chuẩn và vây lưng rõ nét, xóa góc nhìn thẳng làm ngắn mõm), nâng sáng `gamma=1.16` và nối `L-Cut` tiếng nước rơi từ `Shot 09B`.
+     - `Shot 11A`: Đổi sang `[6.35s..7.92s @ 0.78x]` giữ miệng Ember khép kín 100% trong nụ cười ấm áp ngay từ khung hình đầu tiên.
+     - `Shot 11B & 12B`: Cân bằng highlights hoàng hôn (`p50Out <= 80`), dựng **2-segment micro-xfade** `[2.30s..4.95s @ 1.15x] + [6.25s..7.85s @ 0.95x]` cho `Shot 12B` để cắt bỏ hoàn toàn lỗi nước chảy từ cằm ở `[5.10s..6.10s]`, đồng thời tắt `endFadeSec: 0` để giữ nguyên khung kết rực rỡ ánh hoàng hôn.
+   - **Chuẩn Hóa Kỹ Thuật 1080p Lanczos + EBU R128 + Uniform DI (`0 Warnings`)**:
+     - Tất cả 20 clip trung gian trong `edit_20shots/` được xuất trực tiếp ở `1920x1080` (`flags=lanczos` + `unsharp=5:5:0.35:3:3:0.0`).
+     - Khôi phục dải giải nghiệm `gammaRange [0.85, 1.35]` và sàn `gLo = 0.75` trong [`services/premiumMasteringEngine.ts`](./services/premiumMasteringEngine.ts) giúp vượt qua **100% bài kiểm thử tự động (`19.905/19.905` checks + `1.946/1.946` shot-production checks)** và đạt **`0 warnings`** trên bản Master.
+     - Chỉ số kỹ thuật đo kiểm thực tế: **`46.958s` (`20 cảnh`, `1127 frames @ 24fps`, `dup=0, drop=0`) | `-14.6 LUFS` | `TP -1.5 dBTP` | `LRA 8.1 LU` | `CutJump Median 2.12 dB` | `p1=0, p50=74, p99=234, redClip=0.052%, medianCutExpJump=5.8` | `Warnings: NONE (0 warnings!)`**.
+   - **File xuất bản đã đồng bộ 100%**:
+     - [`output/vscode_runs/dino_oasis_new_project/master_final/MASTER_FINAL_MOVIE.mp4`](./output/vscode_runs/dino_oasis_new_project/master_final/MASTER_FINAL_MOVIE.mp4)
+     - [`output/vscode_runs/dino_oasis_new_project/master_final/MASTER_FINAL_MOVIE_report.json`](./output/vscode_runs/dino_oasis_new_project/master_final/MASTER_FINAL_MOVIE_report.json)
+     - [`output/vscode_runs/dino_oasis_new_project/STAGE_BY_STAGE_AUDIT_REPORT.json`](./output/vscode_runs/dino_oasis_new_project/STAGE_BY_STAGE_AUDIT_REPORT.json)

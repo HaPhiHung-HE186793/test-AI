@@ -1,0 +1,1288 @@
+{
+  "masterPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\master_20shots\\MASTER_FINAL_MOVIE.mp4",
+  "srtPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\master_20shots\\master_subtitles.srt",
+  "assPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\master_20shots\\master_subtitles.ass",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "durationSec": 46.958,
+  "shotCount": 20,
+  "avgShotSec": 2.348,
+  "medianShotSec": 2,
+  "windows": [
+    {
+      "shotIdx": "01",
+      "inSec": 0,
+      "outSec": 1.9167,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.9167s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.003
+    },
+    {
+      "shotIdx": "01B",
+      "inSec": 0,
+      "outSec": 2.0833,
+      "reason": "forceWindow: dựng phim chỉ định 0-2.0833s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.164
+    },
+    {
+      "shotIdx": "02",
+      "inSec": 0,
+      "outSec": 3.5417,
+      "reason": "forceWindow: dựng phim chỉ định 0-3.5417s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.009
+    },
+    {
+      "shotIdx": "03",
+      "inSec": 0,
+      "outSec": 2,
+      "reason": "forceWindow: dựng phim chỉ định 0-2s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.021
+    },
+    {
+      "shotIdx": "04",
+      "inSec": 0,
+      "outSec": 2,
+      "reason": "forceWindow: dựng phim chỉ định 0-2s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.109
+    },
+    {
+      "shotIdx": "05",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.9583s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.023
+    },
+    {
+      "shotIdx": "06",
+      "inSec": 0,
+      "outSec": 3.7917,
+      "reason": "forceWindow: dựng phim chỉ định 0-3.7917s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.019
+    },
+    {
+      "shotIdx": "07A",
+      "inSec": 0,
+      "outSec": 1.5833,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.5833s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.111
+    },
+    {
+      "shotIdx": "07B",
+      "inSec": 0,
+      "outSec": 1.75,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.75s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.151
+    },
+    {
+      "shotIdx": "07C",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.9583s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.014
+    },
+    {
+      "shotIdx": "08A",
+      "inSec": 0,
+      "outSec": 1.7083,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.7083s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.189
+    },
+    {
+      "shotIdx": "08B",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.9583s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.043
+    },
+    {
+      "shotIdx": "08C",
+      "inSec": 0,
+      "outSec": 2.1667,
+      "reason": "forceWindow: dựng phim chỉ định 0-2.1667s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.034
+    },
+    {
+      "shotIdx": "09A",
+      "inSec": 0,
+      "outSec": 1.875,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.875s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.073
+    },
+    {
+      "shotIdx": "09B",
+      "inSec": 0,
+      "outSec": 2.9583,
+      "reason": "forceWindow: dựng phim chỉ định 0-2.9583s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.138
+    },
+    {
+      "shotIdx": "10",
+      "inSec": 0,
+      "outSec": 2.125,
+      "reason": "forceWindow: dựng phim chỉ định 0-2.125s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.161
+    },
+    {
+      "shotIdx": "11A",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "reason": "forceWindow: dựng phim chỉ định 0-1.9583s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.003
+    },
+    {
+      "shotIdx": "11B",
+      "inSec": 0,
+      "outSec": 2.0417,
+      "reason": "forceWindow: dựng phim chỉ định 0-2.0417s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.019
+    },
+    {
+      "shotIdx": "12A",
+      "inSec": 0,
+      "outSec": 3.7917,
+      "reason": "forceWindow: dựng phim chỉ định 0-3.7917s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.021
+    },
+    {
+      "shotIdx": "12B",
+      "inSec": 0,
+      "outSec": 3.7917,
+      "reason": "forceWindow: dựng phim chỉ định 0-3.7917s",
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.04
+    }
+  ],
+  "measured": {
+    "integratedLufs": -14.6,
+    "lra": 8.1,
+    "truePeakDb": -1.5
+  },
+  "warnings": [],
+  "frameCount": 1127,
+  "expectedFrameCount": 1127,
+  "encoderDupFrames": 0,
+  "encoderDropFrames": 0,
+  "loudnormMode": "static-gain",
+  "limiterCeilingDb": -1.75,
+  "limiterGainReductionDb": 4.47,
+  "integratedTargetLufs": -14.5,
+  "stemLufs": -22.18,
+  "captionCount": 5,
+  "pacing": "viral-reel",
+  "reportPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\master_20shots\\MASTER_FINAL_MOVIE_report.json",
+  "engineVersion": "premium-master-r3",
+  "createdAt": "2026-11-01T18:31:04.368Z",
+  "outBaseName": "MASTER_FINAL_MOVIE",
+  "sources": [
+    {
+      "shotIdx": "01",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_01_edit.mp4",
+      "md5": "ff3d1e0b5ab99b368468c9dc41623670",
+      "bytes": 3815373
+    },
+    {
+      "shotIdx": "01B",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_01B_edit.mp4",
+      "md5": "991a5722ae655fff061015a98ca1f3fb",
+      "bytes": 3652200
+    },
+    {
+      "shotIdx": "02",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_02_edit.mp4",
+      "md5": "722d91556473e9fc65fc99c8e7ec3cc6",
+      "bytes": 4868475
+    },
+    {
+      "shotIdx": "03",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_03_edit.mp4",
+      "md5": "b9a9d8e7f446ca2b82cf8fe1d6b5a6fe",
+      "bytes": 2816516
+    },
+    {
+      "shotIdx": "04",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_04_edit.mp4",
+      "md5": "ebfee027c9851e5b34871c7910c0c607",
+      "bytes": 3469214
+    },
+    {
+      "shotIdx": "05",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_05_edit.mp4",
+      "md5": "5ba692f58c239ba672c45d299184867c",
+      "bytes": 4954073
+    },
+    {
+      "shotIdx": "06",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_06_edit.mp4",
+      "md5": "b987de61df7cf641a7fa274518dac514",
+      "bytes": 4063630
+    },
+    {
+      "shotIdx": "07A",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_07A_edit.mp4",
+      "md5": "7c640d289f086fd2eeed40599f85f5eb",
+      "bytes": 2355569
+    },
+    {
+      "shotIdx": "07B",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_07B_edit.mp4",
+      "md5": "932c963e369d58cf90dbe60838a350a2",
+      "bytes": 4495433
+    },
+    {
+      "shotIdx": "07C",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_07C_edit.mp4",
+      "md5": "d2a45d680c1e91940ab7f45ddfb7167d",
+      "bytes": 2624639
+    },
+    {
+      "shotIdx": "08A",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_08A_edit.mp4",
+      "md5": "71ca25c18b562f35de669d967da294fa",
+      "bytes": 4206217
+    },
+    {
+      "shotIdx": "08B",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_08B_edit.mp4",
+      "md5": "1036bb92e22761a27e7f16d9bea9dafe",
+      "bytes": 5492615
+    },
+    {
+      "shotIdx": "08C",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_08C_edit.mp4",
+      "md5": "4e8aa9c6736701eb4af64d4aa26f77da",
+      "bytes": 3656115
+    },
+    {
+      "shotIdx": "09A",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_09A_edit.mp4",
+      "md5": "b9ffe90c2fff8a14ccc2f3b31b659146",
+      "bytes": 5785952
+    },
+    {
+      "shotIdx": "09B",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_09B_edit.mp4",
+      "md5": "f5bfd09240322de97eac692a1f6faac5",
+      "bytes": 10723914
+    },
+    {
+      "shotIdx": "10",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_10_edit.mp4",
+      "md5": "b13387059d669a0dcdaeedb4d774f4d0",
+      "bytes": 2448842
+    },
+    {
+      "shotIdx": "11A",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_11A_edit.mp4",
+      "md5": "c871f6544bc0ca26111a3293a1451f36",
+      "bytes": 2237941
+    },
+    {
+      "shotIdx": "11B",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_11B_edit.mp4",
+      "md5": "f3becf10310f58f6c69ed5c8576f8d71",
+      "bytes": 2835007
+    },
+    {
+      "shotIdx": "12A",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_12A_edit.mp4",
+      "md5": "3c881f7f720432453450073a4011f6db",
+      "bytes": 5523042
+    },
+    {
+      "shotIdx": "12B",
+      "videoPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\edit_20shots\\shot_12B_edit.mp4",
+      "md5": "f711e354afde5c921f3f3637378a9f04",
+      "bytes": 5811344
+    }
+  ],
+  "shots": [
+    {
+      "shotIdx": "01",
+      "inSec": 0,
+      "outSec": 1.9167,
+      "durSec": 1.9167,
+      "masterStartSec": 0,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.003,
+      "audio": {
+        "winLufs": -29.75,
+        "headLufs": -32.76,
+        "tailLufs": -30.11,
+        "offsetDb": -2.5,
+        "gainDb": 1,
+        "dramaticGainDb": 1,
+        "levelLufs": -27.97,
+        "lapIn": null,
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 1.0319,
+        "white": 1,
+        "p1Src": 10,
+        "p50Src": 76,
+        "p99Src": 232,
+        "redClipSrc": 0.271,
+        "p1Out": 7,
+        "p50Out": 71,
+        "p99Out": 230,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "01B",
+      "inSec": 0,
+      "outSec": 2.0833,
+      "durSec": 2.0833,
+      "masterStartSec": 1.9167,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.164,
+      "audio": {
+        "winLufs": -20.94,
+        "headLufs": -27.93,
+        "tailLufs": -16.35,
+        "offsetDb": -1.5,
+        "gainDb": -4.95,
+        "dramaticGainDb": -4.95,
+        "levelLufs": -17.79,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9974,
+        "white": 1,
+        "p1Src": 0,
+        "p50Src": 84,
+        "p99Src": 235,
+        "redClipSrc": 0.004,
+        "p1Out": 0,
+        "p50Out": 76,
+        "p99Out": 232,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "02",
+      "inSec": 0,
+      "outSec": 3.5417,
+      "durSec": 3.5417,
+      "masterStartSec": 4,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.009,
+      "audio": {
+        "winLufs": -20.39,
+        "headLufs": -20.36,
+        "tailLufs": -24.4,
+        "offsetDb": -1.5,
+        "gainDb": -3.24,
+        "dramaticGainDb": -3.24,
+        "levelLufs": -18.65,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9043,
+        "white": 1,
+        "p1Src": 19,
+        "p50Src": 95,
+        "p99Src": 240,
+        "redClipSrc": 2.422,
+        "p1Out": 10,
+        "p50Out": 80,
+        "p99Out": 235,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "03",
+      "inSec": 0,
+      "outSec": 2,
+      "durSec": 2,
+      "masterStartSec": 7.5417,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.021,
+      "audio": {
+        "winLufs": -18.38,
+        "headLufs": -19.93,
+        "tailLufs": -17.42,
+        "offsetDb": -1,
+        "gainDb": -4.89,
+        "dramaticGainDb": -4.89,
+        "levelLufs": -17.54,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 1.0223,
+        "white": 1,
+        "p1Src": 4,
+        "p50Src": 77,
+        "p99Src": 248,
+        "redClipSrc": 0.068,
+        "p1Out": 3,
+        "p50Out": 71,
+        "p99Out": 242,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "04",
+      "inSec": 0,
+      "outSec": 2,
+      "durSec": 2,
+      "masterStartSec": 9.5417,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.109,
+      "audio": {
+        "winLufs": -17.33,
+        "headLufs": -19.7,
+        "tailLufs": -16.88,
+        "offsetDb": 0.5,
+        "gainDb": -1.57,
+        "dramaticGainDb": -1.57,
+        "levelLufs": -16.53,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0.025,
+        "gamma": 0.8594,
+        "white": 1,
+        "p1Src": 31,
+        "p50Src": 104,
+        "p99Src": 223,
+        "redClipSrc": 0.443,
+        "p1Out": 12,
+        "p50Out": 79,
+        "p99Out": 218,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "05",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "durSec": 1.9583,
+      "masterStartSec": 11.5417,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.023,
+      "audio": {
+        "winLufs": -16.32,
+        "headLufs": -15.5,
+        "tailLufs": -16.49,
+        "offsetDb": -0.5,
+        "gainDb": -5.01,
+        "dramaticGainDb": -5.01,
+        "levelLufs": -15.67,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0.025,
+        "gamma": 1.057,
+        "white": 1,
+        "p1Src": 20,
+        "p50Src": 79,
+        "p99Src": 242,
+        "redClipSrc": 4.809,
+        "p1Out": 11,
+        "p50Out": 71,
+        "p99Out": 238,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "06",
+      "inSec": 0,
+      "outSec": 3.7917,
+      "durSec": 3.7917,
+      "masterStartSec": 13.5,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.019,
+      "audio": {
+        "winLufs": -20.49,
+        "headLufs": -33.92,
+        "tailLufs": -21.68,
+        "offsetDb": 0,
+        "gainDb": 1.84,
+        "dramaticGainDb": 2.01,
+        "levelLufs": -18.82,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9876,
+        "white": 1,
+        "p1Src": 6,
+        "p50Src": 87,
+        "p99Src": 243,
+        "redClipSrc": 0.56,
+        "p1Out": 4,
+        "p50Out": 80,
+        "p99Out": 238,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "07A",
+      "inSec": 0,
+      "outSec": 1.5833,
+      "durSec": 1.5833,
+      "masterStartSec": 17.2917,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.111,
+      "audio": {
+        "winLufs": -19.78,
+        "headLufs": -18.17,
+        "tailLufs": -20.82,
+        "offsetDb": 0.5,
+        "gainDb": 0.67,
+        "dramaticGainDb": 1.4,
+        "levelLufs": -20.55,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": [
+          {
+            "atSec": 1.417,
+            "durMs": 25,
+            "attDb": 0.79
+          }
+        ]
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 1.001,
+        "white": 1,
+        "p1Src": 8,
+        "p50Src": 79,
+        "p99Src": 234,
+        "redClipSrc": 0.033,
+        "p1Out": 5,
+        "p50Out": 71,
+        "p99Out": 232,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "07B",
+      "inSec": 0,
+      "outSec": 1.75,
+      "durSec": 1.75,
+      "masterStartSec": 18.875,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.151,
+      "audio": {
+        "winLufs": -21.02,
+        "headLufs": -19.96,
+        "tailLufs": -25.93,
+        "offsetDb": 1,
+        "gainDb": -0.79,
+        "dramaticGainDb": 1.5,
+        "levelLufs": -19.47,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0.025,
+        "gamma": 1.0417,
+        "white": 1,
+        "p1Src": 18,
+        "p50Src": 84,
+        "p99Src": 239,
+        "redClipSrc": 4.474,
+        "p1Out": 9,
+        "p50Out": 77,
+        "p99Out": 235,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "07C",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "durSec": 1.9583,
+      "masterStartSec": 20.625,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.014,
+      "audio": {
+        "winLufs": -27.68,
+        "headLufs": -24.58,
+        "tailLufs": -32.78,
+        "offsetDb": -1.5,
+        "gainDb": 3.19,
+        "dramaticGainDb": 3.19,
+        "levelLufs": -26.3,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9976,
+        "white": 1,
+        "p1Src": 13,
+        "p50Src": 84,
+        "p99Src": 234,
+        "redClipSrc": 0.215,
+        "p1Out": 9,
+        "p50Out": 76,
+        "p99Out": 232,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "08A",
+      "inSec": 0,
+      "outSec": 1.7083,
+      "durSec": 1.7083,
+      "masterStartSec": 22.5833,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.189,
+      "audio": {
+        "winLufs": -21.3,
+        "headLufs": -16.96,
+        "tailLufs": -21.45,
+        "offsetDb": 1,
+        "gainDb": 0.5,
+        "dramaticGainDb": 1.26,
+        "levelLufs": -20.66,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0.015,
+        "gamma": 1.029,
+        "white": 1,
+        "p1Src": 16,
+        "p50Src": 79,
+        "p99Src": 219,
+        "redClipSrc": 0.381,
+        "p1Out": 9,
+        "p50Out": 71,
+        "p99Out": 217,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "08B",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "durSec": 1.9583,
+      "masterStartSec": 24.2917,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.043,
+      "audio": {
+        "winLufs": -22.55,
+        "headLufs": -21.08,
+        "tailLufs": -18.37,
+        "offsetDb": 1.5,
+        "gainDb": 0.94,
+        "dramaticGainDb": 1.11,
+        "levelLufs": -20.64,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0.015,
+        "gamma": 1.1294,
+        "white": 1,
+        "p1Src": 13,
+        "p50Src": 71,
+        "p99Src": 242,
+        "redClipSrc": 4.886,
+        "p1Out": 9,
+        "p50Out": 72,
+        "p99Out": 238,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "08C",
+      "inSec": 0,
+      "outSec": 2.1667,
+      "durSec": 2.1667,
+      "masterStartSec": 26.25,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.034,
+      "audio": {
+        "winLufs": -26.69,
+        "headLufs": -39.25,
+        "tailLufs": -35.11,
+        "offsetDb": -1.5,
+        "gainDb": 3.95,
+        "dramaticGainDb": 3.95,
+        "levelLufs": -25.94,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": [
+          {
+            "atSec": 1.158,
+            "durMs": 25,
+            "attDb": 1.04
+          }
+        ]
+      },
+      "exposure": {
+        "black": 0.015,
+        "gamma": 1.0201,
+        "white": 1,
+        "p1Src": 16,
+        "p50Src": 83,
+        "p99Src": 223,
+        "redClipSrc": 0.5,
+        "p1Out": 9,
+        "p50Out": 75,
+        "p99Out": 223,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "09A",
+      "inSec": 0,
+      "outSec": 1.875,
+      "durSec": 1.875,
+      "masterStartSec": 28.4167,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.073,
+      "audio": {
+        "winLufs": -21.69,
+        "headLufs": -27.96,
+        "tailLufs": -23.39,
+        "offsetDb": 1.5,
+        "gainDb": 2.07,
+        "dramaticGainDb": 2.07,
+        "levelLufs": -20.09,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 1.0286,
+        "white": 1,
+        "p1Src": 14,
+        "p50Src": 76,
+        "p99Src": 237,
+        "redClipSrc": 2.972,
+        "p1Out": 10,
+        "p50Out": 72,
+        "p99Out": 234,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "09B",
+      "inSec": 0,
+      "outSec": 2.9583,
+      "durSec": 2.9583,
+      "masterStartSec": 30.2917,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.138,
+      "audio": {
+        "winLufs": -20.09,
+        "headLufs": -18.35,
+        "tailLufs": -27.36,
+        "offsetDb": 2,
+        "gainDb": -0.3,
+        "dramaticGainDb": -0.3,
+        "levelLufs": -18.14,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 1.106,
+        "white": 1,
+        "p1Src": 4,
+        "p50Src": 70,
+        "p99Src": 235,
+        "redClipSrc": 0.294,
+        "p1Out": 4,
+        "p50Out": 72,
+        "p99Out": 234,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "10",
+      "inSec": 0,
+      "outSec": 2.125,
+      "durSec": 2.125,
+      "masterStartSec": 33.25,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.161,
+      "audio": {
+        "winLufs": -24.61,
+        "headLufs": -23.92,
+        "tailLufs": -41.28,
+        "offsetDb": -1.5,
+        "gainDb": 0.67,
+        "dramaticGainDb": 0.67,
+        "levelLufs": -23.73,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0.025,
+        "gamma": 1.045,
+        "white": 1,
+        "p1Src": 37,
+        "p50Src": 84,
+        "p99Src": 234,
+        "redClipSrc": 1.192,
+        "p1Out": 25,
+        "p50Out": 77,
+        "p99Out": 231,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "11A",
+      "inSec": 0,
+      "outSec": 1.9583,
+      "durSec": 1.9583,
+      "masterStartSec": 35.375,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.003,
+      "audio": {
+        "winLufs": -22.34,
+        "headLufs": -23.28,
+        "tailLufs": -20.57,
+        "offsetDb": -2.5,
+        "gainDb": -6.7,
+        "dramaticGainDb": -6.7,
+        "levelLufs": -21.02,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9947,
+        "white": 1,
+        "p1Src": 15,
+        "p50Src": 81,
+        "p99Src": 233,
+        "redClipSrc": 0.164,
+        "p1Out": 10,
+        "p50Out": 74,
+        "p99Out": 231,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "11B",
+      "inSec": 0,
+      "outSec": 2.0417,
+      "durSec": 2.0417,
+      "masterStartSec": 37.3333,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.019,
+      "audio": {
+        "winLufs": -26.38,
+        "headLufs": -33.07,
+        "tailLufs": -28.27,
+        "offsetDb": -2.5,
+        "gainDb": -0.07,
+        "dramaticGainDb": -0.07,
+        "levelLufs": -25.77,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9579,
+        "white": 1,
+        "p1Src": 0,
+        "p50Src": 90,
+        "p99Src": 222,
+        "redClipSrc": 0.016,
+        "p1Out": 0,
+        "p50Out": 80,
+        "p99Out": 221,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "12A",
+      "inSec": 0,
+      "outSec": 3.7917,
+      "durSec": 3.7917,
+      "masterStartSec": 39.375,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.021,
+      "audio": {
+        "winLufs": -20.62,
+        "headLufs": -22.23,
+        "tailLufs": -21.58,
+        "offsetDb": -2,
+        "gainDb": -6.94,
+        "dramaticGainDb": -6.94,
+        "levelLufs": -17.67,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9926,
+        "white": 1,
+        "p1Src": 9,
+        "p50Src": 81,
+        "p99Src": 238,
+        "redClipSrc": 1.199,
+        "p1Out": 6,
+        "p50Out": 72,
+        "p99Out": 234,
+        "redClipOut": 0
+      }
+    },
+    {
+      "shotIdx": "12B",
+      "inSec": 0,
+      "outSec": 3.7917,
+      "durSec": 3.7917,
+      "masterStartSec": 43.1667,
+      "forced": true,
+      "hflip": false,
+      "fxMid": 0.04,
+      "audio": {
+        "winLufs": -25.19,
+        "headLufs": -34.42,
+        "tailLufs": -43.62,
+        "offsetDb": -2.5,
+        "gainDb": -1.71,
+        "dramaticGainDb": -1.71,
+        "levelLufs": -23.4,
+        "lapIn": {
+          "kind": "xfade",
+          "preBlocks": 12,
+          "postBlocks": 13
+        },
+        "repairs": []
+      },
+      "exposure": {
+        "black": 0,
+        "gamma": 0.9946,
+        "white": 1,
+        "p1Src": 0,
+        "p50Src": 79,
+        "p99Src": 243,
+        "redClipSrc": 0.322,
+        "p1Out": 0,
+        "p50Out": 72,
+        "p99Out": 238,
+        "redClipOut": 0
+      }
+    }
+  ],
+  "audio": {
+    "policy": "gain-map + crossfade + static gain + true-peak limiter (no dynamic loudnorm)",
+    "crossfadeFrames": 5,
+    "gainMap": true,
+    "gainMapSpread": 3,
+    "limiterSlackDb": 1,
+    "limiterReleaseMs": 40,
+    "limiterLimitedBlockPct": 3.26,
+    "limiterOverBudgetBlockPct": 0.11,
+    "goalSearch": [
+      {
+        "goalLufs": -14.5,
+        "integratedLufs": -14.6,
+        "lra": 8.1,
+        "truePeakDb": -1.5,
+        "maxGr": 4.47,
+        "overPct": 0.11,
+        "accepted": true
+      }
+    ],
+    "plan": {
+      "spreadNeg": 3,
+      "spreadPos": 0,
+      "cutWeight": 0.3,
+      "predicted": {
+        "integratedLufs": -22.25,
+        "lra": 7.99,
+        "cutJumpMedianDb": 2.61,
+        "maxGainReductionDb": 4.52,
+        "ambienceGainDb": -5.73,
+        "limitedBlockPct": 11.46,
+        "overBudgetBlockPct": 0.12
+      },
+      "ok": true
+    },
+    "staticGainDb": 8,
+    "limiterCeilingDb": -1.75,
+    "limiterMaxGainReductionDb": 4.47,
+    "targetLufs": -14.5,
+    "goalLufs": -14.5,
+    "premix": {
+      "integratedLufs": -22.2,
+      "truePeakDb": -5.3,
+      "lra": 8.4
+    },
+    "ambience": {
+      "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_premium_v2\\audio_r3\\ambience.wav",
+      "lufs": -31.4,
+      "gainDb": -5.78,
+      "belowStemLu": 15
+    },
+    "music": {
+      "path": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\bgm_custom_dino.wav",
+      "lufs": -15.5,
+      "gainDb": -16.68
+    },
+    "cutJumps": {
+      "cutsSec": [
+        1.917,
+        4,
+        7.542,
+        9.542,
+        11.542,
+        13.5,
+        17.292,
+        18.875,
+        20.625,
+        22.583,
+        24.292,
+        26.25,
+        28.417,
+        30.292,
+        33.25,
+        35.375,
+        37.333,
+        39.375,
+        43.167
+      ],
+      "jumpsDb": [
+        -3.18,
+        -1.97,
+        2.41,
+        1.03,
+        -2.12,
+        -5.29,
+        0.67,
+        -0.7,
+        5.05,
+        9.34,
+        -1.81,
+        -12.05,
+        1,
+        2.1,
+        1.68,
+        2.43,
+        -2.97,
+        -0.25,
+        -6.26
+      ],
+      "medianAbsDb": 2.12,
+      "maxAbsDb": 12.05
+    },
+    "premixCutJumps": {
+      "cutsSec": [
+        1.917,
+        4,
+        7.542,
+        9.542,
+        11.542,
+        13.5,
+        17.292,
+        18.875,
+        20.625,
+        22.583,
+        24.292,
+        26.25,
+        28.417,
+        30.292,
+        33.25,
+        35.375,
+        37.333,
+        39.375,
+        43.167
+      ],
+      "jumpsDb": [
+        -3.16,
+        -1.97,
+        2.42,
+        1.02,
+        -2.13,
+        -5.39,
+        1.08,
+        -1.23,
+        5.07,
+        10.9,
+        -1.84,
+        -12.57,
+        0.98,
+        2.02,
+        1.74,
+        2.27,
+        -2.96,
+        -0.28,
+        -6.2
+      ],
+      "medianAbsDb": 2.13,
+      "maxAbsDb": 12.57
+    }
+  },
+  "picture": {
+    "toneCurve": "0/0 0.06/0.04 0.50/0.50 0.88/0.88 1/0.97",
+    "exposureNormalize": true,
+    "targetP50": 76,
+    "p1Luma": 0,
+    "p50Luma": 74,
+    "p99Luma": 234,
+    "redClipPct": 0.052,
+    "cornerCentreRatio": 1.95,
+    "cutExposureJumps": [
+      -1.3,
+      -14.2,
+      -1.1,
+      -15.2,
+      8.2,
+      -4.2,
+      7,
+      -1.9,
+      -6.1,
+      12.7,
+      4.4,
+      -5.8,
+      -1.7,
+      -22.8,
+      -21.6,
+      -3.8,
+      3.9,
+      -5.3,
+      9.6
+    ],
+    "medianCutExposureJump": 5.8
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "projectId": "f36276b8-6ac4-4159-8e2b-d9f1e58fda34",
+  "auditedAt": "2026-11-01T18:31:04.419Z",
+  "methodology": "5-Gate Fail-Closed Multi-Image Side-by-Side Reference Audit (Pixar On-Model + Mascelli/Katz 5 C's + Walter Murch Rule of Six + ASC Lighting + EBU R128)",
+  "gates": {
+    "Gate1_NarrativeTriadCheck": {
+      "status": "PASS (20/20 Shots)",
+      "authority": "Walter Murch ACE (In the Blink of an Eye) & Hollywood 3-Beat Action Triad",
+      "verifiedTriads": [
+        "Triad 1 (Discovery -> Interruption): Shot 01 (Ridge Overlook) -> Shot 01B (Drinks & Cyan Bubbles Erupt) -> Shot 02 (\"Don't make me roll up my sleeves!\")",
+        "Triad 2 (First Attack — Jaw Snap): Shot 07A (Tide Opens Jaws) -> Shot 07B (Two-Shot Jaw Snap Over Ducking Ember) -> Shot 07C (Ember Breathes Relief)",
+        "Triad 3 (Reversal — Tail Knockdown): Shot 08A (Tide Spins & Whips Tail) -> Shot 08B (Two-Shot Tail Slams Ember Into Mud) -> Shot 08C (Ember In Mud Opens Fierce Eye)",
+        "Triad 4 (Climax — Headbutt Charge): Shot 09A (Ember Parallax Sprint) -> Shot 09B (Two-Shot Headbutt Rams Tide's Chest) -> Shot 10 (Tide Sitting Dazed In Water)",
+        "Triad 5 (Mercy & Finale): Shot 11A (Ember's Eye Softens) -> Shot 11B (Ember Invites Tide To Pool) -> Shot 12A (\"High five... oh wait\") -> Shot 12B (Both Drink Together)"
+      ]
+    },
+    "Gate2_CharacterAndScaleBibleCheck": {
+      "status": "PASS (100% Unified Pixar Chibi-3D & 1.0:1.15 Scale Lock)",
+      "authority": "Frank Thomas & Ollie Johnston (The Illusion of Life) & Pixar Character Model Packet",
+      "assetsVerified": [
+        "02_char1_turnaround.png (Ember Bipedal Chibi-3D Turnaround)",
+        "02_char2_chibi3d_turnaround.png (Tide Bipedal Chibi-3D Turnaround)",
+        "02_cast_lineup_master_chibi3d.png (1.0m : 1.15m Comparative Scale Lineup)",
+        "03B_block_standoff_twoshot.png (Master Bipedal 2-Character Arena Blocking Plate)"
+      ]
+    },
+    "Gate3_SideBySideKeyframeAudits": {
+      "Shot_01B": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7,
+        "reasonVi": "Ember khớp chuẩn thiết kế gốc: lưng xám sọc cam, hàm và bụng màu kem, đứng vững bằng hai chân sau. Bối cảnh ốc đảo núi lửa và bong bóng lam thể hiện chính xác."
+      },
+      "Shot_05": {
+        "attempt": 4,
+        "mediaId": "5b8a87d0-def2-4e94-abe9-7b8fc6f51f8e",
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate3_v14_shot_05_triplate_attempt4.png",
+        "pass": false,
+        "characterLockPass": true,
+        "environmentColorLockPass": true,
+        "noUnwantedWeatherOrPalmTreesPass": true,
+        "score": 7,
+        "summaryVi": "Nhân vật chuẩn tỷ lệ Chibi-3D và màu sắc. Môi trường hoàng hôn cùng bùn ốc đảo khớp hoàn toàn với bản mẫu.",
+        "fixInstruction": "Không có. Đạt yêu cầu chất lượng tổng thể."
+      },
+      "Shot_06": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7,
+        "reasonVi": "Tide khớp chuẩn mẫu về dáng mõm dài, vây lưng sọc xanh, mắt và màu da bụng."
+      },
+      "Shot_07A": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7.2,
+        "reasonVi": "Tide khớp chuẩn model gốc: mõm dài Spinosaurus, hàm dưới màu kem, sọc cyan trên cổ và cánh buồm chính xác, bối cảnh đầm lầy hoàng hôn đạt yêu cầu."
+      },
+      "Shot_07B": {
+        "attempt": 4,
+        "mediaId": "2a3d0408-6af7-4cf1-b49c-1afe8498fc1a",
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate3_v14_shot_07B_triplate_attempt4.png",
+        "pass": false,
+        "characterLockPass": true,
+        "environmentColorLockPass": true,
+        "noUnwantedWeatherOrPalmTreesPass": true,
+        "score": 7.2,
+        "summaryVi": "Keyframe khớp chính xác thiết kế nhân vật Chibi-3D, ánh sáng hoàng hôn và phông nền ốc đảo từ tấm chuẩn.",
+        "fixInstruction": "None. Keyframe satisfies all character, environmental, and pose requirements."
+      },
+      "Shot_08A": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7,
+        "reasonVi": "Tide chuẩn model với vây lưng sọc cyan, bụng kem, đứng hai chân và vung đuôi tạo bùn đúng kịch bản."
+      },
+      "Shot_08B": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7,
+        "reasonVi": "Cả Ember và Tide đều giữ đúng thiết kế gốc về màu sắc, hàm, vây lưng và dáng đứng. Bối cảnh ốc đảo núi lửa cùng hành động quất đuôi chuẩn xác theo kịch bản."
+      },
+      "Shot_12B": {
+        "pass": true,
+        "bipedalPass": true,
+        "onModelPass": true,
+        "actionAndScalePass": true,
+        "score": 7,
+        "reasonVi": "Cả hai nhân vật giữ đúng dáng đứng bipedal, tay co trước ngực không chạm đất, đúng tỷ lệ chuẩn và thể hiện đúng hành động cúi đầu uống nước."
+      },
+      "Shot_02": {
+        "attempt": 4,
+        "mediaId": "824a5938-2d41-4dee-8b3f-e45f10a91d54",
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate3_v14_shot_02_triplate_attempt4.png",
+        "pass": false,
+        "characterLockPass": true,
+        "environmentColorLockPass": true,
+        "noUnwantedWeatherOrPalmTreesPass": true,
+        "score": 7,
+        "summaryVi": "Nhân vật Ember và bối cảnh vách đá hoàng hôn khớp chuẩn xác với thiết kế gốc và ánh sáng môi trường mẫu.",
+        "fixInstruction": "None. Keyframe satisfies all character, environmental, and color continuity requirements."
+      },
+      "Shot_03": {
+        "attempt": 4,
+        "mediaId": "28892051-ba8b-4581-b0aa-1b561babc63d",
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate3_v14_shot_03_triplate_attempt4.png",
+        "pass": false,
+        "characterLockPass": true,
+        "environmentColorLockPass": true,
+        "noUnwantedWeatherOrPalmTreesPass": true,
+        "score": 7,
+        "summaryVi": "Khung hình đạt chuẩn: Ember và Tide giữ đúng tỷ lệ Chibi-3D, màu sắc và vị trí hai bên hồ; môi trường hoàng hôn núi lửa khớp hoàn toàn với Center Panel.",
+        "fixInstruction": "Không có yêu cầu chỉnh sửa; khung hình đạt tính liên tục tuyệt đối."
+      },
+      "Shot_07C": {
+        "attempt": 4,
+        "mediaId": "0ed9191d-13e7-4d40-9649-d63e5fd24d3a",
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate3_v14_shot_07C_triplate_attempt4.png",
+        "pass": false,
+        "characterLockPass": true,
+        "environmentColorLockPass": true,
+        "noUnwantedWeatherOrPalmTreesPass": true,
+        "score": 7,
+        "summaryVi": "Khung hình đạt chuẩn character lock và ánh sáng golden-hour từ tấm nền trung tâm; không có hiệu ứng thời tiết sai lệch.",
+        "fixInstruction": "Không có lỗi tồn đọng; giữ nguyên thiết lập cho các khung hình tiếp theo."
+      },
+      "Shot_10": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7,
+        "reasonVi": "Mẫu Tide khớp chuẩn xác: mõm Spinosaurus thon dài, hàm dưới màu kem, cánh buồm và họa tiết sọc xanh ngọc đồng nhất với bản gốc."
+      },
+      "Shot_12A": {
+        "attempt": 4,
+        "mediaId": "ae4ccdf3-8349-4f27-a9a8-9f087a369cf2",
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate3_v14_shot_12A_triplate_attempt4.png",
+        "pass": false,
+        "characterLockPass": true,
+        "environmentColorLockPass": true,
+        "noUnwantedWeatherOrPalmTreesPass": true,
+        "score": 7,
+        "summaryVi": "Keyframe đạt chuẩn. Nhân vật Ember đồng nhất về thiết kế, màu sắc và tư thế giơ tay. Hậu cảnh vách đá bazan và ánh sáng hoàng hôn khớp chính xác với đĩa môi trường mẫu.",
+        "fixInstruction": "None. The candidate keyframe meets continuity and shot-specific requirements."
+      },
+      "Shot_09B": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7,
+        "reasonVi": "Hai nhân vật Ember và Tide giữ đúng tỷ lệ và màu sắc thiết kế gốc, hành động tương tác và bối cảnh ốc đảo núi lửa chuẩn xác."
+      },
+      "Shot_11B": {
+        "pass": true,
+        "colorAndJawMatch": true,
+        "snoutAndSailMatch": true,
+        "bipedalMatch": true,
+        "score": 7,
+        "reasonVi": "Cả Ember và Tide đều giữ đúng thiết kế gốc về màu da, sọc, hàm dưới và dáng đứng bipedal trong bối cảnh ốc đảo hoàng hôn."
+      },
+      "Shot_09A": {
+        "attempt": 4,
+        "mediaId": "342fd3d2-07e3-4160-b050-5e0ce8b0b421",
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate3_v14_shot_09A_triplate_attempt4.png",
+        "pass": false,
+        "characterLockPass": true,
+        "environmentColorLockPass": true,
+        "noUnwantedWeatherOrPalmTreesPass": true,
+        "score": 7,
+        "summaryVi": "Khung hình tái hiện chính xác nhân vật Ember và bối cảnh ốc đảo núi lửa hoàng hôn, ánh sáng và chi tiết bùn đất đạt chuẩn.",
+        "fixInstruction": "Không cần chỉnh sửa, chất lượng đạt yêu cầu."
+      }
+    },
+    "Gate4_MultimodalVideoCouncilAudits": {
+      "Shot_01B": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 1.95,
+        "summaryVi": "Ember giữ đúng chuẩn thiết kế chibi 3D, đứng bằng hai chân sau và tay không chạm đất. Màu sắc, chi tiết sọc cam và bọt nước phát sáng khớp yêu cầu."
+      },
+      "Shot_05": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 2.1,
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate4_v14_shot_05_triplate_1.png",
+        "summaryVi": "Nhân vật giữ đúng tỷ lệ Chibi và màu sắc mẫu, bối cảnh ốc đảo hoàng hôn đồng bộ chuẩn xác với đĩa cảnh, không phát hiện biến dạng."
+      },
+      "Shot_06": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 3.9,
+        "summaryVi": "Tide giữ đúng tạo hình Chibi-3D, chuẩn màu da xanh, mắt xanh lá và vây buồm sọc cyan, không bị biến dạng."
+      },
+      "Shot_07A": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 1.95,
+        "summaryVi": "Nhân vật Tide giữ đúng tỷ lệ Chibi-3D, mõm dài chuẩn Spinosaurus, các sọc cyan và vây lưng khớp hoàn toàn với thiết kế gốc mà không bị biến dạng."
+      },
+      "Shot_07B": {
+        "pass": true,
+        "score": 6.8,
+        "beat_in": 0.05,
+        "beat_out": 2,
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate4_v14_shot_07B_triplate_2.png",
+        "summaryVi": "Khung hình tái hiện chính xác bối cảnh ốc đảo hoàng hôn và duy trì đúng tỷ lệ thiết kế 3D Chibi của hai nhân vật mà không bị biến dạng."
+      },
+      "Shot_08A": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 2,
+        "summaryVi": "Tide giữ chuẩn tạo hình Chibi-3D, màu sắc và sọc cyan khớp bản mẫu. Hành động quất đuôi trên bùn ướt thể hiện tốt."
+      },
+      "Shot_08B": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 2.05,
+        "summaryVi": "Thiết kế nhân vật Chibi-3D đúng mẫu gốc, không bị biến dạng thực tế. Môi trường ốc đảo núi lửa và hành động quất đuôi trúng bụng chuẩn kịch bản."
+      },
+      "Shot_12B": {
+        "pass": true,
+        "score": 7.2,
+        "beat_in": 2.1,
+        "beat_out": 4.2,
+        "summaryVi": "Nhân vật giữ đúng tỷ lệ chibi 3D, bám sát mẫu gốc và không lỗi giải phẫu. Nhịp cúi uống nước tự nhiên, chuyển động mượt mà."
+      },
+      "Shot_02": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 3.65,
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate4_v14_shot_02_triplate_1.png",
+        "summaryVi": "Nhân vật Ember chuẩn tạo hình và màu sắc Chibi 3D; bối cảnh duy trì đúng ánh sáng hoàng hôn và chi tiết vách đá, dương xỉ từ tấm nền."
+      },
+      "Shot_03": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 2.1,
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate4_v14_shot_03_triplate_1.png",
+        "summaryVi": "Nhân vật giữ đúng tỷ lệ Chibi 3D từ bảng mẫu. Bối cảnh và ánh sáng hoàng hôn khớp chính xác với đĩa cảnh mẫu, không có biến dạng hay chi tiết sai lệch."
+      },
+      "Shot_07C": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 1.95,
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate4_v14_shot_07C_triplate_1.png",
+        "summaryVi": "Nhân vật Ember chuẩn model và màu sắc, hướng mặt sang phải hợp lý. Môi trường ánh sáng hoàng hôn khớp chính xác với đĩa cảnh mẫu, không có lỗi thời tiết."
+      },
+      "Shot_10": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 2.1,
+        "summaryVi": "Tide giữ chuẩn tỷ lệ Chibi-3D, màu da xanh và họa tiết sọc dạ quang khớp bản mẫu, tư thế ngồi trong nước đúng yêu cầu."
+      },
+      "Shot_12A": {
+        "pass": true,
+        "score": 7.2,
+        "beat_in": 0.05,
+        "beat_out": 4.2,
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate4_v14_shot_12A_triplate_3.png",
+        "summaryVi": "Nhân vật giữ chuẩn tạo hình Chibi 3D và màu sắc từ bảng mẫu. Khung cảnh, góc sáng và hiệu ứng bokeh hoàng hôn bám sát đĩa cảnh mẫu mà không có biến dạng."
+      },
+      "Shot_09B": {
+        "pass": true,
+        "score": 7.2,
+        "beat_in": 0.05,
+        "beat_out": 2.1,
+        "summaryVi": "Hai nhân vật giữ chuẩn tỷ lệ Chibi-3D, đúng màu sắc và chủng loài. Phân cảnh thể hiện đúng hành động Ember húc đầu vào Tide tại ốc đảo núi lửa."
+      },
+      "Shot_11B": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 2.1,
+        "summaryVi": "Hai nhân vật giữ đúng tạo hình Chibi-3D, màu sắc và tỷ lệ từ master sheet, bối cảnh ốc đảo hoàng hôn khớp mô tả."
+      },
+      "Shot_09A": {
+        "pass": true,
+        "score": 7,
+        "beat_in": 0.05,
+        "beat_out": 2,
+        "triPlatePath": "d:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\gate3_side_by_side_plates\\gate4_v14_shot_09A_triplate_1.png",
+        "summaryVi": "Nhân vật Ember giữ đúng tỷ lệ thiết kế khi di chuyển sang phải. Bối cảnh duy trì chuẩn xác ánh sáng hoàng hôn và chi tiết từ đĩa cảnh gốc, không có hiện tượng biến dạng."
+      }
+    },
+    "Gate5_MasterBroadcastSpecs": {
+      "status": "PASS",
+      "authority": "EBU R128 / ITU-R BS.1770-4 & SMPTE 24fps Digital Cinema (Pro Director Cut V3 + 3-Act Score + Uniform DI)",
+      "masterPath": "D:\\myProject\\test-AI\\output\\vscode_runs\\dino_oasis_new_project\\master_20shots\\MASTER_FINAL_MOVIE.mp4",
+      "resolution": "1920x1080",
+      "fps": 24,
+      "durationSec": 46.958,
+      "shotCount": 20,
+      "frameCount": 1127,
+      "expectedFrameCount": 1127,
+      "encoderDupFrames": 0,
+      "encoderDropFrames": 0,
+      "loudness": {
+        "integratedLufs": -14.6,
+        "lra": 8.1,
+        "truePeakDb": -1.5
+      },
+      "cutJumpMedianDb": 2.12,
+      "picture": {
+        "toneCurve": "0/0 0.06/0.04 0.50/0.50 0.88/0.88 1/0.97",
+        "exposureNormalize": true,
+        "targetP50": 76,
+        "p1Luma": 0,
+        "p50Luma": 74,
+        "p99Luma": 234,
+        "redClipPct": 0.052,
+        "cornerCentreRatio": 1.95,
+        "cutExposureJumps": [
+          -1.3,
+          -14.2,
+          -1.1,
+          -15.2,
+          8.2,
+          -4.2,
+          7,
+          -1.9,
+          -6.1,
+          12.7,
+          4.4,
+          -5.8,
+          -1.7,
+          -22.8,
+          -21.6,
+          -3.8,
+          3.9,
+          -5.3,
+          9.6
+        ],
+        "medianCutExposureJump": 5.8
+      },
+      "warnings": []
+    }
+  },
+  "fourMasterSheetsUsed": {
+    "lineup": "02_cast_lineup_master_chibi3d.png (054e0edd-999b-4b7a-9a90-9260c490c401)",
+    "char1Turnaround": "02_char1_turnaround.png (ad8465b2-c2bd-4dc3-84e8-6d6958b953f1)",
+    "char1MasterSheet": "02_char1_master_sheet.png (d456815c-0b3d-4a68-b75f-11a8daf4734d)",
+    "char2Turnaround": "02_char2_turnaround.png (7e85122a-9113-402a-88f3-de0086826b31)",
+    "char2MasterSheet": "02_char2_master_sheet.png (3cd83d36-859d-4eab-9e50-8c257fa7c07b)"
+  }
+}

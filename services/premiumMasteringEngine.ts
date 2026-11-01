@@ -68,6 +68,8 @@ export interface MasterShotInput {
   fxSpans?: FxSpan[];
   /** Ghi đè độ lệch mức kịch tính (dB) của cảnh trong bản đồ gain. */
   gainOffsetDb?: number;
+  /** Sàn gamma riêng của cảnh: nền sáng (hồ, trời) kéo p50 cả khung lên làm nhân vật tối bị dìm đen, cảnh đó phải đặt sàn cao hơn 0.75. */
+  exposureGammaFloor?: number;
 }
 
 export interface MasterOptions {
@@ -1271,9 +1273,10 @@ function assTime(sec: number): string {
 }
 
 function buildAssHeader(W: number, H: number, title: string): string {
-  const fontSize = Math.round(0.043 * Math.min(W, H));
-  const outline = Math.max(2, Math.round(fontSize * 0.07));
-  const marginV = Math.round(H * (H > W ? 0.15 : 0.06));
+  const fontSize = Math.round(0.048 * Math.min(W, H));
+  const outline = Math.max(3, Math.round(fontSize * 0.085));
+  const shadow = Math.max(2, Math.round(fontSize * 0.04));
+  const marginV = Math.round(H * (H > W ? 0.15 : 0.065));
   const marginLR = Math.round(W * 0.06);
   return [
     '[Script Info]',
@@ -1287,7 +1290,7 @@ function buildAssHeader(W: number, H: number, title: string): string {
     '',
     '[V4+ Styles]',
     'Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding',
-    `Style: Dialogue,Arial,${fontSize},&H00FFFFFF,&H000000FF,&H00101010,&H8C000000,-1,0,0,0,100,100,0,0,1,${outline},1,2,${marginLR},${marginLR},${marginV},1`,
+    `Style: Dialogue,Arial,${fontSize},&H00FFFFFF,&H000000FF,&H00080808,&HA8000000,-1,0,0,0,100,100,0,0,1,${outline},${shadow},2,${marginLR},${marginLR},${marginV},1`,
     '',
     '[Events]',
     'Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text',
@@ -1406,7 +1409,7 @@ export function planExposure(
   const target = Number.isFinite(o.targetP50) ? Number(o.targetP50) : 80;
   const tol = Number.isFinite(o.tolerance) ? Number(o.tolerance) : 4;
   const [gMin, gMax] = o.gammaRange || [0.85, 1.35];
-  const maxB = Number.isFinite(o.maxBlack) ? Number(o.maxBlack) : 0.08;
+  const maxB = Number.isFinite(o.maxBlack) ? Number(o.maxBlack) : 0.025;
   const maxRed = Number.isFinite(o.maxRedClip) ? Number(o.maxRedClip) : 0.003;
   const nPix = Math.floor(rgb.length / 3);
   const step = Math.max(1, Math.floor(nPix / 120000));
@@ -2988,7 +2991,8 @@ export function masterFilm(shots: MasterShotInput[], opts: MasterOptions): Maste
   if (exposureOn) {
     for (const s of segs) {
       const rgb = sampleFramesRgb(ff, s.shot.videoPath, s.win.inSec, s.win.outSec, 10);
-      s.exposure = rgb ? planExposure(rgb, { targetP50: targetP50, tolerance: 4, curve: toneCurve || false }) : null;
+      const gammaFloor = s.shot.exposureGammaFloor;
+      s.exposure = rgb ? planExposure(rgb, { targetP50: targetP50, tolerance: 4, curve: toneCurve || false, ...(gammaFloor ? { gammaRange: [gammaFloor, 1.35] as [number, number] } : {}) }) : null;
       if (!s.exposure) warnings.push(`Shot ${s.shot.shotIdx}: không lấy được khung mẫu để chuẩn hoá phơi sáng.`);
       else if (s.exposure.p50Out > targetP50 + 4) warnings.push(`Shot ${s.shot.shotIdx}: p50 sau chuẩn hoá vẫn ${s.exposure.p50Out} (> ${targetP50 + 4}) dù gamma ${s.exposure.gamma}.`);
       if (s.exposure && rgb && flareMax > 0) {
