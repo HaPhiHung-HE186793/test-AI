@@ -1,0 +1,77 @@
+[
+  {
+    "key": "kf_v2_01_aerial_arena_intro",
+    "mediaId": "d3817ff4-3689-4cd8-bd44-1f78d3d938f7",
+    "wfId": "2d73bf7c-73c8-4f37-bec0-ed1dc9a07782"
+  },
+  {
+    "key": "kf_v2_02_rex_gate_entry",
+    "mediaId": "73a854eb-b456-4fcc-be4f-0e8af19c6e2b",
+    "wfId": "d9db01cd-2810-4dca-b637-8891f7ee05c6"
+  },
+  {
+    "key": "kf_v2_03_rex_stat_roar",
+    "mediaId": "0155e443-a802-438a-9703-0446ad8e4513",
+    "wfId": "e9dc2a8d-643a-4282-9161-628c6ee2dcd8"
+  },
+  {
+    "key": "kf_v2_04_spino_gate_entry",
+    "mediaId": "3242506e-3987-42ef-9182-0e9ffcbd449b",
+    "wfId": "dbb229dd-b7bc-4bec-aebe-2752ccb079df"
+  },
+  {
+    "key": "kf_v2_05_spino_stat_stance",
+    "mediaId": "cf729b7c-dc29-47b8-9d9e-1322ba52533a",
+    "wfId": "3648b69d-907f-4e75-a93a-8886b5f3b7f8"
+  },
+  {
+    "key": "kf_v2_06_wide_arena_faceoff_charge",
+    "mediaId": "cb01cb54-1566-4b9b-8c39-4acc4c2cb7d4",
+    "wfId": "02addce0-a39b-4aa0-bf3d-ccad6ad6c8fc"
+  },
+  {
+    "key": "kf_v2_07_center_20ton_clash",
+    "mediaId": "1ba589f6-e7fb-465d-a0e4-0ddff2d629cc",
+    "wfId": "d8150562-65cc-44c7-a183-bb1e58f28ce1"
+  },
+  {
+    "key": "kf_v2_08_spino_claw_slash_dominance",
+    "mediaId": "20bcaede-432d-41c8-925d-bce1854c708a",
+    "wfId": "82957f3f-8dd8-4c4f-b820-32d86247c381"
+  },
+  {
+    "key": "kf_v2_09_trex_12800psi_neck_lock",
+    "mediaId": "3d2b9d8f-4e4f-4097-a472-46ca170d2855",
+    "wfId": "56fc95ac-31ef-44cc-9127-e97f6b9e8d75"
+  },
+  {
+    "key": "kf_v2_10_trex_champion_victory",
+    "mediaId": "cb50d0fd-c7ce-4a68-9d6e-f0a918ba97b4",
+    "wfId": "43a36dae-d8b0-4034-92d9-2b8223099796"
+  },
+  {
+    "key": "kf_v2_03b_rex_closeup_jaws",
+    "mediaId": "469a83ee-5ddb-472a-a3af-496ce6c53336",
+    "wfId": "ec253ee9-1161-43f0-9f8d-150cf595546d"
+  },
+  {
+    "key": "kf_v2_05b_spino_claws_flex",
+    "mediaId": "74a8f4c6-c0dd-4fc8-aafe-502319ba92e6",
+    "wfId": "90ba0785-3355-4b6e-b978-77b9db910244"
+  },
+  {
+    "key": "kf_v2_07b_neck_grapple_push",
+    "mediaId": "0d91cf09-7d96-42f8-b331-67b58de7a820",
+    "wfId": "c6b82c90-2703-4ce4-aa80-8de72b2de0b7"
+  },
+  {
+    "key": "kf_v2_08b_spino_pinning_trex_low",
+    "mediaId": "2b118a19-570c-4b08-a25f-bfff8d2858fb",
+    "wfId": "444c4444-38bd-433d-9869-c52ff54edb06"
+  },
+  {
+    "key": "kf_v2_09b_trex_slamming_spino_down",
+    "mediaId": "28e75774-d8ef-4ae1-89fd-032c373b9cf2",
+    "wfId": "10aec1a0-b9b1-4e14-b37b-c1db39a498e5"
+  }
+]

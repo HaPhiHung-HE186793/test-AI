@@ -1,0 +1,236 @@
+{
+  "projectTitle": "COLOSSEUM OF ASH — 2-Minute Dinosaur Battle (IGNIS_REX vs LEVIATHAN_SPINO)",
+  "version": "2.0-Master",
+  "googleFlowProjectId": "425eb708-ac40-4d8f-aa42-17f1a94e8898",
+  "googleFlowProjectUrl": "https://flow.google.com/project/425eb708-ac40-4d8f-aa42-17f1a94e8898",
+  "googleFlowSceneId": "763fabab-e0f1-4418-b6b8-165813201db6",
+  "googleFlowSceneUrl": "https://flow.google.com/project/425eb708-ac40-4d8f-aa42-17f1a94e8898/scene/763fabab-e0f1-4418-b6b8-165813201db6",
+  "specs": {
+    "durationSeconds": 120.0,
+    "resolution": "1920x1080",
+    "fps": 24,
+    "videoCodec": "H.264 (libx264 CRF 18)",
+    "audioCodec": "AAC 48kHz Stereo 256kbps (3-Layer Mix: Veo 3.1 Native Foley + Vietnamese Commentator VO + Procedural War Drums & 46Hz LFE Sub-Bass)"
+  },
+  "winner": {
+    "id": "IGNIS_REX",
+    "species": "Tyrannosaurus Rex",
+    "finisher": "12,800 PSI Jaw-Lock Neck Slam & Coronation Roar"
+  },
+  "characters": [
+    {
+      "name": "IGNIS_REX",
+      "species": "Tyrannosaurus Rex",
+      "characterEntityId": "b3d4a57c-998d-4906-bf54-e617fa3de980",
+      "characterStudioUrl": "https://flow.google.com/project/425eb708-ac40-4d8f-aa42-17f1a94e8898/character/b3d4a57c-998d-4906-bf54-e617fa3de980",
+      "portraitMediaId": "14de79a2-57cc-44c0-9b34-1c2be1597fa8",
+      "turnaroundMediaId": "9c100a55-74c8-4112-a09e-76db74bfe2c6",
+      "stats": {
+        "length": "13.5m",
+        "height": "5.4m",
+        "weight": "9.8 Tons",
+        "biteForce": "12,800 PSI (100/100)",
+        "osteodermArmor": "92/100",
+        "chargeSpeed": "32 km/h (78/100)"
+      }
+    },
+    {
+      "name": "LEVIATHAN_SPINO",
+      "species": "Spinosaurus Aegyptiacus",
+      "characterEntityId": "645fb5d2-7747-44a4-aa48-8789bd0991fd",
+      "characterStudioUrl": "https://flow.google.com/project/425eb708-ac40-4d8f-aa42-17f1a94e8898/character/645fb5d2-7747-44a4-aa48-8789bd0991fd",
+      "portraitMediaId": "9b1e3963-f26e-493c-aa55-97619fb1dfdd",
+      "turnaroundMediaId": "6c8e18e2-d31a-48d1-9182-73444105e9bc",
+      "stats": {
+        "length": "15.8m",
+        "sailHeight": "6.2m (2.2m dorsal spine sail)",
+        "weight": "10.5 Tons",
+        "sickleClaws45cm": "8,200 PSI (98/100)",
+        "jawSnap": "6,500 PSI (68/100)",
+        "strikeAgility": "95/100"
+      }
+    }
+  ],
+  "environmentPlates": {
+    "PLATE_A_AERIAL_COLOSSEUM": "012b74f8-3228-4487-9092-e59edac0e2b9",
+    "PLATE_B_GROUND_INTERIOR_COLOSSEUM": "aff4d8c9-cc47-4f69-83f4-6f2a1fe4d34e"
+  },
+  "shots": [
+    {
+      "idx": 1,
+      "key": "v2_s01_aerial_arena_intro",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "012b74f8-3228-4487-9092-e59edac0e2b9",
+      "lastFrameMediaId": "d3817ff4-3689-4cd8-bd44-1f78d3d938f7",
+      "videoMediaId": "f7f61ab0-266a-48cc-85fc-6bfc4ee9384c",
+      "workflowId": "f7367fe6-fb91-45e9-bd60-9e5e12e0a23a"
+    },
+    {
+      "idx": 2,
+      "key": "v2_s02_rex_entry_to_roar",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "73a854eb-b456-4fcc-be4f-0e8af19c6e2b",
+      "lastFrameMediaId": "0155e443-a802-438a-9703-0446ad8e4513",
+      "videoMediaId": "38ca9a76-0335-4001-a2eb-1d0bd9568dce",
+      "workflowId": "94209559-6609-4089-aa0e-5dfdadf25ced"
+    },
+    {
+      "idx": 3,
+      "key": "v2_s03_rex_roar_to_crouch",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "0155e443-a802-438a-9703-0446ad8e4513",
+      "lastFrameMediaId": "469a83ee-5ddb-472a-a3af-496ce6c53336",
+      "videoMediaId": "1ab5caf6-3a6f-4b17-9da2-c5a098c6a960",
+      "workflowId": "85549479-c525-4d70-a3c6-ec35c59a1d8d"
+    },
+    {
+      "idx": 4,
+      "key": "v2_s04_spino_entry_to_stance",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "3242506e-3987-42ef-9182-0e9ffcbd449b",
+      "lastFrameMediaId": "cf729b7c-dc29-47b8-9d9e-1322ba52533a",
+      "videoMediaId": "7c2447ad-bd4a-488b-a85d-6c24b501af60",
+      "workflowId": "a74ff86f-91e1-41e8-a03a-b3c9c60ef1f4"
+    },
+    {
+      "idx": 5,
+      "key": "v2_s05_spino_claws_slash_ready",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "cf729b7c-dc29-47b8-9d9e-1322ba52533a",
+      "lastFrameMediaId": "74a8f4c6-c0dd-4fc8-aafe-502319ba92e6",
+      "videoMediaId": "4b5f70e8-9814-443c-bc13-f1c483964ab9",
+      "workflowId": "c92b6879-a826-49b9-9dde-3f52f363cbc4"
+    },
+    {
+      "idx": 6,
+      "key": "v2_s06_wide_charge_to_20ton_clash",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "cb01cb54-1566-4b9b-8c39-4acc4c2cb7d4",
+      "lastFrameMediaId": "1ba589f6-e7fb-465d-a0e4-0ddff2d629cc",
+      "videoMediaId": "58fa9e85-408f-4dfd-8423-3a64a78a95ca",
+      "workflowId": "cb7980f5-4eb3-486f-99a2-c80e53d70574"
+    },
+    {
+      "idx": 7,
+      "key": "v2_s07_clash_to_neck_grapple",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "1ba589f6-e7fb-465d-a0e4-0ddff2d629cc",
+      "lastFrameMediaId": "0d91cf09-7d96-42f8-b331-67b58de7a820",
+      "videoMediaId": "8109cd89-2465-4b25-81d7-8c95411ec5a1",
+      "workflowId": "5bdaa4be-0a68-41a6-b6b9-287ede5ac056"
+    },
+    {
+      "idx": 8,
+      "key": "v2_s08_grapple_shove_exchange",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra",
+      "mode": "START_FRAME",
+      "firstFrameMediaId": "0d91cf09-7d96-42f8-b331-67b58de7a820",
+      "lastFrameMediaId": null,
+      "videoMediaId": "6cfae800-ea3e-4626-ae2a-2ad06109bcef",
+      "workflowId": "76bfda42-0691-4cdb-900e-d739eed8648d"
+    },
+    {
+      "idx": 9,
+      "key": "v2_s09_spino_claw_slash_dominance",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "0d91cf09-7d96-42f8-b331-67b58de7a820",
+      "lastFrameMediaId": "20bcaede-432d-41c8-925d-bce1854c708a",
+      "videoMediaId": "8fd1ba01-c57a-4473-a26d-66512f6f6b1c",
+      "workflowId": "2c32a896-ae71-4e1f-bed9-84dfde928640"
+    },
+    {
+      "idx": 10,
+      "key": "v2_s10_spino_pinning_trex_down",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "20bcaede-432d-41c8-925d-bce1854c708a",
+      "lastFrameMediaId": "2b118a19-570c-4b08-a25f-bfff8d2858fb",
+      "videoMediaId": "ae7918a1-fcb7-4beb-9641-8fc7cf16c0c8",
+      "workflowId": "54e10a12-decb-4642-aa14-75b138eb0dea"
+    },
+    {
+      "idx": 11,
+      "key": "v2_s11_trex_pinned_rage_awakens",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra",
+      "mode": "START_FRAME",
+      "firstFrameMediaId": "2b118a19-570c-4b08-a25f-bfff8d2858fb",
+      "lastFrameMediaId": null,
+      "videoMediaId": "afb5bd41-2ca5-4acf-9376-ad664f059d5b",
+      "workflowId": "6657f8c7-9531-42fa-b5f4-faea99109d23"
+    },
+    {
+      "idx": 12,
+      "key": "v2_s12_trex_12800psi_counter_lock",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "2b118a19-570c-4b08-a25f-bfff8d2858fb",
+      "lastFrameMediaId": "3d2b9d8f-4e4f-4097-a472-46ca170d2855",
+      "videoMediaId": "f0cce103-61af-44bf-82cc-685bbaf4f531",
+      "workflowId": "78223253-e1cb-441b-9238-9b2a11f1e14f"
+    },
+    {
+      "idx": 13,
+      "key": "v2_s13_trex_neck_wrench_struggle",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra",
+      "mode": "START_FRAME",
+      "firstFrameMediaId": "3d2b9d8f-4e4f-4097-a472-46ca170d2855",
+      "lastFrameMediaId": null,
+      "videoMediaId": "c67548b1-2d96-49e7-94b1-79ad171acce1",
+      "workflowId": "ba242d90-8299-4292-8b63-72e67d9aea2e"
+    },
+    {
+      "idx": 14,
+      "key": "v2_s14_trex_finisher_slam_impact",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "3d2b9d8f-4e4f-4097-a472-46ca170d2855",
+      "lastFrameMediaId": "28e75774-d8ef-4ae1-89fd-032c373b9cf2",
+      "videoMediaId": "4e68fba5-b77a-4549-8a12-ad3d9082d5d4",
+      "workflowId": "44925d03-6e73-493b-875e-de8eae929070"
+    },
+    {
+      "idx": 15,
+      "key": "v2_s15_spino_down_to_champion_foot",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra_fl",
+      "mode": "START_END_FRAMES",
+      "firstFrameMediaId": "28e75774-d8ef-4ae1-89fd-032c373b9cf2",
+      "lastFrameMediaId": "cb50d0fd-c7ce-4a68-9d6e-f0a918ba97b4",
+      "videoMediaId": "4b9a64d4-f6ce-4d62-ac12-4f232bd5ca35",
+      "workflowId": "afddbf3b-197b-4b2e-a03d-48486ca1e13f"
+    },
+    {
+      "idx": 16,
+      "key": "v2_s16_trex_champion_victory_roar",
+      "durationSeconds": 7.5,
+      "model": "veo_3_1_i2v_s_fast_ultra",
+      "mode": "START_FRAME",
+      "firstFrameMediaId": "cb50d0fd-c7ce-4a68-9d6e-f0a918ba97b4",
+      "lastFrameMediaId": null,
+      "videoMediaId": "36b73575-aa99-47ef-8a34-60b6ef9a2bcd",
+      "workflowId": "d057fb83-ecba-4f31-9cdf-f3be11d3bf1b"
+    }
+  ]
+}
