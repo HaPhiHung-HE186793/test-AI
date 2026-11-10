@@ -26,6 +26,10 @@ export const FLOW_RPC_IDS = {
   GENERATE_IMAGE: 'Z9cAtf',      // Tạo ảnh Nano Banana Pro (0 Credit)
   SCENE_GET: 'no0P6',            // Đọc SceneBuilder
   SCENE_UPDATE: 'lt8g5',         // Cập nhật Timeline SceneBuilder
+  SCENE_ADD_WORKFLOWS: 'oWTRd',  // Thêm Seed Workflow vào SceneBuilder
+  SCENE_DELETE_CLIPS: 'S6aU9d',  // Xóa Clip khỏi SceneBuilder
+  SCENE_REORDER_CLIPS: 'BpMsoe', // Sắp xếp lại thứ tự Clip trong SceneBuilder
+  SCENE_SET_PRIMARY_MEDIA: 'dtQlBe', // Chọn phiên bản (take) làm Primary Media của Shot trong SceneBuilder
 };
 
 export class FlowUltraSdk {
@@ -245,5 +249,65 @@ export class FlowUltraSdk {
     const x = sceneId && scenePosition != null ? [batchId, 1, null, [sceneId, scenePosition]] : [batchId, 1];
 
     return this.callBatchExecute(FLOW_RPC_IDS.EXTEND_VIDEO, [[item], k, x]);
+  }
+
+  /**
+   * 7. Thêm Seed Clip (Workflow) vào SceneBuilder (rpcids=oWTRd)
+   */
+  async addWorkflowsToScene({ sceneId, workflowIds, position = 0 }) {
+    const items = workflowIds.map((wfId, idx) => [wfId, position + idx]);
+    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_ADD_WORKFLOWS, [sceneId, items]);
+  }
+
+  /**
+   * 8. Chọn lại phiên bản (Take) chính thức của một Shot ngay trong SceneBuilder (rpcids=dtQlBe)
+   *    (Dùng khi vừa Redo Extend / Edit tại đầu ngọn và muốn đổi qua lại giữa các bản trong History Panel)
+   */
+  async setSceneClipPrimaryMedia({ sceneId, workflowId, mediaId }) {
+    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_SET_PRIMARY_MEDIA, [sceneId, workflowId, mediaId]);
+  }
+
+  /**
+   * 9. Sửa trực tiếp Shot ngay trong SceneBuilder (EDIT_VIDEO - rpcids=jIps6 / hàm Tkc trong m38dl)
+   *    Ghi trực tiếp vào destination: { workflowId } của Shot đang chọn trong Scene
+   */
+  async editVideoInWorkflow({
+    projectId,
+    workflowId,
+    sceneId = null,
+    sourceVideoMediaId,
+    prompt,
+    startFrame = 0,
+    endFrame = 192,
+    modelKey = 'macaron_cookie_edit',
+    aspectRatio = 1,
+    resolution = 1,
+    recaptchaToken,
+  }) {
+    if (!recaptchaToken) {
+      throw new Error('Cần truyền recaptchaToken (grecaptcha.enterprise.execute với action VIDEO_GENERATION)');
+    }
+    const mediaSeed = crypto.randomUUID();
+    const batchId = crypto.randomUUID();
+    const destinationMeta = [sceneId, workflowId, null, null, mediaSeed];
+    const resolutionField = resolution && resolution !== 1 ? [resolution] : null;
+    const item = [
+      [null, sourceVideoMediaId, startFrame, endFrame],
+      [null, null, [[[prompt]]]],
+      modelKey,
+      aspectRatio,
+      null,
+      destinationMeta,
+      null,
+      null,
+      [],
+      [],
+      [],
+      [],
+      resolutionField,
+    ];
+    const k = [null, 22, null, null, null, projectId, null, null, null, null, [recaptchaToken, 1]];
+    const x = [batchId, 1];
+    return this.callBatchExecute(FLOW_RPC_IDS.EDIT_VIDEO, [[item], k, x]);
   }
 }
