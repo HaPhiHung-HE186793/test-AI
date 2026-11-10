@@ -1,0 +1,9 @@
+{
+  "name": "flow-ultra-key-test",
+  "version": "1.0.0",
+  "description": "Kiểm chứng API Key (AIzaSy...) vs Google Flow Ultra 25,000 Credits (rpcids=nzlxg)",
+  "type": "module",
+  "scripts": {
+    "test-key": "node check-credits.mjs"
+  }
+}
