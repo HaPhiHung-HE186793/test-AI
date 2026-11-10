@@ -62,13 +62,20 @@ flowchart TD
     B -- "2. Cùng bối cảnh nhưng dài > 20s và cần nhịp điệu điện ảnh" --> D["Phương Pháp B: Bắc Cầu Khung Hình (Daisy-Chain Keyframes) + Đổi Góc Máy (Camera Tool 0 Credit)"]
 ```
 
-### 2.1. Phương Pháp A: Chuỗi Mở Rộng Liên Hoàn (`Extend Chain`) — Dành cho cú máy liền mạch (`One-Shot Long-Take`)
-- **Công cụ**: Nút **`Mở rộng (Extend)`** trong Trình sửa video (`/edit/:workflowId`) hoặc trên Thanh công cụ nổi của **SceneBuilder (`/scene/:sceneId`)** (gọi RPC `generate_video_extend` qua model `veo_3_1_extend_fast_flow` — `10 Credits`/lần).
-- **Quy trình thực thi**:
-  1. Tạo **Clip Gốc (Seed Clip)** dài **8 giây** ở độ phân giải **`720p`** (tỷ lệ `16:9` hoặc `9:16`).
+### 2.1. Phương Pháp A: Chuỗi Mở Rộng Liên Hoàn (`Extend Chain`) & Chu Trình `SceneBuilder-First Auto-Merge` — Dành cho cú máy liền mạch (`One-Shot Long-Take`)
+- **Công cụ**: Nút **`Mở rộng / Kéo dài (Extend)`** trực tiếp trên Thanh công cụ của **SceneBuilder (`/scene/:sceneId`)** (gọi hàm `Pkc` / `Cfc` / `Efc` ➔ RPC `fZytfe` qua model `veo_3_1_extend_fast_flow` hoặc `omni_1p5_pro_flow`).
+- **Nguyên lý "Video Mẫu Mồi (`Seed Clip`) & Sửa Trực Tiếp Trong `SceneBuilder` (`Tkc`)"**:
+  - Video tạo ở màn ngoài (`/project/:projectId`) chỉ đóng vai trò là **Video mẫu mồi (`Seed Clip`)** để đưa vào `SceneBuilder` (vì màn `SceneBuilder` không tạo được ảnh tĩnh và không tự đẻ ra shot đầu tiên khi Scene trống).
+  - Sau khi đưa `Seed Clip` vào `SceneBuilder`, nếu có bất kỳ chi tiết nào chưa ưng ý, bạn **sửa trực tiếp ngay trong màn `SceneBuilder`**: chỉ cần chọn shot đó trên Timeline và gõ yêu cầu vào ô Prompt của `SceneBuilder` (`Tkc` ➔ `generate_video_into_workflow` với `destination: { workflowId }`) như lúc tạo shot bình thường, tuyệt đối không tạo hàng loạt video rời ở ngoài rồi chỉ dùng Scene để ghép nối cơ học (gây độ khựng $v = 0$ ở mỗi mối nối).
+- **Quy trình thực thi (`Extend` ➔ `Kiểm tra Đầu Ngọn` ➔ `Tạo lại/Sửa tại chỗ` ➔ `Auto-Merge`)**:
+  1. Tạo **Clip Gốc (Seed Clip)** dài **8 giây** ở độ phân giải **`720p`** (tỷ lệ `16:9` hoặc `9:16`) và đưa vào `SceneBuilder`.
   2. Kiểm tra 1 giây cuối của Clip Gốc: Nếu cuối giây thứ 8 nhân vật bị khựng hoặc biến dạng nhẹ, dùng thanh cắt (`Trim End Handle`) trong SceneBuilder **cắt bớt `0.3s – 0.5s` cuối** đến đúng thời điểm hình ảnh đẹp nhất và đang có đà chuyển động.
-  3. Bấm **`Mở rộng (Extend)`** ➔ Nhập mô tả hành động tiếp theo của nhân vật trong 7–8 giây kế tiếp:
-     $$\text{Clip Gốc } (8\text{s}) \xrightarrow{+\text{Extend 1}} 15\text{s} \xrightarrow{+\text{Extend 2}} 22\text{s} \xrightarrow{+\text{Extend 3}} 29\text{s}$$
+  3. Bấm **`Kéo dài / Mở rộng (Extend)`** ngay trong `SceneBuilder` ➔ Nhập mô tả hành động tiếp theo của nhân vật trong cảnh đó, và **bắt buộc kiểm tra kết quả ngay sau mỗi lần kéo dài trước khi kéo dài tiếp**:
+     $$\text{Seed Clip } (8\text{s}) \xrightarrow{+\text{Extend 1}} \mathbf{\text{[Duyệt Đầu Ngọn: Tạo lại (Kkc) / Sửa Prompt (Tkc) đến khi chuẩn 100\%]}} \xrightarrow{+\text{Extend 2 (Auto-Merge Extend 1 vào Shot gốc)}} 22\text{s} \xrightarrow{+\text{Extend 3}} 29\text{s}$$
+  4. **Quy luật Khóa `Auto-Merge` & Tránh Bẫy `Cắt Đoạn (Split)`**:
+     - Khi vừa kéo dài xong (Lần $N$), đoạn mới thêm đang ở trạng thái **đầu ngọn (`sZ = true`)** nên bạn có thể bấm vào cảnh đó trong `SceneBuilder` để **Tạo lại đoạn kéo dài (`Kkc` / `redoExtend`)** hoặc **Sửa bằng Prompt (`Tkc`)** cho chuẩn.
+     - Ngay khi đoạn $N$ đã chuẩn và bạn bấm **`Kéo dài` tiếp (Lần $N+1$)**, hệ thống sẽ **tự động Merge (`Auto-Merge`) đoạn kéo dài cũ ($N$) vào Shot gốc (`primaryMediaId`)** — từ lúc này đoạn cũ ($N$) không thể sửa lẻ được nữa, chỉ sửa được đoạn kéo dài mới nhất ($N+1$).
+     - Nếu để Auto-Merge rồi mới dùng `Cắt đoạn (Split - ukc)` cắt khúc giữa ra để sửa, mô hình sẽ không biết đầu–cuối của 2 cảnh trước/sau mà nó vừa cắt, dẫn đến bị **lệch cảnh (`Jump-Cut`)** tại vết cắt!
 - **3 Điều Kiện Kỹ Thuật Bắt Buộc Khi Dùng `Extend` (Cấm Vi Phạm)**:
   1. Clip đưa vào `Extend` phải dài **`>= 1 giây`**.
   2. Tỷ lệ khung hình phải là **`16:9` hoặc `9:16`**.
@@ -133,3 +140,4 @@ Mỗi khi AI Agent hoặc người dùng chuẩn bị chuyển từ kịch bản
 - [ ] **6. Chống Cụt Thoại (`Audio Tail Buffer`)**: Câu thoại trong mỗi clip 8s đã được giới hạn `<= 18 từ` (kết thúc trước giây `7.2`) chưa?
 - [ ] **7. Chống Nhảy Nhạc Nền (`Clean Foley Only`)**: Trong Prompt của từng clip đã ghi rõ `"clean foley and ambience only, no background music"` để nhạc nền được phủ liền mạch 1 lớp duy nhất ở bước đóng gói chưa?
 - [ ] **8. Quy tắc Upsample Cuối Cùng**: Giữ nguyên độ phân giải **`720p`** trong suốt quá trình `Extend` / `Insert` / `Remove` / `Jump To`, chỉ bấm **`Tăng độ phân giải (1080p / 4K)`** sau khi đã duyệt xong bản dựng cuối cùng!
+- [ ] **9. Quy tắc `SceneBuilder-First & Verify-Before-Auto-Merge`**: Chỉ tạo Video mẫu mồi (`Seed Clip`) ở màn ngoài rồi đưa vào `SceneBuilder` (`/scene/:sceneId`) để sửa trực tiếp (`Tkc`) và kéo dài liên hoàn (`Extend`); kiểm tra và tạo lại/sửa ngay tại đầu ngọn (`Kkc` / `Tkc`) sau mỗi nhịp kéo dài trước khi bấm kéo dài tiếp để Auto-Merge vào Shot gốc!

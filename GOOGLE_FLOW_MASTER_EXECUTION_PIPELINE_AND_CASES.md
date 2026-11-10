@@ -13,10 +13,11 @@ QUY TẮC BẢO VỆ FILE TUYỆT ĐỐI DÀNH CHO AI AGENT (ANTIGRAVITY / SUBAG
 
 > **Trạng thái Khóa Bảo Vệ:** `AI_EDIT_MODE: OFF` (`Read-Only`)  
 > **Phạm vi áp dụng:** Tự động kích hoạt và tuân thủ nghiêm ngặt mỗi khi người dùng cung cấp **Đầu vào (`Input`: Chủ đề / Title + Thời lượng mục tiêu + Ngôn ngữ / Phong cách)** để sản xuất một bộ phim ngắn, TVC quảng cáo, video sinematic hoặc hoạt hình hoàn chỉnh trên hệ sinh thái **Google Flow (`flow.google.com`) + Flow Music (`flowmusic.app`)**.  
-> **Nền tảng tham chiếu:** Kết hợp đồng bộ với 3 kho tri thức đã khóa:
-> 1. [GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md)
-> 2. [GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md)
-> 3. [FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md)
+> **Nền tảng tham chiếu:** Kết hợp đồng bộ với 4 kho tri thức đã khóa:
+> 1. [GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md](file:///mnt/data/backup/project_personal/test-AI/GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md)
+> 2. [GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md)
+> 3. [GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md)
+> 4. [FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md)
 
 ---
 
@@ -56,10 +57,10 @@ flowchart TD
         P4A --> P4B --> P4C
     end
 
-    subgraph Phase5["GIAI ĐOẠN 5: BẤM MÁY VIDEO & XỬ LÝ 10 CASE THỰC CHIẾN (GATE 4)"]
+    subgraph Phase5["GIAI ĐOẠN 5: ĐẠO DIỄN TRỰC TIẾP TRONG SCENEBUILDER & XỬ LÝ 10 CASE THỰC CHIẾN (GATE 4)"]
         P5A["5.1. Kiểm định chéo Prompt Tiếng Anh 4 Đoạn (Subagent Cross-Check)"]
-        P5B["5.2. Render các cảnh ngắn (<=8s) bằng Veo 3.1 / Omni 1.2 Flash"]
-        P5C["5.3. Kích hoạt BỘ XỬ LÝ 10 CASE THỰC CHIẾN (Phần 2)<br/>cho Cảnh dài 40s+, Sửa đoạn giữa, Chèn Cutaway & Quay lại cảnh cũ"]
+        P5B["5.2. Tạo Video mẫu mồi (Seed Clip <=8s) ở màn ngoài -> Đưa vào SceneBuilder (/scene/:sceneId)<br/>Sửa trực tiếp các Shot ngay tại ô Prompt của SceneBuilder (Tkc) nếu cần"]
+        P5C["5.3. Chạy Chu trình SCENEBUILDER-FIRST (Kéo dài Pkc -> Kiểm tra Đầu Ngọn sZ=true -> Tạo lại/Sửa Kkc/Tkc -> Kéo dài tiếp để Auto-Merge)<br/>& Kích hoạt BỘ XỬ LÝ 10 CASE THỰC CHIẾN (Phần 2)"]
         P5D["5.4. Chốt Cổng 4 (ask_question):<br/>Nghiệm thu các cảnh Video & Chỉnh sửa chi tiết nếu cần"]
         P5A --> P5B --> P5C --> P5D
     end
@@ -112,13 +113,20 @@ Trong quá trình chạy Giai đoạn 5 & Giai đoạn 6, hễ gặp bất kỳ 
 
 ---
 
-### 🔹 CASE 2: Đoạn Vừa Kéo Dài (`+4s` hoặc `+10s`) Ở Đuôi Cảnh Bị Sai Ý Hoặc Chuyển Động Chưa Đẹp
+### 🔹 CASE 2: Đoạn Vừa Kéo Dài (`+4s`, `+8s` hoặc `+10s`) Ở Đuôi Cảnh Bị Sai Ý Hoặc Chuyển Động Chưa Đẹp — Cơ Chế Kiểm Duyệt Đầu Ngọn Trước Khi `Auto-Merge` & Quyền Sửa Trực Tiếp Trong `SceneBuilder`
 
-* **Dấu hiệu nhận biết:** Bạn đang kéo dài cảnh từ `29s` lên `39s`, phần `0s ➔ 29s` đã hoàn hảo nhưng riêng khúc mới thêm `29s ➔ 39s` bị lỗi diễn xuất hoặc lia máy chưa ưng ý.
+* **Dấu hiệu nhận biết:** Bạn đang kéo dài cảnh từ `29s` lên `39s` (hoặc từ `8s` lên `16s`), phần gốc phía trước đã hoàn hảo nhưng riêng khúc mới thêm ở đuôi bị lỗi diễn xuất, thiếu chi tiết hoặc lia máy chưa ưng ý.
+* **Bản chất kỹ thuật của màn `SceneBuilder` (`flow-scene-builder` / `m38dl`):**
+  1. **Video tạo ở màn ngoài (`/project/:projectId`) chỉ là "Video mẫu mồi" (`Seed Clip`)**: Màn `SceneBuilder` chỉ có 2 giới hạn là không tạo được ảnh tĩnh và không thể tự khởi tạo mới một shot khi chưa có video mẫu đưa vào. Một khi đã đưa `Seed Clip` vào `SceneBuilder`, bạn **hoàn toàn sửa trực tiếp mọi shot ngay trong màn `SceneBuilder`**: chỉ cần chọn shot đó trên Timeline và gõ yêu cầu vào ô Prompt ở đáy màn `SceneBuilder` (`Tkc` ➔ `generate_video_into_workflow` với `destination: { workflowId }`) như lúc tạo shot bình thường.
+  2. **Chu trình `Kéo dài (Pkc)` ➔ `Kiểm tra Đầu Ngọn (sZ = true)` ➔ `Tạo lại/Sửa tại chỗ (Kkc / Tkc)` ➔ `Kéo dài tiếp để Auto-Merge`**:
+     - Ngay khi vừa kéo dài xong (Lần $N$), đoạn mới thêm vẫn nằm ở **đầu ngọn (`sZ = true`)** và hệ thống còn giữ con trỏ gốc `ky` (`e = b.uc.find(_.Uv).mediaId`) chỉ về video trước khi kéo dài.
+     - Nếu kiểm tra thấy chưa chuẩn hoặc thiếu chi tiết: Bấm trực tiếp vào cảnh đó trong `SceneBuilder` để **Tạo lại đoạn kéo dài (`[↻ Kéo dài lại]` / `redoExtend` / hàm `Kkc` / `jU`)** hoặc **nhập thêm yêu cầu vào ô Prompt trong `SceneBuilder` (`Tkc`)** để hệ thống sửa lại đúng đoạn dài vừa thêm cho đến khi chuẩn 100%.
+     - **Chỉ khi đoạn kéo dài hiện tại đã chuẩn 100% mới được bấm `Kéo dài` tiếp (Lần $N+1$)!** Vì ngay khi bấm `Kéo dài` lần $N+1$, hệ thống sẽ **tự động Merge (`Auto-Merge`) đoạn kéo dài cũ ($N$) vào Shot gốc (`primaryMediaId`)** và cập nhật con trỏ `ky` mới. Lúc này đoạn kéo dài cũ ($N$) đã gộp cứng vào Shot gốc, **không thể sửa lẻ được nữa** mà chỉ sửa được đoạn kéo dài mới nhất ($N+1$).
+     - *(Cảnh báo: Nếu để Auto-Merge rồi mới dùng `Cắt đoạn / Split` cắt khúc giữa ra để sửa, mô hình khi sửa khúc giữa sẽ không biết đầu–cuối của 2 cảnh trước/sau mà nó vừa cắt, dẫn đến bị **lệch cảnh / Jump-Cut** so với 2 cảnh trước sau!)*
 * **Phương án giải quyết chuẩn:**
-  - **Không cắt clip, không sửa đè bằng Edit!**
-  - Nhìn vào góc phải của đoạn vừa kéo dài trên thanh Timeline, bấm ngay nút **`[↻ Kéo dài lại]` (`redoExtend` / hàm `jU`)** (hoặc nếu muốn viết lại câu lệnh mô tả rõ hơn thì mở bảng lịch sử/nhật ký chọn **`Sử dụng lại câu lệnh` / `reuseExtendPrompt`**).
-  - Hệ thống sẽ gọi hàm `xfc(this, b.media, "SceneBuilder.redoExtend")` để **quay lại đúng đoạn mở rộng cuối cùng với Seed mới**, giữ nguyên vẹn 100% đoạn `0s ➔ 29s` phía trước.
+  - **Không cắt clip, không kéo dài tiếp khi đầu ngọn chưa chuẩn!**
+  - Nhìn vào góc phải của đoạn vừa kéo dài trên thanh Timeline trong `SceneBuilder`, bấm ngay nút **`[↻ Kéo dài lại]` (`redoExtend` / hàm `Kkc` / `jU`)** hoặc chọn shot đó trên Timeline và sửa lại câu lệnh ở ô Prompt trong `SceneBuilder` (`reuseExtendPrompt` / `Tkc`).
+  - Hệ thống sẽ gọi hàm `Kkc` / `xfc(this, b.media, "SceneBuilder.redoExtend")` để **quay lại đúng đoạn mở rộng cuối cùng từ con trỏ gốc `ky`**, giữ nguyên vẹn 100% phần Shot gốc phía trước cho đến khi khớp hoàn toàn rồi mới kéo dài tiếp.
 
 ---
 
