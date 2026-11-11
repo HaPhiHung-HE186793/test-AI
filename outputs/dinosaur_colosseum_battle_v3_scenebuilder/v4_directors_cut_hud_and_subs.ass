@@ -1,0 +1,37 @@
+[Script Info]
+Title: Colosseum Dinosaur Battle Clean Broadcast HUD & Subtitles
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 0
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: SubVN,DejaVu Sans,34,&H00FFFFFF,&H0000FFFF,&H00000000,&H8C000000,-1,0,0,0,100,100,0,0,3,2.5,1,2,60,60,28,1
+Style: TopBar,DejaVu Sans Mono,24,&H00E8F4FF,&H0000FFFF,&H00000000,&HA8080C14,-1,0,0,0,100,100,1,0,3,2,0,8,40,40,14,1
+Style: HudRex,DejaVu Sans Mono,22,&H0058A8FF,&H0000FFFF,&H00000000,&HB80A101E,-1,0,0,0,100,100,0,0,3,2,0,7,40,40,56,1
+Style: HudSpino,DejaVu Sans Mono,22,&H00FFDF40,&H0000FFFF,&H00000000,&HB8181208,-1,0,0,0,100,100,0,0,3,2,0,9,40,40,56,1
+Style: CenterBanner,DejaVu Sans,36,&H0000D4FF,&H00FFFFFF,&H00000000,&HA8000000,-1,0,0,0,100,100,2,0,3,3,1,8,40,40,54,1
+Style: WinnerBanner,DejaVu Sans,38,&H0000EAFF,&H00FFFFFF,&H00001840,&HC0000818,-1,0,0,0,100,100,2,0,3,3,1,8,40,40,54,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.00,0:00:04.00,TopBar,,0,0,0,,ĐẤU TRƯỜNG HẮC NHAM: KHỞI TRANH
+Dialogue: 1,0:00:04.00,0:00:10.00,TopBar,,0,0,0,,IGNIS REX [100%] VS [100%] LEVIATHAN SPINO
+Dialogue: 1,0:00:10.00,0:00:16.00,TopBar,,0,0,0,,IGNIS REX [88%] VS [86%] LEVIATHAN SPINO
+Dialogue: 1,0:00:16.00,0:00:21.00,TopBar,,0,0,0,,TUYỆT KỸ: TRẢM VUỐT 8.200 PSI
+Dialogue: 1,0:00:21.00,0:00:27.00,TopBar,,0,0,0,,IGNIS REX [52% NGUY CẤP] VS [82%] SPINO
+Dialogue: 1,0:00:27.00,0:00:33.00,TopBar,,0,0,0,,IGNIS REX: KÍCH HOẠT CUỒNG NỘ
+Dialogue: 1,0:00:33.00,0:00:41.00,TopBar,,0,0,0,,PHẢN ĐÒN: KHÓA HÀM 12.800 PSI
+Dialogue: 1,0:00:41.00,0:00:50.00,TopBar,,0,0,0,,IGNIS REX [52%] VS [0% K.O.] LEVIATHAN SPINO
+Dialogue: 1,0:00:50.00,0:01:02.00,TopBar,,0,0,0,,NHÀ VÔ ĐỊCH TUYỆT ĐỐI: IGNIS REX
+Dialogue: 2,0:00:00.25,0:00:03.85,SubVN,,0,0,0,,Mười tấn sát khí nghiền nát cát đen Đấu Trường Hắc Nham!
+Dialogue: 2,0:00:04.15,0:00:09.80,SubVN,,0,0,0,,IGNIS REX và LEVIATHAN SPINO lao thẳng vào tâm võ đài!
+Dialogue: 2,0:00:10.15,0:00:15.80,SubVN,,0,0,0,,20 tấn thịt thép ghì chặt, không một bước nhượng bộ!
+Dialogue: 2,0:00:16.10,0:00:20.85,SubVN,,0,0,0,,SPINO vung vuốt 8.200 PSI xé toạc sườn đối thủ!
+Dialogue: 2,0:00:21.15,0:00:26.80,SubVN,,0,0,0,,Cú tát hiểm hóc quật ngã Bạo Chúa xuống lớp cát núi lửa!
+Dialogue: 2,0:00:27.10,0:00:32.85,SubVN,,0,0,0,,Giữa vòng vây nghẹt thở, đôi mắt hổ phách của IGNIS REX rực sáng!
+Dialogue: 2,0:00:33.15,0:00:40.80,SubVN,,0,0,0,,Bạo Chúa vùng dậy, khóa chặt hàm 12.800 PSI vào thẳng cổ SPINO!
+Dialogue: 2,0:00:41.15,0:00:49.80,SubVN,,0,0,0,,Cú quật ngàn cân! Thủy quái 10,5 tấn đập sấp sàn đá, hoàn toàn gục ngã!
+Dialogue: 2,0:00:50.40,0:01:00.50,SubVN,,0,0,0,,Nhà vô địch tuyệt đối của Đấu Trường Hắc Nham: IGNIS REX!

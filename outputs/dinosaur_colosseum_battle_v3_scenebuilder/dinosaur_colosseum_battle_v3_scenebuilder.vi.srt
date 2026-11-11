@@ -1,40 +1,44 @@
 1
-00:00:00,400 --> 00:00:04,600
-Chào mừng tới Đấu Trường Hắc Nham! Trận tử chiến của hai siêu thực thể săn mồi!
+00:00:00,300 --> 00:00:03,900
+Mười tấn sát khí nghiền nát cát đen Đấu Trường Hắc Nham!
 
 2
-00:00:04,900 --> 00:00:15,600
-Từ cổng Tây: IGNIS REX, Bạo Chúa Tyrannosaurus Rex! Nặng 9 phẩy 8 tấn, lực cắn nghiền xương 12 ngàn 800 P S I!
+00:00:04,400 --> 00:00:15,600
+Từ cổng Tây: IGNIS REX, Bạo Chúa Tyrannosaurus Rex! Nặng 9,8 tấn, lực cắn 12.800 PSI!
 
 3
-00:00:16,600 --> 00:00:31,600
-Ở cổng Đông: LEVIATHAN SPINO, Spinosaurus Aegyptiacus! Dài 15 phẩy 8 mét, nặng 10 phẩy 5 tấn với bộ vuốt sắc lẹm! Trận chiến... BẮT ĐẦU!
+00:00:16,500 --> 00:00:31,400
+Ở cổng Đông: LEVIATHAN SPINO, Spinosaurus Aegyptiacus! Dài 15,8 mét, nặng 10,5 tấn! Trận chiến bắt đầu!
 
 4
-00:00:32,800 --> 00:00:43,500
-Hai cỗ máy 10 tấn lao thẳng vào tâm võ đài! Cú húc vai 20 tấn nổ tung bụi cát, đẩy cả hai bật lùi dữ dội!
+00:00:32,500 --> 00:00:42,500
+Hai cỗ máy 10 tấn lao thẳng vào tâm võ đài! Cú húc vai 20 tấn nổ tung bụi cát, đẩy cả hai bật lùi!
 
 5
-00:00:44,200 --> 00:00:54,000
-Không một bước nhượng bộ! Hai gã khổng lồ gầm vang, liên tục tung những cú táp hàm uy lực giữa tâm đấu trường!
+00:00:43,500 --> 00:00:53,500
+Hai mươi tấn thịt thép ghì chặt, liên tục tung những cú táp hàm uy lực giữa tâm đấu trường!
 
 6
-00:00:55,200 --> 00:01:12,500
-Đòn đánh hiểm hóc! Spinosaurus vung vuốt 8 ngàn 200 P S I quật ngã Ignis Rex xuống cát đen, rồi lao tới ghì chặt vai Bạo Chúa!
+00:00:54,800 --> 00:01:02,500
+Đòn đánh hiểm hóc! SPINO vung vuốt 8.200 PSI xé toạc sườn đối thủ!
 
 7
-00:01:13,800 --> 00:01:22,800
-Giữa vòng vây nghẹt thở, đôi mắt hổ phách của Ignis Rex rực sáng! Bạo Chúa chồm tới, khóa chặt hàm răng vào thẳng cổ Spinosaurus!
+00:01:03,200 --> 00:01:11,500
+Cú tát 8.200 PSI quật ngã IGNIS REX xuống cát đen, SPINO lao tới đè chặt vai Bạo Chúa!
 
 8
-00:01:23,200 --> 00:01:31,600
-PHẢN ĐÒN HỦY DIỆT! Với lực cắn 12 ngàn 800 P S I, Ignis Rex bẻ gập cổ đối thủ và ghì mạnh xuống mặt cát!
+00:01:12,300 --> 00:01:18,200
+Giữa vòng vây nghẹt thở, đôi mắt hổ phách của IGNIS REX rực sáng!
 
 9
-00:01:32,300 --> 00:01:44,200
-CÚ QUẬT NGÀN CÂN! Xác quái thú 10 phẩy 5 tấn đập xuống sàn đá nổ tung bụi mù, hoàn toàn gục ngã!
+00:01:18,800 --> 00:01:31,200
+PHẢN ĐÒN HỦY DIỆT! Bạo Chúa vùng dậy, khóa chặt hàm 12.800 PSI bẻ gập cổ SPINO!
 
 10
-00:01:45,000 --> 00:01:59,500
-Đứng sừng sững bên cạnh kẻ bại trận, tiếng gầm chiến thắng vang dội khắp võ đài! Nhà vô địch tuyệt đối: IGNIS REX, BẠO CHÚA HẮC NHAM!
+00:01:32,200 --> 00:01:44,000
+Cú quật ngàn cân! Thủy quái 10,5 tấn đập sấp sàn đá nổ tung bụi mù, hoàn toàn gục ngã!
+
+11
+00:01:48,000 --> 00:01:59,200
+Đứng sừng sững bên kẻ bại trận, tiếng gầm vang dội khắp võ đài! Nhà vô địch tuyệt đối: IGNIS REX!
 

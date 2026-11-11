@@ -1,10 +1,48 @@
 {
-  "projectTitle": "COLOSSEUM OF ASH — IGNIS_REX vs LEVIATHAN_SPINO (V3 SceneBuilder-First Zero-Hitch Master)",
-  "architecture": "SceneBuilder-First Continuous Filmmaking (6 Seed Clusters + In-Scene Regenerate/Edit + 9 In-Scene Omni 1.2 Flash Monolithic Extends <= 26s/cluster)",
+  "projectTitle": "COLOSSEUM OF ASH — IGNIS_REX vs LEVIATHAN_SPINO (V4 62s Director's Cut & V3 120s Upgraded Full Broadcast Master)",
+  "architecture": "SceneBuilder-First Continuous Filmmaking + Gemini Web Expert Audit V4 Upgrade (6 Monolithic Clusters + 5 True 85mm/50mm Close-Up & Motionless K.O. Shots + Phonetic TTS + -9.4dB Sidechain Audio Ducking + Clean Broadcast HUD)",
   "projectId": "425eb708-ac40-4d8f-aa42-17f1a94e8898",
   "v3SceneId": "a82b7082-db46-4398-be05-bf08b2336212",
   "v3SceneUrl": "https://flow.google.com/project/425eb708-ac40-4d8f-aa42-17f1a94e8898/scene/a82b7082-db46-4398-be05-bf08b2336212",
   "legacyV2SceneId": "763fabab-e0f1-4418-b6b8-165813201db6",
+  "deliverables": {
+    "v4DirectorsCut62s": "dinosaur_colosseum_battle_v4_directors_cut_62s.mp4",
+    "v4DirectorsCutClean62s": "dinosaur_colosseum_battle_v4_directors_cut_clean_62s.mp4",
+    "v3UpgradedMaster120s": "dinosaur_colosseum_battle_v3_scenebuilder_master_2min.mp4",
+    "v3UpgradedClean120s": "dinosaur_colosseum_battle_v3_clean_no_hud.mp4"
+  },
+  "v4CloseUpAndMotionlessKOShots": [
+    {
+      "shotId": "SHOT01_FOOT_STOMP_ECU",
+      "mediaId": "0a8fadac-f8ee-4e0b-a402-05e6ad1268f4",
+      "durationSec": 4.0,
+      "lensAndFraming": "85mm Extreme Close-Up Worm's-Eye Cold Open Hook (00:00-00:04) — Giant clawed foot of IGNIS_REX slamming black volcanic sand & glowing orange embers"
+    },
+    {
+      "shotId": "SHOT04_CLAW_SLASH_85MM_CU",
+      "mediaId": "20547d70-3aef-4213-9654-74f9ffe186ff",
+      "durationSec": 5.0,
+      "lensAndFraming": "85mm Tight Medium Close-Up — LEVIATHAN_SPINO's curved obsidian claws raking across IGNIS_REX's chest with glowing sparks & scale fragments"
+    },
+    {
+      "shotId": "SHOT06_AMBER_EYE_IGNITE_85MM_ECU",
+      "mediaId": "2924c712-abe6-41fd-9936-6e527359bb8a",
+      "durationSec": 6.0,
+      "lensAndFraming": "85mm Extreme Close-Up Push-In — IGNIS_REX's downed head in black volcanic sand as its amber eye ignites fiery gold, vents hot white steam, and surges upward"
+    },
+    {
+      "shotId": "SHOT07_JAW_LOCK_50MM_MCU",
+      "mediaId": "b8365235-dd88-4d5e-a734-71039a7772c9",
+      "durationSec": 8.0,
+      "lensAndFraming": "50mm Dutch-Tilt Tight Medium Close-Up — IGNIS_REX locks 12,800 PSI jaws onto full-scale 15.8m LEVIATHAN_SPINO's throat and wrenches downward"
+    },
+    {
+      "shotId": "SHOT08_SEISMIC_SLAM_MOTIONLESS_KO",
+      "mediaId": "f7787a4e-56ca-4115-bcfd-9f21dd144630",
+      "durationSec": 9.0,
+      "lensAndFraming": "24mm Wide Low-Angle Seismic Body Slam — LEVIATHAN_SPINO collapses and remains 100% motionless flat on its side with eyes tightly shut and snout limp on the sand while IGNIS_REX stands beside it"
+    }
+  ],
   "targetDurationSec": 120.0,
   "masterResolution": "1920x1080",
   "fps": 24,
