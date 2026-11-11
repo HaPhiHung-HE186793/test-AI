@@ -1,5 +1,5 @@
 [Script Info]
-Title: Colosseum Dinosaur Battle V3 SceneBuilder-First HUD & Subtitles
+Title: Colosseum Dinosaur Battle V3 Upgraded Broadcast HUD & Subtitles
 ScriptType: v4.00+
 PlayResX: 1920
 PlayResY: 1080
@@ -8,35 +8,42 @@ ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: SubVN,DejaVu Sans,36,&H00FFFFFF,&H0000FFFF,&H00000000,&H96000000,-1,0,0,0,100,100,0,0,3,3,1,2,60,60,34,1
-Style: TopBar,DejaVu Sans Mono,26,&H00E0F0FF,&H0000FFFF,&H00000000,&HB4080C14,-1,0,0,0,100,100,1,0,3,2,0,8,40,40,18,1
-Style: HudRex,DejaVu Sans Mono,25,&H0050A0FF,&H0000FFFF,&H00000000,&HC80A101E,-1,0,0,0,100,100,0,0,3,2.5,0,7,890,30,64,1
-Style: HudSpino,DejaVu Sans Mono,25,&H00FFDF40,&H0000FFFF,&H00000000,&HC8181208,-1,0,0,0,100,100,0,0,3,2.5,0,7,45,40,64,1
-Style: CenterBanner,DejaVu Sans,44,&H0000D4FF,&H00FFFFFF,&H00000000,&HB4000000,-1,0,0,0,100,100,2,0,3,4,2,8,40,40,62,1
-Style: WinnerBanner,DejaVu Sans,42,&H0000EAFF,&H00FFFFFF,&H00001840,&HD0000818,-1,0,0,0,100,100,2,0,3,4,2,2,40,40,120,1
+Style: SubVN,DejaVu Sans,34,&H00FFFFFF,&H0000FFFF,&H00000000,&H8C000000,-1,0,0,0,100,100,0,0,3,2.5,1,2,60,60,28,1
+Style: TopBar,DejaVu Sans Mono,24,&H00E8F4FF,&H0000FFFF,&H00000000,&HA8080C14,-1,0,0,0,100,100,1,0,3,2,0,8,40,40,14,1
+Style: HudRex,DejaVu Sans Mono,22,&H0058A8FF,&H0000FFFF,&H00000000,&HB80A101E,-1,0,0,0,100,100,0,0,3,2,0,7,40,40,56,1
+Style: HudSpino,DejaVu Sans Mono,22,&H00FFDF40,&H0000FFFF,&H00000000,&HB8181208,-1,0,0,0,100,100,0,0,3,2,0,9,40,40,56,1
+Style: CenterBanner,DejaVu Sans,38,&H0000D4FF,&H00FFFFFF,&H00000000,&HA8000000,-1,0,0,0,100,100,2,0,3,3,1,8,40,40,54,1
+Style: WinnerBanner,DejaVu Sans,38,&H0000EAFF,&H00FFFFFF,&H00001840,&HC0000818,-1,0,0,0,100,100,2,0,3,3,1,8,40,40,54,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 1,0:00:00.00,0:00:32.80,TopBar,,0,0,0,,>> COLOSSEUM BASALT ARENA  |  INTRO & COMBAT STATS  |  IGNIS_REX (T-REX)  VS  LEVIATHAN_SPINO (SPINOSAURUS) <<
-Dialogue: 1,0:00:32.80,0:00:56.20,TopBar,,0,0,0,,>> IGNIS_REX [HP: █████████░ 90%]   VS   [HP: █████████░ 92%] LEVIATHAN_SPINO  |  24mm WIDE: 20-TON ARENA CLASH <<
-Dialogue: 1,0:00:56.20,0:01:12.60,TopBar,,0,0,0,,!! IGNIS_REX [HP: █████░░░░░ 52% PINNED!]   VS   [HP: ████████░░ 80%] LEVIATHAN_SPINO  |  85mm CLOSE-UP: CLAW DOMINANCE !!
-Dialogue: 1,0:01:12.60,0:01:32.00,TopBar,,0,0,0,,>> IGNIS_REX [HP: █████░░░░░ 52% RAGE!]  VS  [HP: █░░░░░░░░░ 12% CRIT] LEVIATHAN_SPINO | 45-DEG JAW LIFT <<
-Dialogue: 1,0:01:32.00,0:02:00.00,TopBar,,0,0,0,,** IGNIS_REX [HP: █████░░░░░ 52% WINNER!]   VS   [HP: ░░░░░░░░░░ 0% DEFEATED] LEVIATHAN_SPINO  |  CHAMPION CROWNED **
-Dialogue: 2,0:00:02.00,0:00:15.90,HudRex,,0,0,0,,>> FIGHTER #01: IGNIS_REX (GÓC ĐÀI ĐÁ HẮC NHAM)\N• LOÀI (SPECIES): Tyrannosaurus Rex ('Bạo Chúa Hắc Nham')\N• KÍCH THƯỚC: Dài 13.5m  |  Cao 5.4m  |  Nặng 9.8 Tấn\N• LỰC CẮN (BITE FORCE): 12,800 PSI  [██████████ 100/100]\N• GIÁP CỔ (OSTEODERM ARMOR): Hắc Nham [█████████░ 92/100]\N• TỐC ĐỘ HÚC (CHARGE): 32 km/h       [████████░░ 78/100]\N• TUYỆT KỸ: Cú Quật Hàm Nghiền Xương (Bone-Crushing Slam)
-Dialogue: 2,0:00:16.80,0:00:32.20,HudSpino,,0,0,0,,>> FIGHTER #02: LEVIATHAN_SPINO (GÓC ĐÀI THỦY NHIỆT)\N• LOÀI (SPECIES): Spinosaurus Aegyptiacus ('Thủy Quái Đại Dương')\N• KÍCH THƯỚC: Dài 15.8m  |  Buồm 2.2m |  Nặng 10.5 Tấn\N• LỰC VỒ MÓNG VUỐT (CLAW STRIKE): 8,200 PSI [██████████ 98/100]\N• LỰC CẮN (JAW SNAP): 6,500 PSI             [███████░░░ 68/100]\N• TỐC ĐỘ ĐÒN (STRIKE AGILITY): Lưỡng Cư      [██████████ 95/100]\N• TUYỆT KỸ: Liên Hoàn Trảm Vuốt Thủy Triều (Tidal Claw Barrage)
-Dialogue: 3,0:00:31.00,0:00:34.00,CenterBanner,,0,0,0,,>> FIGHT! — TRẬN TỬ CHIẾN BẮT ĐẦU! <<
-Dialogue: 3,0:00:34.50,0:00:40.50,CenterBanner,,0,0,0,,>> 20.3-TON COLLISION IMPACT! <<
-Dialogue: 3,0:00:56.50,0:01:06.50,CenterBanner,,0,0,0,,!! 85mm CLOSE-UP: SPINO 8,200 PSI CLAW PIN! !!
-Dialogue: 3,0:01:13.50,0:01:31.50,CenterBanner,,0,0,0,,>> CRITICAL COUNTER: 12,800 PSI JAW-LOCK & LIFT! <<
-Dialogue: 3,0:01:32.20,0:01:39.50,CenterBanner,,0,0,0,,!! MATCH-ON-ACTION: SEISMIC BODY SLAM! !!
-Dialogue: 3,0:01:45.50,0:02:00.00,WinnerBanner,,0,0,0,,** CHIẾN THẮNG CUỐI CÙNG: IGNIS_REX (TYRANNOSAURUS REX) **
-Dialogue: 2,0:00:00.40,0:00:04.80,SubVN,,0,0,0,,Chào mừng quý vị đến với Đấu Trường Hắc Nham! Trận tử chiến của hai siêu thực thể săn mồi tối thượng!
-Dialogue: 2,0:00:05.00,0:00:15.80,SubVN,,0,0,0,,Ở góc đài bên trái: IGNIS REX, Khủng Long Bạo Chúa Tyrannosaurus Rex! Dài 13 phẩy 5 mét, nặng 9 phẩy 8 tấn, lực cắn nghiền xương 12 ngàn 800 P S I, giáp hắc nham 92 trên 100!
-Dialogue: 2,0:00:16.80,0:00:32.20,SubVN,,0,0,0,,Ở góc đài bên phải: LEVIATHAN SPINO, Spinosaurus Aegyptiacus! Dài kỷ lục 15 phẩy 8 mét, nặng 10 phẩy 5 tấn, buồm lưng 2 phẩy 2 mét và bộ móng vuốt 8 ngàn 200 P S I! Trận chiến... BẮT ĐẦU!
-Dialogue: 2,0:00:33.20,0:00:43.50,SubVN,,0,0,0,,Cả hai quái thú 10 tấn lao thẳng vào tâm võ đài! Cú va chạm 20 tấn làm mặt đất hắc nham rung chuyển dữ dội!
-Dialogue: 2,0:00:44.20,0:00:55.40,SubVN,,0,0,0,,Ngay sau cú tông trực diện, hai gã khổng lồ khóa chặt hàm răng và vai, giằng co quyết liệt giữa tâm đấu trường!
-Dialogue: 2,0:00:56.60,0:01:12.00,SubVN,,0,0,0,,Nguy hiểm cho Bạo Chúa! Spinosaurus tận dụng chiều cao, vung vuốt với lực tát 8 ngàn 200 P S I, ép Ignis Rex khuỵu gối và đè chặt xuống bùn!
-Dialogue: 2,0:01:13.00,0:01:21.80,SubVN,,0,0,0,,Spinosaurus dồn toàn bộ 10 phẩy 5 tấn trọng lượng đè xuống! Nhưng đôi mắt hổ phách của Ignis Rex bỗng rực sáng dữ tợn!
-Dialogue: 2,0:01:22.20,0:01:31.50,SubVN,,0,0,0,,PHẢN ĐÒN HỦY DIỆT! Ignis Rex bật dậy từ dưới bùn, khóa chặt hàm răng 12 ngàn 800 P S I vào thẳng cổ Spinosaurus và nhấc bổng!
-Dialogue: 2,0:01:32.40,0:01:44.50,SubVN,,0,0,0,,MỘT CÚ QUẬT NGÀN CÂN! Bạo Chúa đập thẳng đối thủ 10 phẩy 5 tấn xuống sàn đá hắc nham nổ tung bụi mù!
-Dialogue: 2,0:01:45.20,0:01:59.50,SubVN,,0,0,0,,Chân đặt lên kẻ bại trận, tiếng gầm vang vọng khắp võ đài! Người chiến thắng cuối cùng: IGNIS REX, BẠO CHÚA HẮC NHAM ĐĂNG QUANG TUYỆT ĐỐI!
+Dialogue: 1,0:00:00.00,0:00:32.00,TopBar,,0,0,0,,>> COLOSSEUM BASALT ARENA  |  IGNIS_REX [HP: 100%]   VS   [HP: 100%] LEVIATHAN_SPINO  |  ACT I: CHALLENGER INTROS <<
+Dialogue: 1,0:00:32.00,0:00:36.20,TopBar,,0,0,0,,>> IGNIS_REX [HP: ██████████ 100%]   VS   [HP: ██████████ 100%] LEVIATHAN_SPINO  |  24mm WIDE: CENTER CHARGE <<
+Dialogue: 1,0:00:36.20,0:00:54.50,TopBar,,0,0,0,,>> IGNIS_REX [HP: █████████░ 88%]   VS   [HP: █████████░ 86%] LEVIATHAN_SPINO  |  20-TON SHOULDER RECOIL & CLASH <<
+Dialogue: 1,0:00:54.50,0:00:56.50,TopBar,,0,0,0,,!! IGNIS_REX [HP: █████████░ 88%]   VS   [HP: █████████░ 86%] LEVIATHAN_SPINO  |  85mm CLOSE-UP: SPINO CLAW SLASH !!
+Dialogue: 1,0:00:56.50,0:01:06.80,TopBar,,0,0,0,,!! IGNIS_REX [HP: ███████░░░ 68% KD!]   VS   [HP: ████████░░ 82%] LEVIATHAN_SPINO  |  8,200 PSI CLAW KNOCKDOWN !!
+Dialogue: 1,0:01:06.80,0:01:13.50,TopBar,,0,0,0,,!! IGNIS_REX [HP: █████░░░░░ 52% BRACE!]   VS   [HP: ████████░░ 80%] LEVIATHAN_SPINO  |  CLOSE-UP SHOULDER PIN !!
+Dialogue: 1,0:01:13.50,0:01:18.00,TopBar,,0,0,0,,>> IGNIS_REX [HP: █████░░░░░ 52% OVERDRIVE!]   VS   [HP: ██████░░░░ 60%] LEVIATHAN_SPINO  |  JAW-LOCK COUNTER <<
+Dialogue: 1,0:01:18.00,0:01:28.50,TopBar,,0,0,0,,>> IGNIS_REX [HP: █████░░░░░ 52% RAGE!]   VS   [HP: ███░░░░░░░ 28% KNEELING] LEVIATHAN_SPINO  |  12,800 PSI NECK LOCK <<
+Dialogue: 1,0:01:28.50,0:01:32.20,TopBar,,0,0,0,,>> IGNIS_REX [HP: █████░░░░░ 52% FINISHER!]   VS   [HP: █░░░░░░░░░ 10% CRIT!] LEVIATHAN_SPINO  |  DOWNWARD NECK WRENCH <<
+Dialogue: 1,0:01:32.20,0:02:00.00,TopBar,,0,0,0,,** IGNIS_REX [HP: █████░░░░░ 52% CHAMPION!]   VS   [HP: ░░░░░░░░░░ 0% K.O.] LEVIATHAN_SPINO  |  VICTORY CORONATION **
+Dialogue: 2,0:00:02.00,0:00:15.40,HudRex,,0,0,0,,>> FIGHTER #01: IGNIS_REX (CỔNG TÂY)\N• LOÀI: Tyrannosaurus Rex ('Bạo Chúa Hắc Nham')\N• THÔNG SỐ: Dài 13.5m | Nặng 9.8 Tấn | Giáp 92/100\N• LỰC CẮN: 12,800 PSI [██████████] • TUYỆT KỸ: Quật Hàm Nghiền Xương
+Dialogue: 2,0:00:16.60,0:00:31.40,HudSpino,,0,0,0,,>> FIGHTER #02: LEVIATHAN_SPINO (CỔNG ĐÔNG)\N• LOÀI: Spinosaurus Aegyptiacus ('Thủy Quái Đại Dương')\N• THÔNG SỐ: Dài 15.8m | Buồm 2.2m | Nặng 10.5 Tấn\N• LỰC VUỐT: 8,200 PSI [██████████] • TUYỆT KỸ: Trảm Vuốt Thủy Triều
+Dialogue: 3,0:00:30.80,0:00:33.50,CenterBanner,,0,0,0,,>> FIGHT! — TRẬN TỬ CHIẾN BẮT ĐẦU! <<
+Dialogue: 3,0:00:35.80,0:00:40.50,CenterBanner,,0,0,0,,>> 20.3-TON SHOULDER CLASH & ELASTIC RECOIL! <<
+Dialogue: 3,0:00:55.80,0:01:01.50,CenterBanner,,0,0,0,,!! 8,200 PSI CLAW KNOCKDOWN! !!
+Dialogue: 3,0:01:06.50,0:01:12.00,CenterBanner,,0,0,0,,!! 85mm CLOSE-UP: SPINO SHOULDER PIN! !!
+Dialogue: 3,0:01:16.50,0:01:23.00,CenterBanner,,0,0,0,,>> CRITICAL COUNTER: 12,800 PSI NECK LOCK! <<
+Dialogue: 3,0:01:28.00,0:01:31.90,CenterBanner,,0,0,0,,>> MAXIMUM TORQUE: DOWNWARD NECK WRENCH! <<
+Dialogue: 3,0:01:32.10,0:01:38.50,CenterBanner,,0,0,0,,!! MATCH-ON-ACTION: SEISMIC BODY SLAM (K.O.)! !!
+Dialogue: 3,0:01:51.50,0:02:00.00,WinnerBanner,,0,0,0,,** NHÀ VÔ ĐỊCH TUYỆT ĐỐI: IGNIS_REX (TYRANNOSAURUS REX) **
+Dialogue: 2,0:00:00.40,0:00:04.60,SubVN,,0,0,0,,Chào mừng tới Đấu Trường Hắc Nham! Trận tử chiến của hai siêu thực thể săn mồi!
+Dialogue: 2,0:00:04.90,0:00:15.60,SubVN,,0,0,0,,Từ cổng Tây: IGNIS REX, Bạo Chúa Tyrannosaurus Rex! Nặng 9 phẩy 8 tấn, lực cắn nghiền xương 12 ngàn 800 P S I!
+Dialogue: 2,0:00:16.60,0:00:31.60,SubVN,,0,0,0,,Ở cổng Đông: LEVIATHAN SPINO, Spinosaurus Aegyptiacus! Dài 15 phẩy 8 mét, nặng 10 phẩy 5 tấn với bộ vuốt sắc lẹm! Trận chiến... BẮT ĐẦU!
+Dialogue: 2,0:00:32.80,0:00:43.50,SubVN,,0,0,0,,Hai cỗ máy 10 tấn lao thẳng vào tâm võ đài! Cú húc vai 20 tấn nổ tung bụi cát, đẩy cả hai bật lùi dữ dội!
+Dialogue: 2,0:00:44.20,0:00:54.00,SubVN,,0,0,0,,Không một bước nhượng bộ! Hai gã khổng lồ gầm vang, liên tục tung những cú táp hàm uy lực giữa tâm đấu trường!
+Dialogue: 2,0:00:55.20,0:01:12.50,SubVN,,0,0,0,,Đòn đánh hiểm hóc! Spinosaurus vung vuốt 8 ngàn 200 P S I quật ngã Ignis Rex xuống cát đen, rồi lao tới ghì chặt vai Bạo Chúa!
+Dialogue: 2,0:01:13.80,0:01:22.80,SubVN,,0,0,0,,Giữa vòng vây nghẹt thở, đôi mắt hổ phách của Ignis Rex rực sáng! Bạo Chúa chồm tới, khóa chặt hàm răng vào thẳng cổ Spinosaurus!
+Dialogue: 2,0:01:23.20,0:01:31.60,SubVN,,0,0,0,,PHẢN ĐÒN HỦY DIỆT! Với lực cắn 12 ngàn 800 P S I, Ignis Rex bẻ gập cổ đối thủ và ghì mạnh xuống mặt cát!
+Dialogue: 2,0:01:32.30,0:01:44.20,SubVN,,0,0,0,,CÚ QUẬT NGÀN CÂN! Xác quái thú 10 phẩy 5 tấn đập xuống sàn đá nổ tung bụi mù, hoàn toàn gục ngã!
+Dialogue: 2,0:01:45.00,0:01:59.50,SubVN,,0,0,0,,Đứng sừng sững bên cạnh kẻ bại trận, tiếng gầm chiến thắng vang dội khắp võ đài! Nhà vô địch tuyệt đối: IGNIS REX, BẠO CHÚA HẮC NHAM!

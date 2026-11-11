@@ -171,12 +171,12 @@
     {
       "clusterIndex": 4,
       "clusterId": "C04_ACT2A_SPINO_HYDRO_CLAW_DOMINANCE",
-      "act": "Act II-A — Spino Claw Dominance & Solid-Ground Standoff",
-      "targetTimelineWindow": "00:56.2 - 01:12.6 (16.4s Monolithic Cluster)",
-      "rawDurationTargetSec": 16.97,
+      "act": "Act II-A — Spino Claw Knockdown & Native 85mm Push-In Shoulder Pin",
+      "targetTimelineWindow": "00:54.5 - 01:13.5 (19.0s Auto-Merged Monolithic Cluster)",
+      "rawDurationTargetSec": 20.48,
       "workflowId": "f388dbda-867b-4cbb-b7fa-81325d1ac043",
       "seedPrimaryMediaId": "36c12f1d-a76c-4232-9ef1-4ad3572edc4c",
-      "finalPrimaryMediaId": "eaba8b81-e019-4aea-a58c-81c24b9c3120",
+      "finalPrimaryMediaId": "d65ab02e-4d99-4a90-a33b-a1446ae0d167",
       "seedDurationSec": 8.0,
       "seedEndFrame": 168,
       "extends": [
@@ -190,18 +190,29 @@
           "sourceStartFrame": 0,
           "sourceEndFrame": 168,
           "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the open center of the 3-tier Roman Basalt Colosseum at sunset, the towering slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right steps forward on the solid dark sand floor and slashes its muscular three-fingered reptilian foreclaw against the shoulder of the charcoal-black Tyrannosaurus Rex on the left, driving the T-Rex half a step backward into a low crouch on the solid ground as both dinosaurs roar fiercely at each other. Strictly photorealistic live-action cinema, solid impenetrable ground plane, zero sinking into the floor, zero mesh overlap, zero white 2D slash lines."
+        },
+        {
+          "round": 2,
+          "extendId": "EXT_4_2",
+          "mediaId": "d65ab02e-4d99-4a90-a33b-a1446ae0d167",
+          "sourceVideoMediaId": "eaba8b81-e019-4aea-a58c-81c24b9c3120",
+          "modelKey": "macaron_cookie_extend_10s",
+          "durationSec": 20.48,
+          "sourceStartFrame": 0,
+          "sourceEndFrame": 252,
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop as the camera executes a smooth 85mm telephoto push-in and slight 35-degree low-angle orbit, the slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right lunges forward and slams its massive clawed hand down against the shoulder of the charcoal-black Tyrannosaurus Rex on the left, driving the T-Rex down into a low defensive crouch on the wet dark volcanic sand as dust and sand erupt around them while the T-Rex glares back with blazing amber eyes."
         }
       ],
       "cutOnActionTrim": {
         "startSec": 0.15,
-        "endSec": 16.55
+        "endSec": 19.15
       }
     },
     {
       "clusterIndex": 5,
       "clusterId": "C05_ACT2B_CRIMSON_OVERDRIVE_COUNTER",
-      "act": "Act II-B — Center-Arena Counter-Surge & 12,800 PSI Shoulder/Neck Lock (Zero Wall Clipping)",
-      "targetTimelineWindow": "01:12.6 - 01:32.0 (19.4s Auto-Merged Monolithic Cluster)",
+      "act": "Act II-B — Center-Arena Counter-Surge, 12,800 PSI Jaw-Lock & Downward Neck Wrench (Zero Wall Clipping)",
+      "targetTimelineWindow": "01:13.5 - 01:32.0 (18.5s Auto-Merged Monolithic Cluster)",
       "rawDurationTargetSec": 26.03,
       "workflowId": "b723ec82-6a18-4840-92b5-75c2dcf5946e",
       "seedPrimaryMediaId": "ac7b4857-924e-4ede-b455-667dc407ab8f",
@@ -233,19 +244,19 @@
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 0.15,
-        "endSec": 19.55
+        "startSec": 6.3,
+        "endSec": 24.8
       }
     },
     {
       "clusterIndex": 6,
       "clusterId": "C06_ACT3_SEISMIC_FINISHER_VICTORY",
-      "act": "Act III — Seismic Finisher Slam & Beside-Body Alpha Victory Roar (Zero Leg Clipping)",
-      "targetTimelineWindow": "01:32.0 - 01:53.8 (21.8s Auto-Merged Monolithic Cluster)",
-      "rawDurationTargetSec": 25.0,
+      "act": "Act III — Seismic Finisher Slam, Beside-Body Victory Roar & Native Worm's-Eye Dolly Push-In (Zero Leg Clipping)",
+      "targetTimelineWindow": "01:32.0 - 02:00.0 (28.0s Auto-Merged Monolithic Cluster)",
+      "rawDurationTargetSec": 31.02,
       "workflowId": "6284056f-0b2a-4b50-b4d1-fe3ac47852ab",
       "seedPrimaryMediaId": "29984a4b-cba2-4c00-bcc8-9c22ec3b9e9c",
-      "finalPrimaryMediaId": "51199a27-e34e-44ca-a29d-d88edb038a47",
+      "finalPrimaryMediaId": "140503e6-99de-4775-b92a-7f3793fa707d",
       "seedDurationSec": 8.0,
       "seedEndFrame": 168,
       "extends": [
@@ -270,11 +281,22 @@
           "sourceStartFrame": 0,
           "sourceEndFrame": 360,
           "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the open center of the 3-tier Roman Basalt Colosseum at fiery sunset, the defeated slate-teal Spinosaurus lies motionless on its side on the right half of the dark volcanic sand floor facing left, while the victorious charcoal-black Tyrannosaurus Rex stands tall on the solid dark sand on the left half of the frame beside the fallen Spinosaurus, throws its head skyward, and unleashes a thunderous championship victory roar as the camera executes a majestic slow pull-back. Strict rigid-body physics: zero legs passing through or clipping into the Spinosaurus body."
+        },
+        {
+          "round": 3,
+          "extendId": "EXT_6_3",
+          "mediaId": "140503e6-99de-4775-b92a-7f3793fa707d",
+          "sourceVideoMediaId": "51199a27-e34e-44ca-a29d-d88edb038a47",
+          "modelKey": "macaron_cookie_extend_10s",
+          "durationSec": 31.02,
+          "sourceStartFrame": 0,
+          "sourceEndFrame": 504,
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop, the camera executes a dramatic Spielberg slow dolly push-in and tilts upward into an extreme low-angle worm-eye hero close-up on the victorious charcoal-black Tyrannosaurus Rex standing on the solid dark sand on the left beside the motionless defeated Spinosaurus on the right; the T-Rex throws its massive scarred head skyward with blazing amber eyes and unleashes a final earth-shattering championship roar against the fiery sunset storm sky and flickering Colosseum torches."
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 1.0,
-        "endSec": 22.8
+        "startSec": 1.2,
+        "endSec": 30.8
       }
     }
   ]

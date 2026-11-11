@@ -4,4 +4,4 @@ file '/mnt/data/backup/project_personal/test-AI/outputs/dinosaur_colosseum_battl
 file '/mnt/data/backup/project_personal/test-AI/outputs/dinosaur_colosseum_battle_v3_scenebuilder/clips_trimmed/04_C04_85mm_tight_claw_closeup.mp4'
 file '/mnt/data/backup/project_personal/test-AI/outputs/dinosaur_colosseum_battle_v3_scenebuilder/clips_trimmed/05_C05_45deg_torchwall_lift.mp4'
 file '/mnt/data/backup/project_personal/test-AI/outputs/dinosaur_colosseum_battle_v3_scenebuilder/clips_trimmed/06_C06_wide_seismic_slam_stomp.mp4'
-file '/mnt/data/backup/project_personal/test-AI/outputs/dinosaur_colosseum_battle_v3_scenebuilder/clips_trimmed/07_C05_85mm_wormseye_hero_roar.mp4'
+file '/mnt/data/backup/project_personal/test-AI/outputs/dinosaur_colosseum_battle_v3_scenebuilder/clips_trimmed/07_C06_85mm_wormseye_hero_roar.mp4'
