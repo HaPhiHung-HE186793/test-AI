@@ -65,17 +65,29 @@ Skill này trang bị cho Agent quy trình **Đạo Diễn & Dựng Phim Cốt L
    - **Luật 7.4 — Giữ Nguyên Trục Hướng Đầu Khi Ngã & Tư Thế Đứng Cạnh Chiến Thắng (`Consistent 180° Axis & Beside-Body Victory Stance`)**:
      - Khi nhân vật B bị quật ngã xuống sàn, phải giữ nguyên hướng đầu như lúc đang đứng (ví dụ: đứng ở bên phải quay đầu sang trái $\rightarrow$ ngã xuống bên phải đầu vẫn hướng sang trái), và nhân vật A chiến thắng phải **đứng hai chân trên mặt đất rắn chắc bên cạnh đối thủ (`both hind feet planted firmly on the solid ground beside the fallen opponent, zero legs passing through or clipping into the opponent's body`)**.
 
+8. **CẤM TUYỆT ĐỐI DÙNG `FFMPEG` ĐỂ DỰNG HẬU KỲ — BẮT BUỘC THỰC HIỆN & XUẤT VIDEO NGUYÊN BẢN 100% TRỰC TIẾP TỪ `SCENEBUILDER` (`100% NATIVE FLOW EXPORT + NATIVE MUSIC & SFX`)**:
+   - **CẤM tự nghĩ quy trình hậu kỳ bằng `ffmpeg`**:
+     - **0% `ffmpeg` crop / scale / zoom** (không được lấy cảnh rộng cắt cúp giả làm cảnh cận).
+     - **0% `ffmpeg` blur / pan giả** (`avgblur`, dịch khung `x/y`).
+     - **0% `ffmpeg` cắt ghép cơ học ngoài luồng** (`concat`, `-ss`, `-t`, `setpts`, `atempo`).
+     - **0% đè chữ HUD giải đấu (`.ass`), phụ đề cứng (`.srt`), hay lồng tiếng `edge-tts` / ghép nhạc ngoài luồng**.
+   - **Cách thực hiện chuẩn 100% trên màn `SceneBuilder` (`/project/:projectId/scene/:sceneId`)**:
+     1. Khởi tạo từ **1 `Seed Clip` mồi** đưa vào Timeline của `SceneBuilder`.
+     2. Thực hiện liên hoàn **`Kéo dài (Extend — Pkc / VIDEO_EXTEND)`** và **`Nhảy đến (Jump To — veo_3_1_jump_to_fast_landscape_fl)`** trực tiếp ngay trên Timeline của `SceneBuilder`.
+     3. Ngay trong Prompt của mỗi bước `Seed` / `Extend` / `Jump To`, mô tả đầy đủ cả **Chuyển động máy quay (Cận cảnh `85mm` / Lia máy `Whip-Pan` / Đổi góc máy)**, **Hiệu ứng âm thanh vật lý (`SFX`)**, và **Nhạc nền giao hưởng điện ảnh (`Cinematic Orchestral Score`)** để mô hình của Google Flow tự sinh đồng bộ cả hình ảnh, hiệu ứng lẫn âm nhạc.
+     4. Sau khi hoàn tất chuỗi `Extend` / `Jump To` trên Timeline của `SceneBuilder`, **xuất thẳng file video `.mp4` nguyên bản từ chính Google Flow (`Auto-Merged Native MP4` / `SceneBuilder Export`)** và nhúng trực tiếp file nguyên bản đó vào báo cáo nghiệm thu!
+
 ---
 
 ## 🚀 Quy Trình Thực Thi Từng Bước Khi Nhận Yêu Cầu Làm Video Trên Google Flow
 
 1. **Bước 1 — Đọc Đầy Đủ Các Kho Tri Thức Gốc**:
    - Đọc `GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md`, `GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md`, `GOOGLE_FLOW_MASTER_EXECUTION_PIPELINE_AND_CASES.md`, và `GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md`.
-2. **Bước 2 — Thiết Kế Góc Máy & Chuyển Cảnh Theo 10 Đại Đạo Diễn (`Spielberg, Miller, Kurosawa, Lubezki, Villeneuve, Wright, Bong Joon-ho, Nolan, Snyder, Cameron`)**:
-   - Phân bổ rõ: Những đoạn nào cùng góc máy thì nối bằng **`Extend` lia máy** hoặc **`Whip-Pan`**; những điểm nào cắt cảnh (`Cut`) thì bắt buộc đổi góc $\ge 30^\circ$ và đổi tiêu cự (`24mm Wide` $\leftrightarrow$ `85mm Tight Close-Up` / `18mm Worm's-Eye Low Angle`).
-3. **Bước 3 — Tiền Kỳ & Tạo `Seed Clip` Ở Màn Ngoài (`/project/:projectId`)**:
-   - Tạo và khóa `@Character` khe kép (`Chân dung` + `Cơ thể 3 góc`) + `@Environment` bằng `🍌 Nano Banana Pro` (`0 Credit`).
-   - Tạo `Seed Clip` và đưa ngay vào `SceneBuilder` (`/project/:projectId/scene/:sceneId` qua RPC `oWTRd`).
-4. **Bước 4 — Đạo Diễn Trực Tiếp Trong `SceneBuilder` (`/scene/:sceneId`) & Kiểm Định Khung Hình Biên (`Boundary Verification`)**:
-   - Tinh chỉnh `Seed Clip` trực tiếp trong `SceneBuilder` (`Tkc`), chạy vòng lặp `Extend` (`Pkc`) ➔ `Verify Head` (`sZ = true`) ➔ `Redo Extend` (`Kkc`) ➔ `Auto-Merge`.
-   - Kiểm tra từng cặp khung hình cuối–đầu giữa các Cụm cảnh để đảm bảo **0% lỗi lúc to lúc nhỏ**, **0% lặp lại hành động**, và **100% mượt mà như phim chiếu rạp**!
+2. **Bước 2 — Thiết Kế Kịch Bản Liên Hoàn Trên `SceneBuilder` (`Seed Clip` ➔ Chuỗi `Extend` / `Jump To`)**:
+   - Thiết kế rõ từng nhịp nối tiếp nhau trên Timeline của `SceneBuilder`: Mở đầu `Cold Open` cận cảnh (`85mm` Foot Stomp) ➔ `Extend` / `Jump To` ra toàn cảnh giao chiến ➔ `Extend` / `Jump To` vào cận cảnh vung vuốt (`85mm`) ➔ `Extend` / `Jump To` đặc tả mắt hổ phách bừng sáng & khóa hàm (`50mm`) ➔ `Extend` cú quật địa chấn K.O. bất động 100% & gầm chiến thắng, kèm chỉ dẫn **SFX + Nhạc nền giao hưởng (`Cinematic Score`)** xuyên suốt trong từng Prompt.
+3. **Bước 3 — Tiền Kỳ & Tạo `Seed Clip` Đưa Vào `SceneBuilder`**:
+   - Khóa `@Character` và `@Environment`, tạo `Seed Clip` mở đầu và đưa vào `SceneBuilder` (`/project/:projectId/scene/:sceneId`).
+4. **Bước 4 — Chạy Chuỗi `Extend` (`Pkc` / `qoc`) / `Jump To` Liên Hoàn Ngay Trên Timeline Của `SceneBuilder` & Xuất Thẳng File Nguyên Bản (`export-native-scene.mjs`)**:
+   - Ở mỗi nhịp `Extend` / `Jump To` trên Timeline `SceneBuilder`, kiểm tra ngay đầu ngọn (`sZ = true`); nếu chưa đạt thì bấm `Redo Extend` (`Kkc` / `loc`) hoặc sửa trực tiếp (`Tkc` / `uoc`) ngay trong `SceneBuilder`.
+   - Khi đã đạt chuẩn 100%, tiếp tục `Extend` / `Jump To` nhịp kế tiếp để Google Flow tự động **Auto-Merge** liền mạch.
+   - Cuối cùng, gọi trình xuất cảnh nguyên bản của `SceneBuilder` (`window.__flowSB.download()` / `ns.hsb(sb.Bf, { I1 })` tương ứng RPC máy chủ `GjQLTd` + `IxdSwd` qua script [export-native-scene.mjs](./scripts/export-native-scene.mjs)) để **tải thẳng file video `.mp4` nguyên bản từ chính máy chủ Google Flow** (`0% ffmpeg` chỉnh sửa, `0%` crop/zoom/blur, `0%` đè chữ HUD) và nhúng trực tiếp vào báo cáo nghiệm thu!

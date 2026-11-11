@@ -71,10 +71,30 @@ Khi tạo hoặc kéo dài bất kỳ cảnh hành động, va chạm, vật l�
 
 ---
 
-## 5. 📺 QUY TẮC BẮT BUỘC NHÚNG VIDEO TRỰC TIẾP VÀO BÁO CÁO NGHIỆM THU (`EMBEDDED PLAYABLE VIDEO IN ARTIFACT REPORT`)
+## 5. 🚫 QUY TẮC CẤM TUYỆT ĐỐI DÙNG `FFMPEG` DỰNG HẬU KỲ — BẮT BUỘC XUẤT VIDEO NGUYÊN BẢN 100% TỪ GOOGLE FLOW (`100% NATIVE SCENEBUILDER & NATIVE AUDIO/MUSIC`)
+
+> [!CAUTION]
+> **NGHIÊM CẤM TỰ NGHĨ QUY TRÌNH DỰNG HẬU KỲ BẰNG `FFMPEG` NGOÀI LUỒNG**:
+> Dù cuộc trò chuyện dài hay qua phiên mới, AI Agent **BẮT BUỘC** đọc và kích hoạt skill `flow-scenebuilder-director` (`.agents/skills/flow-scenebuilder-director/SKILL.md`) và **TUYỆT ĐỐI KHÔNG ĐƯỢC**:
+> 1. **CẤM dùng `ffmpeg` để cắt ghép cơ học (`concat`, `-ss`, `-t`, `setpts`, `atempo`)** các đoạn video rời ở ngoài.
+> 2. **CẤM dùng `ffmpeg` để phóng to/cắt khung hình (`scale`, `crop`)** giả làm góc cận cảnh, hoặc dùng bộ lọc làm mờ (`avgblur`) giả làm hiệu ứng lia máy Whip-Pan.
+> 3. **CẤM dùng `ffmpeg` đè chữ HUD giải đấu (`.ass`), đốt phụ đề cứng (`.srt`), hay chèn giọng đọc `edge-tts` / ghép nhạc ngoài luồng**.
+>
+> **QUY TRÌNH BẮT BUỘC 100% TRÊN MÀN `SCENEBUILDER` CỦA GOOGLE FLOW**:
+> 1. **Liên hoàn trên Timeline `SceneBuilder` (`Seed Clip` $\rightarrow$ `Kéo dài (Extend)` / `Nhảy đến (Jump To)`)**:
+>    - Khởi tạo từ `Seed Clip` mồi trong `SceneBuilder`, sau đó thực hiện liên hoàn **`Kéo dài (Extend — Pkc / VIDEO_EXTEND)`** và **`Nhảy đến (Jump To — veo_3_1_jump_to_fast_landscape_fl)`** ngay trên Timeline của `SceneBuilder`.
+>    - Mọi chuyển động máy quay (Lia máy `Whip-Pan`, Đổi góc cận cảnh `85mm ECU` / `50mm MCU`, Cú quật `Seismic Slam`, K.O. bất động 100%) đều phải do chính mô hình AI của Google Flow thực hiện thông qua `Extend` / `Jump To`.
+> 2. **Âm thanh, Hiệu ứng (`SFX`) & Nhạc nền (`Cinematic Score`) Nguyên Bản Từ Google Flow**:
+>    - Mô tả trực tiếp cả **Hiệu ứng âm thanh (`SFX`)** lẫn **Nhạc nền giao hưởng điện ảnh (`Cinematic Orchestral Score`)** ngay trong câu lệnh Prompt của từng bước `Seed` / `Extend` / `Jump To` trên `SceneBuilder` để mô hình Veo 3.1 / Omni 1.2 Flash tự sinh âm thanh và nhạc nền đồng bộ 100% với chuyển động hình ảnh.
+> 3. **Xuất thẳng file Video Nguyên Bản (`100% Native Export`) từ chính Google Flow**:
+>    - Tải trực tiếp file `.mp4` nguyên bản đã được chính Google Flow tự động nối liền (`Auto-Merge` / `Native Scene Export`) từ `SceneBuilder` — giữ nguyên 100% luồng video và âm thanh gốc của Google Flow (`0% ffmpeg` can thiệp vào video/audio).
+
+---
+
+## 6. 📺 QUY TẮC BẮT BUỘC NHÚNG VIDEO TRỰC TIẾP VÀO BÁO CÁO NGHIỆM THU (`EMBEDDED PLAYABLE VIDEO IN ARTIFACT REPORT`)
 
 Khi hoàn thành bất kỳ quy trình sản xuất hoặc chỉnh sửa video nào:
-1. Agent **BẮT BUỘC** copy toàn bộ các file video đầu ra (bản `Master MP4`, bản `Clean No-HUD MP4`, và các video cụm cảnh `C01..C0N`) vào thư mục Artifact của phiên làm việc hiện tại (`<appDataDir>/brain/<conversation-id>/`).
+1. Agent **BẮT BUỘC** copy file video nguyên bản xuất trực tiếp từ Google Flow vào thư mục Artifact của phiên làm việc hiện tại (`<appDataDir>/brain/<conversation-id>/`).
 2. Nhúng trực tiếp trình phát video bằng cú pháp `![Tên Video](/absolute/path/in/artifact_dir/video.mp4)` ngay ở **Mục 1 đầu báo cáo nghiệm thu (`.md` Artifact)** để người dùng bấm xem trực tiếp cả video lẫn báo cáo trên cùng một màn hình mà không phải mở thư mục ngoài tìm file.
 
 
