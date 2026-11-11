@@ -50,3 +50,22 @@ Khi làm phim hoặc tạo chuỗi cảnh chiến đấu/hành động trên Goo
      - `24mm Wide` $\xrightarrow{\text{Cut}}$ `85mm Extreme Worm's-Eye Hero Close-Up + Spielberg Slow Dolly Push-In`.
 3. **Ứng dụng 10 Kỹ Thuật Đạo Diễn Điện Ảnh vào Veo Prompt & Tính Năng Google Flow**:
    - Luôn tham chiếu bảng ánh xạ trong `GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md` (Spielberg Oner & Dolly Push-In, George Miller Crosshair Framing, Kurosawa Weather-as-Emotion & Match-on-Action Cut, Lubezki Wide-Lens Close-Up, Villeneuve Megalithic Scale, Edgar Wright Whip-Pan + Whoosh Bridge, Bong Joon-ho Vertical Power Blocking, Nolan Sub-Bass Weight, Snyder Impact Speed-Ramp, Cameron/Jackson 24Hz Seismic Micro-Tremor).
+
+---
+
+## 4. ⚛️ QUY TẮC VẬT LÝ CHỐNG XUYÊN KHUNG (`ZERO-CLIPPING RIGID-BODY PHYSICS` — CẤM XUYÊN NHAU / LÚN ĐẤT / XUYÊN TƯỜNG)
+
+Khi tạo hoặc kéo dài bất kỳ cảnh hành động, va chạm, vật lộn hoặc di chuyển nào trên Google Flow, Agent **BẮT BUỘC** tuân thủ 4 Định luật Vật lý Khối rắn (`Rigid-Body Physics`) sau để ngăn chặn tuyệt đối hiện tượng nhân vật xuyên qua nhau, lún xuống đất hoặc xuyên qua tường/background:
+
+1. **CẤM Dùng `START_END_FRAMES` (`First + Last Frame`) Cho Các Pha Cận Chiến Phức Tạp — BẮT BUỘC Dùng `START_FRAME` (`veo_3_1_i2v_s_fast_ultra`) + `EXTEND_VIDEO`**:
+   - Khi ép Veo nội suy giữa 2 ảnh tĩnh (`hX` + `xsa`) có tư thế chồng lấp, chênh lệch độ cao mặt đất, hoặc đảo chiều $180^\circ$, mô hình sẽ **biến hình ("morph") các khối 3D xuyên thẳng qua nhau**, mọc đầu từ dưới ngực đối phương, hoặc xoay xác $180^\circ$ cắt ngang qua chân trụ.
+   - **Giải pháp bắt buộc**: Khởi xuất `Seed Clip` của cảnh cận chiến bằng **`Wu: "START_FRAME"` (`Vf: "veo_3_1_i2v_s_fast_ultra"`)** từ **1 ảnh đầu tách biệt rõ ràng**, sau đó dùng **`Kéo dài (Extend — Wu: "EXTEND_VIDEO")`** để mô hình tự diễn hoạt va chạm theo động lực học tự nhiên.
+2. **Định Luật Phản Lực Đàn Hồi (`Elastic Recoil Law` — Chống Xuyên Đầu/Thân Khi Lao Vào Nhau)**:
+   - Hai thực thể khổng lồ lao vào nhau **KHÔNG BAO GIỜ** được đi xuyên qua không gian 3D của nhau. Trong Prompt bắt buộc phải mô tả rõ: **`collide shoulder-to-shoulder with solid rigid-body mass and immediately recoil/push back 1.5 meters apart upon impact — ZERO mesh interpenetration, bodies NEVER pass through each other`**.
+3. **Định Luật Khóa Mặt Phẳng Sàn & Khoảng Cách Tường `30m` (`Hard Ground-Plane Contact & 30m Arena Wall Clearance` — Chống Lún Đất & Xuyên Tường)**:
+   - **Chống lún sàn (`Zero Ground Sinking`)**: Bàn chân nhân vật phải luôn khóa cứng trên mặt phẳng sàn (`Both feet remain firmly planted on top of the solid sand floor at all times — ZERO feet or legs sinking into the ground`).
+   - **Chống xuyên tường/cột đuốc (`30m Wall Clearance`)**: Với các sinh vật có đuôi dài hoặc vũ khí lớn, mọi pha quần thảo/vật lộn bắt buộc phải đặt tại **Tâm Đấu Trường Rộng Mở cách tường ít nhất `30m` (`in the wide-open center of the arena at least 30 meters away from the stone walls — tails, sails, and bodies NEVER touch or clip into background walls or torches`)**.
+4. **Định Luật Tư Thế Chiến Thắng Đứng Cạnh Xác (`Beside-Body Victory Stance` — Chống Đứng Xuyên Lồng Ngực)**:
+   - Khi một nhân vật quật ngã đối thủ và đứng gầm chiến thắng, **TUYỆT ĐỐI KHÔNG** đặt nhân vật chiến thắng đứng đè hai chân lên giữa thân xác đối thủ (vì AI sẽ vẽ chân cắm xuyên qua lồng ngực/buồm lưng xác nằm dưới).
+   - **Giải pháp bắt buộc**: Quật đối thủ ngã sang một bên (giữ nguyên hướng đầu gốc, không xoay $180^\circ$) và đặt nhân vật chiến thắng **đứng trên nền đất trống ngay bên cạnh xác (`standing firmly on the open sand floor BESIDE the fallen opponent — legs NEVER straddle or clip through the fallen body`)**.
+
