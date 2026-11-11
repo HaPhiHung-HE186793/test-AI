@@ -69,3 +69,12 @@ Khi tạo hoặc kéo dài bất kỳ cảnh hành động, va chạm, vật l�
    - Khi một nhân vật quật ngã đối thủ và đứng gầm chiến thắng, **TUYỆT ĐỐI KHÔNG** đặt nhân vật chiến thắng đứng đè hai chân lên giữa thân xác đối thủ (vì AI sẽ vẽ chân cắm xuyên qua lồng ngực/buồm lưng xác nằm dưới).
    - **Giải pháp bắt buộc**: Quật đối thủ ngã sang một bên (giữ nguyên hướng đầu gốc, không xoay $180^\circ$) và đặt nhân vật chiến thắng **đứng trên nền đất trống ngay bên cạnh xác (`standing firmly on the open sand floor BESIDE the fallen opponent — legs NEVER straddle or clip through the fallen body`)**.
 
+---
+
+## 5. 📺 QUY TẮC BẮT BUỘC NHÚNG VIDEO TRỰC TIẾP VÀO BÁO CÁO NGHIỆM THU (`EMBEDDED PLAYABLE VIDEO IN ARTIFACT REPORT`)
+
+Khi hoàn thành bất kỳ quy trình sản xuất hoặc chỉnh sửa video nào:
+1. Agent **BẮT BUỘC** copy toàn bộ các file video đầu ra (bản `Master MP4`, bản `Clean No-HUD MP4`, và các video cụm cảnh `C01..C0N`) vào thư mục Artifact của phiên làm việc hiện tại (`<appDataDir>/brain/<conversation-id>/`).
+2. Nhúng trực tiếp trình phát video bằng cú pháp `![Tên Video](/absolute/path/in/artifact_dir/video.mp4)` ngay ở **Mục 1 đầu báo cáo nghiệm thu (`.md` Artifact)** để người dùng bấm xem trực tiếp cả video lẫn báo cáo trên cùng một màn hình mà không phải mở thư mục ngoài tìm file.
+
+
