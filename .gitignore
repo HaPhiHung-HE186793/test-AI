@@ -1,3 +1,6 @@
 node_modules/
 .env
 output/
+outputs/**/clips_raw/
+outputs/**/clips_trimmed/
+

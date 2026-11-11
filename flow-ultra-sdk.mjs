@@ -25,11 +25,12 @@ export const FLOW_RPC_IDS = {
   EXPORT_VIDEO_POLL: 'IxdSwd',   // Lấy dữ liệu nhị phân MP4 Base64 (Usb -> field 5)
   GENERATE_IMAGE: 'Z9cAtf',      // Tạo ảnh Nano Banana Pro (0 Credit)
   SCENE_GET: 'no0P6',            // Đọc SceneBuilder
+  SCENE_CREATE: 'rqZuUc',        // Tạo mới Scene trong Project (kèm clone Seed Workflows)
   SCENE_UPDATE: 'lt8g5',         // Cập nhật Timeline SceneBuilder
   SCENE_ADD_WORKFLOWS: 'oWTRd',  // Thêm Seed Workflow vào SceneBuilder
   SCENE_DELETE_CLIPS: 'S6aU9d',  // Xóa Clip khỏi SceneBuilder
-  SCENE_REORDER_CLIPS: 'BpMsoe', // Sắp xếp lại thứ tự Clip trong SceneBuilder
-  SCENE_SET_PRIMARY_MEDIA: 'dtQlBe', // Chọn phiên bản (take) làm Primary Media của Shot trong SceneBuilder
+  SCENE_REORDER_CLIPS: 'BpMsoe', // Sắp xếp lại thứ tự Clip / Đổi tên Scene (scene_metadata)
+  SCENE_SET_PRIMARY_MEDIA: 'dtQlBe', // Chọn phiên bản (take) làm Primary Media & Trim Handles (start_time/end_time)
 };
 
 export class FlowUltraSdk {
@@ -135,9 +136,34 @@ export class FlowUltraSdk {
   }
 
   /**
-   * 4. Xuất & Tải file Video MP4 gốc (ftypisom / avc1mp41) qua 2 RPC chính thức GjQLTd & IxdSwd
+   * 4. Xuất & Tải file Video MP4 gốc (ftypisom / avc1mp41) siêu tốc qua FIFE URL (=mm,22,15) hoặc 2 RPC GjQLTd & IxdSwd
    */
-  async downloadVideoByMediaId(mediaId, outputPath, durationSec = 4) {
+  async downloadVideoByMediaId(mediaId, outputPath, durationSec = 8, fifeUrl = null) {
+    if (fifeUrl) {
+      const directUrl =
+        fifeUrl.replace('https://lh3.googleusercontent.com/asb/', 'https://flow.google.com/asb/').split('=')[0] +
+        '=mm,22,15';
+      const res = await fetch(directUrl, {
+        headers: {
+          Cookie: this.cookie,
+          'User-Agent': this.userAgent,
+          Referer: 'https://flow.google.com/',
+        },
+      });
+      if (res.ok) {
+        const buffer = Buffer.from(await res.arrayBuffer());
+        if (buffer.length > 1000) {
+          fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+          fs.writeFileSync(outputPath, buffer);
+          return {
+            outputPath,
+            bytes: buffer.length,
+            headerAscii: buffer.subarray(4, 12).toString('ascii'),
+          };
+        }
+      }
+    }
+
     const startRes = await this.callBatchExecute(FLOW_RPC_IDS.EXPORT_VIDEO_START, [
       [[mediaId, null, [0], [durationSec]]],
     ]);
@@ -253,18 +279,66 @@ export class FlowUltraSdk {
 
   /**
    * 7. Thêm Seed Clip (Workflow) vào SceneBuilder (rpcids=oWTRd)
+   *    (Đã kiểm chứng 100% HTTP 200: [projectId, sceneId, workflowIds])
    */
-  async addWorkflowsToScene({ sceneId, workflowIds, position = 0 }) {
-    const items = workflowIds.map((wfId, idx) => [wfId, position + idx]);
-    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_ADD_WORKFLOWS, [sceneId, items]);
+  async addWorkflowsToScene({ projectId, sceneId, workflowIds }) {
+    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_ADD_WORKFLOWS, [projectId, sceneId, workflowIds]);
   }
 
   /**
-   * 8. Chọn lại phiên bản (Take) chính thức của một Shot ngay trong SceneBuilder (rpcids=dtQlBe)
-   *    (Dùng khi vừa Redo Extend / Edit tại đầu ngọn và muốn đổi qua lại giữa các bản trong History Panel)
+   * 8. Chọn lại phiên bản (Take) chính thức và/hoặc Trim Handles (start_time/end_time) của Shot trong SceneBuilder (rpcids=dtQlBe)
+   *    (Đã kiểm chứng 100% HTTP 200: [[wfObj, sceneId, [null, null, startDuration, endDuration]], [mask]])
    */
-  async setSceneClipPrimaryMedia({ sceneId, workflowId, mediaId }) {
-    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_SET_PRIMARY_MEDIA, [sceneId, workflowId, mediaId]);
+  async setSceneClipPrimaryMedia({ projectId, sceneId, workflowId, mediaId, startSec = null, endSec = null }) {
+    const toDurationTuple = sec => {
+      if (sec == null) return null;
+      const whole = Math.floor(sec);
+      const nanos = Math.round((sec - whole) * 1e9);
+      return [whole === 0 ? null : whole, nanos === 0 ? null : nanos];
+    };
+    const mask = [];
+    if (mediaId) mask.push('workflow.metadata.primary_media_id');
+    if (startSec != null) mask.push('scene_workflow_metadata.start_time');
+    if (endSec != null) mask.push('scene_workflow_metadata.end_time');
+    const wfObj = [
+      workflowId,
+      null,
+      null,
+      mediaId ? [null, null, null, null, mediaId] : null,
+      projectId,
+    ];
+    const sceneWfMeta =
+      startSec != null || endSec != null
+        ? [null, null, toDurationTuple(startSec), toDurationTuple(endSec)]
+        : null;
+    const payload = [[wfObj, sceneId, sceneWfMeta], [mask]];
+    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_SET_PRIMARY_MEDIA, payload);
+  }
+
+  /**
+   * 8b. Tạo Scene mới trên Google Flow (rpcids=rqZuUc / hàm XK trong mod_wO1vlb.js)
+   *     Tự động deep-clone mảng workflowIds thành các Shot độc lập trong Scene mới!
+   */
+  async createScene({ projectId, workflowIds = [], collectionId = null, aspectRatio = 2 }) {
+    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_CREATE, [
+      `projects/${projectId}`,
+      workflowIds,
+      collectionId,
+      null,
+      aspectRatio,
+    ]);
+  }
+
+  /**
+   * 8c. Đổi tên hiển thị của Scene (rpcids=BpMsoe / hàm dN trong mod_wO1vlb.js)
+   */
+  async renameScene({ projectId, sceneId, title }) {
+    return this.callBatchExecute(FLOW_RPC_IDS.SCENE_REORDER_CLIPS, [
+      projectId,
+      sceneId,
+      [null, title],
+      [['display_name']],
+    ]);
   }
 
   /**
