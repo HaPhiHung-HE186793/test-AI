@@ -12,6 +12,63 @@
     "IGNIS_REX": "Screen-Left facing Right (Charcoal-black osteoderm scales, burnt-orange dorsal stripes, amber eyes)",
     "LEVIATHAN_SPINO": "Screen-Right facing Left (Slate-teal crocodilian armor, 2.2m orange-and-bronze dorsal sail, natural 3-fingered reptilian foreclaws)"
   },
+  "cinematicTransitionChoreography": {
+    "grammarRules": [
+      "Rule 1 (Same Camera Angle, Different Position => Pan / Whip-Pan, ZERO Hard Cut): Used for West Gate -> East Gate -> Center Arena and Close-Up Spino -> Close-Up T-Rex.",
+      "Rule 2 (Only Cut When Changing Camera Angle >= 30 deg & Focal Length >= 1.5x-2.0x): Used for 24mm Wide -> 85mm Close-Up -> 45-deg Low Angle -> 24mm Seismic Slam Match-on-Action -> 85mm Extreme Worm's-Eye Hero Roar."
+    ],
+    "sevenBeats": [
+      {
+        "beat": 1,
+        "windowSec": "0.00 - 16.40",
+        "sourceCluster": "C01_ACT1_IGNIS_REX_ARRIVAL [0.00s..16.40s]",
+        "lensAndAngle": "24mm Wide Master (1.0x) — West Gate",
+        "exitTransition": "T1 at 16.40s: Same-Angle High-Velocity Horizontal Whip-Pan Right (24mm West Gate -> 24mm East Gate) + Directional Motion Blur + Whoosh SFX"
+      },
+      {
+        "beat": 2,
+        "windowSec": "16.40 - 32.80",
+        "sourceCluster": "C02_ACT1_LEVIATHAN_SPINO_CHALLENGE [0.05s..16.45s]",
+        "lensAndAngle": "24mm Wide Master (1.0x) — East Gate",
+        "exitTransition": "T2 at 32.80s: Same-Angle High-Velocity Horizontal Whip-Pan Left (24mm East Gate -> 24mm Center Arena) + Directional Motion Blur + Whoosh SFX"
+      },
+      {
+        "beat": 3,
+        "windowSec": "32.80 - 56.20",
+        "sourceCluster": "C03_ACT2A_20TON_COLLISION_JAWLOCK [0.06s..23.46s]",
+        "lensAndAngle": "24mm Wide Center Arena Master (1.0x -> 1.08x Dolly Push)",
+        "exitTransition": "T3 at 56.20s: Angle & Focal-Length Cut #1 (24mm Wide 1.0x -> 85mm Telephoto Close-Up 2.0x on Spinosaurus Jaws & Claws, >=30 deg + 2.0x Scale Change)"
+      },
+      {
+        "beat": 4,
+        "windowSec": "56.20 - 72.60",
+        "sourceCluster": "C04_ACT2A_SPINO_HYDRO_CLAW_DOMINANCE [0.10s..16.50s]",
+        "lensAndAngle": "85mm Tight Telephoto Close-Up (2.0x Crop on Spinosaurus Jaws, Sail & 3-Fingered Claws)",
+        "exitTransition": "T4 at 72.60s: Combat Whip-Pan Left/Down (85mm Spino Close-Up -> Tight T-Rex Counter-Surge pulling back into 45-deg Torch-Wall Low Angle)"
+      },
+      {
+        "beat": 5,
+        "windowSec": "72.60 - 92.00",
+        "sourceCluster": "C05_ACT2B_CRIMSON_OVERDRIVE_COUNTER [0.10s..18.50s]",
+        "lensAndAngle": "Tight T-Rex Counter-Surge -> 45-Degree Flaming-Torch Side-Wall Low Angle (12,800 PSI Throat Lift)",
+        "exitTransition": "T5 at 92.00s: Kurosawa Match-on-Action Cut + Angle Change #3 (45-deg Torch-Wall Downward Throw at C05 t=18.50s -> 24mm Wide Center Arena Seismic Slam Impact at C06 t=2.87s)"
+      },
+      {
+        "beat": 6,
+        "windowSec": "92.00 - 115.50",
+        "sourceCluster": "C06_ACT3_SEISMIC_FINISHER_VICTORY [2.87s..25.47s]",
+        "lensAndAngle": "24mm Wide Center Arena Master — Seismic Body-Slam Dust Explosion & Foot-Stomp Coronation",
+        "exitTransition": "T6 at 115.50s: Angle & Focal-Length Cut #4 (24mm Wide Full-Arena Foot-Stomp -> 85mm Extreme Worm's-Eye Close-Up Hero Roar)"
+      },
+      {
+        "beat": 7,
+        "windowSec": "115.50 - 120.00",
+        "sourceCluster": "C05_ACT2B_CRIMSON_OVERDRIVE_COUNTER [21.90s..25.50s]",
+        "lensAndAngle": "85mm Extreme Worm's-Eye Close-Up Hero Roar + Spielberg Slow Dolly Push-In (1.0x -> 1.12x)",
+        "exitTransition": "Fade to Black at 120.00s"
+      }
+    ]
+  },
   "clusters": [
     {
       "clusterIndex": 1,
