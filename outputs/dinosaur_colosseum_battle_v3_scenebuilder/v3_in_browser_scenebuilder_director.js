@@ -40,7 +40,7 @@ window.FlowV3Director = (() => {
         startFrame: 10,
         endFrame: 168,
         prompt:
-          'Continuing seamlessly from the previous frame with zero velocity drop, IGNIS_REX on the Left side of the frame (13-meter apex Tyrannosaurus Rex with charcoal-black osteoderm armor and glowing volcanic crimson magma chest scars) finishes its earth-shattering roar and stomps forward across the rain-slicked black basalt Colosseum floor, jaws snapping shut with a heavy bone-ratchet clack as steam vents from its nostrils. The 35mm anamorphic camera tracks backward at a low 15-degree angle with heavy hydraulic footstep tremor, keeping IGNIS_REX locked on the Left facing Right as lightning illuminates the tiered stone arches and rusted iron portcullis gates. Deep sub-bass footstep impacts, hissing volcanic steam on wet stone, and crackling braziers, no music, no human voices, no text or HUD.',
+          'Continuing seamlessly from the previous frame with zero velocity drop inside the 3-tier Roman Basalt Colosseum at fiery crimson-orange sunset, the charcoal-black Tyrannosaurus Rex with burnt-orange dorsal stripes on the left finishes its earth-shattering roar, lowers its massive head into an aggressive combat crouch facing right, and stomps powerfully forward across the flat dark volcanic sand and shallow water puddle as pressurized white steam vents from its nostrils. The 35mm eye-level camera tracks smoothly with heavy footstep tremor as torch braziers blaze in the stone archways behind it. Deep seismic footstep impacts, hissing nostril steam, and guttural T-Rex growl, no music, no human voices, no text or HUD.',
       },
       round2: null,
     },
@@ -56,7 +56,7 @@ window.FlowV3Director = (() => {
         startFrame: 10,
         endFrame: 168,
         prompt:
-          'Continuing seamlessly from the previous frame with zero velocity drop, LEVIATHAN_SPINO on the Right side of the frame (15-meter aquatic-armored Spinosaurus with slate-grey crocodilian scutes, elongated gharial snout, and towering 2.5-meter dorsal neural sail pulsing with bioluminescent cyan veins) plants its massive hooked foreclaws into the flooded basalt puddles facing Left, arches its neck, and unleashes a rattling amphibious bellow across the arena toward IGNIS_REX on the Left. The 50mm anamorphic lens performs a tense lateral dolly-arc from Right to Center, capturing cyan bioluminescent reflections rippling across the black water and volcanic ash. Deep guttural amphibious resonance, water splashes, and thunderous storm wind, no music, no human voices, no text or HUD.',
+          'Continuing seamlessly from the previous frame with zero velocity drop inside the 3-tier Roman Basalt Colosseum at fiery crimson-orange sunset, the towering slate-teal Spinosaurus with its 2.2-meter orange-and-bronze dorsal sail and crocodile-like snout on the right facing left steps aggressively forward into the shallow water puddle, flexes its muscular three-fingered reptilian forelimbs, and unleashes a ferocious crocodilian bellow toward the left. Pure biological dinosaur anatomy, zero metal blades or weapons. The 35mm eye-level camera performs a tense lateral dolly movement capturing water ripples and blazing stadium braziers. Deep guttural amphibious roar, heavy splashing footsteps, and snapping jaws, no music, no human voices, no text or HUD.',
       },
       round2: null,
     },
@@ -72,7 +72,7 @@ window.FlowV3Director = (() => {
         startFrame: 10,
         endFrame: 168,
         prompt:
-          "Continuing seamlessly from the full-momentum collision in the previous frame, IGNIS_REX on the Left (charcoal-black T-Rex with glowing crimson magma scars) and LEVIATHAN_SPINO on the Right (slate-grey Spinosaurus with glowing cyan dorsal sail) lock jaws and shoulders at the center of the wet basalt arena, their 20-ton bodies grinding together as shockwaves of rainwater and volcanic sparks erupt outward. The 35mm anamorphic camera pushes in dynamically with handheld kinetic impact shake as IGNIS_REX's crushing jaws clamp onto the side of LEVIATHAN_SPINO's elongated snout, spraying saliva and embers. Crushing bone impact, grinding scales, and roaring monster vocalizations, no music, no human voices, no text or HUD.",
+          'Continuing seamlessly from the full-momentum 20-ton collision in the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the charcoal-black Tyrannosaurus Rex on the left and the slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right lock jaws and shoulders at the center of the dark volcanic sand arena, shoving violently against each other as clouds of dust and mud spray outward. Pure biological dinosaur anatomy, zero weapons. The 35mm eye-level camera pushes in with kinetic impact shake as the T-Rex snaps its jaws at the Spinosaurus neck while the Spinosaurus parries with its natural three-fingered forelimb. Crushing bone impact, grinding scales, and twin apex roars, no music, no human voices, no text or HUD.',
       },
       round2: {
         extendId: 'EXT_3_2',
@@ -80,14 +80,14 @@ window.FlowV3Director = (() => {
         startFrame: 0,
         endFrame: 372,
         prompt:
-          'Continuing seamlessly from the jaw-lock grapple with zero hitch, LEVIATHAN_SPINO on the Right violently wrenches its head free and drives its massive muscular shoulder and glowing cyan sail forward, shoving IGNIS_REX backward across the wet black basalt flagstones so its hind claws gouge deep sparks and water plumes into the stone. The camera tracks laterally alongside the sliding titans at knee height, preserving the 180-degree axis with IGNIS_REX on the Left and LEVIATHAN_SPINO on the Right under flashing crimson and cyan lighting. Heavy skidding stone friction, guttural snarls, and torrential rain, no music, no human voices, no text or HUD.',
+          'Continuing seamlessly from the jaw-lock grapple with zero velocity drop inside the 3-tier Roman Basalt Colosseum at fiery sunset, the towering slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right violently wrenches its head free and drives its massive muscular shoulder forward, shoving the charcoal-black Tyrannosaurus Rex backward across the wet dark volcanic sand floor so its hind claws gouge deep tracks through the mud puddles. Strictly one Tyrannosaurus Rex on the left and one Spinosaurus on the right, pure biological anatomy. The 35mm eye-level camera tracks laterally alongside the sliding titans. Heavy skidding mud friction, guttural snarls, and stadium fire roar, no music, no human voices, no text or HUD.',
       },
     },
     {
       clusterIndex: 4,
       clusterId: 'C04_ACT2A_SPINO_HYDRO_CLAW_DOMINANCE',
       workflowId: 'f388dbda-867b-4cbb-b7fa-81325d1ac043',
-      seedPrimaryMediaId: 'c862fd52-4737-4247-9f06-28b058f7fd06',
+      seedPrimaryMediaId: '49729867-c146-4c28-8386-f590161a7bfb',
       cutOnActionTrim: [0, 18],
       round1: {
         extendId: 'EXT_4_1',
@@ -95,7 +95,7 @@ window.FlowV3Director = (() => {
         startFrame: 10,
         endFrame: 168,
         prompt:
-          'Continuing seamlessly from the claw slash in the previous frame, LEVIATHAN_SPINO on the Right follows through with a devastating second hooked foreclaw strike and whip-like tail sweep that slams IGNIS_REX on the Left straight into a massive Corinthian basalt pillar, shattering the ancient stone column into falling boulders and clouds of wet ash as IGNIS_REX crashes onto its side in the mud. The 28mm wide anamorphic camera whip-pans slightly with the impact and drops to ground level as rubble rains down around both titans. Thunderous stone pillar collapse, razor claw rip, and painful monster roar, no music, no human voices, no text or HUD.',
+          'Continuing seamlessly from the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the towering slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right lunges forward and slashes its natural three-fingered reptilian foreclaws across the snout and shoulder of the single charcoal-black Tyrannosaurus Rex kneeling on the left, shoving the T-Rex backward through the shallow mud puddle as both dinosaurs roar fiercely at each other. Strictly one Tyrannosaurus Rex on the left and one Spinosaurus on the right, pure biological dinosaur anatomy, zero extra heads, zero duplicate limbs. The 35mm eye-level camera tracks the brutal close-quarters exchange. Heavy claw impact, splashing mud, and ferocious dinosaur roars, no music, no human voices, no text or HUD.',
       },
       round2: null,
     },
@@ -111,7 +111,7 @@ window.FlowV3Director = (() => {
         startFrame: 10,
         endFrame: 168,
         prompt:
-          "Continuing seamlessly from the pinned struggle in the previous frame, IGNIS_REX on the Left ignites in blinding volcanic crimson overdrive—its sub-dermal magma scars flaring white-hot and boiling the rainwater around its body into explosive steam—and surges upward from the basalt floor, slamming its armored skull into LEVIATHAN_SPINO's chest on the Right to break the pin. The 35mm anamorphic camera rises rapidly with IGNIS_REX's explosive counter-surge, illuminated by intense crimson embers clashing against cyan bioluminescence. Roaring geothermal steam explosion, cracking armor plates, and furious apex roar, no music, no human voices, no text or HUD.",
+          'Continuing seamlessly from the counter-surge in the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the charcoal-black Tyrannosaurus Rex on the left drives forward with explosive power and clamps its massive 12,800 PSI jaws tightly around the throat of the slate-teal crocodile-snouted Spinosaurus with the orange-bronze dorsal sail on the right, violently wrenching its muscular neck to push the Spinosaurus backward across the dark volcanic sand floor. Pure biological dinosaur anatomy. The 35mm eye-level camera tracks the brutal jaw-lock grapple as dust swirls around their feet. Bone-crushing jaw snap, shocked crocodilian screech, and heavy thrashing footsteps, no music, no human voices, no text or HUD.',
       },
       round2: {
         extendId: 'EXT_5_2',
@@ -119,7 +119,7 @@ window.FlowV3Director = (() => {
         startFrame: 0,
         endFrame: 372,
         prompt:
-          "Continuing seamlessly from the crimson counter-surge with zero velocity drop, IGNIS_REX on the Left lunges forward with blazing magma jaws wide open and clamps its 6-ton bite directly onto the base of LEVIATHAN_SPINO's neck and dorsal sail on the Right, lifting and violently thrashing the 15-meter Spinosaurus off balance across the shattered arena stones. Tight 50mm kinetic tracking shot following the brutal jaw-clamp and thrash, sparks and cyan droplets flying through the storm. Bone-crushing jaw snap, agonizing reptilian screech, and heavy thrashing footsteps, no music, no human voices, no text or HUD.",
+          'Continuing seamlessly from the throat-clamp grapple with zero velocity drop inside the 3-tier Roman Basalt Colosseum at fiery sunset, the charcoal-black Tyrannosaurus Rex on the left keeps its massive 12,800 PSI jaws locked onto the neck of the slate-teal crocodile-snouted Spinosaurus with the orange-bronze dorsal sail on the right, wrenching its muscular neck to lift and violently slam the Spinosaurus down onto the dark volcanic sand arena floor in a massive shockwave of dust and mud. Strictly one Tyrannosaurus Rex on the left and one Spinosaurus on the right. Tight 35mm kinetic tracking shot following the brutal takedown slam. Earth-shattering body slam impact, bone-crushing jaw pressure, and agonizing reptilian roar, no music, no human voices, no text or HUD.',
       },
     },
     {
@@ -134,7 +134,7 @@ window.FlowV3Director = (() => {
         startFrame: 10,
         endFrame: 168,
         prompt:
-          "Continuing seamlessly from the seismic body slam in the previous frame, LEVIATHAN_SPINO lies defeated and motionless on the cracked basalt arena floor on the Right as its cyan dorsal sail flickers and dims, while IGNIS_REX on the Left plants its massive clawed hind foot firmly onto the fallen rival's flank amidst rising volcanic steam and settling rubble. The 35mm anamorphic camera cranes slowly upward from the cracked crater floor toward IGNIS_REX's towering silhouette. Rumbling aftershock stone settling, heavy victorious breathing, and hissing rain, no music, no human voices, no text or HUD.",
+          'Continuing seamlessly from the body slam in the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the defeated slate-teal Spinosaurus collapses motionless onto its side on the dark volcanic sand floor on the right, while the victorious charcoal-black Tyrannosaurus Rex on the left steps forward and plants its massive three-toed hind foot firmly onto the fallen Spinosaurus flank amidst swirling dust. The 35mm eye-level camera cranes slightly upward toward the towering T-Rex silhouette against the blazing torchlit stone archways. Heavy body collapse impact, decisive foot stomp, and deep victorious breathing, no music, no human voices, no text or HUD.',
       },
       round2: {
         extendId: 'EXT_6_2',
@@ -142,7 +142,7 @@ window.FlowV3Director = (() => {
         startFrame: 0,
         endFrame: 372,
         prompt:
-          'Continuing seamlessly from the previous frame, IGNIS_REX stands victorious atop the defeated LEVIATHAN_SPINO in the center of the Colosseum of Ash, throws its scarred charcoal-black head skyward as crimson magma veins pulse brightly across its neck and chest, and unleashes a triumphant, prolonged alpha roar as forked lightning splits the storm clouds overhead and the camera executes a majestic slow pull-back. Earth-shaking alpha Tyrannosaurus roar echoing across the stone amphitheater, thunderclap, and pouring rain, no music, no human voices, no text or HUD.',
+          'Continuing seamlessly from the previous frame inside the 3-tier Roman Basalt Colosseum at fiery crimson-orange sunset, the victorious charcoal-black Tyrannosaurus Rex stands tall with its massive hind foot planted firmly atop the motionless defeated slate-teal Spinosaurus lying flat on the dark volcanic sand floor, throws its scarred head skyward, and unleashes a prolonged, earth-shaking championship alpha roar as torch braziers blaze across the three tiers of stone archways behind them and the 28mm wide camera executes a majestic slow pull-back. Prolonged earth-shaking Tyrannosaurus victory roar echoing across the stone amphitheater, deep sub-bass rumble, and crackling fire, no music, no human voices, no text or HUD.',
       },
     },
   ];

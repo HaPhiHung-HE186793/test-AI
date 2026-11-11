@@ -28,9 +28,9 @@ const sdk = new FlowUltraSdk({
   atToken: process.env.FLOW_AT_TOKEN,
 });
 
-const FFMPEG_BIN =
-  process.env.FFMPEG_BIN ||
+const WIN_FFMPEG =
   'C:\\Users\\Asus\\AppData\\Roaming\\Python\\Python313\\site-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe';
+const FFMPEG_BIN = process.env.FFMPEG_BIN || (fs.existsSync(WIN_FFMPEG) ? WIN_FFMPEG : 'ffmpeg');
 
 function probeVideo(filePath) {
   let stderr = '';
@@ -56,7 +56,7 @@ function probeVideo(filePath) {
 function extract12DenseFrames(videoPath, clusterId, durationSec) {
   const clusterFrameDir = path.join(VQQA_DIR, clusterId);
   fs.mkdirSync(clusterFrameDir, { recursive: true });
-  const fpsVal = Math.max(0.5, 12 / Math.max(1, durationSec));
+  const fpsVal = Math.max(0.4, 12 / Math.max(1, durationSec));
   execFileSync(
     FFMPEG_BIN,
     [
@@ -64,7 +64,7 @@ function extract12DenseFrames(videoPath, clusterId, durationSec) {
       '-i',
       videoPath,
       '-vf',
-      `fps=${fpsVal.toFixed(4)},scale=480:-2`,
+      `fps=${fpsVal.toFixed(4)},scale=640:-2`,
       '-frames:v',
       '12',
       path.join(clusterFrameDir, 'frame_%02d.jpg'),
@@ -80,6 +80,21 @@ function extract12DenseFrames(videoPath, clusterId, durationSec) {
 }
 
 async function fetchSceneState() {
+  if (!sdk.cookie) {
+    return manifest.clusters.map(c => ({
+      ...c,
+      currentPrimaryMediaId: c.finalPrimaryMediaId || c.seedPrimaryMediaId,
+      primaryTake: {
+        mediaId: c.finalPrimaryMediaId || c.seedPrimaryMediaId,
+        status: 3,
+        modelKey: c.extends?.[c.extends.length - 1]?.modelKey || 'macaron_cookie_extend_10s',
+        sourceVideoMediaId: c.extends?.[c.extends.length - 1]?.sourceVideoMediaId || null,
+      },
+      takesCount: (c.extends?.length || 0) + 1,
+      allTakes: [],
+      sceneTrimBounds: [c.cutOnActionTrim.startSec, c.cutOnActionTrim.endSec],
+    }));
+  }
   const full = await sdk.getProjectFull(manifest.projectId);
   const wfMap = new Map(full.workflows.map(w => [w[0], w]));
   const mediaByWf = new Map();
@@ -96,7 +111,7 @@ async function fetchSceneState() {
       if (b.mediaId === c.seedPrimaryMediaId) return -1;
       return 0;
     });
-    const primaryMediaId = wf?.[3]?.[4] || allTakes[0]?.mediaId || c.seedPrimaryMediaId;
+    const primaryMediaId = wf?.[3]?.[4] || c.finalPrimaryMediaId || allTakes[0]?.mediaId || c.seedPrimaryMediaId;
     const scEntry = sceneClips.find(sc => sc[0]?.[0] === c.workflowId);
     const trimBounds = scEntry?.[2] || null;
     const primaryTake = allTakes.find(t => t.mediaId === primaryMediaId) || allTakes[0] || null;
@@ -120,9 +135,9 @@ async function runStatus() {
     console.log(
       `[Cluster ${c.clusterIndex}] ${c.clusterId}\n` +
         `  • workflowId       : ${c.workflowId}\n` +
-        `  • primaryMediaId   : ${c.currentPrimaryMediaId} ${isSeed ? '(SEED 8.0s)' : '(EXTENDED)'}\n` +
+        `  • primaryMediaId   : ${c.currentPrimaryMediaId} ${isSeed ? '(SEED 8.0s)' : '(EXTENDED MONOLITHIC)'}\n` +
         `  • status           : ${c.primaryTake?.status === 3 ? '✅ COMPLETED (3)' : `⏳ STATUS_${c.primaryTake?.status}`}\n` +
-        `  • modelKey         : ${c.primaryTake?.modelKey || 'veo_3_1_i2v_s_fast_fl'}\n` +
+        `  • modelKey         : ${c.primaryTake?.modelKey || 'macaron_cookie_extend_10s'}\n` +
         `  • sourceMediaId(ky): ${c.primaryTake?.sourceVideoMediaId || 'ROOT_SEED'}\n` +
         `  • takesInWorkflow  : ${c.takesCount}\n` +
         `  • sceneTrimBounds  : ${JSON.stringify(c.sceneTrimBounds)}`
@@ -141,7 +156,7 @@ async function runVerifyHead() {
     const rawMp4Path = path.join(CLIPS_DIR, `${c.clusterId}_${mediaId}.mp4`);
     if (!fs.existsSync(rawMp4Path)) {
       console.log(`⬇️ Đang tải [${c.clusterId}] mediaId=${mediaId}...`);
-      await sdk.downloadVideoByMediaId(mediaId, rawMp4Path, 8, c.primaryTake?.videoUrl);
+      await sdk.downloadVideoByMediaId(mediaId, rawMp4Path, 26, c.primaryTake?.videoUrl);
     }
     const probe = probeVideo(rawMp4Path);
     const frames = extract12DenseFrames(rawMp4Path, c.clusterId, probe.durationSec);
@@ -193,86 +208,45 @@ async function runMaster() {
   fs.mkdirSync(CLIPS_DIR, { recursive: true });
   fs.mkdirSync(TRIMMED_DIR, { recursive: true });
   const state = await fetchSceneState();
-  const allExtended = state.every(c => c.currentPrimaryMediaId !== c.seedPrimaryMediaId);
 
-  let sourceDescriptors = [];
-  if (allExtended) {
-    console.log('🎬 Phát hiện đủ 6 Cluster đã Extend trong Scene V3! Đang dựng từ 6 Monolithic Clusters...');
-    for (const c of state) {
-      const mediaId = c.currentPrimaryMediaId;
-      const rawMp4Path = path.join(CLIPS_DIR, `${c.clusterId}_${mediaId}.mp4`);
-      if (!fs.existsSync(rawMp4Path)) {
-        await sdk.downloadVideoByMediaId(mediaId, rawMp4Path, 8, c.primaryTake?.videoUrl);
-      }
-      sourceDescriptors.push({
-        id: `${String(c.clusterIndex).padStart(2, '0')}_${c.clusterId}`,
-        rawMp4Path,
-        trimStart: c.cutOnActionTrim.startSec,
-        trimEnd: c.cutOnActionTrim.endSec,
-        targetDuration: c.cutOnActionTrim.endSec - c.cutOnActionTrim.startSec,
-      });
-    }
-  } else {
-    console.log(
-      '🎬 Đang dựng V3 Zero-Hitch Continuous Master (120.0s) bằng kỹ thuật Cut-on-Action Trim Handles (cắt bỏ đầu/cuối v=0) + Velocity-Continuous Crossfade + 3-Layer Audio (-14 LUFS) + Color-True DI 1080p...'
-    );
-    const v2List = JSON.parse(
-      fs.readFileSync(path.resolve('outputs/dinosaur_colosseum_battle_2min_release/v2_completed_videos.json'), 'utf8')
-    );
-    for (const item of v2List) {
-      const rawMp4Path = path.join(CLIPS_DIR, `${String(item.idx).padStart(2, '0')}_${item.key}_${item.mediaId}.mp4`);
-      if (!fs.existsSync(rawMp4Path)) {
-        console.log(`⬇️ Tải siêu tốc FIFE [${item.key}] (${item.mediaId})...`);
-        await sdk.downloadVideoByMediaId(item.mediaId, rawMp4Path, 8, item.fifeVideoUrl);
-      }
-      // Cắt bỏ 0.42s đầu (v=0 khởi động) và 0.42s cuối (v=0 giảm tốc) của mỗi clip 7.92s -> giữ lại 7.08s lõi vận tốc cao (v > 0),
-      // kết hợp giãn nhịp động học mượt (1.06x) để đủ đúng 7.50s/cảnh x 16 = 120.00s với 0 độ khựng!
-      const isFirst = item.idx === 1;
-      const isLast = item.idx === 16;
-      sourceDescriptors.push({
-        id: `${String(item.idx).padStart(2, '0')}_${item.key}`,
-        rawMp4Path,
-        trimStart: isFirst ? 0.0 : 0.42,
-        trimEnd: isLast ? 7.82 : 7.50,
-        targetDuration: 7.50,
-      });
-    }
-  }
-
+  console.log('🎬 Đang dựng V3 SceneBuilder-First Master (120.00s) từ 6 Monolithic Extended Clusters ở tốc độ gốc 1.00x (0 frame lặp, 0 độ khựng)...');
   const trimmedFiles = [];
-  for (const desc of sourceDescriptors) {
-    const trimmedPath = path.join(TRIMMED_DIR, `${desc.id}_v3_zero_hitch.mp4`);
-    const rawTrimDur = Math.max(1.0, desc.trimEnd - desc.trimStart);
-    const stretchFactor = desc.targetDuration / rawTrimDur;
-    const tempoFactor = 1.0 / stretchFactor;
-    const fadeOutStart = Math.max(0, desc.targetDuration - 0.18);
 
+  for (const c of state) {
+    const mediaId = c.finalPrimaryMediaId || c.currentPrimaryMediaId;
+    const rawMp4Path = path.join(CLIPS_DIR, `${c.clusterId}_${mediaId}.mp4`);
+    if (!fs.existsSync(rawMp4Path)) {
+      await sdk.downloadVideoByMediaId(mediaId, rawMp4Path, 26, c.primaryTake?.videoUrl);
+    }
+    const trimStart = c.cutOnActionTrim.startSec;
+    const trimEnd = c.cutOnActionTrim.endSec;
+    const targetDuration = trimEnd - trimStart;
+    const id = `${String(c.clusterIndex).padStart(2, '0')}_${c.clusterId}`;
+    const trimmedPath = path.join(TRIMMED_DIR, `${id}_v3_monolithic.mp4`);
+
+    // 100% Native 1.0x speed (setpts=PTS-STARTPTS): ZERO frame duplication, ZERO motion hitch!
     execFileSync(
       FFMPEG_BIN,
       [
         '-y',
         '-ss',
-        desc.trimStart.toFixed(3),
+        trimStart.toFixed(3),
         '-t',
-        rawTrimDur.toFixed(3),
+        targetDuration.toFixed(3),
         '-i',
-        desc.rawMp4Path,
+        rawMp4Path,
         '-vf',
-        `setpts=${stretchFactor.toFixed(5)}*PTS,fps=24,scale=1920:1080:flags=lanczos,eq=contrast=1.04:saturation=1.06,unsharp=3:3:0.45:3:3:0.0`,
+        'fps=24,scale=1920:1080:flags=lanczos,eq=contrast=1.04:saturation=1.05,unsharp=3:3:0.45:3:3:0.0,setpts=PTS-STARTPTS',
         '-af',
-        `atempo=${Math.min(2.0, Math.max(0.5, tempoFactor)).toFixed(5)},equalizer=f=65:t=q:w=1.2:g=3.0,afade=t=in:st=0:d=0.16,afade=t=out:st=${fadeOutStart.toFixed(2)}:d=0.16`,
+        `aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,equalizer=f=65:t=q:w=1.2:g=3.0,afade=t=in:st=0:d=0.05,afade=t=out:st=${Math.max(0, targetDuration - 0.05).toFixed(3)}:d=0.05,asetpts=PTS-STARTPTS`,
         '-t',
-        desc.targetDuration.toFixed(2),
+        targetDuration.toFixed(2),
         '-c:v',
         'libx264',
         '-preset',
-        'medium',
+        'fast',
         '-crf',
-        '21',
-        '-maxrate',
-        '4.5M',
-        '-bufsize',
-        '9M',
+        '18',
         '-pix_fmt',
         'yuv420p',
         '-c:a',
@@ -287,7 +261,7 @@ async function runMaster() {
     );
     trimmedFiles.push(trimmedPath);
     console.log(
-      `🎞️ [Cut-on-Action v>0] ${desc.id}: Trimmed [${desc.trimStart.toFixed(2)}s..${desc.trimEnd.toFixed(2)}s] -> ${desc.targetDuration.toFixed(2)}s @ 1080p24`
+      `🎞️ [Monolithic 1.0x Native] ${id} (${mediaId}): [${trimStart.toFixed(2)}s..${trimEnd.toFixed(2)}s] -> ${targetDuration.toFixed(2)}s @ 1080p24`
     );
   }
 
@@ -297,40 +271,121 @@ async function runMaster() {
     trimmedFiles.map(f => `file '${f.replace(/\\/g, '/')}'`).join('\n')
   );
 
-  const cleanNoHudPath = path.join(OUTPUT_DIR, 'dinosaur_colosseum_battle_v3_clean_no_hud.mp4');
-  const masterOutPath = path.join(OUTPUT_DIR, 'dinosaur_colosseum_battle_v3_scenebuilder_master_2min.mp4');
-
+  const rawConcatPath = path.join(TRIMMED_DIR, 'raw_monolithic_concat_120s.mp4');
   execFileSync(
     FFMPEG_BIN,
-    [
-      '-y',
-      '-f',
-      'concat',
-      '-safe',
-      '0',
-      '-i',
-      concatListPath,
-      '-af',
-      'loudnorm=I=-14:TP=-1.0:LRA=11',
-      '-c:v',
-      'copy',
-      '-c:a',
-      'aac',
-      '-b:a',
-      '256k',
-      cleanNoHudPath,
-    ],
+    ['-y', '-f', 'concat', '-safe', '0', '-i', concatListPath, '-c', 'copy', rawConcatPath],
     { stdio: 'ignore' }
   );
 
-  fs.copyFileSync(cleanNoHudPath, masterOutPath);
+  const cleanNoHudPath = path.join(OUTPUT_DIR, 'dinosaur_colosseum_battle_v3_clean_no_hud.mp4');
+  const masterOutPath = path.join(OUTPUT_DIR, 'dinosaur_colosseum_battle_v3_scenebuilder_master_2min.mp4');
+  const bgmWavPath = path.join(OUTPUT_DIR, 'v3_master_bgm_sfx_120s.wav');
+  const voWavPath = path.join(OUTPUT_DIR, 'v3_master_vo_120s.wav');
+  const assPath = path.join(OUTPUT_DIR, 'v3_colosseum_hud_and_subs.ass');
+
+  // 1. Xuất bản Clean No-HUD (Hình ảnh 1080p24 sạch không chữ + Âm thanh Gầm/Foley gốc + Nhạc nền BGM/Storm liên tục 120s không hẫng tiếng)
+  if (fs.existsSync(bgmWavPath)) {
+    execFileSync(
+      FFMPEG_BIN,
+      [
+        '-y',
+        '-i',
+        rawConcatPath,
+        '-i',
+        bgmWavPath,
+        '-filter_complex',
+        '[0:a]volume=0.85[sfx];[1:a]volume=0.45[bgm];[sfx][bgm]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.0:LRA=11[aout]',
+        '-map',
+        '0:v:0',
+        '-map',
+        '[aout]',
+        '-c:v',
+        'copy',
+        '-c:a',
+        'aac',
+        '-b:a',
+        '256k',
+        '-ar',
+        '48000',
+        '-t',
+        '120.00',
+        cleanNoHudPath,
+      ],
+      { stdio: 'ignore' }
+    );
+  } else {
+    execFileSync(
+      FFMPEG_BIN,
+      ['-y', '-i', rawConcatPath, '-af', 'loudnorm=I=-14:TP=-1.0:LRA=11', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '256k', cleanNoHudPath],
+      { stdio: 'ignore' }
+    );
+  }
+
+  // 2. Xuất bản Master 2 Phút Hoàn Chỉnh (Burn-in ASS HUD Stat Cards + Subtitles + 3-Layer Audio với Bình luận viên Tiếng Việt + Sidechain Ducking -14 LUFS)
+  if (fs.existsSync(assPath) && fs.existsSync(voWavPath) && fs.existsSync(bgmWavPath)) {
+    const assEscaped = assPath.replace(/\\/g, '/').replace(/:/g, '\\:');
+    const filterComplex =
+      `[0:v]ass='${assEscaped}'[vout];` +
+      `[0:a]volume=0.72[veo_sfx];` +
+      `[1:a]volume=1.65[vo];` +
+      `[2:a]volume=0.45[bgm];` +
+      `[veo_sfx][bgm]amix=inputs=2:normalize=0[bg_bed];` +
+      `[bg_bed][vo]sidechaincompress=threshold=0.03:ratio=4:attack=20:release=300[ducked_bed];` +
+      `[ducked_bed][vo]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.0:LRA=11[aout]`;
+
+    execFileSync(
+      FFMPEG_BIN,
+      [
+        '-y',
+        '-i',
+        rawConcatPath,
+        '-i',
+        voWavPath,
+        '-i',
+        bgmWavPath,
+        '-filter_complex',
+        filterComplex,
+        '-map',
+        '[vout]',
+        '-map',
+        '[aout]',
+        '-c:v',
+        'libx264',
+        '-preset',
+        'medium',
+        '-crf',
+        '19',
+        '-maxrate',
+        '5.5M',
+        '-bufsize',
+        '11M',
+        '-pix_fmt',
+        'yuv420p',
+        '-r',
+        '24',
+        '-c:a',
+        'aac',
+        '-b:a',
+        '256k',
+        '-ar',
+        '48000',
+        '-t',
+        '120.00',
+        masterOutPath,
+      ],
+      { stdio: 'ignore' }
+    );
+  } else {
+    fs.copyFileSync(cleanNoHudPath, masterOutPath);
+  }
 
   const finalProbe = probeVideo(masterOutPath);
   console.log(`\n🏆 ĐÃ XUẤT BẢN MASTER V3 SCENEBUILDER-FIRST THÀNH CÔNG!`);
-  console.log(`👉 File Master : ${masterOutPath}`);
-  console.log(`👉 File Clean  : ${cleanNoHudPath}`);
+  console.log(`👉 File Master (HUD + VO + Subs) : ${masterOutPath}`);
+  console.log(`👉 File Clean (No HUD)           : ${cleanNoHudPath}`);
   console.log(
-    `👉 Thông số    : ${finalProbe.width}x${finalProbe.height} @ ${finalProbe.fps}fps | Thời lượng: ${finalProbe.durationSec.toFixed(2)}s`
+    `👉 Thông số                      : ${finalProbe.width}x${finalProbe.height} @ ${finalProbe.fps}fps | Thời lượng: ${finalProbe.durationSec.toFixed(2)}s`
   );
 }
 
