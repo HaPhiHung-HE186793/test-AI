@@ -77,33 +77,33 @@
       "targetTimelineWindow": "00:00.0 - 00:16.0 (16.0s Monolithic Cluster)",
       "rawDurationTargetSec": 16.46,
       "workflowId": "8312d69d-d36f-4893-b2a0-7b39d16ec725",
-      "seedPrimaryMediaId": "a66c330d-835e-4671-8d84-ceb0b0d31dd6",
-      "finalPrimaryMediaId": "5cdd24bc-1540-4e9e-afb7-f383d84ff4cc",
+      "seedPrimaryMediaId": "36e218d9-af05-4d89-8304-827c6ddb853e",
+      "finalPrimaryMediaId": "751df8e0-f3c9-4ea3-9d92-73271b5f9060",
       "seedDurationSec": 8.0,
       "seedEndFrame": 168,
       "extends": [
         {
           "round": 1,
           "extendId": "EXT_1_1",
-          "mediaId": "5cdd24bc-1540-4e9e-afb7-f383d84ff4cc",
-          "sourceVideoMediaId": "a66c330d-835e-4671-8d84-ceb0b0d31dd6",
+          "mediaId": "751df8e0-f3c9-4ea3-9d92-73271b5f9060",
+          "sourceVideoMediaId": "36e218d9-af05-4d89-8304-827c6ddb853e",
           "modelKey": "macaron_cookie_extend_10s",
-          "durationSec": 16.46,
-          "sourceStartFrame": 10,
+          "durationSec": 16.97,
+          "sourceStartFrame": 0,
           "sourceEndFrame": 168,
-          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop inside the 3-tier Roman Basalt Colosseum at fiery crimson-orange sunset, the charcoal-black Tyrannosaurus Rex with burnt-orange dorsal stripes on the left finishes its earth-shattering roar, lowers its massive head into an aggressive combat crouch facing right, and stomps powerfully forward across the flat dark volcanic sand and shallow water puddle as pressurized white steam vents from its nostrils. The 35mm eye-level camera tracks smoothly with heavy footstep tremor as torch braziers blaze in the stone archways behind it. Deep seismic footstep impacts, hissing nostril steam, and guttural T-Rex growl, no music, no human voices, no text or HUD."
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop inside the 3-tier Roman Basalt Colosseum at crimson-orange sunset, the charcoal-black Tyrannosaurus Rex with burnt-orange dorsal stripes on the left finishes its biological roar, lowers its massive head into an aggressive combat stalk facing right, and strides powerfully forward across the flat dark volcanic sand floor with solid ground contact, splashing through a shallow puddle before panning rapidly rightward across the arena. Strictly realistic biological dinosaur physics, zero fire breathing, zero flames from the mouth, zero clipping. Heavy seismic footsteps, water splash, and deep guttural T-Rex growl, no music, no human voices, no text or HUD."
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 0.0,
-        "endSec": 16.0
+        "startSec": 0.15,
+        "endSec": 16.35
       }
     },
     {
       "clusterIndex": 2,
       "clusterId": "C02_ACT1_LEVIATHAN_SPINO_CHALLENGE",
       "act": "Act I — Arrival of LEVIATHAN_SPINO & Standoff",
-      "targetTimelineWindow": "00:16.0 - 00:32.0 (16.0s Monolithic Cluster)",
+      "targetTimelineWindow": "00:16.2 - 00:32.4 (16.2s Monolithic Cluster)",
       "rawDurationTargetSec": 16.46,
       "workflowId": "6dc06dca-55ca-420b-9b50-f519aa0e5082",
       "seedPrimaryMediaId": "d6cc96f6-eb86-4987-9377-5eb2585cad0c",
@@ -124,157 +124,157 @@
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 0.0,
-        "endSec": 16.0
+        "startSec": 0.15,
+        "endSec": 16.35
       }
     },
     {
       "clusterIndex": 3,
       "clusterId": "C03_ACT2A_20TON_COLLISION_JAWLOCK",
-      "act": "Act II-A — The 20-Ton Collision & Jaw-Lock",
-      "targetTimelineWindow": "00:32.0 - 00:54.0 (22.0s Auto-Merged Monolithic Cluster)",
-      "rawDurationTargetSec": 23.46,
+      "act": "Act II-A — The 20-Ton Collision & Elastic Recoil Jaw-Lock",
+      "targetTimelineWindow": "00:32.4 - 00:56.2 (23.8s Auto-Merged Monolithic Cluster)",
+      "rawDurationTargetSec": 26.01,
       "workflowId": "5aa8dd0c-ac89-4c83-8f77-06160e25c870",
-      "seedPrimaryMediaId": "b665f2e4-f3b9-4285-b577-5e3a57c14cbb",
-      "finalPrimaryMediaId": "679be88e-b2d2-4a76-b6e8-df93e073de98",
+      "seedPrimaryMediaId": "bb9b7c7b-9fdc-45b0-b586-2c9591204e4e",
+      "finalPrimaryMediaId": "a12d01da-50e2-46da-9512-8dc1dbe72bfa",
       "seedDurationSec": 8.0,
       "seedEndFrame": 168,
       "extends": [
         {
           "round": 1,
           "extendId": "EXT_3_1",
-          "mediaId": "fd92ee2d-f974-4559-80f6-f2ade4c2945c",
-          "sourceVideoMediaId": "b665f2e4-f3b9-4285-b577-5e3a57c14cbb",
+          "mediaId": "1931ae2b-ee6f-4021-a1c4-8354295921e7",
+          "sourceVideoMediaId": "bb9b7c7b-9fdc-45b0-b586-2c9591204e4e",
           "modelKey": "macaron_cookie_extend_10s",
-          "durationSec": 16.51,
-          "sourceStartFrame": 10,
+          "durationSec": 16.97,
+          "sourceStartFrame": 0,
           "sourceEndFrame": 168,
-          "prompt": "Continuing seamlessly from the full-momentum 20-ton collision in the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the charcoal-black Tyrannosaurus Rex on the left and the slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right lock jaws and shoulders at the center of the dark volcanic sand arena, shoving violently against each other as clouds of dust and mud spray outward. Pure biological dinosaur anatomy, zero weapons. The 35mm eye-level camera pushes in with kinetic impact shake as the T-Rex snaps its jaws at the Spinosaurus neck while the Spinosaurus parries with its natural three-fingered forelimb. Crushing bone impact, grinding scales, and twin apex roars, no music, no human voices, no text or HUD."
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the open center of the 3-tier Roman Basalt Colosseum at sunset, the charcoal-black Tyrannosaurus Rex on the left and the slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right lunge forward and slam their muscular shoulders together at the center line, immediately recoiling half a step backward as dust and mud spray outward from their feet while they snap their jaws fiercely at each other from the left and right sides of the frame. Strict rigid-body physics: solid impenetrable dinosaur bodies, zero mesh interpenetration, heads and bodies never pass through each other, feet firmly planted on solid sand 30 meters away from the distant background walls."
         },
         {
           "round": 2,
           "extendId": "EXT_3_2",
-          "mediaId": "679be88e-b2d2-4a76-b6e8-df93e073de98",
-          "sourceVideoMediaId": "fd92ee2d-f974-4559-80f6-f2ade4c2945c",
-          "modelKey": "macaron_cookie_extend_8s",
-          "durationSec": 23.46,
+          "mediaId": "a12d01da-50e2-46da-9512-8dc1dbe72bfa",
+          "sourceVideoMediaId": "1931ae2b-ee6f-4021-a1c4-8354295921e7",
+          "modelKey": "macaron_cookie_extend_10s",
+          "durationSec": 26.01,
           "sourceStartFrame": 0,
-          "sourceEndFrame": 372,
-          "prompt": "Continuing seamlessly from the jaw-lock grapple with zero velocity drop inside the 3-tier Roman Basalt Colosseum at fiery sunset, the towering slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right violently wrenches its head free and drives its massive muscular shoulder forward, shoving the charcoal-black Tyrannosaurus Rex backward across the wet dark volcanic sand floor so its hind claws gouge deep tracks through the mud puddles. Strictly one Tyrannosaurus Rex on the left and one Spinosaurus on the right, pure biological anatomy. The 35mm eye-level camera tracks laterally alongside the sliding titans. Heavy skidding mud friction, guttural snarls, and stadium fire roar, no music, no human voices, no text or HUD."
+          "sourceEndFrame": 384,
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the open center of the 3-tier Roman Basalt Colosseum at sunset, the slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right lunges forward and shoves its muscular shoulder against the charcoal-black Tyrannosaurus Rex on the left, driving the T-Rex a step backward across the flat dark volcanic sand floor with dust kicking up under their feet while both dinosaurs remain completely separated on the left and right sides of the open arena center. Strict rigid-body physics: solid impenetrable dinosaur bodies, zero mesh interpenetration."
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 0.0,
-        "endSec": 22.0
+        "startSec": 0.15,
+        "endSec": 23.95
       }
     },
     {
       "clusterIndex": 4,
       "clusterId": "C04_ACT2A_SPINO_HYDRO_CLAW_DOMINANCE",
-      "act": "Act II-A — Spino Claw Dominance & Kneeling Standoff",
-      "targetTimelineWindow": "00:54.0 - 01:10.4 (16.4s Monolithic Cluster after In-Scene Seed Fix + Kkc Redo Extend)",
-      "rawDurationTargetSec": 16.51,
+      "act": "Act II-A — Spino Claw Dominance & Solid-Ground Standoff",
+      "targetTimelineWindow": "00:56.2 - 01:12.6 (16.4s Monolithic Cluster)",
+      "rawDurationTargetSec": 16.97,
       "workflowId": "f388dbda-867b-4cbb-b7fa-81325d1ac043",
-      "seedPrimaryMediaId": "49729867-c146-4c28-8386-f590161a7bfb",
-      "finalPrimaryMediaId": "99d10853-5246-42af-8c16-baba169d5b69",
+      "seedPrimaryMediaId": "36c12f1d-a76c-4232-9ef1-4ad3572edc4c",
+      "finalPrimaryMediaId": "eaba8b81-e019-4aea-a58c-81c24b9c3120",
       "seedDurationSec": 8.0,
       "seedEndFrame": 168,
       "extends": [
         {
           "round": 1,
-          "extendId": "EXT_4_1_REDO",
-          "mediaId": "99d10853-5246-42af-8c16-baba169d5b69",
-          "sourceVideoMediaId": "49729867-c146-4c28-8386-f590161a7bfb",
+          "extendId": "EXT_4_1",
+          "mediaId": "eaba8b81-e019-4aea-a58c-81c24b9c3120",
+          "sourceVideoMediaId": "36c12f1d-a76c-4232-9ef1-4ad3572edc4c",
           "modelKey": "macaron_cookie_extend_10s",
-          "durationSec": 16.51,
-          "sourceStartFrame": 10,
+          "durationSec": 16.97,
+          "sourceStartFrame": 0,
           "sourceEndFrame": 168,
-          "prompt": "Continuing seamlessly from the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the towering slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right lunges forward and slashes its natural three-fingered reptilian foreclaws across the snout and shoulder of the single charcoal-black Tyrannosaurus Rex kneeling on the left, shoving the T-Rex backward through the shallow mud puddle as both dinosaurs roar fiercely at each other. Strictly one Tyrannosaurus Rex on the left and one Spinosaurus on the right, pure biological dinosaur anatomy, zero extra heads, zero duplicate limbs. The 35mm eye-level camera tracks the brutal close-quarters exchange. Heavy claw impact, splashing mud, and ferocious dinosaur roars, no music, no human voices, no text or HUD."
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the open center of the 3-tier Roman Basalt Colosseum at sunset, the towering slate-teal crocodile-snouted Spinosaurus with its orange-bronze dorsal sail on the right steps forward on the solid dark sand floor and slashes its muscular three-fingered reptilian foreclaw against the shoulder of the charcoal-black Tyrannosaurus Rex on the left, driving the T-Rex half a step backward into a low crouch on the solid ground as both dinosaurs roar fiercely at each other. Strictly photorealistic live-action cinema, solid impenetrable ground plane, zero sinking into the floor, zero mesh overlap, zero white 2D slash lines."
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 0.0,
-        "endSec": 16.4
+        "startSec": 0.15,
+        "endSec": 16.55
       }
     },
     {
       "clusterIndex": 5,
       "clusterId": "C05_ACT2B_CRIMSON_OVERDRIVE_COUNTER",
-      "act": "Act II-B — All Is Lost, Counter-Surge & 12,800 PSI Throat Lock",
-      "targetTimelineWindow": "01:10.4 - 01:35.2 (24.8s Auto-Merged Monolithic Cluster)",
-      "rawDurationTargetSec": 25.46,
+      "act": "Act II-B — Center-Arena Counter-Surge & 12,800 PSI Shoulder/Neck Lock (Zero Wall Clipping)",
+      "targetTimelineWindow": "01:12.6 - 01:32.0 (19.4s Auto-Merged Monolithic Cluster)",
+      "rawDurationTargetSec": 26.03,
       "workflowId": "b723ec82-6a18-4840-92b5-75c2dcf5946e",
-      "seedPrimaryMediaId": "8c34df19-b9cb-4d8d-84a3-1356b9e57c68",
-      "finalPrimaryMediaId": "010930d6-50cc-4c74-9fb4-e9941ac41d45",
+      "seedPrimaryMediaId": "ac7b4857-924e-4ede-b455-667dc407ab8f",
+      "finalPrimaryMediaId": "7e92ef11-84f4-46b8-98ed-019edcd703e1",
       "seedDurationSec": 8.0,
       "seedEndFrame": 168,
       "extends": [
         {
           "round": 1,
           "extendId": "EXT_5_1",
-          "mediaId": "a5d05682-bb59-4c7c-8ad9-7fceee012586",
-          "sourceVideoMediaId": "8c34df19-b9cb-4d8d-84a3-1356b9e57c68",
+          "mediaId": "e5f01f4f-26a1-403e-88af-cc321f775d14",
+          "sourceVideoMediaId": "ac7b4857-924e-4ede-b455-667dc407ab8f",
           "modelKey": "macaron_cookie_extend_10s",
-          "durationSec": 16.46,
-          "sourceStartFrame": 10,
+          "durationSec": 16.97,
+          "sourceStartFrame": 0,
           "sourceEndFrame": 168,
-          "prompt": "Continuing seamlessly from the counter-surge in the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the charcoal-black Tyrannosaurus Rex on the left drives forward with explosive power and clamps its massive 12,800 PSI jaws tightly around the throat of the slate-teal crocodile-snouted Spinosaurus with the orange-bronze dorsal sail on the right, violently wrenching its muscular neck to push the Spinosaurus backward across the dark volcanic sand floor. Pure biological dinosaur anatomy. The 35mm eye-level camera tracks the brutal jaw-lock grapple as dust swirls around their feet. Bone-crushing jaw snap, shocked crocodilian screech, and heavy thrashing footsteps, no music, no human voices, no text or HUD."
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the wide-open center of the 3-tier Roman Basalt Colosseum at sunset, 30 meters away from the distant background stone walls, the charcoal-black Tyrannosaurus Rex on the left surges forward and clamps its massive jaws onto the upper shoulder ridge of the slate-teal crocodile-snouted Spinosaurus on the right, wrenching its muscular neck sideways to stagger the Spinosaurus in place at the center of the flat dark volcanic sand arena. Strict rigid-body physics: both dinosaurs remain in the open center of the arena far away from the background stone walls, zero wall clipping."
         },
         {
           "round": 2,
           "extendId": "EXT_5_2",
-          "mediaId": "010930d6-50cc-4c74-9fb4-e9941ac41d45",
-          "sourceVideoMediaId": "a5d05682-bb59-4c7c-8ad9-7fceee012586",
+          "mediaId": "7e92ef11-84f4-46b8-98ed-019edcd703e1",
+          "sourceVideoMediaId": "e5f01f4f-26a1-403e-88af-cc321f775d14",
           "modelKey": "macaron_cookie_extend_10s",
-          "durationSec": 25.46,
+          "durationSec": 26.03,
           "sourceStartFrame": 0,
-          "sourceEndFrame": 372,
-          "prompt": "Continuing seamlessly from the throat-clamp grapple with zero velocity drop inside the 3-tier Roman Basalt Colosseum at fiery sunset, the charcoal-black Tyrannosaurus Rex on the left keeps its massive 12,800 PSI jaws locked onto the neck of the slate-teal crocodile-snouted Spinosaurus with the orange-bronze dorsal sail on the right, wrenching its muscular neck to lift and violently slam the Spinosaurus down onto the dark volcanic sand arena floor in a massive shockwave of dust and mud. Strictly one Tyrannosaurus Rex on the left and one Spinosaurus on the right. Tight 35mm kinetic tracking shot following the brutal takedown slam. Earth-shattering body slam impact, bone-crushing jaw pressure, and agonizing reptilian roar, no music, no human voices, no text or HUD."
+          "sourceEndFrame": 384,
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the wide-open center of the 3-tier Roman Basalt Colosseum at sunset, 30 meters away from the distant background stone walls, the charcoal-black Tyrannosaurus Rex on the left clamps its massive jaws onto the upper shoulder ridge of the kneeling slate-teal crocodile-snouted Spinosaurus on the right and wrenches downward with all its might, forcing the Spinosaurus lower onto the dark volcanic sand floor at the center of the arena as dust billows around their feet. Strict rigid-body physics: zero wall clipping, zero mesh interpenetration."
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 0.0,
-        "endSec": 24.8
+        "startSec": 0.15,
+        "endSec": 19.55
       }
     },
     {
       "clusterIndex": 6,
       "clusterId": "C06_ACT3_SEISMIC_FINISHER_VICTORY",
-      "act": "Act III — Seismic Finisher Slam & Alpha Victory Roar",
-      "targetTimelineWindow": "01:35.2 - 02:00.0 (24.8s Auto-Merged Monolithic Cluster)",
-      "rawDurationTargetSec": 25.46,
+      "act": "Act III — Seismic Finisher Slam & Beside-Body Alpha Victory Roar (Zero Leg Clipping)",
+      "targetTimelineWindow": "01:32.0 - 01:53.8 (21.8s Auto-Merged Monolithic Cluster)",
+      "rawDurationTargetSec": 25.0,
       "workflowId": "6284056f-0b2a-4b50-b4d1-fe3ac47852ab",
-      "seedPrimaryMediaId": "604f264b-9d52-4046-88c5-8c7219435681",
-      "finalPrimaryMediaId": "5ce1d083-2ce0-4b7f-8e68-d527fbbf8bf5",
+      "seedPrimaryMediaId": "29984a4b-cba2-4c00-bcc8-9c22ec3b9e9c",
+      "finalPrimaryMediaId": "51199a27-e34e-44ca-a29d-d88edb038a47",
       "seedDurationSec": 8.0,
       "seedEndFrame": 168,
       "extends": [
         {
           "round": 1,
           "extendId": "EXT_6_1",
-          "mediaId": "c67f2acb-169f-499b-acb5-2ca05c19d3d1",
-          "sourceVideoMediaId": "604f264b-9d52-4046-88c5-8c7219435681",
+          "mediaId": "91d6494d-2b73-4606-89bb-6826f955de60",
+          "sourceVideoMediaId": "29984a4b-cba2-4c00-bcc8-9c22ec3b9e9c",
           "modelKey": "macaron_cookie_extend_10s",
-          "durationSec": 16.46,
-          "sourceStartFrame": 10,
+          "durationSec": 16.97,
+          "sourceStartFrame": 0,
           "sourceEndFrame": 168,
-          "prompt": "Continuing seamlessly from the body slam in the previous frame inside the 3-tier Roman Basalt Colosseum at fiery sunset, the defeated slate-teal Spinosaurus collapses motionless onto its side on the dark volcanic sand floor on the right, while the victorious charcoal-black Tyrannosaurus Rex on the left steps forward and plants its massive three-toed hind foot firmly onto the fallen Spinosaurus flank amidst swirling dust. The 35mm eye-level camera cranes slightly upward toward the towering T-Rex silhouette against the blazing torchlit stone archways. Heavy body collapse impact, decisive foot stomp, and deep victorious breathing, no music, no human voices, no text or HUD."
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the open center of the 3-tier Roman Basalt Colosseum at fiery sunset, the defeated slate-teal Spinosaurus remains collapsed on its side on the right half of the dark volcanic sand floor facing left, while the victorious charcoal-black Tyrannosaurus Rex stands tall on the solid dark sand on the left half of the frame beside the fallen Spinosaurus, lowers its head to snarl down at its defeated rival, and then raises its head high to unleash a prolonged championship victory roar. Strict rigid-body physics: the T-Rex keeps both hind feet planted on the solid sand on the left beside the Spinosaurus, zero legs passing through or clipping into the Spinosaurus body."
         },
         {
           "round": 2,
           "extendId": "EXT_6_2",
-          "mediaId": "5ce1d083-2ce0-4b7f-8e68-d527fbbf8bf5",
-          "sourceVideoMediaId": "c67f2acb-169f-499b-acb5-2ca05c19d3d1",
+          "mediaId": "51199a27-e34e-44ca-a29d-d88edb038a47",
+          "sourceVideoMediaId": "91d6494d-2b73-4606-89bb-6826f955de60",
           "modelKey": "macaron_cookie_extend_10s",
-          "durationSec": 25.46,
+          "durationSec": 25.0,
           "sourceStartFrame": 0,
-          "sourceEndFrame": 372,
-          "prompt": "Continuing seamlessly from the previous frame inside the 3-tier Roman Basalt Colosseum at fiery crimson-orange sunset, the victorious charcoal-black Tyrannosaurus Rex stands tall with its massive hind foot planted firmly atop the motionless defeated slate-teal Spinosaurus lying flat on the dark volcanic sand floor, throws its scarred head skyward, and unleashes a prolonged, earth-shaking championship alpha roar as torch braziers blaze across the three tiers of stone archways behind them and the 28mm wide camera executes a majestic slow pull-back. Prolonged earth-shaking Tyrannosaurus victory roar echoing across the stone amphitheater, deep sub-bass rumble, and crackling fire, no music, no human voices, no text or HUD."
+          "sourceEndFrame": 360,
+          "prompt": "Continuing seamlessly from the previous frame with zero velocity drop at the open center of the 3-tier Roman Basalt Colosseum at fiery sunset, the defeated slate-teal Spinosaurus lies motionless on its side on the right half of the dark volcanic sand floor facing left, while the victorious charcoal-black Tyrannosaurus Rex stands tall on the solid dark sand on the left half of the frame beside the fallen Spinosaurus, throws its head skyward, and unleashes a thunderous championship victory roar as the camera executes a majestic slow pull-back. Strict rigid-body physics: zero legs passing through or clipping into the Spinosaurus body."
         }
       ],
       "cutOnActionTrim": {
-        "startSec": 0.0,
-        "endSec": 24.8
+        "startSec": 1.0,
+        "endSec": 22.8
       }
     }
   ]

@@ -239,13 +239,13 @@ def mux_final_masters():
         "-i", bgm_wav,
         "-filter_complex", "[0:a]volume=0.85[sfx];[1:a]volume=0.55[bgm];[sfx][bgm]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.0:LRA=11[aout]",
         "-map", "0:v:0", "-map", "[aout]",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-maxrate", "4.5M", "-bufsize", "9M", "-pix_fmt", "yuv420p", "-r", "24",
-        "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-t", "120.00",
+        "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "3500k", "-bufsize", "7000k", "-pix_fmt", "yuv420p", "-r", "24",
+        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", "120.00",
         clean_out
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print(f"Exported Clean No-HUD -> {clean_out}")
 
-    # 2. Master HUD + VO + Subs + 3-Layer Audio 1080p24 MP4 (under 85MB for GitHub)
+    # 2. Master HUD + VO + Subs + 3-Layer Audio 1080p24 MP4 (under 60MB for GitHub)
     ass_escaped = ass_path.replace("\\", "/").replace(":", "\\:")
     fc = (
         f"[0:v]ass='{ass_escaped}'[vout];"
@@ -263,8 +263,8 @@ def mux_final_masters():
         "-i", bgm_wav,
         "-filter_complex", fc,
         "-map", "[vout]", "-map", "[aout]",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-maxrate", "5.2M", "-bufsize", "10.4M", "-pix_fmt", "yuv420p", "-r", "24",
-        "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-t", "120.00",
+        "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "3500k", "-bufsize", "7000k", "-pix_fmt", "yuv420p", "-r", "24",
+        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-t", "120.00",
         master_out
     ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     print(f"Exported Full Master -> {master_out}")
