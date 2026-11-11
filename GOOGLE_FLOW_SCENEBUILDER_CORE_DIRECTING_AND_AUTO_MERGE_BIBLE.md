@@ -184,3 +184,24 @@ Mỗi khi thực hiện bất kỳ dự án phim hay video nào trên Google Flo
 | **`VE(media)` (dòng 962)** | `"SceneBuilder.regenerateMedia"` (`U3`) | Tạo lại (Regenerate) một bản media của Shot đang chọn ngay trong cột Lịch sử (`flow-editor-history-panel`) của `SceneBuilder`. |
 | **`yE(media)` (dòng 961)** | `dtQlBe` (`set_scene_clip_primary_media`) | Chọn một phiên bản (take) bất kỳ trong cột Lịch sử của `SceneBuilder` làm video chính thức (`primaryMediaId`) hiển thị trên Timeline. |
 | **`Ahc(a)` ➔ `ukc(a, b)` (dòng 898 & 924)** | `split_scene_clip` (`lt8g5` / `oWTRd`) | Cắt đôi một clip trên Timeline tại vị trí kim `Playhead` (`iJ`). *(Lưu ý: Cắt khúc giữa của một Shot đã Auto-Merge để sửa bằng `Tkc` sẽ gây lệch cảnh ở 2 đầu vết cắt).* |
+
+---
+
+## 7. QUY TẮC CHUYỂN CẢNH GIỮA CÁC MONOLITHIC CLUSTER TRONG `SCENEBUILDER` (`SAME-ANGLE WHIP-PAN` vs `ANGLE-CHANGE-ONLY CUT`)
+
+Khi ghép nối các cụm cảnh dài (`Monolithic Extend Clusters`) trên Timeline của `SceneBuilder` (`/scene/:sceneId`), việc giữ nguyên cùng một góc máy (`Same Camera Angle`) giữa 2 Cluster liên tiếp sẽ dẫn đến lỗi **Nhảy Tỉ Lệ Trục (`Axial Scale-Pop` — khung hình và nhân vật lúc to lúc nhỏ)** hoặc **lặp lại động tác tại điểm cắt**. Do đó, mọi Đạo diễn và AI Agent bắt buộc phải tuân thủ 2 quy luật chuyển cảnh sau:
+
+### 7.1. Quy Luật 1: Cùng Góc Máy Nhưng Khác Vị Trí (`Same Camera Angle, Different Position`) ➔ BẮT BUỘC `LIA MÁY / WHIP-PAN`, CẤM CẮT CỨNG (`NO HARD CUT`)
+- **Tình huống**: Máy quay giữ nguyên góc độ và tiêu cự (ví dụ `24mm–35mm Eye-Level Wide`), chỉ di chuyển vị trí nhìn từ Góc Đài A sang Góc Đài B hoặc ra Giữa Đấu Trường (hoặc từ Cận cảnh Nhân vật A sang Cận cảnh Nhân vật B đang đối diện).
+- **Cách xử lý chuẩn trên `SceneBuilder` & Hậu kỳ**:
+  1. **Trong `SceneBuilder` (`Extend — Pkc`)**: Bấm `Kéo dài (VIDEO_EXTEND)` và ra lệnh rõ trong Prompt: *"The camera executes a rapid, high-velocity horizontal whip-pan right across the torchlit stone archways with heavy directional motion blur to reveal [Character B] on the opposite side of the arena..."*
+  2. **Hoặc dùng `Nhảy đến (Jump To — veo_3_1_jump_to_fast_landscape_fl)`**: Để AI tự sinh cầu nối lia máy biến chuyển giữa 2 vị trí.
+  3. **Khi đóng gói Master**: Áp dụng hiệu ứng **Lia Máy Tốc Độ Cao (`Whip-Pan Slide` `0.35s` + `Directional Horizontal Motion Blur sizeX=64, sizeY=2` + `Whip-Pan Whoosh SFX`)** để mắt người xem cảm nhận máy quay lia vút qua không gian thật mà không có bất kỳ vết cắt cứng nào.
+
+### 7.2. Quy Luật 2: Chỉ Chuyển Cảnh (`Hard Cut`) Khi Đổi Góc Máy ($\ge 30^\circ$) VÀ Đổi Tiêu Cự ($\ge 1.5\times\text{–}2.0\times$) (`Angle-Change-Only Cut`)
+- **Tình huống**: Kết thúc một Monolithic Cluster và chuyển sang Cluster tiếp theo bằng vết cắt trực tiếp (`Hard Cut`).
+- **Điều kiện bắt buộc (`30-Degree & 2x Focal-Length Rule`)**:
+  - **Độ lệch góc máy**: Tối thiểu **$\ge 30^\circ$** (ví dụ từ `Eye-Level 0°` sang `45° Side-Wall Low-Angle` hoặc `Extreme Worm's-Eye Low-Angle`).
+  - **Độ lệch tiêu cự / kích cỡ khung hình**: Tối thiểu **$\ge 1.5\times\text{–}2.0\times$** (ví dụ từ `24mm Wide Master 1.0x` cắt thẳng vào `85mm Telephoto Tight Close-Up 2.0x` đặc tả hàm răng và móng vuốt, không còn thấy mái vòm đấu trường).
+  - **Kỹ thuật `Kurosawa Match-on-Action Cut` tại điểm nối**: Nếu Cluster trước kết thúc bằng một đòn quật hoặc cú vung tay (ví dụ `C05` ở góc nghiêng 45° nhấc bổng đối thủ và quật xuống ở `t = 18.50s`), tuyệt đối **không để cảnh đó tự diễn xong cú chạm đất rồi sang Cluster sau lại quật lần 2**. Phải cắt ngay tại **đỉnh gia tốc rơi (`Apex Downward Throw`)** của góc nghiêng 45° nối thẳng vào **đúng mili-giây cơ thể đập xuống sàn nổ tung bụi mù (`Impact Frame`)** ở góc rộng `24mm` của Cluster sau!
+  - *(Xem toàn bộ 10 Kỹ thuật Đạo diễn Bậc thầy & Bảng ánh xạ Veo 3.1 / Omni 1.2 Flash tại `GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md`).*

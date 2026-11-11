@@ -13,11 +13,12 @@ QUY TẮC BẢO VỆ FILE TUYỆT ĐỐI DÀNH CHO AI AGENT (ANTIGRAVITY / SUBAG
 
 > **Trạng thái Khóa Bảo Vệ:** `AI_EDIT_MODE: OFF` (`Read-Only`)  
 > **Phạm vi áp dụng:** Tự động kích hoạt và tuân thủ nghiêm ngặt mỗi khi người dùng cung cấp **Đầu vào (`Input`: Chủ đề / Title + Thời lượng mục tiêu + Ngôn ngữ / Phong cách)** để sản xuất một bộ phim ngắn, TVC quảng cáo, video sinematic hoặc hoạt hình hoàn chỉnh trên hệ sinh thái **Google Flow (`flow.google.com`) + Flow Music (`flowmusic.app`)**.  
-> **Nền tảng tham chiếu:** Kết hợp đồng bộ với 4 kho tri thức đã khóa:
+> **Nền tảng tham chiếu:** Kết hợp đồng bộ với 5 kho tri thức đã khóa:
 > 1. [GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md](file:///mnt/data/backup/project_personal/test-AI/GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md)
-> 2. [GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md)
-> 3. [GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md)
-> 4. [FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md)
+> 2. [GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md](file:///mnt/data/backup/project_personal/test-AI/GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md)
+> 3. [GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md)
+> 4. [GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md](file:///d:/myProject/test-AI/GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md)
+> 5. [FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md](file:///d:/myProject/test-AI/FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md)
 
 ---
 
@@ -237,15 +238,31 @@ Trong quá trình chạy Giai đoạn 5 & Giai đoạn 6, hễ gặp bất kỳ 
 
 ---
 
-## PHẦN 3: BẢNG CHECKLIST NGHIỆM THU CUỐI CÙNG TRƯỚC KHI BÀN GIAO OUTPUT CHO NGƯỜI DÙNG
+### 🔹 CASE 11: Xử Lý Lỗi 2 Cảnh Liên Tiếp Cùng Góc Quay Làm Nhân Vật Lúc To Lúc Nhỏ (`Axial Scale-Pop`) Hoặc Lặp Lại Đòn Đánh Tại Điểm Nối (`Same-Angle Whip-Pan` vs `Angle-Change-Only Cut`)
 
-Trước khi xuất file Master cuối cùng ở Giai đoạn 6, AI Agent bắt buộc kiểm tra đủ **8 tiêu chí Pass/Fail**:
+* **Dấu hiệu nhận biết:**
+  1. Hai cụm cảnh (`Cluster`) liên tiếp đều được quay ở cùng một góc máy (ví dụ cùng là `35mm Eye-Level Toàn Cảnh Võ Đài`). Khi cắt nối trực tiếp (`Hard Cut`), kích thước nhân vật và mái vòm phía sau bị nhảy lúc to lúc nhỏ và gây cảm giác khựng mắt.
+  2. Cảnh trước đã thực hiện xong một đòn đánh/quật ngã ở cuối clip, nhưng cảnh sau lại bắt đầu từ tư thế đứng và thực hiện lại cú quật đó một lần nữa (`Duplicate Action at Cut Boundary`).
+* **Phương án giải quyết chuẩn (`2 Quy Luật Chuyển Cảnh Điện Ảnh`):**
+  1. **Nếu CÙNG GÓC MÁY chỉ khác vị trí trong không gian (`Same Camera Angle, Different Position`) $\implies$ CẤM CẮT CỨNG (`Hard Cut`), BẮT BUỘC DÙNG `LIA MÁY / WHIP-PAN`:**
+     - Sử dụng **`Kéo dài (Extend — Pkc)`** kèm câu lệnh `High-velocity horizontal whip-pan left/right with directional motion blur`, hoặc dùng hiệu ứng **Lia Máy Nhanh (`Whip-Pan Slide 0.35s` + `Directional Horizontal Motion Blur sizeX=64, sizeY=2` + `Whip-Pan Whoosh SFX`)** để lia máy mượt mà từ vị trí nhân vật A sang vị trí nhân vật B hoặc ra tâm đấu trường.
+  2. **Chỉ CẮT CẢNH (`Hard Cut`) khi ĐỔI GÓC MÁY ($\ge 30^\circ$) VÀ ĐỔI TIÊU CỰ ($\ge 1.5\times\text{–}2.0\times$) kèm `Kurosawa Match-on-Action Cut`:**
+     - Chuyển từ **`24mm Toàn Cảnh (1.0x)`** cắt thẳng vào **`85mm Cận Cảnh Đặc Tả (2.0x)`** (loại bỏ hoàn toàn vòm trời/hậu cảnh xa để mắt người xem tập trung vào chi tiết hàm răng/móng vuốt).
+     - Chuyển từ **`Góc Nghiêng Thấp 45° Tường Đuốc Lửa`** (cắt ngay tại **đỉnh gia tốc quật xuống** trước khi chạm đất) nối khớp chuyển động (`Match-on-Action`) sang **`Góc Rộng Toàn Cảnh 24mm`** đúng tại **mili-giây cơ thể va chạm mặt đất nổ tung bụi mù**, triệt tiêu 100% lỗi lặp lại đòn đánh!
+     - Khép lại cao trào bằng vết cắt từ **`24mm Toàn Cảnh`** sang **`85mm Cận Cảnh Ngước Cực Thấp (Extreme Worm's-Eye Hero Close-Up)`** kết hợp **Spielberg Slow Dolly Push-In**.
+
+---
+
+## PHẦN 3: BẢNG CHECKLIST NGHIỆM THU CUỐI CÙNG TRƯỚC KHI BÀN GIAO OUTPUT CHO NGƯỜNG DÙNG
+
+Trước khi xuất file Master cuối cùng ở Giai đoạn 6, AI Agent bắt buộc kiểm tra đủ **9 tiêu chí Pass/Fail**:
 
 - [ ] **1. Thời lượng (`Duration Match`):** Tổng thời lượng trên Timeline có khớp chính xác với yêu cầu đầu vào của người dùng ($\pm 0.2\text{s}$) không?
 - [ ] **2. Đồng nhất Nhân vật (`Identity Consistency`):** Khuôn mặt, tỷ lệ cơ thể và trang phục nhân vật qua tất cả các cảnh (bao gồm cả cảnh kéo dài 40s+) có giữ nguyên 100% không?
 - [ ] **3. Không mất đoạn khi Edit (`Zero Truncation`):** Các đoạn được chỉnh sửa bằng `Omni 1.2 Flash Edit` có được tách bằng nút **Cây Kéo (`Tách đoạn video`)** thay vì bấm `[Tự động cắt]` không?
 - [ ] **4. Mối nối mượt (`Zero Jump-Cut / Zero Freeze`):** Mọi mối nối giữa đoạn sửa và đoạn kế tiếp đã được xử lý bằng `Edit-Before-Extend`, `Start-to-End Bridge`, hoặc `Cutaway Mask` chưa? Đuôi các clip rời đã được gọt `0.3s–0.5s` chưa?
-- [ ] **5. Quy tắc Điện ảnh (`180° & 30° Rules`):** Hướng nhìn (`Eyeline`) và hướng di chuyển của nhân vật có nhất quán từ đầu đến cuối không?
+- [ ] **5. Quy tắc Điện ảnh (`180° & 30° Rules + Whip-Pan vs Angle-Change-Only Cut`):** Các cảnh cùng góc máy đổi vị trí đã dùng `Pan / Whip-Pan + Motion Blur + Whoosh SFX` (không cắt cứng) chưa? Mọi vết cắt cứng (`Hard Cut`) đã đổi góc máy $\ge 30^\circ$ và tiêu cự $\ge 1.5\times\text{–}2.0\times$ kèm `Match-on-Action` (không lặp đòn đánh) chưa?
 - [ ] **6. Màu sắc & Ánh sáng (`60-30-10 Color Grade`):** Nhiệt độ màu và hướng nắng/đèn giữa các cảnh liền kề có đồng nhất không?
 - [ ] **7. Âm thanh liền mạch (`Seamless 3-Layer Audio`):** Không có câu thoại nào bị cắt cụt ở cuối shot; nhạc nền từ `flowmusic.app` chạy xuyên suốt mượt mà và có nhịp ngắt nghỉ hợp lý.
 - [ ] **8. Độ phân giải xuất bản (`Master Export`):** Xuất file ở chuẩn `1080p` hoặc `4K Ultra` (`24 fps`) sắc nét, không chứa chữ rác/watermark lỗi.
+- [ ] **9. Tuân thủ 10 Kỹ thuật Đạo diễn Bậc thầy (`Master Directors' Cinematography`):** Đã áp dụng các kỹ thuật tương ứng trong `GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md` (Spielberg Push-In, Miller Crosshair Framing, Kurosawa Weather & Match-on-Action, Bong Joon-ho Vertical Power Blocking, Cameron 24Hz Seismic Tremor) chưa?
