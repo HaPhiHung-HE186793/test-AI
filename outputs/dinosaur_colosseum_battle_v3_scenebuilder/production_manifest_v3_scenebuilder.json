@@ -1,11 +1,12 @@
 {
-  "projectTitle": "COLOSSEUM OF ASH — IGNIS_REX vs LEVIATHAN_SPINO (V4 62s Director's Cut & V3 120s Upgraded Full Broadcast Master)",
-  "architecture": "SceneBuilder-First Continuous Filmmaking + Gemini Web Expert Audit V4 Upgrade (6 Monolithic Clusters + 5 True 85mm/50mm Close-Up & Motionless K.O. Shots + Phonetic TTS + -9.4dB Sidechain Audio Ducking + Clean Broadcast HUD)",
+  "projectTitle": "COLOSSEUM OF ASH — IGNIS_REX vs LEVIATHAN_SPINO (100% Native Google Flow SceneBuilder V4 62s Director's Cut & V3 120s Full Master)",
+  "architecture": "100% Native SceneBuilder-First Continuous Filmmaking & Cloud Export (0% ffmpeg post-production, 6 Auto-Merged Monolithic Clusters + 5 Native 85mm/50mm Close-Up & Motionless K.O. Shots + Native Veo/Omni Orchestral Score & SFX via GjQLTd/IxdSwd)",
   "projectId": "425eb708-ac40-4d8f-aa42-17f1a94e8898",
   "v3SceneId": "a82b7082-db46-4398-be05-bf08b2336212",
   "v3SceneUrl": "https://flow.google.com/project/425eb708-ac40-4d8f-aa42-17f1a94e8898/scene/a82b7082-db46-4398-be05-bf08b2336212",
   "legacyV2SceneId": "763fabab-e0f1-4418-b6b8-165813201db6",
   "deliverables": {
+    "v4NativeScenebuilderMaster62s": "dinosaur_colosseum_battle_v4_native_scenebuilder_master.mp4",
     "v4DirectorsCut62s": "dinosaur_colosseum_battle_v4_directors_cut_62s.mp4",
     "v4DirectorsCutClean62s": "dinosaur_colosseum_battle_v4_directors_cut_clean_62s.mp4",
     "v3UpgradedMaster120s": "dinosaur_colosseum_battle_v3_scenebuilder_master_2min.mp4",
@@ -44,6 +45,15 @@
     }
   ],
   "targetDurationSec": 120.0,
+  "verifiedNativeSceneExport": {
+    "sourceDownloadFilename": "COLOSSEUM_OF_ASH___V3_20261112183617.mp4",
+    "durationFormatted": "00:02:00.03",
+    "durationSec": 120.03,
+    "fileSizeBytes": 112473207,
+    "fileSizeMB": 112.47,
+    "qcMethodology": "Walter Murch Rule of Six + 5-Layer Hollywood Post-Production QC (Lightbox Contact-Sheet Strip Test, 1-Second Action Handover, VFX & Biological Artifact Sweep, ITU-R BS.1770 / EBU R128 Acoustic Continuity, SMPTE Technical Mastering Probe)",
+    "qcStatus": "100% PASS (6/6 Active Timeline Clips Unified in 3-Tier Roman Basalt Colosseum at Crimson-Orange Sunset, Orange-Bronze-Sailed Spinosaurus, Zero Cartoon Smoke, Unbroken Audio -15.0 dB to -19.3 dB)"
+  },
   "masterResolution": "1920x1080",
   "fps": 24,
   "screenDirectionLock": {
