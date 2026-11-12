@@ -4,15 +4,16 @@ Mọi AI Agent làm việc trong dự án này bắt buộc phải tuân thủ t
 
 ---
 
-## 1. 🔒 QUY TẮC BẢO VỆ 6 KHO TRI THỨC GỐC (`AI_EDIT_MODE: OFF` — CHỈ ĐỌC)
+## 1. 🔒 QUY TẮC BẢO VỆ 7 KHO TRI THỨC GỐC (`AI_EDIT_MODE: OFF` — CHỈ ĐỌC)
 
-Trước khi thực hiện bất kỳ yêu cầu sản xuất video, âm nhạc hoặc viết code nào trên Google Flow (`flow.google.com`) và Flow Music (`flowmusic.app`), Agent bắt buộc phải đọc (`read_file`) 6 tài liệu gốc sau:
+Trước khi thực hiện bất kỳ yêu cầu sản xuất video, âm nhạc hoặc viết code nào trên Google Flow (`flow.google.com`) và Flow Music (`flowmusic.app`), Agent bắt buộc phải đọc (`read_file`) 7 tài liệu gốc sau:
 1. `GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md` — **Quy chuẩn Cốt lõi về Đạo diễn, Chỉnh sửa trực tiếp, Kéo dài không độ khựng & Auto-Merge trên màn `SceneBuilder` (`/scene/:sceneId`)**.
 2. `GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md` — **Quy chuẩn Ngữ pháp Chuyển cảnh Điện ảnh (`Same-Angle Whip-Pan` vs `Angle-Change-Only Cut >= 30°`) & 10 Kỹ thuật Đạo diễn Bậc thầy ánh xạ sang Veo 3.1 / Omni 1.2 Flash**.
 3. `GOOGLE_FLOW_MASTER_KNOWLEDGE_BASE.md` — Bách khoa toàn thư Kiến trúc, Model, RPC & Tính năng của Google Flow.
 4. `GOOGLE_FLOW_MASTER_EXECUTION_PIPELINE_AND_CASES.md` — Quy trình sản xuất 6 giai đoạn (5 Gates) & 11 Case xử lý tình huống thực chiến.
 5. `GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md` — Quy chuẩn 4 trụ cột chống biến dạng, nối dài cảnh, chống khựng & âm thanh liền mạch.
 6. `FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md` — Kho tri thức toàn diện về sáng tác nhạc, Stems, DSP trên `flowmusic.app`.
+7. `AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md` — **Bách khoa 4 Trụ cột Làm phim AI Chuẩn Studio Điện ảnh (`Atomic Beats 3–5s`, `Frames First Video Second`, `Model Routing 2025–2026`, `4-Layer Sound & DaVinci De-AI-ifying`) & Kiểm định Chất lượng Hậu kỳ 5 Lớp Hollywood (`Walter Murch Rule of Six`)**.
 
 > **CẤM CHỈNH SỬA**: Khi cờ ở đầu các file trên đang là `AI_EDIT_MODE: OFF`, Agent **TUYỆT ĐỐI KHÔNG ĐƯỢC SỬA, XÓA HAY GHI ĐÈ** vào các file đó. Chỉ khi người dùng ra lệnh rõ ràng cho phép bật `AI_EDIT_MODE: ON` cho một file cụ thể thì mới được phép cập nhật, và sau khi cập nhật xong phải lập tức khóa lại về `AI_EDIT_MODE: OFF`.
 
@@ -96,5 +97,23 @@ Khi tạo hoặc kéo dài bất kỳ cảnh hành động, va chạm, vật l�
 Khi hoàn thành bất kỳ quy trình sản xuất hoặc chỉnh sửa video nào:
 1. Agent **BẮT BUỘC** copy file video nguyên bản xuất trực tiếp từ Google Flow vào thư mục Artifact của phiên làm việc hiện tại (`<appDataDir>/brain/<conversation-id>/`).
 2. Nhúng trực tiếp trình phát video bằng cú pháp `![Tên Video](/absolute/path/in/artifact_dir/video.mp4)` ngay ở **Mục 1 đầu báo cáo nghiệm thu (`.md` Artifact)** để người dùng bấm xem trực tiếp cả video lẫn báo cáo trên cùng một màn hình mà không phải mở thư mục ngoài tìm file.
+
+---
+
+## 7. 🏆 QUY CHUẨN 4 TRỤ CỘT ĐIỆN ẢNH AI & KIỂM ĐỊNH CHẤT LƯỢNG 5 LỚP HOLLYWOOD (`AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md`)
+
+Mọi dự án sản xuất phim ngắn, TVC, hoạt hình hoặc trailer bắt buộc kích hoạt đồng thời skill `ai-cinema-4-pillars-director` (`.agents/skills/ai-cinema-4-pillars-director/SKILL.md`) và tuân thủ:
+
+1. **Tư duy Đạo diễn Nhịp Vi Mô (`Atomic Beats 3–5s`) & Khẩu hình**:
+   - Mỗi nhịp quay (`Seed Clip` hoặc `Extend`) chỉ thực hiện **1 hành động chính duy nhất + 1 chuyển động thiết bị máy quay vật lý** để chống hiện tượng tan chảy vật lý (`Motion Soup`).
+   - Gọi tên chính xác cỡ cảnh (`EWS`, `MCU`, `ECU`, `Insert Shot`), tiêu cự (`24mm` chiều sâu kịch tính vs `85mm` xóa phông cô lập cảm xúc), ánh sáng (`Chiaroscuro`, `Rim Light`, `Volumetric Fog`), định mức **`10–14 âm tiết / 5s`** cho thoại khớp môi và cầu âm thanh `J-Cut / L-Cut`.
+2. **Quy trình 3 Tầng "Khóa Tĩnh trước, Tạo Động sau" (`Frames First, Video Second`)**:
+   - Cấm đi thẳng từ chữ sang video (`Text-to-Video`) khi chưa duyệt ảnh tĩnh: bắt buộc khóa **Character Turnaround Sheet** (đa góc nền trung tính + `5-Layer Negative Prompt Stack`, không cầm đạo cụ trên tay) và **Environment Master Keyframes** (`0 Video Credit`).
+   - Kỹ thuật `Anti-Glitch`: Lặp lại cụm `Fixed Anchor` thay vì dùng đại từ mơ hồ; chỉ định rõ `"mouth firmly closed, zero lip movement"` ở mọi cảnh chỉ chạy Voiceover; neo thiết bị quay vật lý (`locked-off fluid-head tripod`, `heavy gimbal tracking`, `slow Technocrane rise`).
+3. **Định tuyến Mô hình (`Model Routing`) & Hòa âm 4 Lớp / Hậu kỳ `De-AI-ifying`**:
+   - Mặc định tuân thủ `100% Native Google Flow SceneBuilder` (Mục 5); khi người dùng yêu cầu quy trình thương mại đa mô hình thì định tuyến chuẩn theo bảng `AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md` (kết hợp `DaVinci Resolve 6-Node De-AI-ifying`: `Color Match`, `Midtone Detail -10..-18`, `Halation`, `35mm Film Grain`) và đảm bảo **Kiến trúc Âm thanh 4 Lớp** (`Dialogue/VO` + `Foley` + `Continuous Room Tone` + `Cinematic Score`) cùng quản trị thư mục `Scene_ID`.
+4. **Kiểm định Chất lượng Hậu kỳ 5 Lớp Hollywood (`5-Layer Finishing QC` & Walter Murch *Rule of Six*)**:
+   - Trước khi bàn giao bất kỳ video nào, bắt buộc chạy kiểm định đủ 5 lớp: (1) `Lightbox Contact-Sheet Strip Test` kiểm tra đồng nhất bối cảnh/nhân vật toàn tuyến, (2) `1-Second Handover Check` chống khựng điểm nối, (3) `Biological & Physics Artifact Sweep`, (4) `ITU-R BS.1770 Acoustic Continuity` chống hụt tiếng, và (5) `SMPTE Technical Mastering Probe`.
+
 
 

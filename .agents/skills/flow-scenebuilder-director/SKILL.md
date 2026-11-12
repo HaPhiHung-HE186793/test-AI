@@ -13,6 +13,7 @@ Skill này trang bị cho Agent quy trình **Đạo Diễn & Dựng Phim Cốt L
 4. [GOOGLE_FLOW_MASTER_EXECUTION_PIPELINE_AND_CASES.md](../../../GOOGLE_FLOW_MASTER_EXECUTION_PIPELINE_AND_CASES.md)
 5. [GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md](../../../GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md)
 6. [FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md](../../../FLOW_MUSIC_MASTER_KNOWLEDGE_BASE.md)
+7. [AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md](../../../AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md) *(4 Trụ cột Làm phim AI Chuẩn Studio: `Atomic Beats 3–5s`, `Frames First Video Second` với `11-Frame Turnaround + 5-Layer Negative Stack`, `Anti-Glitch & Mouth-Closed Lock`, `Physical Camera Rig Syntax`, `4-Layer Sound Architecture`, và `5-Layer Hollywood Post-Production QC / Walter Murch Rule of Six`)*
 
 > [!CAUTION]
 > **QUY TẮC KHÓA BẢO VỆ TÀI LIỆU (`AI_EDIT_MODE: OFF`)**:
@@ -76,6 +77,11 @@ Skill này trang bị cho Agent quy trình **Đạo Diễn & Dựng Phim Cốt L
      2. Thực hiện liên hoàn **`Kéo dài (Extend — Pkc / VIDEO_EXTEND)`** và **`Nhảy đến (Jump To — veo_3_1_jump_to_fast_landscape_fl)`** trực tiếp ngay trên Timeline của `SceneBuilder`.
      3. Ngay trong Prompt của mỗi bước `Seed` / `Extend` / `Jump To`, mô tả đầy đủ cả **Chuyển động máy quay (Cận cảnh `85mm` / Lia máy `Whip-Pan` / Đổi góc máy)**, **Hiệu ứng âm thanh vật lý (`SFX`)**, và **Nhạc nền giao hưởng điện ảnh (`Cinematic Orchestral Score`)** để mô hình của Google Flow tự sinh đồng bộ cả hình ảnh, hiệu ứng lẫn âm nhạc.
      4. Sau khi hoàn tất chuỗi `Extend` / `Jump To` trên Timeline của `SceneBuilder`, **xuất thẳng file video `.mp4` nguyên bản từ chính Google Flow (`Auto-Merged Native MP4` / `SceneBuilder Export`)** và nhúng trực tiếp file nguyên bản đó vào báo cáo nghiệm thu!
+
+9. **Tuân Thủ 4 Trụ Cột Điện Ảnh AI & Kiểm Định Hậu Kỳ 5 Lớp Hollywood (`AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md` + Skill `ai-cinema-4-pillars-director`)**:
+   - **Nhịp vi mô `Atomic Beats` (`1 Hành động chính + 1 Thiết bị quay vật lý`)**: Mỗi lệnh `Seed Clip` hoặc `Extend` chỉ giao đúng 1 hành động vật lý chủ đạo + 1 thiết bị cơ khí máy quay thật (`locked-off heavy fluid-head tripod`, `heavy Ronin gimbal tracking`, `damped hydraulic dolly push-in`, `slow Technocrane rise`) để chống `Motion Soup` và chống trôi camera.
+   - **Khóa Tĩnh Trước, Tạo Động Sau (`Frames First, Video Second`)**: Cấm dùng `Text-to-Video` trần không neo ảnh tĩnh; bắt buộc khóa `Character Turnaround Sheet` (kèm `5-Layer Negative Prompt Stack`) + `Environment Master Keyframes` trước khi quay; lặp lại cụm `Fixed Anchor` thay cho đại từ mơ hồ; thêm `"mouth firmly closed, zero lip movement"` ở các cảnh không thoại; giới hạn `10–14 âm tiết / 5s` nếu có thoại khớp môi.
+   - **Thiết kế Âm thanh 4 Lớp & Kiểm định 5 Lớp Hollywood trước bàn giao**: Mô tả đầy đủ 4 lớp âm thanh (`Dialogue/VO`, `Foley`, `Continuous Ambience/Room Tone`, `Cinematic Score`) trong Prompt và chạy đủ **5 Lớp Kiểm Định Chất Lượng Hậu Kỳ** (`Lightbox Contact-Sheet Strip Test`, `1s Handover Check`, `Biological/Physics Artifact Sweep`, `ITU-R BS.1770 Acoustic Continuity`, `SMPTE Mastering Probe` theo **Walter Murch's *Rule of Six***) trước khi bàn giao video cho người dùng.
 
 ---
 
