@@ -129,10 +129,15 @@ Mọi dự án sản xuất phim ngắn, TVC, hoạt hình hoặc trailer bắt 
         - **CẤM bỏ rơi thẻ `@Nhân vật` khi kéo dài video**: Khi kéo dài một video đã có, bắt buộc phải **gắn ĐỒNG THỜI cả Video cần kéo dài lẫn Thực thể `@Nhân vật`** trong hộp Prompt (chế độ **`Tác nhân`** bật sáng):
           1. **Giữ / Chèn thẻ chip `[tên-nhân-vật]` (`@Nhân vật`)** ngay ở đầu câu lệnh (ví dụ: `[t-rex]`).
           2. **Bấm nút `+` (hoặc gõ `@`) mở popup `Tìm kiếm thành phần` $\rightarrow$ chọn chính đoạn `Video` vừa tạo cần kéo dài** (kiểm tra thanh cắt thời gian `00:00:00  ▷  00:10:00`) $\rightarrow$ bấm **`Thêm vào câu lệnh`** để xuất hiện **thumbnail Video có icon máy quay `🎥`** ở hàng nguyên liệu phía trên hộp Prompt (hoặc rê chuột lên thẻ video bấm nút mở rộng/thêm vào câu lệnh).
-          3. **Xem lại khoảnh khắc cuối cùng của video trước** (ví dụ: khủng long vừa ngửa cổ gầm xong) để viết câu lệnh nối tiếp mượt mà theo đúng cấu trúc:
-             > **`[tên-nhân-vật] kéo dài video này khi mà [hành động cuối cùng của video trước] rồi thì [hành động diễn biến tiếp theo...]`**
-             *(Ví dụ thực tế: `[t-rex] kéo dài video này khi mà khủng long gầm rồi thì nó bỗng nhiên nghe được tiếng động bên trái thì nó bất ngờ qua sang bên trái`)*.
-          4. **Bấm `→`** để **`Tác nhân` (`Đang tư duy...`)** tự động đọc cả `10s Video gốc (🎥)` (giữ nguyên 100% bối cảnh, ánh sáng và tư thế cuối) kết hợp với `Thực thể @Nhân vật` (giữ nguyên 100% thiết kế khuôn mặt, vảy, mào ở góc quay mới) và sinh đoạn video nối tiếp mượt mà!
+          3. **Xem lại khoảnh khắc cuối cùng của video trước** (ví dụ: khủng long vừa ngửa cổ gầm xong, hoặc vừa ngoảnh sang trái) để viết câu lệnh nối tiếp mượt mà theo đúng cấu trúc:
+             - **Nếu kéo dài tiếp hành động của 1 nhân vật** (`10s ➔ 15s`):
+               > **`[tên-nhân-vật] kéo dài video này khi mà [hành động cuối cùng của video trước] rồi thì [hành động diễn biến tiếp theo...]`**
+               *(Ví dụ: `[t-rex] kéo dài video này khi mà khủng long gầm rồi thì nó bỗng nhiên nghe được tiếng động bên trái thì nó bất ngờ qua sang bên trái`)*.
+             - **Nếu kéo dài kèm Lia máy (`lia cam nhanh`) sang Nhân vật thứ 2 xuất hiện** (`15s ➔ 20s`):
+               - Đính kèm đủ **3 thành phần** trên hộp Prompt: **`[🎥 Video 15s vừa nối]` + `[🧍 Nhân vật 1]` + `[🧍 Nhân vật 2]`** và gõ:
+               > **`kéo dài video 1. khi [nhân-vật-1] [hành động cuối video trước] rồi thì lia cam nhanh sang bên phía [hướng] đó thì [nhân-vật-2] xuất hiện và [hành động...]`**
+               *(Ví dụ: `kéo dài video 1. khi [t-rex] ngoảnh sang rồi thì lia cam nhanh sang bên phía tiếng động đó thì [Triceratops] xuất hiện và khấm tiếng`)*.
+          4. **Bấm `→`** để **`Tác nhân` (`Đang tư duy...` / `Omni 1.2 Flash`)** tự động đọc cả `Video gốc (🎥)` (giữ nguyên 100% bối cảnh khu rừng, ánh sáng và tư thế cuối, tự động gộp thành video `15 giây` / `20 giây`) kết hợp với các `Thực thể @Nhân vật` (giữ nguyên 100% thiết kế khuôn mặt, vảy, sừng ở góc quay mới) và sinh đoạn video nối tiếp **0% độ khựng**!
    - Kỹ thuật `Anti-Glitch`: Chỉ định rõ `"mouth firmly closed, zero lip movement"` ở mọi cảnh chỉ chạy Voiceover; neo thiết bị quay vật lý (`locked-off fluid-head tripod`, `heavy gimbal tracking`, `slow Technocrane rise`).
 3. **Định tuyến Mô hình (`Model Routing`) & Hòa âm 4 Lớp / Hậu kỳ `De-AI-ifying`**:
    - Mặc định tuân thủ `100% Native Google Flow SceneBuilder` (Mục 5); khi người dùng yêu cầu quy trình thương mại đa mô hình thì định tuyến chuẩn theo bảng `AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md` (kết hợp `DaVinci Resolve 6-Node De-AI-ifying`: `Color Match`, `Midtone Detail -10..-18`, `Halation`, `35mm Film Grain`) và đảm bảo **Kiến trúc Âm thanh 4 Lớp** (`Dialogue/VO` + `Foley` + `Continuous Room Tone` + `Cinematic Score`) cùng quản trị thư mục `Scene_ID`.
