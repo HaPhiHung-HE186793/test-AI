@@ -28,12 +28,13 @@ Skill này kích hoạt bộ quy chuẩn **4 Trụ Cột Làm Phim AI Chuẩn St
    - Thoại trực tiếp trên hình (*On-camera Lip-Sync*): Giới hạn **`10–14 âm tiết / cảnh 5 giây`** (`2.0–2.8 âm tiết/giây`).
    - Nối thoại mượt qua vết cắt bằng **`J-Cut`** (tiếng vào sớm `0.5–1.0s`) và **`L-Cut`** (tiếng ngân trễ `0.5–1.2s`).
 
-### Bước 2: Khóa Tĩnh Trước, Tạo Động Sau (`Pillar 2 — Frames First, Video Second`)
-1. **Cấm đi thẳng từ `Text-to-Video` khi chưa khóa Nguyên liệu Tĩnh (`0 Video Credit`)**:
-   - Tạo **Character Turnaround Sheet** (bảng xoay đa góc `Chính diện, Nghiêng 3/4, Nghiêng 90°, Sau lưng` + `Cận mặt 4K` trên nền xám trung tính phẳng, không cầm đạo cụ trên tay) kèm **Khối 5 Lớp Negative Prompt** chuẩn trong `AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md`.
+### Bước 2: Khóa Tĩnh Trước, Tạo Động Sau & Dùng Thực Thể `🧍 Nhân Vật` Chuẩn Google Flow (`Pillar 2 — Frames First, Video Second & @Character Chip`)
+1. **Bắt buộc đóng gói Thực thể `🧍 Nhân vật` (`@Character Entity` 2 khe ảnh) — Cấm đi đường vòng bằng ảnh tĩnh rời**:
+   - Tạo **Ảnh Chân dung cận mặt (`Khe 1`)** + **Bảng xoay đa góc (`Khe 2 - Character Turnaround Sheet` kèm `5-Layer Negative Prompt Stack`)**, sau đó **BẮT BUỘC vào mục `🧍 Nhân vật` (`/project/:projectId/character`) tạo Thực thể Nhân vật chính thức** gắn đủ 2 khe ảnh này.
    - Tạo **Environment Master Keyframes** khóa cứng kiến trúc, số tầng, hướng nắng và bảng màu `60-30-10`.
-2. **Kỹ thuật `Anti-Glitch Prompt Engineering`**:
-   - **Cấm dùng đại từ mơ hồ (`he / she / it`)**: Luôn lặp lại cụm `Fixed Anchor` mô tả đặc điểm nhận diện cố định + gắn thẻ `@Character` / `Start Frame`.
+2. **Cách gọi Nhân vật & Bối cảnh khi tạo Video (`Gõ @ ➔ Chọn Nhân vật ➔ Thêm vào câu lệnh`)**:
+   - **Cấm bỏ qua thẻ `@Nhân vật` để viết 100 từ tiếng Anh tả ngoại hình**: Khi viết Prompt tạo Video, bắt buộc gõ **`@`** ngay tại vị trí chủ ngữ $\rightarrow$ chọn tab **`🧍 Nhân vật`** $\rightarrow$ chọn nhân vật $\rightarrow$ bấm **`Thêm vào câu lệnh`** để chèn **thẻ chip `[tên-nhân-vật]` inline vào giữa câu lệnh** kèm **thumbnail có icon `🧍` trên hộp Prompt**.
+   - **Đồng nhất Bối cảnh**: Khi tạo shot mới ở góc máy khác trong cùng bối cảnh, bấm `+` (`@`) đính kèm đồng thời **`[Ảnh Bối Cảnh Gốc]` + `[@Nhân vật]`** vào hộp Prompt (hoặc dùng `Kéo dài / Extend` trực tiếp trên `SceneBuilder`).
    - **Khóa miệng khi chạy Voiceover (`Mouth-Closed Lock`)**: Mọi cảnh không có thoại trực tiếp phải có cụm `"mouth firmly closed, relaxed neutral jaw, silent contemplative expression, zero lip movement"`.
    - **Neo thiết bị quay vật lý (`Physical Camera Rig`)**: Chỉ định rõ `"locked-off heavy fluid-head tripod"`, `"heavy gimbal tracking shot"`, `"damped hydraulic dolly push-in"`, hoặc `"slow Technocrane vertical rise"` — cấm viết *"cinematic camera"* chung chung gây trôi máy bồng bềnh.
 

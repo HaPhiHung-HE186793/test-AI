@@ -26,8 +26,11 @@ Skill này trang bị cho Agent quy trình **Đạo Diễn & Dựng Phim Cốt L
 1. **CẤM Tạo Hàng Loạt Shot Rời Ngoài Màn Chính Rồi Chỉ Dùng `SceneBuilder` Để Ghép Nối Cơ Học**:
    - Tạo 10–16 clip 8 giây độc lập ngoài màn `Project Grid` (`START_END_FRAMES` / `START_FRAME`) rồi xếp nối đuôi vào Scene sẽ gây **độ khựng (`v = 0` tại điểm đầu và cuối mỗi shot)** vì mỗi clip khởi động từ ảnh tĩnh và phanh về ảnh tĩnh.
    - Màn ngoài (`/project/:projectId`) **chỉ dùng để tạo**:
-     1. Thực thể `@Character` khe kép (`Chân dung` + `Cơ thể 3 góc`) và `@Environment` (Ảnh tĩnh `Nano Banana Pro` `0 Credit`).
-     2. **Video Mẫu Mồi (`Seed Clip` ban đầu)** để có cái đưa vào `SceneBuilder` (vì màn `SceneBuilder` không tạo được ảnh tĩnh và không thể tự khởi tạo mới một shot khi Timeline đang trống).
+     1. **Thực thể `🧍 Nhân vật` (`@Character Entity`) chính thức trong tab `Nhân vật` (`/project/:projectId/character`)** gồm đủ **2 khe ảnh tham chiếu (`Khe 1: Chân dung cận mặt` + `Khe 2: Bảng xoay đa góc Turnaround`)** và **Ảnh bối cảnh gốc (`@Environment`)**. **TUYỆT ĐỐI CẤM** chỉ tạo ảnh tĩnh thường (`🖼️ Hình ảnh`) rồi bỏ qua bước tạo thực thể trong tab `🧍 Nhân vật`!
+     2. **Video Mẫu Mồi (`Seed Clip` ban đầu) bằng cách gõ `@` chèn trực tiếp thẻ Chip `[tên-nhân-vật]` vào giữa câu lệnh Prompt**:
+        - Trong ô nhập Prompt, gõ câu mô tả bối cảnh/hành động và tại vị trí nhân vật xuất hiện thì **gõ `@`** $\rightarrow$ chọn tab **`🧍 Nhân vật`** $\rightarrow$ chọn thực thể nhân vật (ví dụ: `t-rex`) $\rightarrow$ bấm **`Thêm vào câu lệnh`**.
+        - Bắt buộc kiểm tra trên hộp Prompt có đủ **2 dấu hiệu**: **(a) Thẻ chip `[tên-nhân-vật]` (`flow-character-ingredient-chip`) nằm inline ngay trong dòng chữ** và **(b) Thumbnail nhân vật có icon hình người `🧍` (`accessibility_new`) ở phía trên**. Không viết đoạn văn dài 100 từ tả lại ngoại hình thay cho thẻ `@Nhân vật`!
+        - Nếu tạo Shot mới trong cùng bối cảnh, bấm `+` (`@`) đính kèm thêm **Ảnh bối cảnh gốc (`🖼️ Hình ảnh`)** cùng với thẻ **`@Nhân vật`** để khóa đồng nhất 100% cả nhân vật lẫn bối cảnh.
 
 2. **Màn `SceneBuilder` (`/project/:projectId/scene/:sceneId`) Là Trung Tâm Làm Phim & Chỉnh Sửa Trực Tiếp (`Tkc` / `U3`)**:
    - Ngay khi đã đưa `Seed Clip` vào `SceneBuilder` (`oWTRd`), mọi thao tác tinh chỉnh, sửa lại hoặc tạo lại shot **đều thực hiện trực tiếp ngay trong màn `SceneBuilder`**.
@@ -80,7 +83,7 @@ Skill này trang bị cho Agent quy trình **Đạo Diễn & Dựng Phim Cốt L
 
 9. **Tuân Thủ 4 Trụ Cột Điện Ảnh AI & Kiểm Định Hậu Kỳ 5 Lớp Hollywood (`AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md` + Skill `ai-cinema-4-pillars-director`)**:
    - **Nhịp vi mô `Atomic Beats` (`1 Hành động chính + 1 Thiết bị quay vật lý`)**: Mỗi lệnh `Seed Clip` hoặc `Extend` chỉ giao đúng 1 hành động vật lý chủ đạo + 1 thiết bị cơ khí máy quay thật (`locked-off heavy fluid-head tripod`, `heavy Ronin gimbal tracking`, `damped hydraulic dolly push-in`, `slow Technocrane rise`) để chống `Motion Soup` và chống trôi camera.
-   - **Khóa Tĩnh Trước, Tạo Động Sau (`Frames First, Video Second`)**: Cấm dùng `Text-to-Video` trần không neo ảnh tĩnh; bắt buộc khóa `Character Turnaround Sheet` (kèm `5-Layer Negative Prompt Stack`) + `Environment Master Keyframes` trước khi quay; lặp lại cụm `Fixed Anchor` thay cho đại từ mơ hồ; thêm `"mouth firmly closed, zero lip movement"` ở các cảnh không thoại; giới hạn `10–14 âm tiết / 5s` nếu có thoại khớp môi.
+   - **Khóa Thực Thể `🧍 Nhân Vật` & Gắn Chip `@Nhân-Vật` Inline (`Frames First, Video Second & @Character Chip`)**: Cấm chỉ tạo ảnh tĩnh thường (`Start Frame`) rồi viết 100 từ tả ngoại hình; bắt buộc vào mục **`🧍 Nhân vật` (`/project/:projectId/character`)** tạo **Thực thể Nhân vật (`Character Entity`)** gồm đủ 2 khe ảnh (`Khe 1: Chân dung cận mặt` + `Khe 2: Turnaround Sheet kèm 5-Layer Negative Prompt Stack`). Khi tạo Video, bắt buộc **gõ `@` ngay tại vị trí chủ ngữ $\rightarrow$ chọn tab `🧍 Nhân vật` $\rightarrow$ bấm `Thêm vào câu lệnh`** để chèn thẻ chip `[tên-nhân-vật]` inline vào dòng chữ kèm thumbnail `🧍` trên hộp Prompt (và đính kèm thêm `[Ảnh Bối Cảnh Gốc]` nếu tạo shot mới trong cùng bối cảnh). Thêm `"mouth firmly closed, zero lip movement"` ở các cảnh không thoại; giới hạn `10–14 âm tiết / 5s` nếu có thoại khớp môi.
    - **Thiết kế Âm thanh 4 Lớp & Kiểm định 5 Lớp Hollywood trước bàn giao**: Mô tả đầy đủ 4 lớp âm thanh (`Dialogue/VO`, `Foley`, `Continuous Ambience/Room Tone`, `Cinematic Score`) trong Prompt và chạy đủ **5 Lớp Kiểm Định Chất Lượng Hậu Kỳ** (`Lightbox Contact-Sheet Strip Test`, `1s Handover Check`, `Biological/Physics Artifact Sweep`, `ITU-R BS.1770 Acoustic Continuity`, `SMPTE Mastering Probe` theo **Walter Murch's *Rule of Six***) trước khi bàn giao video cho người dùng.
 
 ---
@@ -88,11 +91,12 @@ Skill này trang bị cho Agent quy trình **Đạo Diễn & Dựng Phim Cốt L
 ## 🚀 Quy Trình Thực Thi Từng Bước Khi Nhận Yêu Cầu Làm Video Trên Google Flow
 
 1. **Bước 1 — Đọc Đầy Đủ Các Kho Tri Thức Gốc**:
-   - Đọc `GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md`, `GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md`, `GOOGLE_FLOW_MASTER_EXECUTION_PIPELINE_AND_CASES.md`, và `GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md`.
+   - Đọc `GOOGLE_FLOW_SCENEBUILDER_CORE_DIRECTING_AND_AUTO_MERGE_BIBLE.md`, `GOOGLE_FLOW_CINEMATOGRAPHY_AND_DIRECTING_MASTERY_BIBLE.md`, `GOOGLE_FLOW_MASTER_EXECUTION_PIPELINE_AND_CASES.md`, `GOOGLE_FLOW_PRODUCTION_CONTINUITY_SOP.md`, `AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md` và `FLOW_PRODUCTION_BUGS_AND_LESSONS_LEARNED.md`.
 2. **Bước 2 — Thiết Kế Kịch Bản Liên Hoàn Trên `SceneBuilder` (`Seed Clip` ➔ Chuỗi `Extend` / `Jump To`)**:
    - Thiết kế rõ từng nhịp nối tiếp nhau trên Timeline của `SceneBuilder`: Mở đầu `Cold Open` cận cảnh (`85mm` Foot Stomp) ➔ `Extend` / `Jump To` ra toàn cảnh giao chiến ➔ `Extend` / `Jump To` vào cận cảnh vung vuốt (`85mm`) ➔ `Extend` / `Jump To` đặc tả mắt hổ phách bừng sáng & khóa hàm (`50mm`) ➔ `Extend` cú quật địa chấn K.O. bất động 100% & gầm chiến thắng, kèm chỉ dẫn **SFX + Nhạc nền giao hưởng (`Cinematic Score`)** xuyên suốt trong từng Prompt.
-3. **Bước 3 — Tiền Kỳ & Tạo `Seed Clip` Đưa Vào `SceneBuilder`**:
-   - Khóa `@Character` và `@Environment`, tạo `Seed Clip` mở đầu và đưa vào `SceneBuilder` (`/project/:projectId/scene/:sceneId`).
+3. **Bước 3 — Tạo Thực Thể `🧍 Nhân Vật` (2 Khe Ảnh) & Gõ `@` Chèn Chip `[Nhân-Vật]` Để Tạo `Seed Clip` Đưa Vào `SceneBuilder`**:
+   - Vào tab **`🧍 Nhân vật` (`/project/:projectId/character`)** tạo thực thể nhân vật chính thức có đủ 2 khe ảnh (`Khe 1: Chân dung cận mặt` + `Khe 2: Turnaround Sheet`) và tạo ảnh gốc cho bối cảnh (`@Environment`).
+   - Khi tạo `Seed Clip`, gõ **`@`** tại vị trí chủ ngữ trong câu lệnh $\rightarrow$ chọn tab **`🧍 Nhân vật`** $\rightarrow$ bấm **`Thêm vào câu lệnh`** để gắn thẻ chip `[tên-nhân-vật]` inline vào câu văn (kèm `[Ảnh Bối Cảnh Gốc]` trên hộp Prompt), sau đó đưa `Seed Clip` vào `SceneBuilder` (`/project/:projectId/scene/:sceneId`).
 4. **Bước 4 — Chạy Chuỗi `Extend` (`Pkc` / `qoc`) / `Jump To` Liên Hoàn Ngay Trên Timeline Của `SceneBuilder` & Xuất Thẳng File Nguyên Bản (`export-native-scene.mjs`)**:
    - Ở mỗi nhịp `Extend` / `Jump To` trên Timeline `SceneBuilder`, kiểm tra ngay đầu ngọn (`sZ = true`); nếu chưa đạt thì bấm `Redo Extend` (`Kkc` / `loc`) hoặc sửa trực tiếp (`Tkc` / `uoc`) ngay trong `SceneBuilder`.
    - Khi đã đạt chuẩn 100%, tiếp tục `Extend` / `Jump To` nhịp kế tiếp để Google Flow tự động **Auto-Merge** liền mạch.

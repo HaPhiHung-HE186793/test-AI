@@ -107,9 +107,17 @@ Mọi dự án sản xuất phim ngắn, TVC, hoạt hình hoặc trailer bắt 
 1. **Tư duy Đạo diễn Nhịp Vi Mô (`Atomic Beats 3–5s`) & Khẩu hình**:
    - Mỗi nhịp quay (`Seed Clip` hoặc `Extend`) chỉ thực hiện **1 hành động chính duy nhất + 1 chuyển động thiết bị máy quay vật lý** để chống hiện tượng tan chảy vật lý (`Motion Soup`).
    - Gọi tên chính xác cỡ cảnh (`EWS`, `MCU`, `ECU`, `Insert Shot`), tiêu cự (`24mm` chiều sâu kịch tính vs `85mm` xóa phông cô lập cảm xúc), ánh sáng (`Chiaroscuro`, `Rim Light`, `Volumetric Fog`), định mức **`10–14 âm tiết / 5s`** cho thoại khớp môi và cầu âm thanh `J-Cut / L-Cut`.
-2. **Quy trình 3 Tầng "Khóa Tĩnh trước, Tạo Động sau" (`Frames First, Video Second`)**:
-   - Cấm đi thẳng từ chữ sang video (`Text-to-Video`) khi chưa duyệt ảnh tĩnh: bắt buộc khóa **Character Turnaround Sheet** (đa góc nền trung tính + `5-Layer Negative Prompt Stack`, không cầm đạo cụ trên tay) và **Environment Master Keyframes** (`0 Video Credit`).
-   - Kỹ thuật `Anti-Glitch`: Lặp lại cụm `Fixed Anchor` thay vì dùng đại từ mơ hồ; chỉ định rõ `"mouth firmly closed, zero lip movement"` ở mọi cảnh chỉ chạy Voiceover; neo thiết bị quay vật lý (`locked-off fluid-head tripod`, `heavy gimbal tracking`, `slow Technocrane rise`).
+2. **Quy trình 3 Tầng "Khóa Tĩnh trước, Tạo Động sau" (`Frames First, Video Second`) & Thực Thể `🧍 Nhân Vật` (`@Character Entity`)**:
+   - **BẮT BUỘC Tạo Thực Thể `🧍 Nhân Vật` Khe Kép (`/project/:projectId/character`) — CẤM Chỉ Dùng Ảnh Tĩnh Rời (`Start Frame`) Thay Cho `@Nhân Vật`**:
+     1. Vào tab **`🧍 Nhân vật` (`accessibility_new`)**, đóng gói mỗi nhân vật thành một **Thực thể Nhân vật (`Character Entity`) chính thức** (ví dụ: `t-rex`, `spinosaurus`...) gồm đủ **2 khe ảnh tham chiếu**:
+        - **Khe 1 (`Portrait / Close-Up`)**: Ảnh chân dung cận mặt khóa cấu trúc sọ, gờ xương mắt, sẹo, răng, màu da.
+        - **Khe 2 (`Turnaround Sheet`)**: Bảng xoay đa góc toàn thân trên nền trắng/xám phẳng khóa tỷ lệ hình học 3D.
+     2. **Cách gọi Nhân vật khi tạo Video (`Gõ @ ➔ Chọn Nhân vật ➔ Thêm vào câu lệnh`)**:
+        - Trong ô nhập Prompt, gõ **`@`** tại đúng vị trí chủ ngữ nhân vật xuất hiện $\rightarrow$ mở popup **`Tìm kiếm thành phần`** $\rightarrow$ chọn tab **`🧍 Nhân vật`** $\rightarrow$ click chọn nhân vật $\rightarrow$ bấm **`Thêm vào câu lệnh`**.
+        - Phải đảm bảo trên hộp Prompt xuất hiện đồng thời: **(a) Thẻ chip inline `[tên-nhân-vật]` (`flow-character-ingredient-chip`) nằm ngay giữa câu văn** và **(b) Ô thumbnail nhân vật có icon hình người `🧍` ở hàng nguyên liệu phía trên**.
+        - Nhờ Google Flow truyền trực tiếp cả 2 khe ảnh của `@Nhân vật` xuống bộ sinh video, câu lệnh Prompt chỉ cần viết ngắn gọn, tập trung vào **diễn biến hành động & góc máy** (không nhồi nhét hàng trăm từ tả lại ngoại hình gây quá tải Prompt và mất Voiceover).
+     3. **Đồng nhất cả Bối cảnh qua các Shot**: Cùng với thẻ `@Nhân vật`, bấm `+` (`@`) đính kèm thêm **Ảnh gốc của Bối cảnh (`🖼️ Hình ảnh`)** hoặc nối tiếp trực tiếp bằng **`Kéo dài (Extend)`** trong `SceneBuilder` để bối cảnh không bị vẽ lại ngẫu nhiên.
+   - Kỹ thuật `Anti-Glitch`: Chỉ định rõ `"mouth firmly closed, zero lip movement"` ở mọi cảnh chỉ chạy Voiceover; neo thiết bị quay vật lý (`locked-off fluid-head tripod`, `heavy gimbal tracking`, `slow Technocrane rise`).
 3. **Định tuyến Mô hình (`Model Routing`) & Hòa âm 4 Lớp / Hậu kỳ `De-AI-ifying`**:
    - Mặc định tuân thủ `100% Native Google Flow SceneBuilder` (Mục 5); khi người dùng yêu cầu quy trình thương mại đa mô hình thì định tuyến chuẩn theo bảng `AI_CINEMA_4_PILLARS_INDUSTRY_KNOWLEDGE_BASE.md` (kết hợp `DaVinci Resolve 6-Node De-AI-ifying`: `Color Match`, `Midtone Detail -10..-18`, `Halation`, `35mm Film Grain`) và đảm bảo **Kiến trúc Âm thanh 4 Lớp** (`Dialogue/VO` + `Foley` + `Continuous Room Tone` + `Cinematic Score`) cùng quản trị thư mục `Scene_ID`.
 4. **Kiểm định Chất lượng Hậu kỳ 5 Lớp Hollywood (`5-Layer Finishing QC` & Walter Murch *Rule of Six*)**:
